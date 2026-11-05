@@ -21,7 +21,7 @@
 
 ## Part 2: Demo sites (17 built)
 Each is one self-contained `index.html` with a different look. Each has noindex, the fixed "Demo preview built by David" banner, hero, services, why-us, a missed-call text-back phone mock, clearly labelled "Sample reviews", a quote form (non-functional), a service area and a tap-to-call link with the real number. No real photos.
-All 17 also got a design-skill polish pass, checked at 375/768/1280/1600px (no sideways scroll, 44px tap targets). During the polish, unsupported claims such as "free estimates" and invented star ratings were removed.
+All 17 use the design skill: 14 got a separate polish pass and 3 (one-shot-exterior, manna-from-heaven, prps-junk-removal) were built with it from the start. The polished sites were checked at 375/768/1280/1600px (no sideways scroll, 44px tap targets). During the polish, unsupported claims such as "free estimates" and invented star ratings were removed.
 
 - `demos/coles-southern-bbq/`
 - `demos/carolina-catering/`
