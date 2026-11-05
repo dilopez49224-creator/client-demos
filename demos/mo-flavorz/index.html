@@ -14,7 +14,7 @@
   --ink:#1c1626;
   --ink-2:#120e1a;
   --tang:#ff8a3d;
-  --tang-d:#c75d12;
+  --tang-d:#a84a0a;
   --lime:#c8f55a;
   --lime-d:#5f7d07;
   --cream:#fff3d6;
@@ -33,6 +33,8 @@ h2{font-size:clamp(2.1rem,8vw,3.8rem)}
 h3{font-size:1.55rem}
 p{margin:0 0 1em}
 a{color:var(--tang-d)}
+p a[href^="tel:"]{display:inline-block;padding:11px 0;margin:-11px 0}
+.brand{padding:2px 0}
 :focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--lime)}
 .banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:44px;background:var(--ink-2);color:#fff;text-align:center;font:700 13px/1.3 "Hanken Grotesk",sans-serif;padding:6px 12px;display:flex;align-items:center;justify-content:center}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
@@ -46,9 +48,9 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .brand{font-family:"Lilita One",sans-serif;font-size:1.6rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
 .brand svg{width:36px;height:36px}
 nav.main{display:none}
-nav.main a{text-decoration:none;color:var(--ink);font-weight:700;font-size:.95rem;margin-left:22px}
+nav.main a{text-decoration:none;color:var(--ink);font-weight:700;font-size:.95rem;margin-left:10px;padding:12px;display:inline-block}
 nav.main a:hover{color:var(--tang-d)}
-.callhead{display:none}
+.btn.callhead{display:none}
 /* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:12px 26px;border-radius:999px;background:var(--ink);color:#fff;font:400 1.2rem "Lilita One",sans-serif;letter-spacing:.02em;text-decoration:none;border:3px solid var(--ink);cursor:pointer;transition:transform .15s,background .15s}
 .btn:hover{transform:translateY(-2px);background:var(--ink-2)}
@@ -94,12 +96,12 @@ nav.main a:hover{color:var(--tang-d)}
 /* why */
 .why{padding:60px 0}
 .why .wrap{display:grid;gap:28px}
-.why ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.why li{background:var(--white);border:2px solid var(--ink);border-radius:18px;padding:18px 18px 16px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;box-shadow:5px 5px 0 var(--tang)}
-.why li:nth-child(even){box-shadow:5px 5px 0 var(--lime)}
-.why li svg{width:44px;height:44px;color:var(--ink)}
-.why li strong{display:block;font-family:"Lilita One",sans-serif;font-size:1.3rem;color:var(--ink);margin-bottom:2px}
-.why li span{color:var(--muted)}
+.why ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.why li{border-top:2px solid var(--ink);padding:18px 0 20px;display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.why li svg{width:44px;height:44px;color:var(--ink);background:var(--tang);border-radius:50%;padding:9px}
+.why li:nth-child(even) svg{background:var(--lime)}
+.why li strong{display:block;font-family:"Lilita One",sans-serif;font-size:1.35rem;color:var(--ink);margin-bottom:2px}
+.why li span{color:var(--muted);display:block;max-width:34em}
 /* missed call */
 .textback{padding:60px 0;background:var(--lime);color:var(--ink);border-radius:40px 40px 0 0}
 .textback .eyebrow{color:var(--ink)}
@@ -148,14 +150,19 @@ input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:none;box
 .two{display:grid;gap:14px}
 .msg{display:none;background:var(--ink);color:#fff;border-radius:16px;padding:16px 18px;font-weight:500}
 .msg.show{display:block}
-.quote aside p{color:var(--muted)}
+.quote aside p{color:var(--muted);max-width:32em}
+.specs{margin:22px 0 0;padding:18px 0 0;list-style:none;display:grid;gap:10px;border-top:2px solid var(--ink)}
+.specs li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline;font-size:.95rem}
+.specs b{font:400 1rem "Lilita One",sans-serif;color:var(--ink);white-space:nowrap}
+.specs span{color:var(--muted)}
+.specs .ttl{display:block;font:700 .8rem/1 "Hanken Grotesk",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--tang-d);margin-bottom:10px}
 /* area */
 .area{padding:60px 0;background:var(--tang);border-radius:40px 40px 0 0}
 .area .eyebrow{color:var(--ink)}
 .area .wrap{display:grid;gap:30px;align-items:center}
-.area p{color:#4a2a10}
+.area p{color:#4a2a10;max-width:34em}
 .area ul{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
-.area li{background:var(--cream);border:2px solid var(--ink);border-radius:999px;padding:6px 14px;font-weight:700;font-size:.92rem;color:var(--ink)}
+.area li{background:var(--cream);border:2px solid var(--ink);border-radius:999px;padding:9px 16px;min-height:44px;display:inline-flex;align-items:center;font-weight:700;font-size:.92rem;color:var(--ink)}
 .map{max-width:380px;width:100%;margin:0 auto}
 .map svg{width:100%;height:auto;display:block}
 footer{padding:40px 0 30px;background:var(--ink-2);color:#cfc7d6;font-size:.92rem}
@@ -178,7 +185,7 @@ footer .brand{color:#fff}
 }
 @media (min-width:900px){
   nav.main{display:block}
-  .callhead{display:inline-flex;min-height:44px;padding:8px 18px;font-size:1.05rem}
+  .btn.callhead{display:inline-flex;min-height:44px;padding:8px 18px;font-size:1.05rem}
   .sticky{display:none}
   body{padding-bottom:0}
   .grid{grid-template-columns:repeat(4,1fr)}
@@ -259,11 +266,11 @@ footer .brand{color:#fff}
     <p class="intro">Mo' Flavorz does more than drop off trays. Pick the one that fits your day, or mix them for a big event.</p>
     <ul class="grid">
       <li class="tile big">
-        <span class="sticker">Most popular</span>
+        <span class="sticker">Any occasion</span>
         <svg class="ico" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 34h40"/><path d="M10 34c0-9 7-16 16-16s16 7 16 16"/><circle cx="26" cy="15" r="2.5"/><path d="M4 40h44"/></svg>
         <h3>All-purpose catering</h3>
-        <p>Weddings, reunions, church functions, office lunches, birthdays, repasts — if a crowd is coming, we cook for it. Buffet, boxed or served.</p>
-        <span class="fact">Any occasion, any headcount — call to plan it</span>
+        <p>Weddings, reunions, church functions, office lunches, birthdays, repasts — if a crowd is coming, we cook for it.</p>
+        <span class="fact">Call with your date and headcount to plan it</span>
       </li>
       <li class="tile">
         <svg class="ico" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 18h32l-3 24H13z"/><path d="M18 18v-4a8 8 0 0 1 16 0v4"/></svg>
@@ -280,7 +287,7 @@ footer .brand{color:#fff}
         <svg class="ico" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10l-4 30h28l-4-30z"/><path d="M14 22h24"/><path d="M26 40v6M18 46h16"/><path d="M34 8l6-4"/></svg>
         <h3>Beverage catering</h3>
         <p>Certified and insured for beverage catering, so the bar side of your event is handled the right way.</p>
-        <span class="fact">Certified and insured beverage service</span>
+        <span class="fact">Pairs with any of the other four</span>
       </li>
       <li class="tile tall">
         <svg class="ico" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="22" width="40" height="10" rx="2"/><path d="M12 32v12M40 32v12M20 22v-6h12v6"/><circle cx="26" cy="12" r="3"/></svg>
@@ -371,6 +378,13 @@ footer .brand{color:#fff}
       <h2 id="h-quote">Tell us what you're planning.</h2>
       <p>Date, headcount and which service you're after. We'll follow up by phone or text with menu ideas and pricing.</p>
       <p><strong>Prefer to talk?</strong> <a href="tel:8644426045">864-442-6045</a></p>
+      <ul class="specs" aria-label="Good to have ready">
+        <li style="grid-column:1/-1"><span class="ttl">Good to have ready</span></li>
+        <li><b>Headcount</b><span>The private room seats 20 to 24; bigger crowds are catered or booked through Festive on Augusta.</span></li>
+        <li><b>Date</b><span>Takeout runs on select days, so the date decides what's possible.</span></li>
+        <li><b>Drinks</b><span>Say if you want beverage service. Mo' Flavorz is certified and insured for it.</span></li>
+        <li><b>Pickup or drop-off</b><span>Catered pickup keeps it simple; full catering comes to you.</span></li>
+      </ul>
     </aside>
     <form id="quoteForm" novalidate>
       <div class="two">
@@ -385,7 +399,7 @@ footer .brand{color:#fff}
         <select name="type"><option>All-purpose catering</option><option>Catered pickup</option><option>Beverage catering</option><option>Private dining room (20–24)</option><option>Event at Festive on Augusta</option><option>Not sure yet</option></select>
       </label>
       <label>Anything else? <textarea name="msg" placeholder="Occasion, menu ideas, dietary needs..."></textarea></label>
-      <button class="btn tang" type="submit">Send my request</button>
+      <button class="btn tang" type="submit">Send booking request</button>
       <p class="msg" id="formMsg" role="status" aria-live="polite">Thanks! This demo form doesn't send yet — on the live site, Mo' Flavorz would get your request instantly and text you back.</p>
     </form>
   </div>
@@ -433,6 +447,7 @@ document.getElementById('quoteForm').addEventListener('submit',function(e){
   e.preventDefault();
   document.getElementById('formMsg').classList.add('show');
   this.querySelector('button').textContent='Request sent (demo)';
+  this.querySelector('button').disabled=true;
 });
 </script>
 </body>
