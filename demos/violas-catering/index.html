@@ -32,7 +32,7 @@ body{margin:0;padding-top:46px;padding-bottom:84px;color:var(--ink);font:400 17p
 h1,h2,h3{font-family:"Yeseva One",Georgia,serif;font-weight:400;line-height:1.08;margin:0 0 .45em;color:var(--plum)}
 h1{font-size:clamp(2.5rem,9vw,4.6rem)}
 h2{font-size:clamp(1.9rem,6.5vw,3rem)}
-h3{font-size:1.35rem}
+h3{font-size:1.5rem}
 p{margin:0 0 1em}
 a{color:var(--olive-d)}
 svg{display:block;max-width:100%}
@@ -93,7 +93,7 @@ section{padding:60px 0;position:relative}
 .plate{text-align:center}
 .plate .rim{width:min(150px,100%);aspect-ratio:1;margin:0 auto 14px;border-radius:50%;background:#fff;border:6px solid var(--butter-d);box-shadow:inset 0 0 0 10px #fff,inset 0 0 0 12px var(--olive-l),0 10px 24px -16px rgba(59,33,65,.5);display:grid;place-items:center}
 .plate .rim svg{width:46%;height:46%;stroke:var(--olive);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.plate h3{font-size:1.1rem;margin-bottom:.25em}
+.plate h3{font-family:Mulish,system-ui,sans-serif;font-weight:800;line-height:1.2;font-size:1.1rem;margin-bottom:.25em}
 .plate p{font-size:.88rem;color:var(--muted);margin:0}
 .runner{margin-top:40px;background:var(--olive);color:var(--butter);border-radius:12px;padding:22px 24px;display:grid;gap:14px;align-items:center;position:relative;overflow:hidden}
 .runner::before{content:"";position:absolute;inset:8px;border:1.5px dashed rgba(255,244,214,.45);border-radius:8px;pointer-events:none}
@@ -109,7 +109,7 @@ section{padding:60px 0;position:relative}
 .why-list li{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;padding:22px 0;border-top:1px solid rgba(255,244,214,.2)}
 .why-list li:last-child{border-bottom:1px solid rgba(255,244,214,.2)}
 .why-list .amp{font:400 2.6rem/1 "Yeseva One",serif;color:var(--ember);width:52px;text-align:center}
-.why-list h3{color:#fff;font-size:1.3rem;margin-bottom:.2em}
+.why-list h3{color:#fff;font-size:1.5rem;margin-bottom:.2em}
 .why-list p{margin:0;color:#e3d3e6;max-width:60ch}
 
 /* text-back */
@@ -131,8 +131,8 @@ section{padding:60px 0;position:relative}
 .bubble{max-width:88%;padding:11px 14px;border-radius:18px;line-height:1.4;font-size:.86rem}
 .bubble.in{align-self:flex-start;background:var(--olive-l);border-bottom-left-radius:4px}
 .bubble.out{align-self:flex-end;background:var(--olive);color:#fff;border-bottom-right-radius:4px}
-.bubble small{display:block;opacity:.75;font-size:.7rem;margin-top:4px}
-.sms-label{text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-top:6px}
+.bubble small{display:block;opacity:.75;font-size:.75rem;margin-top:4px}
+.sms-label{text-align:center;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-top:6px}
 @media(prefers-reduced-motion:no-preference){
   .bubble.out{animation:pop .5s .6s both}.missed{animation:pop .5s .1s both}
   @keyframes pop{from{opacity:0;transform:translateY(8px) scale(.96)}to{opacity:1;transform:none}}
@@ -145,8 +145,8 @@ section{padding:60px 0;position:relative}
   background-image:repeating-linear-gradient(transparent 0 31px,rgba(74,93,35,.18) 31px 32px)}
 @media(min-width:800px){.book{grid-template-columns:repeat(3,1fr);gap:30px}}
 .entry p{font:italic 400 1.05rem/2 Mulish,serif;margin:0 0 6px;color:var(--ink)}
-.entry .who{font:400 1.05rem "Yeseva One",serif;color:var(--olive-d)}
-.entry .who small{font:800 .72rem Mulish,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-left:8px}
+.entry .who{font:800 1.05rem Mulish,system-ui,sans-serif;color:var(--olive-d)}
+.entry .who small{font:800 .75rem Mulish,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-left:8px}
 
 /* form */
 .quote{background:var(--paper)}
@@ -165,7 +165,7 @@ form{background:#fff;border:1.5px solid var(--butter-d);border-radius:12px;paddi
 .contact-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:14px}
 .contact-list li{display:flex;gap:12px;align-items:center;font-weight:400}
 .contact-list svg{width:24px;height:24px;stroke:var(--ember-d);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.contact-list a{color:var(--plum);text-decoration:none;font:400 1.35rem "Yeseva One",serif;display:inline-flex;align-items:center;min-height:44px}
+.contact-list a{color:var(--plum);text-decoration:none;font:400 1.5rem "Yeseva One",serif;display:inline-flex;align-items:center;min-height:44px}
 
 /* area */
 .area .grid{display:grid;gap:30px;align-items:center}
@@ -177,7 +177,7 @@ form{background:#fff;border:1.5px solid var(--butter-d);border-radius:12px;paddi
 footer{background:var(--plum);color:#e3d3e6;padding:36px 0 40px;font-size:.9rem}
 footer .wrap{display:grid;gap:10px}
 footer a{color:#fff}
-footer strong{color:#fff;font:400 1.4rem "Yeseva One",serif}
+footer strong{color:#fff;font:400 1.5rem "Yeseva One",serif}
 
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,244,214,.94);backdrop-filter:blur(8px);border-top:1px solid var(--butter-d)}
 .callbar .btn{width:100%;font-size:1.05rem}
@@ -398,7 +398,7 @@ footer strong{color:#fff;font:400 1.4rem "Yeseva One",serif}
         <!-- pin -->
         <path d="M180 60 c-16 0 -26 12 -26 26 c0 20 26 44 26 44 s26 -24 26 -44 c0 -14 -10 -26 -26 -26z" fill="#4a5d23" stroke="#fffaf0" stroke-width="3"/>
         <circle cx="180" cy="86" r="9" fill="#fff4d6"/>
-        <text x="180" y="50" text-anchor="middle" font-family="'Yeseva One', serif" font-size="20" fill="#3b2141">Seneca, SC</text>
+        <text x="180" y="50" text-anchor="middle" font-family="Mulish, system-ui, sans-serif" font-size="20" font-weight="800" fill="#3b2141">Seneca, SC</text>
       </svg>
     </div>
     <div>
