@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ferkalo Handyman | Handyman in Seneca, SC</title>
+<meta name="description" content="Ferkalo Handyman: home repairs, fixture swaps, drywall patches and punch lists around Seneca, SC. Call 864-324-6353.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Chivo:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kraft:#c9a66b;--kraft-d:#b08d52;--kraft-l:#e3cfa5;--cream:#fbf5e8;--cream-2:#f3e9d4;
+  --denim:#2c4a6b;--denim-d:#1f3650;--denim-x:#15273a;--red:#d9442b;--red-d:#b5341f;
+  --ink:#241c12;--mute:#5f554a;--rule:#d8c8a6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:6rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;padding-top:2.6rem;padding-bottom:5rem;font-family:Chivo,system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--cream);overflow-x:hidden}
+h1,h2,h3{font-family:"Stardos Stencil",Impact,sans-serif;font-weight:700;line-height:1;margin:0 0 .5em;text-transform:uppercase;letter-spacing:.01em}
+h1{font-size:clamp(2.6rem,8.5vw,4.8rem)}
+h2{font-size:clamp(1.9rem,5vw,2.9rem)}
+h3{font-size:1.15rem;letter-spacing:.04em}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--denim)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:min(1100px,100% - 2rem);margin-inline:auto}
+section{padding:4.5rem 0}
+.eyebrow{display:inline-block;font-weight:800;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin:0 0 .8rem}
+
+/* kraft paper texture */
+.kraft{background-color:var(--kraft);background-image:radial-gradient(rgba(255,255,255,.18) 1px,transparent 1.2px),radial-gradient(rgba(60,40,10,.12) 1px,transparent 1.2px);background-size:9px 9px,13px 13px;background-position:0 0,4px 6px}
+
+/* tape-measure ruler edge: inch ticks with 16" stud marks */
+.ruler{height:34px;background:
+  linear-gradient(to right,var(--red) 0 2px,transparent 2px) 0 0/96px 100% no-repeat,
+  repeating-linear-gradient(to right,var(--ink) 0 2px,transparent 2px 48px),
+  repeating-linear-gradient(to right,transparent 0 23px,var(--ink) 23px 25px,transparent 25px 48px),
+  repeating-linear-gradient(to right,transparent 0 11px,rgba(36,28,18,.55) 11px 12px,transparent 12px 24px),
+  #f5d94a;
+  background-size:96px 100%,48px 100%,48px 60%,24px 35%,auto;background-repeat:repeat-x;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);position:relative}
+.ruler::after{content:"16\" O.C. · stud spacing";position:absolute;right:1rem;top:50%;transform:translateY(-50%);font:800 .7rem/1 Chivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;background:#f5d94a;padding:0 .4rem;color:var(--ink)}
+
+.demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--denim-x);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:.55rem 1rem}
+
+header.site{position:sticky;top:2.6rem;z-index:90;background:var(--cream);border-bottom:3px solid var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);min-height:48px}
+.brand .mark{width:40px;height:40px;flex:none}
+.brand b{font-family:"Stardos Stencil",sans-serif;font-weight:700;font-size:1.25rem;line-height:1;display:block;text-transform:uppercase}
+.brand small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:.15rem}
+.nav ul{display:none;list-style:none;margin:0;padding:0;gap:1.3rem}
+.nav ul a{text-decoration:none;color:var(--ink);font-weight:600;display:inline-block;padding:.6rem .2rem}
+.nav ul a:hover{color:var(--red)}
+@media (min-width:900px){.nav ul{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.75rem 1.4rem;font-weight:800;font-size:1rem;text-decoration:none;border:2px solid var(--ink);border-radius:6px;cursor:pointer;transition:background .15s,color .15s,transform .15s;font-family:inherit;box-shadow:3px 3px 0 var(--ink)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-denim{background:var(--denim);color:#fff}
+.btn-denim:hover{background:var(--denim-d)}
+.btn-paper{background:var(--cream);color:var(--ink)}
+.btn-paper:hover{background:#fff}
+.nav .btn{display:none}
+@media (min-width:600px){.nav .btn{display:inline-flex}}
+
+/* hero */
+.hero{padding:3.5rem 0 3rem;position:relative}
+.hero .wrap{display:grid;gap:2.5rem;align-items:center}
+@media (min-width:940px){.hero .wrap{grid-template-columns:1fr .95fr}}
+.hero h1 span{color:var(--red)}
+.hero .eyebrow{color:var(--denim-x)}
+.hero .lead{font-size:1.2rem;color:var(--ink);max-width:40ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.6rem}
+.hero-note{font-size:.9rem;color:var(--ink);margin-top:.9rem}
+
+/* work-order tag */
+.tag-card{background:var(--cream);border:2px solid var(--ink);border-radius:10px;position:relative;padding:1.4rem 1.4rem 1.2rem;box-shadow:5px 6px 0 var(--denim-x)}
+.tag-card::before{content:"";position:absolute;top:-14px;left:50%;width:28px;height:28px;border-radius:50%;background:var(--kraft);border:2px solid var(--ink);transform:translateX(-50%)}
+.tag-card.big{max-width:440px;margin:1.5rem auto 0;transform:rotate(-1.5deg)}
+.tag-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px dashed var(--rule);padding-bottom:.6rem;margin:.4rem 0 .8rem;gap:1rem}
+.tag-head b{font-family:"Stardos Stencil",sans-serif;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em}
+.tag-head span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:800}
+.tag-list{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
+.tag-list li{display:flex;gap:.7rem;align-items:flex-start;font-size:.98rem}
+.tag-list .box{width:20px;height:20px;border:2px solid var(--ink);border-radius:3px;flex:none;margin-top:.2rem;position:relative;background:#fff}
+.tag-list .box.done::after{content:"";position:absolute;left:5px;top:0px;width:6px;height:11px;border:solid var(--red);border-width:0 3px 3px 0;transform:rotate(40deg)}
+.tag-list .box.done + span{text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px;color:var(--mute)}
+.tag-foot{margin-top:.9rem;font-size:.8rem;color:var(--mute);font-style:italic}
+
+/* services: work-order tags grid */
+.services{position:relative}
+.svc-grid{display:grid;gap:1.75rem 1.4rem;margin-top:2.6rem}
+@media (min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--cream);border:2px solid var(--ink);border-radius:10px;padding:1.6rem 1.2rem 1.2rem;position:relative}
+.svc::before{content:"";position:absolute;top:-12px;left:1.2rem;width:22px;height:22px;border-radius:50%;background:var(--kraft);border:2px solid var(--ink)}
+.svc .num{position:absolute;top:-.8rem;right:1rem;background:var(--denim);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.12em;padding:.3rem .55rem;border-radius:4px;text-transform:uppercase}
+.svc svg{width:38px;height:38px;margin-bottom:.6rem}
+.svc h3{margin-bottom:.35rem}
+.svc p{margin:0;font-size:.97rem;color:var(--mute)}
+.svc-note{margin-top:2rem;font-size:.95rem;color:var(--mute)}
+
+/* why us: denim panel with left-aligned statements */
+.why{background:var(--denim);color:#fff}
+.why .eyebrow{color:#ffb3a3}
+.why h2{color:#fff}
+.why .wrap{display:grid;gap:2.5rem}
+@media (min-width:900px){.why .wrap{grid-template-columns:.9fr 1.1fr}}
+.why p{color:#dbe4ee}
+.why-list{list-style:none;margin:0;padding:0;border-top:2px solid rgba(255,255,255,.25)}
+.why-list li{padding:1.1rem 0;border-bottom:2px solid rgba(255,255,255,.25);display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.why-list .k{font-family:"Stardos Stencil",sans-serif;font-size:1.5rem;color:#ffb3a3;line-height:1;min-width:2.2ch}
+.why-list h3{margin:0 0 .2rem;color:#fff}
+.why-list p{margin:0;font-size:.98rem}
+
+/* missed call */
+.mc .wrap{display:grid;gap:2.5rem;align-items:center}
+@media (min-width:900px){.mc .wrap{grid-template-columns:1.1fr .9fr}}
+.mc ul{padding-left:1.2rem;margin:0}
+.mc li{margin:.4rem 0}
+.phone{width:min(300px,100%);margin-inline:auto;aspect-ratio:9/18.5;background:var(--denim-x);border-radius:40px;padding:12px;box-shadow:0 30px 60px -25px rgba(36,28,18,.6);position:relative}
+.phone .screen{background:#fff;border-radius:30px;height:100%;overflow:hidden;display:flex;flex-direction:column}
+.phone .island{width:84px;height:24px;background:var(--denim-x);border-radius:14px;margin:10px auto 0}
+.phone .time{font-weight:800;font-size:.8rem;text-align:center;margin-top:.6rem}
+.phone .thread{padding:1rem .9rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+.bubble{font-size:.84rem;line-height:1.45;padding:.7rem .85rem;border-radius:16px;max-width:92%}
+.bubble.missed{align-self:flex-start;background:#fbe3de;color:#8a2512;display:flex;gap:.5rem;align-items:center;font-weight:800;border-radius:12px}
+.bubble.missed svg{width:18px;height:18px;flex:none}
+.bubble.sms{align-self:flex-end;background:var(--denim);color:#fff;border-bottom-right-radius:4px;animation:pop .5s .6s both}
+.bubble.sms b{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-bottom:.25rem}
+.stamp{font-size:.7rem;color:var(--mute);align-self:flex-end}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* reviews */
+.reviews{background:var(--cream-2)}
+.rev-note{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:#fff;border:2px dashed var(--ink);padding:.35rem .7rem;margin-bottom:1rem}
+.rev-grid{display:grid;gap:1.25rem;margin-top:2rem}
+@media (min-width:760px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{background:var(--cream);border:2px solid var(--ink);border-radius:10px;padding:1.2rem;position:relative}
+.rev::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:20px;transform:translateX(-50%) rotate(-2deg);background:rgba(217,68,43,.55)}
+.rev .stars{color:var(--red);letter-spacing:.1em;font-size:.95rem}
+.rev p{margin:.5rem 0;font-size:1rem}
+.rev footer{font-size:.85rem;color:var(--mute);font-weight:600}
+
+/* form */
+.quote .wrap{display:grid;gap:2.5rem}
+@media (min-width:900px){.quote .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
+form{display:grid;gap:1rem;background:#fff;padding:1.5rem;border-radius:10px;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--kraft)}
+.row{display:grid;gap:1rem}
+@media (min-width:600px){.row{grid-template-columns:1fr 1fr}}
+label{font-weight:800;font-size:.85rem;letter-spacing:.04em;display:block;margin-bottom:.3rem}
+input,select,textarea{width:100%;min-height:48px;padding:.7rem .85rem;border:2px solid var(--ink);border-radius:6px;background:var(--cream);font:inherit;color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+.msg{display:none;background:#e6eef7;border:2px solid var(--denim);color:var(--denim-d);padding:1rem;font-weight:600;border-radius:6px}
+.msg.show{display:block}
+
+/* area */
+.area{background:var(--denim-x);color:#fff}
+.area .eyebrow{color:#ffb3a3}
+.area h2{color:#fff}
+.area p{color:#dbe4ee}
+.area .wrap{display:grid;gap:2rem;align-items:center}
+@media (min-width:900px){.area .wrap{grid-template-columns:1fr 1fr}}
+.area-map{border:2px solid var(--kraft);border-radius:10px;padding:1rem;background:rgba(255,255,255,.04)}
+.area-map svg{width:100%;height:auto;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:1rem 0 0}
+.chips li{background:var(--kraft);color:var(--ink);font-weight:800;font-size:.82rem;letter-spacing:.06em;padding:.45rem .8rem;border-radius:4px}
+
+footer.site{background:var(--cream);border-top:3px solid var(--ink);padding:2rem 0 1.5rem;font-size:.95rem}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+footer.site a[href^="tel:"]{font-weight:800;display:inline-block;padding:11px 0}
+footer.site small{color:var(--mute);width:100%}
+
+.sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:95;padding:.6rem 1rem calc(.6rem + env(safe-area-inset-bottom));background:var(--cream);border-top:3px solid var(--ink)}
+.sticky-call .btn{width:100%}
+@media (min-width:900px){.sticky-call{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="site">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="12" width="34" height="16" rx="3" fill="#f5d94a" stroke="#241c12" stroke-width="2"/><path d="M9 12v6M15 12v4M21 12v6M27 12v4M33 12v6" stroke="#241c12" stroke-width="2"/><rect x="3" y="26" width="34" height="3" fill="#241c12"/><circle cx="20" cy="33" r="4" fill="#d9442b" stroke="#241c12" stroke-width="2"/></svg>
+      <span><b>Ferkalo</b><small>Handyman · Seneca, SC</small></span>
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Ferkalo</a></li>
+      <li><a href="#textback">Text-back</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#area">Service area</a></li>
+    </ul>
+    <a class="btn btn-red" href="tel:8643246353"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call Ferkalo</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero kraft" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Handyman · Seneca, SC</p>
+        <h1 id="hero-h">The to-do list <span>gets done.</span></h1>
+        <p class="lead">Ferkalo Handyman takes the small jobs that pile up around a house in Seneca: the drywall ding, the sticking door, the faucet that drips, the shelf still in its box.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-red" href="tel:8643246353">Call 864-324-6353</a>
+          <a class="btn btn-paper" href="#quote">Send your list</a>
+        </div>
+        <p class="hero-note">One trip, several fixes. Send the whole list and it gets worked through in order.</p>
+      </div>
+      <div class="tag-card big" aria-hidden="true">
+        <div class="tag-head"><b>Work order</b><span>Sample · Seneca</span></div>
+        <ul class="tag-list">
+          <li><span class="box done"></span><span>Patch &amp; paint drywall, hallway</span></li>
+          <li><span class="box done"></span><span>Rehang bathroom door, fix latch</span></li>
+          <li><span class="box done"></span><span>Swap kitchen faucet</span></li>
+          <li><span class="box"></span><span>Mount 65" TV, find studs at 16" O.C.</span></li>
+          <li><span class="box"></span><span>Re-caulk tub surround</span></li>
+        </ul>
+        <p class="tag-foot">Example list, to show how a visit is organized.</p>
+      </div>
+    </div>
+  </section>
+  <div class="ruler" aria-hidden="true"></div>
+
+  <section class="services" id="services" aria-labelledby="serv-h">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2 id="serv-h">Standard handyman work.</h2>
+      <p>The everyday repairs a homeowner needs done right, without calling five different trades.</p>
+      <div class="svc-grid">
+        <article class="svc">
+          <span class="num">Repair</span>
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2c4a6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="32" height="28" rx="2"/><path d="M14 18l5 5 8-9" stroke="#d9442b"/><path d="M4 14h32"/></svg>
+          <h3>Drywall patch &amp; paint</h3>
+          <p>Nail pops, doorknob holes and water-stain spots patched, sanded, textured and touched up.</p>
+        </article>
+        <article class="svc">
+          <span class="num">Plumbing</span>
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2c4a6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14h14a6 6 0 0 1 6 6v4"/><path d="M8 10v8M4 14h4M28 24h-4v4h4z"/><path d="M26 32c0-2 2-3 2-5 0 2 2 3 2 5a2 2 0 0 1-4 0z" fill="#d9442b" stroke="#d9442b"/></svg>
+          <h3>Faucets &amp; fixtures</h3>
+          <p>Dripping faucets, running toilets, new showerheads, garbage disposals and under-sink leaks.</p>
+        </article>
+        <article class="svc">
+          <span class="num">Doors</span>
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2c4a6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="4" width="20" height="32" rx="1"/><circle cx="25" cy="21" r="2" fill="#d9442b" stroke="#d9442b"/><path d="M4 36h32"/></svg>
+          <h3>Doors, locks &amp; hardware</h3>
+          <p>Sticking or sagging doors planed and rehung, deadbolts and knobs swapped, strike plates lined up.</p>
+        </article>
+        <article class="svc">
+          <span class="num">Install</span>
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2c4a6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="30" height="18" rx="2"/><path d="M20 26v6M13 34h14"/><path d="M12 14l4 4-4 4" stroke="#d9442b"/></svg>
+          <h3>Mounting &amp; assembly</h3>
+          <p>TVs on studs, shelves level, curtain rods, grab bars and flat-pack furniture put together.</p>
+        </article>
+        <article class="svc">
+          <span class="num">Electrical</span>
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2c4a6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4v6M20 10a8 8 0 0 0-5 14h10a8 8 0 0 0-5-14z"/><path d="M16 28h8M17 32h6"/><path d="M8 12l3 3M32 12l-3 3" stroke="#d9442b"/></svg>
+          <h3>Light fixtures &amp; fans</h3>
+          <p>Swapping existing light fixtures, ceiling fans, switches and outlet covers, like for like.</p>
+        </article>
+        <article class="svc">
+          <span class="num">Exterior</span>
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2c4a6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h32M8 22v12M16 22v12M24 22v12M32 22v12"/><path d="M6 14l14-8 14 8" stroke="#d9442b"/></svg>
+          <h3>Caulk, trim &amp; small carpentry</h3>
+          <p>Tub and window caulk redone, baseboard and trim replaced, loose deck boards and fence pickets fixed.</p>
+        </article>
+      </div>
+      <p class="svc-note">Not sure if a job fits? Send a photo with your list and you'll get a straight answer. Larger jobs that need a licensed trade will be pointed to the right people.</p>
+    </div>
+  </section>
+
+  <section class="why" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Why Ferkalo</p>
+        <h2 id="why-h">One call for the whole list.</h2>
+        <p>Most handyman visits are a list, not a single job. The point is to work through all of it in one trip, clean up and leave the house better than it was found.</p>
+      </div>
+      <ul class="why-list">
+        <li><span class="k">A</span><div><h3>Show up as planned</h3><p>A set arrival window and a text if it shifts, so you're not waiting around all afternoon.</p></div></li>
+        <li><span class="k">B</span><div><h3>Clear scope before work starts</h3><p>You know what's on the list and what's not before the toolbox opens. No surprises on the invoice.</p></div></li>
+        <li><span class="k">C</span><div><h3>Done properly</h3><p>Studs found, anchors rated for the load, caulk tooled, paint feathered. The small stuff is where the care shows.</p></div></li>
+        <li><span class="k">D</span><div><h3>Local to Seneca</h3><p>Seneca and the neighboring Oconee and Pickens County towns, so the trip charge stays reasonable.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mc" id="textback" aria-labelledby="mc-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Demo feature</p>
+        <h2 id="mc-h">Never miss a call — we text you back in seconds</h2>
+        <p>When you're on a ladder with a drill in your hand, the phone goes to voicemail and that homeowner calls the next handyman on the list. Missed-call text-back sends an instant text from Ferkalo Handyman so the job waits for you.</p>
+        <ul>
+          <li>Reply goes out seconds after a missed call</li>
+          <li>Sent in the Ferkalo name, from your number</li>
+          <li>Asks for the list and a photo so you can quote when you're off the ladder</li>
+        </ul>
+      </div>
+      <div class="phone" role="img" aria-label="Phone mock-up showing a missed call followed by an instant text reply from Ferkalo Handyman">
+        <div class="screen">
+          <div class="island"></div>
+          <div class="time">2:08 PM</div>
+          <div class="thread">
+            <div class="bubble missed">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2l6 6M22 2l-6 6"/><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              <span>Missed call · 2:08 PM</span>
+            </div>
+            <div class="bubble sms">
+              <b>Ferkalo Handyman</b>
+              Hi, this is Ferkalo Handyman in Seneca. Sorry I missed you, I'm on a job. Text me what needs fixing (a photo helps) and I'll get back to you shortly.
+            </div>
+            <div class="stamp">Sent automatically · 2:08 PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <span class="rev-note">Sample reviews · placeholder text</span>
+      <h2 id="rev-h">What a review section could look like.</h2>
+      <p>These are example reviews to show the layout. Real customer reviews would go here.</p>
+      <div class="rev-grid">
+        <article class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Gave him a list of seven things. All seven done in one afternoon, and the drywall patch is invisible."</p>
+          <footer>Linda · Seneca</footer>
+        </article>
+        <article class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Hung our TV on the studs, not the drywall, and tidied the cables. Showed up right when he said."</p>
+          <footer>Greg · Seneca</footer>
+        </article>
+        <article class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Fixed the back door that's been sticking for two years. Should have called a long time ago."</p>
+          <footer>Amy · Walhalla</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote" aria-labelledby="q-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Send your list</p>
+        <h2 id="q-h">Tell us what needs fixing.</h2>
+        <p>List the jobs, big or small, and you'll hear back about a time. Quickest is a call or text to <a href="tel:8643246353" style="font-weight:800">864-324-6353</a>.</p>
+        <p>This demo form doesn't send anything yet. On the real site it would text Ferkalo and email a copy.</p>
+      </div>
+      <form id="qform" novalidate>
+        <div class="row">
+          <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="row">
+          <div><label for="f-town">Town</label><input id="f-town" name="town" placeholder="Seneca" autocomplete="address-level2"></div>
+          <div><label for="f-svc">Main job</label>
+            <select id="f-svc" name="service">
+              <option>Drywall patch &amp; paint</option><option>Faucet or fixture</option><option>Door, lock or hardware</option><option>Mounting or assembly</option><option>Light fixture or fan</option><option>Caulk, trim or carpentry</option><option>A list of several things</option>
+            </select>
+          </div>
+        </div>
+        <div><label for="f-msg">Your list</label><textarea id="f-msg" name="message" placeholder="1. Patch hole in hallway wall&#10;2. Back door sticks&#10;3. Mount TV in den"></textarea></div>
+        <button class="btn btn-red" type="submit">Send my list</button>
+        <p class="msg" id="qmsg" role="status">Thanks! This demo form doesn't send yet. For a real request, call or text 864-324-6353.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="area" id="area" aria-labelledby="area-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Service area</p>
+        <h2 id="area-h">Seneca and the towns around it.</h2>
+        <p>Based in Seneca, SC, covering the nearby parts of Oconee and Pickens counties. Outside this area? Ask, it may still work.</p>
+        <ul class="chips" aria-label="Towns served">
+          <li>Seneca</li><li>Walhalla</li><li>Westminster</li><li>Clemson</li><li>Central</li><li>Fair Play</li>
+        </ul>
+        <p style="margin-top:1.2rem"><a class="btn btn-red" href="tel:8643246353">Call about your area</a></p>
+      </div>
+      <div class="area-map" aria-hidden="true">
+        <svg viewBox="0 0 400 260">
+          <path d="M0 60 C 70 90, 120 40, 190 70 S 320 120, 400 80" fill="none" stroke="#c9a66b" stroke-width="3" opacity=".6"/>
+          <path d="M60 260 C 90 190, 140 170, 210 150 S 330 110, 400 130" fill="none" stroke="#c9a66b" stroke-width="2" opacity=".5" stroke-dasharray="6 5"/>
+          <path d="M0 200 C 60 230, 110 210, 150 240 S 230 260, 260 260" fill="none" stroke="#6f9bc8" stroke-width="7" opacity=".5"/>
+          <circle cx="170" cy="120" r="70" fill="rgba(201,166,107,.12)" stroke="#d9442b" stroke-width="2" stroke-dasharray="5 5"/>
+          <g transform="translate(170 120)"><rect x="-13" y="-13" width="26" height="26" rx="4" fill="#f5d94a" stroke="#241c12" stroke-width="2"/><path d="M-7 -5v10M0 -5v10M7 -5v10" stroke="#241c12" stroke-width="2"/></g>
+          <text x="170" y="165" text-anchor="middle" font-family="Chivo,sans-serif" font-weight="800" font-size="15" fill="#fff">SENECA</text>
+          <text x="80" y="60" font-family="Chivo,sans-serif" font-weight="600" font-size="12" fill="#c9a66b">Walhalla</text>
+          <text x="40" y="150" font-family="Chivo,sans-serif" font-weight="600" font-size="12" fill="#c9a66b">Westminster</text>
+          <text x="290" y="110" font-family="Chivo,sans-serif" font-weight="600" font-size="12" fill="#c9a66b">Clemson</text>
+          <text x="330" y="165" font-family="Chivo,sans-serif" font-weight="600" font-size="12" fill="#c9a66b">Central</text>
+          <text x="40" y="235" font-family="Chivo,sans-serif" font-weight="600" font-size="12" fill="#9fc0de">Lake Keowee / Hartwell</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span><strong>Ferkalo Handyman</strong> · Seneca, SC</span>
+    <a href="tel:8643246353">864-324-6353</a>
+    <small>Demo preview built by David. Not affiliated with or endorsed by Ferkalo Handyman. Reviews shown are placeholders.</small>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <a class="btn btn-red" href="tel:8643246353"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call Ferkalo · 864-324-6353</a>
+</div>
+
+<script>
+document.getElementById('qform').addEventListener('submit',function(e){e.preventDefault();document.getElementById('qmsg').classList.add('show');this.querySelector('button').textContent='Sent (demo)';});
+</script>
+</body>
+</html>
