@@ -86,11 +86,11 @@ header.site{background:#fff;border-bottom:1px solid var(--concrete-2)}
 
 /* before/after slider */
 .wipe{position:relative}
-.wipe-frame{position:relative;height:clamp(250px,62vw,420px);overflow:hidden;border-radius:var(--radius);background:#d9dcd8;border:3px solid #fff;box-shadow:0 0 0 1px var(--silver),0 24px 44px -28px rgba(13,45,99,.55)}
-.scene{position:absolute;inset:0;width:100%;height:100%;display:block}
+.wipe-frame{position:relative;aspect-ratio:450/227;overflow:hidden;border-radius:var(--radius);background:#d9dcd8;border:3px solid #fff;box-shadow:0 0 0 1px var(--silver),0 24px 44px -28px rgba(13,45,99,.55)}
+.scene{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;user-select:none;-webkit-user-drag:none}
 .scene.after{clip-path:inset(0 0 0 var(--cut,50%))}
 .wipe-line{position:absolute;top:0;bottom:0;left:var(--cut,50%);width:3px;background:#fff;transform:translateX(-1.5px);box-shadow:0 0 0 1px rgba(13,45,99,.35)}
-.wipe-knob{position:absolute;top:50%;left:var(--cut,50%);transform:translate(-50%,-50%);width:58px;height:58px;pointer-events:none;filter:drop-shadow(0 4px 10px rgba(0,0,0,.3))}
+.wipe-knob{position:absolute;top:50%;left:var(--cut,50%);transform:translate(-50%,-50%);width:52px;height:52px;pointer-events:none;filter:drop-shadow(0 4px 10px rgba(0,0,0,.3))}
 .wipe-knob svg{width:100%;height:100%;display:block}
 .wipe input[type=range]{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;-webkit-appearance:none;appearance:none}
 .wipe input[type=range]:focus-visible ~ .wipe-knob{outline:3px solid var(--navy-2);outline-offset:3px;border-radius:50%}
@@ -214,10 +214,97 @@ footer .brand small{color:#d6deea}
 .sticky-call .btn{width:100%;font-size:1.05rem}
 @media(min-width:880px){.sticky-call{display:none}body{padding-bottom:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.btn:hover{transition:none;transform:none}}
+
+/* pressure-wash intro (canvas; CSS grime + fade-out are the no-JS fallback) */
+.wash{position:fixed;inset:0;z-index:99;pointer-events:none;opacity:.92;overflow:hidden;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.03' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .24  0 0 0 0 .27  0 0 0 0 .16  0 0 0 1.3 -.45'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(ellipse at 22% 28%,rgba(88,104,56,.85),transparent 55%),radial-gradient(ellipse at 78% 72%,rgba(66,62,44,.9),transparent 60%),radial-gradient(ellipse at 60% 20%,rgba(104,100,72,.7),transparent 45%),linear-gradient(180deg,#6f7458,#5b5e45 60%,#4a4a38);animation:washOut .45s ease 2.5s forwards}
+.wash.live{background:none}
+.wash canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+@keyframes washOut{to{opacity:0;visibility:hidden}}
+@media(prefers-reduced-motion:reduce){.wash{display:none}}
 </style>
 </head>
 <body>
 <div class="demo-banner" role="note">Demo preview built by David — not the official site.</div>
+<div class="wash" id="wash" aria-hidden="true"></div>
+<script>
+(function(){
+  var el=document.getElementById('wash');if(!el)return;
+  function done(){if(el&&el.parentNode)el.parentNode.removeChild(el);el=null;}
+  try{
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){done();return;}
+    var C={passes:[[.12,1,0],[.37,-1,.4],[.63,1,.8],[.88,-1,1.2]],dur:.58,band:.32,tilt:0,wand:'#0d2d63',grip:'#1a4084',tint:'26,64,132',drop:'13,45,99'};
+    var W=window.innerWidth,H=window.innerHeight,dpr=Math.min(window.devicePixelRatio||1,2);
+    var c=document.createElement('canvas'),fx=document.createElement('canvas');
+    c.width=fx.width=Math.round(W*dpr);c.height=fx.height=Math.round(H*dpr);
+    var g=c.getContext('2d'),f=fx.getContext('2d');if(!g||!f)return;
+    /* grime: olive base, mottled noise octaves, drips and moss blotches */
+    var w=c.width,h=c.height,i,lg=g.createLinearGradient(0,0,0,h);
+    lg.addColorStop(0,'#6f7458');lg.addColorStop(.55,'#5c5f45');lg.addColorStop(1,'#4a4a38');
+    g.fillStyle=lg;g.fillRect(0,0,w,h);
+    var cols=[[84,96,52],[66,70,46],[106,104,76],[56,74,38],[94,86,60],[46,50,34],[120,116,88]];
+    [[70,.6],[22,.42],[7,.28],[2.5,.2]].forEach(function(o){
+      var s=o[0]*dpr,sw=Math.ceil(w/s)+1,sh=Math.ceil(h/s)+1,t=document.createElement('canvas');
+      t.width=sw;t.height=sh;var tc=t.getContext('2d'),id=tc.createImageData(sw,sh),d=id.data;
+      for(var j=0;j<d.length;j+=4){var k=cols[(Math.random()*cols.length)|0];d[j]=k[0];d[j+1]=k[1];d[j+2]=k[2];d[j+3]=Math.random()*255*o[1];}
+      tc.putImageData(id,0,0);g.imageSmoothingEnabled=true;g.drawImage(t,0,0,sw*s,sh*s);
+    });
+    g.lineCap='round';
+    for(i=0;i<22;i++){var dx=Math.random()*w,dy=Math.random()*h*.5,dh=h*(.15+Math.random()*.45),sg=g.createLinearGradient(0,dy,0,dy+dh);
+      sg.addColorStop(0,'rgba(36,40,24,.28)');sg.addColorStop(1,'rgba(36,40,24,0)');g.strokeStyle=sg;g.lineWidth=(1.5+Math.random()*4)*dpr;
+      g.beginPath();g.moveTo(dx,dy);for(var y2=dy;y2<dy+dh;y2+=14*dpr){dx+=(Math.random()-.5)*3*dpr;g.lineTo(dx,y2);}g.stroke();}
+    for(i=0;i<12;i++){var mx=Math.random()*w,my=Math.random()*h,mr=(40+Math.random()*120)*dpr,rg=g.createRadialGradient(mx,my,0,mx,my,mr);
+      rg.addColorStop(0,i%3?'rgba(70,92,40,.45)':'rgba(40,40,28,.45)');rg.addColorStop(1,'rgba(70,92,40,0)');g.fillStyle=rg;g.fillRect(mx-mr,my-mr,mr*2,mr*2);}
+    el.appendChild(c);el.appendChild(fx);el.className+=' live';
+    /* wash passes */
+    var bh=C.band*H,P=C.passes.map(function(p){return{y:p[0]*H,dir:p[1],t0:p[2],lx:null};}),drops=[],t0=null,last=0;
+    var end=Math.max.apply(null,P.map(function(p){return p.t0;}))+C.dur,fading=false;
+    function ease(p){return .65*p+.35*(.5-.5*Math.cos(Math.PI*p));}
+    function headX(p,q){var x0=-bh*.25,x1=W+bh*.25,e=ease(q);return p.dir>0?x0+(x1-x0)*e:x1-(x1-x0)*e;}
+    function headY(p,x){return p.y+C.tilt*H*(x/W-.5)*p.dir+Math.sin(x/W*Math.PI*2)*H*.008;}
+    g.globalCompositeOperation='destination-out';
+    function frame(ts){
+      if(!el)return;
+      if(t0===null){t0=ts;last=ts;}
+      var t=(ts-t0)/1000,dt=Math.min(.05,(ts-last)/1000);last=ts;
+      f.setTransform(1,0,0,1,0,0);f.clearRect(0,0,fx.width,fx.height);f.setTransform(dpr,0,0,dpr,0,0);
+      P.forEach(function(p){
+        var q=(t-p.t0)/C.dur;if(q<0||(q>1&&p.lx===null))return;q=Math.min(q,1);
+        var x=headX(p,q),y=headY(p,x),lx=p.lx===null?x-p.dir*bh*.25:p.lx;
+        /* erase the stripe: soft top/bottom edges, hard enough middle */
+        var gr=g.createLinearGradient(0,(y-bh/2)*dpr,0,(y+bh/2)*dpr);
+        gr.addColorStop(0,'rgba(0,0,0,0)');gr.addColorStop(.17,'rgba(0,0,0,1)');gr.addColorStop(.83,'rgba(0,0,0,1)');gr.addColorStop(1,'rgba(0,0,0,0)');
+        g.fillStyle=gr;g.fillRect((Math.min(lx,x)-2)*dpr,(y-bh/2)*dpr,(Math.abs(x-lx)+4)*dpr,bh*dpr);
+        var rr=g.createRadialGradient(x*dpr,y*dpr,0,x*dpr,y*dpr,bh*.42*dpr);rr.addColorStop(0,'rgba(0,0,0,.5)');rr.addColorStop(1,'rgba(0,0,0,0)');
+        g.fillStyle=rr;g.fillRect((x-bh*.42)*dpr,(y-bh*.42)*dpr,bh*.84*dpr,bh*.84*dpr);
+        p.lx=q>=1?null:x;if(q>=1){p.t0=1e9;return;}
+        /* mist at the wand head */
+        var m=f.createRadialGradient(x,y,0,x,y,bh*.6);m.addColorStop(0,'rgba('+C.tint+',.34)');m.addColorStop(.5,'rgba(255,255,255,.14)');m.addColorStop(1,'rgba(255,255,255,0)');
+        f.fillStyle=m;f.fillRect(x-bh*.6,y-bh*.6,bh*1.2,bh*1.2);
+        /* fan spray from the nozzle to the surface */
+        var nx=x-p.dir*Math.min(70,W*.14),ny=y+bh*.5+30,fan=f.createLinearGradient(nx,ny,x,y);
+        fan.addColorStop(0,'rgba(255,255,255,.75)');fan.addColorStop(1,'rgba('+C.tint+',.22)');
+        f.fillStyle=fan;f.beginPath();f.moveTo(nx,ny);f.lineTo(x,y-bh*.42);f.lineTo(x,y+bh*.42);f.closePath();f.fill();
+        f.strokeStyle='rgba(255,255,255,.55)';f.lineWidth=1.2;f.beginPath();
+        for(var k=0;k<6;k++){f.moveTo(nx,ny);f.lineTo(x,y-bh*.4+bh*.8*k/5+(Math.random()-.5)*6);}f.stroke();
+        /* the wand: lance, nozzle tip and trigger gun */
+        var gx=nx-p.dir*150,gy=ny+130;
+        f.lineCap='round';f.strokeStyle=C.wand;f.lineWidth=6;f.beginPath();f.moveTo(gx,gy);f.lineTo(nx,ny);f.stroke();
+        f.strokeStyle=C.grip;f.lineWidth=11;f.beginPath();f.moveTo(nx+(gx-nx)*.04,ny+(gy-ny)*.04);f.lineTo(nx+(gx-nx)*.1,ny+(gy-ny)*.1);f.stroke();
+        f.fillStyle=C.wand;f.beginPath();f.moveTo(gx,gy);f.lineTo(gx+p.dir*8,gy+44);f.lineTo(gx-p.dir*12,gy+46);f.lineTo(gx-p.dir*16,gy+4);f.closePath();f.fill();
+        /* droplets */
+        for(k=0;k<4;k++)drops.push({x:x+(Math.random()-.3)*12*p.dir,y:y+(Math.random()-.5)*bh*.8,vx:p.dir*(80+Math.random()*260),vy:(Math.random()-.7)*160,l:.3+Math.random()*.35,r:.8+Math.random()*2,c:k%2?'255,255,255':C.drop});
+      });
+      for(var n=drops.length-1;n>=0;n--){var o=drops[n];o.l-=dt;if(o.l<=0){drops.splice(n,1);continue;}
+        o.vy+=900*dt;o.x+=o.vx*dt;o.y+=o.vy*dt;f.fillStyle='rgba('+o.c+','+Math.min(1,o.l*2.4)+')';f.beginPath();f.arc(o.x,o.y,o.r,0,6.283);f.fill();}
+      if(t>=end&&!fading){fading=true;el.style.transition='opacity .28s ease';el.style.opacity='0';setTimeout(done,300);}
+      if(el)requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+    setTimeout(done,2450);
+  }catch(e){}
+})();
+</script>
+
 
 <!-- reusable symbols -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -268,65 +355,25 @@ footer .brand small{color:#d6deea}
           <b>4.9</b> on Google · 140 reviews
         </div>
         <h1 id="hero-h">Clean in <span>one shot.</span></h1>
-        <p class="lead">Driveways, paver walkways, vinyl siding, wood fences, roofs and storefronts, washed right the first time across Easley, Greenville, Anderson and the Upstate. Drag the scope to see the difference.</p>
+        <p class="lead">Driveways, paver walkways, vinyl siding, wood fences, roofs and storefronts, washed right the first time across Easley, Greenville, Anderson and the Upstate. Drag the scope on a real job to see the difference.</p>
         <div class="hero-ctas">
           <a class="btn btn-navy" href="tel:+18642939426"><svg aria-hidden="true"><use href="#phone-ic"/></svg>Call 864-293-9426</a>
           <a class="btn btn-line" href="#quote">Get a quote</a>
         </div>
       </div>
 
-      <div class="wipe" aria-label="Before and after illustration of a house and concrete driveway being cleaned">
+      <div class="wipe">
         <div class="wipe-frame" id="wipe" style="--cut:52%">
-          <!-- BEFORE scene -->
-          <svg class="scene before" viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <defs>
-              <linearGradient id="skyB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a2a7a6"/><stop offset="1" stop-color="#c3c4bb"/></linearGradient>
-              <pattern id="grime" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="6" cy="8" r="3" fill="#5b5444" opacity=".35"/><circle cx="18" cy="19" r="4" fill="#4b4a38" opacity=".3"/><circle cx="21" cy="5" r="2" fill="#6b6650" opacity=".4"/></pattern>
-            </defs>
-            <rect width="600" height="420" fill="url(#skyB)"/>
-            <rect y="300" width="600" height="120" fill="#7c8763"/>
-            <path d="M230 420 L300 300 L380 300 L520 420 Z" fill="#8f877a"/>
-            <path d="M230 420 L300 300 L380 300 L520 420 Z" fill="url(#grime)"/>
-            <ellipse cx="365" cy="370" rx="34" ry="12" fill="#4a4338" opacity=".55"/>
-            <rect x="110" y="160" width="300" height="150" fill="#bdb08f"/>
-            <g stroke="#a59775" stroke-width="2"><path d="M110 178h300M110 196h300M110 214h300M110 232h300M110 250h300M110 268h300M110 286h300"/></g>
-            <rect x="110" y="160" width="300" height="150" fill="url(#grime)"/>
-            <path d="M110 250 h300 v60 h-300z" fill="#6f7350" opacity=".35"/>
-            <path d="M90 170 L260 70 L430 170 Z" fill="#55534c"/>
-            <path d="M90 170 L260 70 L430 170 Z" fill="url(#grime)"/>
-            <rect x="140" y="190" width="50" height="50" fill="#6c7577"/><rect x="330" y="190" width="50" height="50" fill="#6c7577"/>
-            <rect x="235" y="220" width="50" height="90" fill="#4f4a42"/>
-            <path d="M120 180 q10 60 0 125M395 180 q-8 60 0 125M200 250 q6 30 0 60" stroke="#55503f" stroke-width="6" opacity=".45" fill="none"/>
-            <rect x="92" y="166" width="336" height="8" fill="#4a4f47"/>
-            <ellipse cx="200" cy="130" rx="40" ry="12" fill="#5e6e3a" opacity=".7"/><ellipse cx="320" cy="120" rx="30" ry="10" fill="#5e6e3a" opacity=".7"/>
-          </svg>
-          <!-- AFTER scene -->
-          <svg class="scene after" viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <defs>
-              <linearGradient id="skyA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d8ec"/><stop offset="1" stop-color="#f4f7fb"/></linearGradient>
-            </defs>
-            <rect width="600" height="420" fill="url(#skyA)"/>
-            <rect y="300" width="600" height="120" fill="#6fa25e"/>
-            <path d="M230 420 L300 300 L380 300 L520 420 Z" fill="#e2e1dc"/>
-            <path d="M262 365 L462 365" stroke="#c9c8c1" stroke-width="2"/>
-            <path d="M340 300 L375 420" stroke="#c9c8c1" stroke-width="2"/>
-            <rect x="110" y="160" width="300" height="150" fill="#f3ecd9"/>
-            <g stroke="#e0d6bd" stroke-width="2"><path d="M110 178h300M110 196h300M110 214h300M110 232h300M110 250h300M110 268h300M110 286h300"/></g>
-            <path d="M90 170 L260 70 L430 170 Z" fill="#3c4148"/>
-            <rect x="140" y="190" width="50" height="50" fill="#d6e2f0" stroke="#fff" stroke-width="4"/><rect x="330" y="190" width="50" height="50" fill="#d6e2f0" stroke="#fff" stroke-width="4"/>
-            <rect x="235" y="220" width="50" height="90" fill="#0d2d63"/>
-            <circle cx="275" cy="268" r="3" fill="#c4c9d0"/>
-            <rect x="92" y="166" width="336" height="8" fill="#ffffff"/>
-            <path d="M470 200 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5z" fill="#fff"/>
-            <path d="M150 110 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z" fill="#fff"/>
-          </svg>
+          <img class="scene before" src="img/siding-before.webp" width="450" height="227" alt="Before: tan vinyl siding with green-gray mildew streaks across the wall">
+          <img class="scene after" src="img/siding-after.webp" width="450" height="227" alt="After: the same wall soft washed, clean cream siding">
           <span class="tag b" aria-hidden="true">Before</span>
           <span class="tag a" aria-hidden="true">After</span>
-          <input type="range" id="cut" min="4" max="96" value="52" aria-label="Reveal before and after">
+          <input type="range" id="cut" min="0" max="100" value="52" aria-label="Before and after slider: drag or use arrow keys to compare the mildewed siding with the soft-washed result">
           <div class="wipe-line" aria-hidden="true"></div>
           <div class="wipe-knob" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff"/><use href="#reticle" x="3" y="3" width="42" height="42"/></svg></div>
         </div>
-        <p class="wipe-cap">Illustration only. Drag the crosshair left and right.</p>
+        <p class="wipe-cap">A real One Shot siding job. Drag the crosshair left and right.</p>
+      </div>
       </div>
     </div>
   </section>
