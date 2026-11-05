@@ -52,28 +52,31 @@ section{padding:44px 0}
 .bubble::before{content:"";position:absolute;left:34px;bottom:-14px;z-index:1;border:8px solid transparent;border-top:13px solid #fff;border-bottom:0}
 .why ul{list-style:none;padding:0;margin:0}
 .why li{margin:.5rem 0;font-weight:700}
+.why li:nth-child(2)::before{content:"BAM!"}.why li:nth-child(3)::before{content:"ZAP!"}.why li:nth-child(4)::before{content:"WHAM!"}
 .why li::before{content:"POW!";font-family:Bangers;background:var(--coral);color:var(--deep);border:2px solid var(--deep);padding:0 6px;margin-right:8px;font-size:.95rem;display:inline-block;transform:rotate(-4deg)}
 .sms-grid{display:grid;gap:22px;align-items:center}
 .phone{width:min(100%,290px);margin:0 auto;border:6px solid var(--deep);border-radius:34px;background:#fff;box-shadow:8px 8px 0 var(--deep);padding:14px 12px 20px;color:var(--deep)}
 .phone .notch{width:70px;height:8px;border-radius:6px;background:var(--deep);margin:0 auto 12px}
 .missed{display:flex;align-items:center;gap:10px;background:#ffe3e3;border:3px solid var(--deep);border-radius:14px;padding:8px 10px;font-weight:800;font-size:.92rem}
 .missed svg{flex:none}
-.msg{margin:12px 0 0;padding:10px 12px;border:3px solid var(--deep);border-radius:16px;font-size:.92rem;font-weight:700;max-width:92%}
+.msg{margin:12px 0 0;padding:10px 12px;border:3px solid var(--deep);border-radius:16px;font-size:.92rem;font-weight:600;max-width:92%}
 .msg.in{background:var(--cobalt);color:#fff;border-bottom-left-radius:4px}
 .msg small{display:block;font-weight:700;margin-bottom:2px}
 .msg.pop{animation:pop .5s .6s both}
 @keyframes pop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:none}}
 .rev-label{display:inline-block;background:var(--deep);color:#fff;font-family:Bangers;font-size:1.3rem;letter-spacing:.06em;padding:2px 12px}
-.rev p{margin:.2rem 0 14px}
+.rev figcaption{padding-left:30px}
 .stars{letter-spacing:3px;color:var(--deep);font-weight:900}
 form{display:grid;gap:14px}
-label{font-weight:800;display:block;margin-bottom:3px}
+label{font-weight:700;display:block;margin-bottom:3px}
 input,textarea,select{width:100%;font:inherit;font-weight:600;padding:12px;border:4px solid var(--deep);background:#fff;color:var(--deep);min-height:48px;border-radius:0}
 textarea{min-height:110px}
-.demo-msg{display:none;background:var(--yellow);border:4px solid var(--deep);padding:12px;font-weight:800}
+.demo-msg{display:none;background:var(--yellow);border:4px solid var(--deep);padding:12px;font-weight:700}
 .demo-msg.show{display:block}
-footer{background:var(--deep);color:#fff;padding:30px 0;text-align:center;font-weight:700}
-footer a{color:var(--yellow)}
+footer{background:var(--deep);color:#fff;padding:30px 0;text-align:center}
+footer a{color:var(--yellow);display:inline-block;padding:10px 0}
+.tel{display:inline-block;padding:10px 0}
+p{max-width:65ch}
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--deep);padding:10px 16px;display:flex;justify-content:center}
 .sticky .btn{width:100%;max-width:420px;justify-content:center;font-size:1.5rem}
 @media(min-width:760px){
@@ -137,23 +140,23 @@ footer a{color:var(--yellow)}
 <main>
 <section id="services">
  <div class="wrap">
-  <h2>What we haul</h2>
-  <p class="bubble" style="max-width:520px;margin-bottom:34px">Junk removal in Anderson. Call to tell us what you need gone!</p>
+  <h2>How it works</h2>
+  <p class="bubble" style="max-width:520px;margin-bottom:34px">Junk removal in Anderson. Couch, mattress, a garage full of boxes: tell us what needs gone!</p>
   <div class="svc-grid">
    <article class="panel svc">
     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 20h36l-4 38H18z" fill="#ff5a5f" stroke="#14123a" stroke-width="4" stroke-linejoin="round"/><path d="M10 20h44M24 20v-8h16v8M26 30v20M38 30v20" stroke="#14123a" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
-    <div class="num" aria-hidden="true">1</div><h3>Junk removal</h3>
-    <p>The main event. Tell us what needs to go and we take care of the hauling.</p>
+    <div class="num" aria-hidden="true">1</div><h3>Call JRS</h3>
+    <p>One call to 864-276-9290. Tell us what needs to go and where it is.</p>
    </article>
    <article class="panel svc blue dots-c">
     <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="26" width="34" height="22" fill="#ffd23f" stroke="#14123a" stroke-width="4"/><path d="M42 32h10l6 8v8H42z" fill="#fff" stroke="#14123a" stroke-width="4" stroke-linejoin="round"/><circle cx="20" cy="50" r="6" fill="#ff5a5f" stroke="#14123a" stroke-width="4"/><circle cx="48" cy="50" r="6" fill="#ff5a5f" stroke="#14123a" stroke-width="4"/></svg>
-    <div class="num" aria-hidden="true">2</div><h3>Pickup and haul-away</h3>
-    <p>We load up and drive it off. Ask us about your particular pile when you call.</p>
+    <div class="num" aria-hidden="true">2</div><h3>We load it up</h3>
+    <p>We do the lifting, loading and hauling. You point, we carry.</p>
    </article>
    <article class="panel svc coral dots">
     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6l7 16 17 2-13 12 4 17-15-9-15 9 4-17L8 24l17-2z" fill="#ffd23f" stroke="#14123a" stroke-width="4" stroke-linejoin="round"/></svg>
     <div class="num" aria-hidden="true">3</div><h3>Clear, clean space</h3>
-    <p>The goal is simple: a space that feels lighter when we drive away.</p>
+    <p>We drive it off and the room, garage or yard is yours again.</p>
    </article>
   </div>
  </div>
@@ -197,9 +200,9 @@ footer a{color:var(--yellow)}
   <h2>Comic-book fan mail</h2>
   <p><span class="rev-label">Sample reviews</span> &nbsp;Invented placeholders, not real customers.</p>
   <div class="rev-grid" style="display:grid;gap:22px;grid-template-columns:1fr">
-   <figure class="panel rev" style="margin:0"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Placeholder: quick, easy and friendly. Example text only."</p><figcaption><strong>Sample customer</strong></figcaption></figure>
-   <figure class="panel rev" style="margin:0"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Placeholder: they showed up, hauled it off, done. Example text only."</p><figcaption><strong>Sample customer</strong></figcaption></figure>
-   <figure class="panel rev" style="margin:0"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Placeholder: easy to reach by phone. Example text only."</p><figcaption><strong>Sample customer</strong></figcaption></figure>
+   <figure class="rev" style="margin:0"><blockquote class="bubble" style="margin:0 0 28px"><div class="stars" aria-label="5 stars">★★★★★</div><p style="margin:.2rem 0 0">"Placeholder: quick, easy and friendly. Example text only."</p></blockquote><figcaption><strong>Sample customer</strong></figcaption></figure>
+   <figure class="rev" style="margin:0"><blockquote class="bubble" style="margin:0 0 28px"><div class="stars" aria-label="5 stars">★★★★★</div><p style="margin:.2rem 0 0">"Placeholder: they showed up, hauled it off, done. Example text only."</p></blockquote><figcaption><strong>Sample customer</strong></figcaption></figure>
+   <figure class="rev" style="margin:0"><blockquote class="bubble" style="margin:0 0 28px"><div class="stars" aria-label="5 stars">★★★★★</div><p style="margin:.2rem 0 0">"Placeholder: easy to reach by phone. Example text only."</p></blockquote><figcaption><strong>Sample customer</strong></figcaption></figure>
   </div>
  </div>
 </section>
@@ -207,16 +210,16 @@ footer a{color:var(--yellow)}
 <section id="quote">
  <div class="wrap grid two">
   <div>
-   <h2>Get a free quote</h2>
+   <h2>Get a quote</h2>
    <p><strong>Service area:</strong> Anderson area.</p>
-   <p>Prefer to talk? <a href="tel:+18642769290"><strong>Call 864-276-9290</strong></a>.</p>
-   <p class="bubble">Best times to reach us: early AM or after 4pm.</p>
+   <p>Prefer to talk? <a class="tel" href="tel:+18642769290"><strong>Call 864-276-9290</strong></a></p>
+   <p class="bubble">BBB accredited with an A rating, and local to Anderson.</p>
   </div>
   <form class="panel coral dots" id="demoForm" novalidate>
    <div><label for="n">Your name</label><input id="n" name="n" autocomplete="name"></div>
    <div><label for="p">Phone</label><input id="p" name="p" type="tel" autocomplete="tel"></div>
    <div><label for="s">What needs to go?</label><textarea id="s" name="s"></textarea></div>
-   <button class="btn" type="submit">Send request</button>
+   <button class="btn" type="submit">Send quote request</button>
    <div class="demo-msg" id="dm" role="status" aria-live="polite">Demo only. This form does not send anything. Please call 864-276-9290.</div>
   </form>
  </div>
