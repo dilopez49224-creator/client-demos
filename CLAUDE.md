@@ -42,3 +42,9 @@ Every `.md` file and `leads/` stay off the live site via `.assetsignore`.
 - Design and build work: Opus, matching the style and quality of the existing demos (a separate polish pass isn't needed if these rules are followed).
 - Routine edits, data updates and scripts: Sonnet.
 - Keep parallel agents to what's needed, and avoid second passes.
+
+## Outreach emails (David's approved format)
+- Email is the preferred channel. Structure: specific hook from their own materials → "My name is David, and I'm a solo web designer near Clemson. I went ahead and built <Business> a free demo website…" + link → "It's a first draft, so anything can change: colors, photos, wording or pages." → "Beyond the website, I help local businesses with:" bullets (missed-call text-back tailored to their trade, Google Business Profile and local SEO, automatic review requests) → "And if there's something else on your wish list, I'm happy to build around whatever your business needs." → soft ask for a 10-minute look.
+- Offer missed-call text-back only (no AI call-back bot). No prices.
+- Signature: Thanks, / David / Solo Web Designer, Clemson, SC / 706-362-3685 · dilopez49224@gmail.com / (Email is the best way to reach me.)
+- Create Gmail drafts only; David sends them himself. Delete outdated drafts when replacing them.
