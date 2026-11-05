@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mac Smith's Country Store and Grill | Burgers and hot dogs in Pendleton, SC</title>
+<meta name="description" content="Burgers and hot dogs on Lebanon Road in Pendleton, SC. Open Tuesday to Saturday, 10 to 3.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Figtree:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --feed:#20406B; --enamel:#F8F9F6; --tomato:#D9382B; --mustard:#F2B632; --ink:#16263B; --paper:#FBFAEF;
+  --disp:'Rozha One','Georgia',serif;
+  --body:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --hand:'Caveat','Segoe Script',cursive;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:18px/1.55 var(--body);color:var(--ink);background:var(--enamel)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tomato);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:var(--ink);color:#cfd8e4;font:500 13px var(--body);text-align:center;padding:7px 12px}
+.top{background:var(--feed);color:#fff;border-bottom:6px solid var(--mustard)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font:400 26px/1.05 var(--disp)}
+.logo small{display:block;font:500 14px var(--body);opacity:.85;margin-top:2px}
+.status{display:inline-flex;align-items:center;gap:10px;font-weight:700;background:#fff;color:var(--ink);border-radius:99px;padding:7px 16px}
+.dot{width:12px;height:12px;border-radius:50%;background:#9aa6b4}
+.status.open .dot{background:#2E8B57}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:var(--tomato);color:#fff;font:700 17px var(--body);border:0;border-radius:6px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#b82c20}
+h1{font:400 clamp(40px,6.6vw,78px)/1 var(--disp);color:var(--feed);max-width:12ch}
+h2{font:400 clamp(28px,4.2vw,42px)/1.05 var(--disp);margin-bottom:14px}
+.hero{padding:34px 0 58px}
+.hero .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.lede{font-size:20px;max-width:30ch;margin:16px 0 14px}
+.rating{font-weight:700}
+.busy{margin-top:10px;max-width:34ch}
+
+/* guest check */
+.pad{background:var(--paper);border-radius:4px 4px 0 0;box-shadow:0 0 0 2px var(--ink),8px 8px 0 var(--feed);padding:0 0 22px;transform:rotate(1deg);position:relative}
+.pad::before{content:"";display:block;height:14px;background:repeating-linear-gradient(90deg,var(--tomato) 0 14px,var(--paper) 14px 28px)}
+.pad .in{padding:14px 22px 0}
+.pad h2{font:400 26px var(--disp);color:var(--tomato);margin:0 0 2px}
+.pad .sm{font-size:14px;color:#52606f;margin-bottom:10px}
+.grp{border:0;padding:0;margin:0 0 12px}
+.grp legend{font-weight:700;margin-bottom:6px}
+.pick{display:flex;flex-wrap:wrap;gap:8px}
+.pick label{position:relative}
+.pick input{position:absolute;opacity:0}
+.pick span{display:inline-block;padding:9px 14px;min-height:44px;border:2px solid var(--feed);border-radius:6px;background:#fff;cursor:pointer;font-weight:500}
+.pick input:checked+span{background:var(--feed);color:#fff;font-weight:700}
+.pick input:focus-visible+span{outline:3px solid var(--tomato);outline-offset:2px}
+.check{margin-top:14px;padding:10px 4px 0;font:700 30px/1.55 var(--hand);color:#1a2b6b;background:repeating-linear-gradient(to bottom,transparent 0 45px,#c8d3e6 45px 46px);min-height:150px;border-top:2px dashed #b3bccb}
+.check .ln{display:block;animation:ink .35s ease-out}
+.check .end{display:block;color:var(--tomato);font-size:26px}
+@keyframes ink{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.fine{font-size:13px;margin-top:8px;color:#52606f}
+
+/* sign */
+.sign{background:var(--feed);color:#fff;padding:54px 0}
+.sign .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.plate{border:5px solid #fff;outline:4px solid var(--tomato);outline-offset:-14px;border-radius:18px;padding:30px 30px 26px;background:var(--feed);text-align:center}
+.plate h2{color:var(--mustard);margin-bottom:10px}
+.hrs{border-collapse:collapse;width:100%;font-size:21px}
+.hrs td{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.25)}
+.hrs td:last-child{text-align:right;font-weight:700}
+.hrs tr.today td{color:var(--mustard)}
+.where h2{color:#fff}
+.where p{margin-bottom:12px;font-size:20px}
+.where a{color:var(--mustard)}
+.say{padding:58px 0}
+.say blockquote{font:400 clamp(26px,4vw,44px)/1.1 var(--disp);color:var(--feed);max-width:24ch}
+.say cite{display:block;margin-top:12px;font-style:normal;font-size:15px}
+footer{background:var(--mustard);padding:22px 0;font-size:15px}
+@media (max-width:860px){.hero .grid,.sign .grid{grid-template-columns:1fr}.pad{transform:none;box-shadow:0 0 0 2px var(--ink),5px 5px 0 var(--feed)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.check .ln{animation:none}.pad{transform:none}}
+
+/* --- Demo preview additions (banner, text-back, sample reviews) --- */
+:root{--dp-banner-h:40px}
+html{scroll-padding-top:var(--dp-banner-h)}
+body{padding-top:var(--dp-banner-h)}
+.dp-banner{position:fixed;top:0;left:0;right:0;z-index:1000;min-height:40px;display:flex;align-items:center;justify-content:center;padding:8px 16px;background:var(--mustard);color:var(--ink);font:600 14px/1.3 var(--body);text-align:center;box-shadow:0 1px 0 rgba(0,0,0,.12)}
+.dp-textback{background:var(--paper);padding:60px 0}
+.dp-textback .dp-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.dp-textback p{max-width:46ch;margin-bottom:14px}
+.dp-textback .dp-fine{font-size:14px;opacity:.75;margin:0}
+.dp-phone{width:290px;max-width:100%;margin:0 auto;background:var(--ink);border-radius:38px;padding:12px;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.dp-screen{background:#fff;border-radius:28px;padding:14px 12px 18px;min-height:470px;display:flex;flex-direction:column;gap:12px;color:var(--ink);font:14px/1.4 var(--body)}
+.dp-notch{width:88px;height:22px;background:var(--ink);border-radius:0 0 14px 14px;margin:-14px auto 10px}
+.dp-missed{display:flex;align-items:center;gap:10px;background:var(--enamel);border:1px solid #c8d3e6;border-radius:14px;padding:10px 12px}
+.dp-missed svg{flex:none;width:34px;height:34px;border-radius:9px;background:#C62828;padding:7px;color:#fff}
+.dp-missed b{display:block;font-size:14px}
+.dp-missed small{display:block;font-size:12px;opacity:.75}
+.dp-thread{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.dp-from{font-size:12px;font-weight:600;opacity:.7;padding-left:6px}
+.dp-bubble{align-self:flex-start;max-width:88%;background:var(--feed);color:#fff;padding:10px 13px;border-radius:18px 18px 18px 4px;font-size:14px}
+.dp-meta{font-size:11px;opacity:.65;padding-left:6px}
+.dp-reviews{background:var(--enamel);padding:60px 0;border-top:2px solid var(--ink)}
+.dp-reviews .dp-fine{font-size:15px;opacity:.8;margin:-8px 0 22px;max-width:60ch}
+.dp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;list-style:none;padding:0}
+.dp-card{background:var(--paper);border-radius:4px;box-shadow:0 0 0 2px var(--ink),8px 8px 0 var(--feed);padding:20px 22px 22px}
+.dp-stars{color:var(--tomato);font-size:18px;letter-spacing:2px;margin-bottom:8px}
+.dp-card p{margin-bottom:12px}
+.dp-card cite{font-style:normal;font-weight:700;font-size:15px}
+.dp-card cite small{display:block;font-weight:500;font-size:13px;opacity:.7}
+@media (max-width:820px){.dp-textback .dp-grid,.dp-cards{grid-template-columns:1fr}.dp-phone{margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="dp-banner">Demo preview built by David — not the official site.</div>
+<div class="demo">Sample mockup prepared for Mac Smith's Country Store and Grill. This is not their official site.</div>
+
+<div class="top"><div class="wrap">
+  <div class="logo">Mac Smith's<small>Country Store and Grill</small></div>
+  <span class="status" id="status" role="status"><i class="dot"></i><span>Checking hours</span></span>
+</div></div>
+
+<main>
+<section class="hero"><div class="wrap grid">
+  <div>
+    <h1>Burgers and hot dogs, just off Lebanon Road.</h1>
+    <p class="lede">A small, rustic spot in Pendleton, SC. Tuesday to Saturday, 10 to 3.</p>
+    <p class="rating">4.8 stars from 612 Google reviews</p>
+    <p class="busy">Busy at lunch, and the line moves fast. There's outside seating.</p>
+  </div>
+  <div class="pad">
+    <div class="in">
+      <h2>Write up your order</h2>
+      <p class="sm">Tap to fill out the check.</p>
+      <fieldset class="grp"><legend>Main</legend><div class="pick" id="mains">
+        <label><input type="radio" name="m" value="Hamburger"><span>Hamburger</span></label>
+        <label><input type="radio" name="m" value="Hot dog"><span>Hot dog</span></label>
+        <label><input type="radio" name="m" value="Two-hot-dog plate"><span>Two-hot-dog plate</span></label>
+      </div></fieldset>
+      <fieldset class="grp"><legend>Sides</legend><div class="pick" id="sides">
+        <label><input type="checkbox" value="Slaw"><span>Slaw</span></label>
+        <label><input type="checkbox" value="Onion rings"><span>Onion rings</span></label>
+      </div></fieldset>
+      <div class="check" id="check" aria-live="polite"></div>
+      <p class="fine">Sample menu for this mockup. The real menu goes here.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sign"><div class="wrap grid">
+  <div class="plate">
+    <h2>We're open</h2>
+    <table class="hrs">
+      <tr data-days="Tue Wed Thu Fri Sat"><td>Tuesday to Saturday</td><td>10am to 3pm</td></tr>
+      <tr data-days="Sun Mon"><td>Sunday and Monday</td><td>Closed</td></tr>
+    </table>
+  </div>
+  <div class="where">
+    <h2>Find the store</h2>
+    <p>2201 Lebanon Rd<br>Pendleton, SC 29670</p>
+    <p><a href="https://maps.apple.com/?q=Mac+Smith%27s+Country+Store+and+Grill+2201+Lebanon+Rd+Pendleton+SC">Open in Maps</a></p>
+    <p><a href="tel:+18642249759">864-224-9759</a></p>
+  </div>
+</div></section>
+
+<section class="say"><div class="wrap">
+  <blockquote>"Great hidden treasure that is away from the normal hustle and bustle of other chains."</blockquote>
+  <cite>Google review</cite>
+</div></section>
+
+<section class="dp-textback" id="textback"><div class="wrap dp-grid">
+  <div>
+    <h2>Never miss a call — we text you back in seconds</h2>
+    <p>When a call to Mac Smith's Country Store and Grill goes unanswered, the caller gets a text back right away, so they know you saw them and can reply without calling again.</p>
+    <p class="dp-fine">Sample message shown. The wording is set with Mac Smith's Country Store and Grill before it goes live.</p>
+  </div>
+  <div class="dp-phone" role="img" aria-label="Phone showing a missed call followed by an instant text reply from Mac Smith's Country Store and Grill">
+    <div class="dp-screen">
+      <div class="dp-notch"></div>
+      <div class="dp-missed">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2z"/><path d="M15 3l6 6M21 3l-6 6"/></svg>
+        <div><b>Missed call</b><small>Incoming call &middot; just now</small></div>
+      </div>
+      <div class="dp-thread">
+        <span class="dp-from">Mac Smith's Country Store and Grill</span>
+        <div class="dp-bubble">Hi, this is Mac Smith's Country Store and Grill. Sorry we missed your call! Reply here and we'll get back to you between orders.</div>
+        <span class="dp-meta">Sent automatically, seconds after the missed call</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="dp-reviews" id="sample-reviews"><div class="wrap">
+  <h2>Sample reviews</h2>
+  <p class="dp-fine">Placeholder reviews for this preview only. They are not from real customers; the business's own reviews go here.</p>
+  <ul class="dp-cards">
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Best burger around and the line really does move fast."</p><cite>Mike<small>Sample review</small></cite></li>
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Two-hot-dog plate with slaw. Worth the drive every time."</p><cite>Jessica<small>Sample review</small></cite></li>
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Small place, big flavor. Sat outside and enjoyed every bite."</p><cite>Brian<small>Sample review</small></cite></li>
+  </ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">Mac Smith's Country Store and Grill &middot; 2201 Lebanon Rd, Pendleton, SC &middot; 864-224-9759</div></footer>
+
+<script>
+const HRS={Tue:[600,900],Wed:[600,900],Thu:[600,900],Fri:[600,900],Sat:[600,900]};
+const ORDER=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function fmt(m){const h=Math.floor(m/60),mm=m%60,ap=h>=12?'PM':'AM',h12=((h+11)%12)+1;return h12+(mm?':'+String(mm).padStart(2,'0'):'')+' '+ap}
+function now(){
+  const f=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'});
+  const p=Object.fromEntries(f.formatToParts(new Date()).map(x=>[x.type,x.value]));
+  return {d:p.weekday,m:(+p.hour)*60+(+p.minute)};
+}
+(function(){
+  const t=now(), el=document.getElementById('status'), txt=el.querySelector('span:last-child');
+  const h=HRS[t.d];
+  if(h&&t.m>=h[0]&&t.m<h[1]){el.classList.add('open');txt.textContent='Open now, until '+fmt(h[1])}
+  else{
+    let i=ORDER.indexOf(t.d),nx=null;
+    for(let k=0;k<8;k++){const d=ORDER[(i+k)%7],hh=HRS[d];if(hh&&(k>0||t.m<hh[0])){nx={d:d,k:k,o:hh[0]};break}}
+    txt.textContent=nx?('Closed. Opens '+(nx.k===0?'today':nx.k===1?'tomorrow':nx.d)+' at '+fmt(nx.o)):'Closed';
+  }
+  document.querySelectorAll('.hrs tr').forEach(r=>{if(r.dataset.days.split(' ').includes(t.d))r.classList.add('today')});
+})();
+
+const chk=document.getElementById('check');
+function draw(){
+  const m=document.querySelector('input[name=m]:checked');
+  const s=[...document.querySelectorAll('#sides input:checked')].map(x=>x.value);
+  let h='';
+  if(!m&&!s.length){h='<span class="ln">Table 4. What can we get you?</span>'}
+  else{
+    if(m)h+='<span class="ln">1 &nbsp;'+m.value+'</span>';
+    s.forEach(x=>h+='<span class="ln">1 &nbsp;'+x+'</span>');
+    if(!m)h+='<span class="ln">Add a main?</span>';
+    else h+='<span class="end">Thank you, come again!</span>';
+  }
+  chk.innerHTML=h;
+}
+document.querySelectorAll('.pad input').forEach(i=>i.addEventListener('change',draw));
+draw();
+</script>
+<script>
+(function(){var b=document.querySelector('.dp-banner');if(!b)return;function f(){document.documentElement.style.setProperty('--dp-banner-h',b.offsetHeight+'px')}f();addEventListener('resize',f);addEventListener('load',f)})();
+</script>
+</body>
+</html>
