@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Almaroad Pressure Washing | Exterior Cleaning in Anderson, SC</title>
+<meta name="description" content="Demo preview of a one-page site for Almaroad Pressure Washing, owner-operated pressure washing and exterior cleaning in the Anderson area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#022c3a;      /* ink */
+  --cyan:#0e7490;      /* primary */
+  --cyan-d:#0b5c73;
+  --cyan-l:#cdeff6;
+  --mist:#f0fdff;      /* page */
+  --white:#ffffff;
+  --lime:#a3e635;      /* accent */
+  --lime-d:#5a7f12;    /* accent text on light */
+  --grime:#5b5240;
+  --text:#123842;
+  --muted:#3f6672;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;padding-top:46px;padding-bottom:84px;background:var(--mist);color:var(--text);font:400 17px/1.6 Manrope,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Fredoka,"Trebuchet MS",sans-serif;line-height:1.05;margin:0 0 .4em;color:var(--deep);letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,9vw,4.4rem);font-weight:700}
+h2{font-size:clamp(1.9rem,6.5vw,3rem);font-weight:600}
+h3{font-size:1.3rem;font-weight:600}
+p{margin:0 0 1em}
+a{color:var(--cyan-d)}
+img,svg{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--deep);outline-offset:3px;box-shadow:0 0 0 7px var(--lime)}
+.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:46px;background:var(--deep);color:#fff;text-align:center;font:700 13px/1.3 Manrope,sans-serif;padding:7px 12px;display:flex;align-items:center;justify-content:center;letter-spacing:.02em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+section{padding:56px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:800 .78rem/1 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-d);margin-bottom:14px}
+.eyebrow::before{content:"";width:14px;height:14px;border-radius:50% 50% 50% 0;background:var(--cyan);transform:rotate(-45deg)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:60ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:999px;background:var(--cyan);color:#fff;border:0;font:700 1.05rem Manrope,sans-serif;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{background:var(--cyan-d);transform:translateY(-1px)}
+.btn.lime{background:var(--lime);color:var(--deep)}
+.btn.lime:hover{background:#b7f04e}
+.btn.ghost{background:var(--white);color:var(--deep);box-shadow:inset 0 0 0 2px var(--deep)}
+.btn.ghost:hover{background:var(--cyan-l)}
+.btn svg{width:22px;height:22px;flex:none}
+
+/* header */
+.top{background:var(--white);border-bottom:1px solid var(--cyan-l)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--deep);font:700 1.25rem Fredoka,sans-serif}
+.logo .drop{width:36px;height:36px;border-radius:50% 50% 50% 0;background:linear-gradient(135deg,var(--cyan),var(--deep));transform:rotate(-45deg);display:grid;place-items:center;flex:none}
+.logo .drop i{width:10px;height:10px;border-radius:50%;background:var(--lime);transform:rotate(45deg) translate(-3px,-3px)}
+.top .call{display:none}
+@media(min-width:720px){.top .call{display:inline-flex}}
+
+/* hero */
+.hero{position:relative;padding:40px 0 60px;overflow:hidden;background:
+  radial-gradient(900px 400px at 110% -10%,var(--cyan-l) 0,transparent 60%),
+  radial-gradient(600px 300px at -10% 110%,#e3fbc8 0,transparent 60%),var(--mist)}
+.hero .grid{display:grid;gap:36px;align-items:center}
+@media(min-width:900px){.hero .grid{grid-template-columns:1.05fr 1fr}}
+.hero h1 span{color:var(--cyan)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 10px}
+.fineprint{font-size:.9rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.chips li{background:var(--white);border:1.5px solid var(--cyan-l);border-radius:999px;padding:6px 12px;font-size:.85rem;font-weight:700;color:var(--cyan-d)}
+
+/* before/after reveal */
+.reveal{position:relative;border-radius:24px;overflow:hidden;background:var(--white);box-shadow:0 20px 50px -20px rgba(2,44,58,.45);aspect-ratio:4/3;isolation:isolate}
+.reveal .layer{position:absolute;inset:0}
+.reveal .layer svg{width:100%;height:100%}
+.reveal .dirty{clip-path:inset(0 calc(100% - var(--pos,55%)) 0 0)}
+.reveal .handle{position:absolute;top:0;bottom:0;left:var(--pos,55%);width:4px;background:var(--white);transform:translateX(-2px);pointer-events:none;box-shadow:0 0 0 1px rgba(2,44,58,.15)}
+.reveal .knob{position:absolute;top:50%;left:var(--pos,55%);transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:var(--lime);display:grid;place-items:center;pointer-events:none;box-shadow:0 6px 18px rgba(2,44,58,.35)}
+.reveal .knob svg{width:26px;height:26px}
+.reveal input[type=range]{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;-webkit-appearance:none;appearance:none}
+.reveal input[type=range]:focus-visible{opacity:1;outline:3px solid var(--deep);outline-offset:-4px}
+.reveal .tag{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font:700 .75rem/1 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;z-index:2;pointer-events:none}
+.reveal .tag.b{left:14px;background:var(--grime);color:#fff}
+.reveal .tag.a{right:14px;background:var(--lime);color:var(--deep)}
+.reveal figcaption{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-size:.8rem;color:var(--muted);pointer-events:none}
+
+/* services */
+.services{background:var(--white)}
+.cards{display:grid;gap:18px;margin-top:28px}
+@media(min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--mist);border-radius:20px;padding:24px;border:1.5px solid var(--cyan-l)}
+.card .ico{width:54px;height:54px;border-radius:16px;background:var(--cyan);display:grid;place-items:center;margin-bottom:16px}
+.card .ico svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card.ask{background:var(--deep);color:#dff6fb;border-color:var(--deep)}
+.card.ask h3{color:#fff}
+.card.ask p{color:#bfe6ef}
+.card.ask .ico{background:var(--lime)}
+.card.ask .ico svg{stroke:var(--deep)}
+
+/* why us */
+.why{background:var(--deep);color:#dff6fb;position:relative;overflow:hidden}
+.why::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(163,230,53,.18) 1.5px,transparent 1.6px);background-size:22px 22px;opacity:.6;pointer-events:none}
+.why .wrap{position:relative}
+.why h2{color:#fff}
+.why .eyebrow{color:var(--lime)}
+.why .eyebrow::before{background:var(--lime)}
+.why-grid{display:grid;gap:14px;margin-top:28px}
+@media(min-width:720px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+.why-item{display:flex;gap:14px;padding:18px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.why-item .n{flex:none;width:44px;height:44px;border-radius:50%;background:var(--lime);display:grid;place-items:center}
+.why-item .n svg{width:24px;height:24px;stroke:var(--deep);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.why-item h3{color:#fff;font-size:1.15rem;margin-bottom:.2em}
+.why-item p{margin:0;color:#bfe6ef;font-size:.95rem}
+
+/* text-back */
+.textback{background:linear-gradient(180deg,var(--white),var(--mist))}
+.textback .grid{display:grid;gap:36px;align-items:center}
+@media(min-width:900px){.textback .grid{grid-template-columns:1fr 1fr}}
+.steps{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px}
+.steps li{display:flex;gap:12px;align-items:flex-start;background:var(--white);border:1.5px solid var(--cyan-l);border-radius:14px;padding:12px 14px}
+.steps li b{flex:none;width:30px;height:30px;border-radius:50%;background:var(--cyan);color:#fff;display:grid;place-items:center;font:700 .9rem Fredoka,sans-serif}
+.phone{width:min(300px,88%);margin:0 auto;background:var(--deep);border-radius:40px;padding:14px;box-shadow:0 30px 60px -25px rgba(2,44,58,.6);position:relative}
+.phone::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:110px;height:26px;background:var(--deep);border-radius:0 0 18px 18px;z-index:2}
+.screen{background:#f4fbfd;border-radius:28px;min-height:520px;padding:44px 14px 18px;display:flex;flex-direction:column;gap:10px;font-size:.9rem;color:var(--deep)}
+.screen .time{text-align:center;font-weight:800;font-size:.8rem;color:var(--muted)}
+.missed{background:#fff;border-radius:16px;padding:12px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 4px 14px rgba(2,44,58,.08);border-left:4px solid #e4572e}
+.missed .ic{width:36px;height:36px;border-radius:50%;background:#fde8e2;display:grid;place-items:center;flex:none}
+.missed .ic svg{width:20px;height:20px;stroke:#c2410c;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.missed b{display:block;font-size:.85rem}
+.missed span{font-size:.78rem;color:var(--muted)}
+.bubble{max-width:88%;padding:11px 14px;border-radius:18px;line-height:1.4;font-size:.86rem}
+.bubble.in{align-self:flex-start;background:#e6eef1;border-bottom-left-radius:4px}
+.bubble.out{align-self:flex-end;background:var(--cyan);color:#fff;border-bottom-right-radius:4px}
+.bubble small{display:block;opacity:.75;font-size:.7rem;margin-top:4px}
+.sms-label{text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-top:6px}
+@media(prefers-reduced-motion:no-preference){
+  .bubble.out{animation:pop .5s .6s both}
+  .missed{animation:pop .5s .1s both}
+  @keyframes pop{from{opacity:0;transform:translateY(8px) scale(.96)}to{opacity:1;transform:none}}
+}
+
+/* reviews */
+.reviews{background:var(--white)}
+.note{display:inline-block;background:#fff7d6;border:1.5px dashed #d9b84a;color:#6b5306;border-radius:10px;padding:6px 12px;font-size:.85rem;font-weight:700;margin-bottom:18px}
+.rev-grid{display:grid;gap:16px}
+@media(min-width:720px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{background:var(--mist);border-radius:20px;padding:22px;border:1.5px solid var(--cyan-l);position:relative}
+.rev::before{content:"\201C";position:absolute;top:-8px;left:18px;font:700 4rem/1 Fredoka,serif;color:var(--cyan-l)}
+.rev p{position:relative;margin:0 0 12px;font-size:.98rem}
+.rev .who{font-weight:800;font-size:.85rem;color:var(--cyan-d)}
+.rev .stars{color:#d99a06;letter-spacing:2px;font-size:.9rem}
+
+/* form */
+.quote{background:var(--mist)}
+.quote .grid{display:grid;gap:28px}
+@media(min-width:900px){.quote .grid{grid-template-columns:1fr 1.2fr}}
+form{background:var(--white);border-radius:24px;padding:24px;border:1.5px solid var(--cyan-l);box-shadow:0 20px 40px -30px rgba(2,44,58,.4)}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field label{font-weight:800;font-size:.9rem;color:var(--deep)}
+.field input,.field select,.field textarea{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid #9ccfdc;background:#fff;color:var(--text);min-height:48px}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan)}
+.two{display:grid;gap:0 14px}
+@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+.msg{display:none;margin-top:14px;padding:14px;border-radius:12px;background:#ecfccb;color:#365314;font-weight:700}
+.msg.show{display:block}
+.contact-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.contact-list li{display:flex;gap:12px;align-items:center;font-weight:700}
+.contact-list svg{width:24px;height:24px;stroke:var(--cyan);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.contact-list a{color:var(--deep);text-decoration:none;font-size:1.2rem;font-family:Fredoka,sans-serif}
+
+/* area */
+.area{background:var(--white)}
+.area .grid{display:grid;gap:30px;align-items:center}
+@media(min-width:800px){.area .grid{grid-template-columns:1fr 1fr}}
+.map{background:var(--mist);border-radius:24px;padding:16px;border:1.5px solid var(--cyan-l)}
+.map svg{width:100%;height:auto}
+.area ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.area li{background:var(--cyan-l);color:var(--deep);padding:8px 14px;border-radius:999px;font-weight:700;font-size:.9rem}
+
+footer{background:var(--deep);color:#bfe6ef;padding:36px 0 40px;font-size:.9rem}
+footer .wrap{display:grid;gap:10px}
+footer a{color:#fff}
+
+/* sticky call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(240,253,255,.92);backdrop-filter:blur(8px);border-top:1px solid var(--cyan-l)}
+.callbar .btn{width:100%;font-size:1.1rem}
+@media(min-width:720px){.callbar{display:none}body{padding-bottom:0}}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Almaroad Pressure Washing home"><span class="drop" aria-hidden="true"><i></i></span>Almaroad Pressure Washing</a>
+    <a class="btn lime call" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>864-883-0126</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Anderson, SC · Owner-operated</span>
+      <h1 id="hero-h">Your place, <span>looking new</span> again.</h1>
+      <p class="lead">Pressure washing and exterior cleaning for homes and businesses around Anderson. One owner, one standard: if it isn't clean, we're not done.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call 864-883-0126</a>
+        <a class="btn ghost" href="#quote">Get a free quote</a>
+      </div>
+      <p class="fineprint">Free estimates. Text or call — if we're on a job, we'll text you right back.</p>
+      <ul class="chips" aria-label="Highlights">
+        <li>Owner on every job</li>
+        <li>Praised for work ethic &amp; quality</li>
+        <li>Anderson area</li>
+      </ul>
+    </div>
+
+    <figure class="reveal" style="--pos:55%" id="reveal">
+      <span class="tag b">Before</span><span class="tag a">After</span>
+      <!-- CLEAN layer (full) -->
+      <div class="layer clean" aria-hidden="true">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bdeefb"/><stop offset="1" stop-color="#f0fdff"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#sky)"/>
+          <circle cx="330" cy="55" r="26" fill="#fff4b8"/>
+          <rect y="215" width="400" height="85" fill="#9bd36a"/>
+          <path d="M0 230 Q200 210 400 230 V300 H0Z" fill="#7dc24e"/>
+          <!-- driveway -->
+          <path d="M150 300 L185 215 H255 L300 300Z" fill="#e6e9ea"/>
+          <path d="M160 300 L190 215 H250 L290 300Z" fill="#f2f4f5"/>
+          <!-- house -->
+          <rect x="60" y="120" width="200" height="100" fill="#ffffff"/>
+          <rect x="60" y="120" width="200" height="100" fill="none" stroke="#d7e2e6" stroke-width="2"/>
+          <g stroke="#dfe8eb" stroke-width="1.5"><path d="M60 140H260M60 160H260M60 180H260M60 200H260"/></g>
+          <path d="M45 125 L160 55 L275 125Z" fill="#0e7490"/>
+          <rect x="200" y="70" width="18" height="40" fill="#0b5c73"/>
+          <rect x="140" y="165" width="40" height="55" fill="#0b5c73"/>
+          <circle cx="172" cy="195" r="2.5" fill="#a3e635"/>
+          <g fill="#bdeefb" stroke="#0b5c73" stroke-width="2"><rect x="80" y="140" width="38" height="34"/><rect x="202" y="140" width="38" height="34"/></g>
+          <g stroke="#0b5c73" stroke-width="2"><path d="M99 140v34M80 157h38M221 140v34M202 157h38"/></g>
+          <!-- bushes -->
+          <circle cx="85" cy="222" r="14" fill="#5aa83a"/><circle cx="110" cy="226" r="11" fill="#6fbe48"/><circle cx="240" cy="224" r="13" fill="#5aa83a"/>
+          <!-- sparkles -->
+          <g fill="#fff"><path d="M300 120l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="M40 90l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M330 190l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></g>
+        </svg>
+      </div>
+      <!-- DIRTY layer (clipped) -->
+      <div class="layer dirty" aria-hidden="true">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fb6bd"/><stop offset="1" stop-color="#cfd8d6"/></linearGradient>
+          <pattern id="grime" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="4" cy="5" r="2.2" fill="#4c5a3b" opacity=".55"/><circle cx="11" cy="11" r="1.6" fill="#5b5240" opacity=".5"/></pattern></defs>
+          <rect width="400" height="300" fill="url(#sky2)"/>
+          <circle cx="330" cy="55" r="26" fill="#e9e3c5"/>
+          <rect y="215" width="400" height="85" fill="#7f9a55"/>
+          <path d="M0 230 Q200 210 400 230 V300 H0Z" fill="#6b8a44"/>
+          <path d="M150 300 L185 215 H255 L300 300Z" fill="#8f9496"/>
+          <path d="M160 300 L190 215 H250 L290 300Z" fill="#a4a9a8"/>
+          <path d="M160 300 L190 215 H250 L290 300Z" fill="url(#grime)"/>
+          <rect x="60" y="120" width="200" height="100" fill="#d8d4c3"/>
+          <rect x="60" y="120" width="200" height="100" fill="url(#grime)"/>
+          <g stroke="#b9b5a3" stroke-width="1.5"><path d="M60 140H260M60 160H260M60 180H260M60 200H260"/></g>
+          <path d="M60 120 h200 v30 q-60 10 -120 0 q-40 -6 -80 4z" fill="#6e7d4c" opacity=".55"/>
+          <path d="M45 125 L160 55 L275 125Z" fill="#4e6a63"/>
+          <path d="M70 120 L160 66 L250 120Z" fill="url(#grime)"/>
+          <rect x="200" y="70" width="18" height="40" fill="#3f4f52"/>
+          <rect x="140" y="165" width="40" height="55" fill="#4f5e5f"/>
+          <g fill="#9fb0b4" stroke="#4f5e5f" stroke-width="2"><rect x="80" y="140" width="38" height="34"/><rect x="202" y="140" width="38" height="34"/></g>
+          <g stroke="#4f5e5f" stroke-width="2"><path d="M99 140v34M80 157h38M221 140v34M202 157h38"/></g>
+          <circle cx="85" cy="222" r="14" fill="#55753a"/><circle cx="110" cy="226" r="11" fill="#60824a"/><circle cx="240" cy="224" r="13" fill="#55753a"/>
+        </svg>
+      </div>
+      <div class="handle" aria-hidden="true"></div>
+      <div class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#022c3a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+      <input type="range" min="5" max="95" value="55" aria-label="Drag to compare before and after cleaning" id="slider">
+      <figcaption>Drag to compare · illustration</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services" aria-labelledby="serv-h">
+  <div class="wrap">
+    <span class="eyebrow">What we clean</span>
+    <h2 id="serv-h">Pressure washing &amp; exterior cleaning</h2>
+    <p class="lead">Dirt, mildew, pollen and years of weather don't stand a chance. Here's what folks around Anderson call us for most.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+        <h3>House &amp; siding washing</h3>
+        <p>Vinyl, brick, stucco and painted surfaces washed to bring back the color your home had on day one.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20L9 4h6l5 16M7 14h10M8 9h8"/></svg></div>
+        <h3>Driveways, walks &amp; concrete</h3>
+        <p>Oil spots, tire marks, green algae and that gray grime that makes concrete look older than it is.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 10h18M3 15h18M6 5v14M12 5v14M18 5v14"/></svg></div>
+        <h3>Decks, patios &amp; fences</h3>
+        <p>Wood and composite cleaned at the right pressure so it's fresh, not fuzzy or damaged.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4zM4 12h16M9 7v10"/></svg></div>
+        <h3>Storefronts &amp; commercial</h3>
+        <p>Entrances, sidewalks and dumpster pads for shops and offices that want to look open for business.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div>
+        <h3>Soft washing for delicate surfaces</h3>
+        <p>Low pressure and the right cleaning solution where a blast of water would do more harm than good.</p>
+      </article>
+      <article class="card ask">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 9a3 3 0 1 1 4 2.8c-.7.3-1 .9-1 1.7V15M12 19h.01"/></svg></div>
+        <h3>Not sure if we clean it?</h3>
+        <p>Send a photo or just ask. If it's outside and dirty, there's a good chance we can help.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <span class="eyebrow">Why Almaroad</span>
+    <h2 id="why-h">Small enough to care. Serious about the work.</h2>
+    <p class="lead" style="color:#bfe6ef">You deal with the owner from the first call to the final rinse. No sales reps, no crews that have never seen your house before.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="n"><svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg></div>
+        <div><h3>Owner-operated</h3><p>Adam Almaroad runs the business and does the work. The person who quotes the job is the person who shows up.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="n"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <div><h3>Known for work ethic</h3><p>Customers on HomeAdvisor have praised the work ethic and quality of the finished job. That's the reputation we protect.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="n"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div><h3>Right pressure, right surface</h3><p>Concrete gets the power it needs. Siding, wood and roofs get a gentler approach so nothing is stripped or scarred.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="n"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg></div>
+        <div><h3>Simple, upfront pricing</h3><p>Tell us what needs cleaning and roughly how big it is. You'll get a straight number before any work starts.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXT BACK -->
+<section class="textback" id="textback" aria-labelledby="tb-h">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Call-back guarantee</span>
+      <h2 id="tb-h">Never miss a call — we text you back in seconds</h2>
+      <p class="lead">When the wand is running, the phone can't be answered. So if your call goes to voicemail, you get an automatic text from Almaroad Pressure Washing right away, and a real reply as soon as the job's done.</p>
+      <ol class="steps">
+        <li><b>1</b><span>You call while we're mid-rinse and it goes unanswered.</span></li>
+        <li><b>2</b><span>Within seconds, you get a text so you know we saw you.</span></li>
+        <li><b>3</b><span>Reply with your address and what needs cleaning; we text back a quote.</span></li>
+      </ol>
+    </div>
+    <div class="phone" role="img" aria-label="Phone mock-up: a missed call from a customer followed by an instant text reply from Almaroad Pressure Washing.">
+      <div class="screen" aria-hidden="true">
+        <div class="time">2:14 PM</div>
+        <div class="missed">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M16 2l6 6M22 2l-6 6"/><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><b>Missed call</b><span>Customer · Anderson, SC · 2:14 PM</span></div>
+        </div>
+        <div class="sms-label">Messages</div>
+        <div class="bubble out">Hey, this is Almaroad Pressure Washing. Sorry we missed you, we're on a job right now. What can we clean for you? Reply here and we'll get you a quote.<small>Sent 2:14 PM · automatic</small></div>
+        <div class="bubble in">Hi! Driveway and front of the house, two-story vinyl. Off Hwy 81.</div>
+        <div class="bubble out">Perfect. I can swing by Thursday morning for a look, or text me a photo and I'll quote it today.<small>Adam · 3:02 PM</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews" aria-labelledby="rev-h">
+  <div class="wrap">
+    <span class="eyebrow">Sample reviews</span>
+    <h2 id="rev-h">Sample reviews</h2>
+    <p class="note">Placeholder text for layout only. Real customer reviews go here.</p>
+    <div class="rev-grid">
+      <article class="rev"><div class="stars" aria-label="5 star placeholder">★★★★★</div><p>Sample review: "The driveway looks brand new and he was careful around the flower beds. Showed up when he said he would."</p><div class="who">— Sarah, sample</div></article>
+      <article class="rev"><div class="stars" aria-label="5 star placeholder">★★★★★</div><p>Sample review: "Got our siding and back deck done in one morning. Fair price and he texted back fast when I had a question."</p><div class="who">— Mike, sample</div></article>
+      <article class="rev"><div class="stars" aria-label="5 star placeholder">★★★★★</div><p>Sample review: "Hard worker, no shortcuts. The green on the north side of the house is completely gone."</p><div class="who">— Linda, sample</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote" id="quote" aria-labelledby="q-h">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Free quote</span>
+      <h2 id="q-h">Tell us what needs a wash</h2>
+      <p class="lead">A few details and we'll get back to you with a price. No pressure (except on the concrete).</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+18648830126">864-883-0126</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.7-.8L3 21l1.9-5.3A8.4 8.4 0 0 1 3 11.5a8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 9 8.4z"/></svg><span>Text works great too — photos welcome</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Serving the Anderson area</span></li>
+      </ul>
+    </div>
+    <form id="quote-form" novalidate>
+      <div class="two">
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="field"><label for="addr">Address or neighborhood</label><input id="addr" name="addr" type="text" autocomplete="street-address" placeholder="Anderson, SC"></div>
+      <div class="field"><label for="what">What needs cleaning?</label>
+        <select id="what" name="what">
+          <option>House / siding</option><option>Driveway or concrete</option><option>Deck, patio or fence</option><option>Storefront / commercial</option><option>Something else</option>
+        </select>
+      </div>
+      <div class="field"><label for="notes">Anything we should know?</label><textarea id="notes" name="notes" placeholder="Two-story house, driveway has oil stains, etc."></textarea></div>
+      <button class="btn lime" type="submit" style="width:100%">Send my quote request</button>
+      <p class="msg" id="form-msg" role="status" aria-live="polite">Thanks! This is a demo, so nothing was sent, but on the real site your request would land in Adam's inbox and phone right away.</p>
+    </form>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area" id="area" aria-labelledby="area-h">
+  <div class="wrap grid">
+    <div class="map" aria-hidden="true">
+      <svg viewBox="0 0 360 240">
+        <defs><pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#0e7490" opacity=".25"/></pattern></defs>
+        <rect width="360" height="240" rx="16" fill="url(#dots)"/>
+        <!-- radiating rings -->
+        <g fill="none" stroke="#0e7490" stroke-opacity=".35" stroke-width="2"><circle cx="180" cy="125" r="40"/><circle cx="180" cy="125" r="75" stroke-dasharray="6 6"/><circle cx="180" cy="125" r="110" stroke-dasharray="3 9"/></g>
+        <!-- roads -->
+        <g stroke="#9ccfdc" stroke-width="5" stroke-linecap="round" fill="none"><path d="M20 160 C100 140 160 150 250 60"/><path d="M60 30 C120 90 220 110 340 200"/><path d="M180 20 V230"/></g>
+        <!-- pin -->
+        <path d="M180 85 c-16 0 -26 12 -26 26 c0 20 26 44 26 44 s26 -24 26 -44 c0 -14 -10 -26 -26 -26z" fill="#a3e635" stroke="#022c3a" stroke-width="3"/>
+        <circle cx="180" cy="111" r="9" fill="#022c3a"/>
+        <text x="180" y="178" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="18" font-weight="700" fill="#022c3a">Anderson, SC</text>
+      </svg>
+    </div>
+    <div>
+      <span class="eyebrow">Where we work</span>
+      <h2 id="area-h">Serving the Anderson area</h2>
+      <p class="lead">Based in Anderson and covering the surrounding area. A little outside town? Give us a call — if the drive makes sense, we'll come out.</p>
+      <ul aria-label="Service area">
+        <li>Anderson</li><li>Surrounding Anderson County</li><li>Ask about nearby areas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong style="color:#fff;font-family:Fredoka,sans-serif;font-size:1.2rem">Almaroad Pressure Washing</strong>
+    <span>Pressure washing &amp; exterior cleaning · Anderson, SC · <a href="tel:+18648830126">864-883-0126</a></span>
+    <span>Demo preview built by David — not the official site. Sample reviews are placeholders.</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn lime" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Tap to call 864-883-0126</a>
+</div>
+
+<script>
+(function(){
+  var s=document.getElementById('slider'),r=document.getElementById('reveal');
+  if(s&&r){s.addEventListener('input',function(){r.style.setProperty('--pos',s.value+'%');});}
+  var f=document.getElementById('quote-form'),m=document.getElementById('form-msg');
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();m.classList.add('show');m.focus&&m.setAttribute('tabindex','-1');m.focus();});}
+})();
+</script>
+</body>
+</html>
