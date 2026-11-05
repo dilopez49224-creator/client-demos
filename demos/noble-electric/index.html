@@ -4,114 +4,146 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Noble Electric LLC | Electrician in Seneca, SC</title>
-<meta name="description" content="Demo preview of a one-page site for Noble Electric LLC, electrical work and dock inspections in the Seneca area.">
+<title>Noble Electric LLC | Licensed Electrician in Seneca, SC</title>
+<meta name="description" content="Demo preview of a one-page site for Noble Electric LLC: troubleshooting, panel upgrades, lighting, dock power and generator transfer switches in the Seneca area.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#f6efd9;--paper2:#efe5c6;--ink:#12304d;--lake:#1d5f93;--lake-d:#154a74;--butter:#f2c94c;--line:#1d5f93;--white:#fffdf5}
+:root{--black:#0b0b0b;--coal:#161616;--line:#2c2c2c;--white:#fff;--snow:#f4f4f4;--ink:#111;--muted:#4a4a4a;
+ --red:#e3001b;      /* brand fill: bolt, buttons (white text 4.9:1) */
+ --red-hi:#ff4040;   /* red text on black (5.7:1) */
+ --red-d:#c8102e}    /* red text on white (5.9:1) */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;padding-top:44px;padding-bottom:72px;background-color:var(--paper);
- background-image:linear-gradient(rgba(29,95,147,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(29,95,147,.12) 1px,transparent 1px);
- background-size:24px 24px;color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif;overflow-x:hidden}
-h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.03em;line-height:1.05;margin:0 0 .5em}
-h1{font-size:clamp(2.6rem,12vw,5rem);font-weight:700}
-h2{font-size:clamp(1.9rem,7vw,3rem);font-weight:700}
-h3{font-size:1.4rem;font-weight:600}
-p{margin:0 0 1em;max-width:65ch}
-.open{padding:6px 0 0}
-.open h2{position:relative;padding-bottom:10px}
-.open h2::after{content:"";position:absolute;left:0;bottom:0;width:72px;height:6px;background:var(--butter);border:2px solid var(--ink)}
-.tb{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin:22px 0 0;border:2px solid var(--ink);background:var(--paper)}
-.tb div{padding:8px 12px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink)}
-.tb div:nth-child(2n){border-right:0}.tb div:nth-last-child(-n+2){border-bottom:0}
-.tb dt{font:600 .875rem "Barlow Condensed",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--lake-d)}
-.tb dd{margin:0;font-size:.95rem}
-a{color:var(--lake-d)}
-:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--butter)}
-.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:44px;background:var(--ink);color:#fff;text-align:center;font:600 13px/1.3 "IBM Plex Sans",sans-serif;padding:6px 12px;display:flex;align-items:center;justify-content:center}
-.wrap{max-width:1040px;margin:0 auto;padding:0 16px 0 44px;position:relative}
-/* circuit rail */
-.rail{position:absolute;left:18px;top:0;bottom:0;width:4px;background:var(--line);border-radius:2px}
-.node{position:absolute;left:10px;width:20px;height:20px;border-radius:50%;background:var(--butter);border:4px solid var(--line)}
-.node::after{content:"";position:absolute;left:16px;top:6px;width:18px;height:4px;background:var(--line)}
-section{position:relative;padding:44px 0 20px}
-.sheet{position:relative;background:var(--white);border:2px solid var(--ink);padding:22px 18px 24px;box-shadow:6px 6px 0 var(--lake)}
-.sheet .tag{position:absolute;top:-13px;right:12px;background:var(--butter);border:2px solid var(--ink);font:600 .875rem/1 "Barlow Condensed",sans-serif;letter-spacing:.12em;padding:5px 8px;text-transform:uppercase}
-.eyebrow{font:600 1rem "Barlow Condensed",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--lake-d);margin-bottom:.4em}
-.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:10px 22px;background:var(--butter);color:var(--ink);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);font:700 1.35rem "Barlow Condensed",sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer}
-.btn:hover{transform:translate(-1px,-1px);box-shadow:6px 6px 0 var(--ink)}
-.btn.alt{background:var(--white)}
+body{margin:0;padding-top:44px;padding-bottom:72px;background:var(--white);color:var(--ink);font:400 17px/1.6 "Barlow",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,.display{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1;margin:0 0 .45em}
+h1{font-size:clamp(3rem,15vw,5.6rem)}
+h2{font-size:clamp(2.1rem,9vw,3.4rem)}
+h3{font:700 1.15rem/1.3 "Barlow",sans-serif;margin:0 0 .35em}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--red-d);font-weight:600}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.band{padding:56px 0}
+.dark{background:var(--black);color:var(--white)}
+.dark a{color:var(--white)}
+.dark .kicker{color:var(--red-hi)}
+.kicker{display:flex;align-items:center;gap:10px;font:700 .95rem/1.2 "Barlow",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--red-d);margin:0 0 12px}
+.kicker::before{content:"";width:28px;height:4px;background:var(--red);flex:none}
+.hot{color:var(--red-d)}.dark .hot{color:var(--red-hi)}
+.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:44px;background:#1c1c1c;border-bottom:3px solid var(--red);color:#fff;text-align:center;font:600 13px/1.3 "Barlow",sans-serif;padding:6px 12px;display:flex;align-items:center;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:10px 22px;background:var(--red);color:#fff!important;border:2px solid var(--red);border-radius:6px;font:700 1.05rem "Barlow",sans-serif;letter-spacing:.02em;text-decoration:none;cursor:pointer}
+.btn:hover{background:#b80016;border-color:#b80016}
+.btn.ghost{background:transparent;border-color:currentColor}
+.dark .btn.ghost{color:#fff!important}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn svg{width:20px;height:20px;flex:none}
+/* top brand bar */
+.brand{display:flex;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}
+.brand svg{width:44px;height:52px;flex:none}
+.brand .name{font:800 1.9rem/1 "Barlow Condensed",sans-serif;text-transform:uppercase;color:var(--red-hi);letter-spacing:.01em}
+.brand .sub{display:block;font:600 .8rem/1.3 "Barlow",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#d6d6d6;margin-top:3px}
+.brand .tel{margin-left:auto;display:none;text-decoration:none;font-weight:700}
 /* hero */
-.hero{padding-top:30px}
-.hero .lead{font-size:1.15rem;max-width:34em}
-.hero .row{display:flex;flex-wrap:wrap;gap:14px;margin:22px 0 10px}
-.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
-.facts li{border:2px solid var(--ink);background:var(--paper2);padding:4px 10px;font-weight:500;font-size:.9rem}
-.hero-art{margin-top:24px}
+.hero{padding:28px 0 56px}
+.hero h1 span{display:block;color:var(--red-hi)}
+.hero .lead{font-size:1.15rem;color:#e6e6e6;max-width:36em}
+.flyer{display:grid;grid-template-columns:1fr;margin:26px 0;border:2px solid #fff;border-radius:8px;overflow:hidden}
+.flyer > div{padding:18px 18px 16px}
+.flyer > div + div{border-top:2px solid #fff}
+.flyer h3{font-size:1.2rem;color:#fff;margin-bottom:8px}
+.flyer ul{list-style:none;margin:0;padding:0}
+.flyer li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:1.08rem;padding:5px 0}
+.flyer li svg{width:18px;height:18px;flex:none}
+.flyer .need{background:var(--coal)}
+.choose{font-weight:700;font-size:1.1rem;margin:0 0 20px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.facts li{border:1px solid #555;border-radius:999px;padding:4px 12px;font-weight:600;font-size:.9rem;color:#eee}
+.facts a{text-decoration:none}
+.panel-art{margin:30px auto 0;max-width:320px}
+.panel-art svg{display:block;width:100%;height:auto}
 /* services */
-.grid{display:grid;gap:14px;grid-template-columns:1fr;padding:0;margin:0;list-style:none}
-.grid li{display:flex;gap:12px;align-items:center;border:2px solid var(--ink);background:var(--paper);padding:10px 12px;min-height:56px}
-.grid svg{flex:none;width:34px;height:34px}
-/* dock panel */
-.dock{background:var(--ink);color:#fff;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--butter);padding:0;overflow:hidden}
-.dock .txt{padding:22px 18px}
-.dock h2{color:var(--butter)}
-.dock .eyebrow{color:#cfe3f5}
-.dock a{color:#fff}
-.dock svg{display:block;width:100%;height:auto}
+.svc{display:grid;gap:14px;grid-template-columns:1fr;padding:0;margin:24px 0 0;list-style:none}
+.svc li{border:2px solid var(--ink);border-radius:8px;padding:16px 16px 14px;background:#fff;position:relative}
+.svc li::after{content:"";position:absolute;left:-2px;top:16px;width:5px;height:34px;background:var(--red)}
+.svc .ic{width:40px;height:40px;margin-bottom:8px}
+.svc p{margin:0;color:var(--muted);font-size:1rem}
+.also{margin:20px 0 0;color:var(--muted);font-size:1rem}
+/* dock */
+.dock{display:grid;gap:26px;align-items:center}
+.dock > svg{display:block;width:100%;height:auto;border-radius:8px;border:2px solid #333}
 /* why */
-.why{display:grid;gap:16px}
-.why div{border-left:6px solid var(--butter);padding:2px 0 2px 14px}
-.why h3{margin-bottom:.25em}
-/* missed call */
-.mc{display:grid;gap:26px;align-items:center}
-.phone{width:min(100%,290px);margin:0 auto;background:var(--ink);border-radius:34px;padding:14px 12px 18px;box-shadow:8px 8px 0 var(--butter);border:3px solid var(--ink)}
-.screen{background:#f4f8fb;border-radius:22px;padding:14px 12px;min-height:350px;color:#102a43;font-size:14px}
-.screen .time{text-align:center;font-size:12px;color:#44586b;margin-bottom:10px}
-.missed{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #c5d3df;border-radius:14px;padding:10px;margin-bottom:14px}
-.missed .ic{width:34px;height:34px;border-radius:50%;background:#b3261e;display:grid;place-items:center;flex:none}
-.missed b{display:block;color:#8a1c15}
+.why{display:grid;gap:14px;margin-top:22px}
+.why > div{background:var(--snow);border-radius:8px;padding:18px 18px 8px;border-top:5px solid var(--ink)}
+.why > div.safe{background:var(--black);color:#fff;border-top-color:var(--red)}
+.why .safe h3{color:var(--red-hi)}
+.why svg{width:36px;height:36px;margin-bottom:6px}
+.hrs{margin:24px 0 0;padding:0;list-style:none;max-width:420px}
+.hrs li{display:flex;justify-content:space-between;border-bottom:1px solid #d8d8d8;padding:7px 0;gap:12px}
+.hrs li span:last-child{font-weight:700}
+/* text-back */
+.mc{display:grid;gap:30px;align-items:center}
+.phone{width:min(100%,290px);margin:0 auto;background:#222;border-radius:36px;padding:14px 12px 18px;border:3px solid #444;box-shadow:0 0 0 6px var(--black),0 0 0 8px var(--red)}
+.screen{background:#f3f3f3;border-radius:24px;padding:14px 12px;min-height:350px;color:#111;font-size:14px}
+.screen .time{text-align:center;font-size:12px;color:#555;margin-bottom:10px}
+.missed{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #d4d4d4;border-radius:14px;padding:10px;margin-bottom:14px}
+.missed .ic{width:34px;height:34px;border-radius:50%;background:var(--red);display:grid;place-items:center;flex:none}
+.missed b{display:block;color:var(--red-d)}
 .bub{max-width:88%;padding:9px 12px;border-radius:16px;margin:0 0 10px;line-height:1.4}
-.bub.in{background:var(--lake-d);color:#fff;border-bottom-left-radius:4px}
-.bub.out{background:#fff;border:1px solid #c5d3df;margin-left:auto;border-bottom-right-radius:4px}
-.bub small{display:block;font-size:12px;opacity:.9;margin-top:3px}
-.auto{display:inline-block;background:var(--butter);color:var(--ink);font:700 .875rem "Barlow Condensed",sans-serif;letter-spacing:.1em;padding:2px 6px;margin-bottom:4px}
-.typing{display:flex;gap:4px;padding:8px 12px}.typing i{width:7px;height:7px;border-radius:50%;background:#7c93a8;animation:b 1.2s infinite}.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+.bub.in{background:var(--black);color:#fff;border-bottom-left-radius:4px}
+.bub.out{background:#fff;border:1px solid #d4d4d4;margin-left:auto;border-bottom-right-radius:4px}
+.bub small{display:block;font-size:12px;color:#ccc;margin-top:3px}
+.from{display:inline-flex;align-items:center;gap:5px;font:700 12px/1 "Barlow",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--red-hi);margin-bottom:5px}
+.typing{display:flex;gap:4px;padding:10px 12px;width:56px}.typing i{width:7px;height:7px;border-radius:50%;background:#999;animation:b 1.2s infinite}.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
 @keyframes b{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-4px)}}
+.ticks{list-style:none;padding:0;margin:0}
+.ticks li{display:flex;gap:10px;align-items:baseline;padding:4px 0;font-weight:500}
+.ticks li::before{content:"";width:10px;height:10px;background:var(--red);flex:none;transform:translateY(-1px)}
 /* reviews */
+.label{display:inline-block;background:var(--ink);color:#fff;font:700 .9rem "Barlow",sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:4px;margin-bottom:16px}
 .revs{display:grid;gap:14px}
-.rev{border:2px solid var(--ink);background:var(--paper);padding:14px 16px}
-.stars{color:#7a5a00;letter-spacing:2px}
-.label{display:inline-block;background:var(--ink);color:#fff;font:600 .95rem "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:3px 10px;margin-bottom:12px}
+.rev{margin:0;border:2px solid var(--ink);border-radius:8px;padding:16px}
+.stars{color:var(--red-d);letter-spacing:2px;font-size:1.05rem}
+.rev blockquote{margin:6px 0 8px}
+.rev figcaption{font-weight:700;font-size:.95rem;color:var(--muted)}
+/* area */
+.area{display:grid;gap:24px;align-items:center}
+.map{background:var(--coal);border:1px solid #333;border-radius:8px;padding:10px}
+.map svg{display:block;width:100%;height:auto}
+.contact{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px}
+.contact li{display:flex;gap:12px;align-items:center}
+.contact svg{width:22px;height:22px;flex:none}
+.contact a{text-decoration:none;font-size:1.1rem;word-break:break-word}
+.contact small{display:block;font-size:.85rem;color:#bbb;font-weight:500}
 /* form */
-form{display:grid;gap:14px}
-label{font-weight:600;display:block;margin-bottom:4px}
-input,select,textarea{width:100%;font:inherit;padding:11px 12px;border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:0}
+form{display:grid;gap:14px;margin-top:20px}
+label{font-weight:700;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;padding:11px 12px;border:2px solid var(--ink);border-radius:6px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--red)}
 textarea{min-height:110px}
-.msg{display:none;border:2px solid var(--ink);background:var(--butter);padding:12px 14px;font-weight:600}
+.msg{display:none;border-left:5px solid var(--red);background:var(--snow);padding:12px 14px;font-weight:600}
 .msg.show{display:block}
-.hrs{margin:0;padding:0;list-style:none}
-.hrs li{display:flex;justify-content:space-between;border-bottom:1px dashed var(--lake);padding:5px 0;gap:12px}
-footer{padding:30px 16px 20px;text-align:center;font-size:.9rem;color:var(--ink)}
+footer{background:var(--black);color:#ddd;padding:30px 16px 24px;text-align:center;font-size:.95rem;border-top:4px solid var(--red)}
+footer a{color:#fff}
 /* sticky call */
-.callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--butter);border-top:3px solid var(--ink);padding:8px 12px;display:flex;justify-content:center}
-.callbar a{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;min-height:48px;background:var(--ink);color:#fff;text-decoration:none;font:700 1.35rem "Barlow Condensed",sans-serif;letter-spacing:.06em;text-transform:uppercase}
-.callbar a:focus-visible{outline-color:#fff}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--black);border-top:3px solid var(--red);padding:8px 12px;display:flex;justify-content:center}
+.callbar a{width:100%;max-width:420px;min-height:48px}
 @media(min-width:760px){
  body{padding-bottom:0;font-size:18px}
- .wrap{padding-left:70px}
- .rail{left:30px}.node{left:22px}
- .grid{grid-template-columns:1fr 1fr}
- .why{grid-template-columns:repeat(3,1fr)}
- .revs{grid-template-columns:repeat(3,1fr)}
+ .brand .tel{display:inline-flex}
+ .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+ .panel-art{margin:0}
+ .flyer{grid-template-columns:1fr 1fr}
+ .flyer > div + div{border-top:0;border-left:2px solid #fff}
+ .svc{grid-template-columns:repeat(3,1fr)}
+ .dock{grid-template-columns:1fr 1.1fr;gap:40px}
+ .why{grid-template-columns:repeat(4,1fr)}
  .mc{grid-template-columns:1.1fr .9fr}
- .dock{display:grid;grid-template-columns:1fr 1.1fr;align-items:center}
+ .revs{grid-template-columns:repeat(3,1fr)}
+ .area{grid-template-columns:.9fr 1.1fr;gap:40px}
  .callbar{display:none}
- .sheet{padding:30px 32px 34px}
- .tb{grid-template-columns:repeat(4,1fr)}.tb div{border-bottom:0}.tb div:nth-child(2n){border-right:2px solid var(--ink)}.tb div:last-child{border-right:0}
  form{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
@@ -120,90 +152,147 @@ footer{padding:30px 16px 20px;text-align:center;font-size:.9rem;color:var(--ink)
 <body>
 <div class="banner" role="note">Demo preview built by David — not the official site.</div>
 
-<main class="wrap" id="top">
-<div class="rail" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="shield" viewBox="0 0 44 52"><path d="M22 2L41 8v17c0 12-8 20.5-19 25C11 45.5 3 37 3 25V8z" fill="#fff"/><path d="M22 6.5L37 11.3V25c0 9.6-6.3 16.6-15 20.6C13.3 41.6 7 34.6 7 25V11.3z" fill="#0b0b0b"/><path d="M25.5 11L14 29h7.2l-3 13L30.5 23h-7.3z" fill="#e3001b"/></symbol>
+  <symbol id="bolt" viewBox="0 0 18 18"><path d="M10.5 1L3 10.5h5l-1.5 6.5L15 7.5h-5z" fill="#e3001b"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></symbol>
+ </defs>
+</svg>
 
-<section class="hero">
- <span class="node" aria-hidden="true" style="top:46px"></span>
- <div class="sheet">
-  <span class="tag">Sheet &middot; Overview</span>
-  <p class="eyebrow">Noble Electric LLC &middot; Seneca, SC</p>
-  <h1>Power, lights &amp; lake-side wiring.</h1>
-  <p class="lead">Residential and commercial electrical work for the Seneca area, from a stubborn outlet to a panel upgrade, plus dock inspections and repairs for folks on the water.</p>
-  <div class="row">
-   <a class="btn" href="tel:+18642807023">Call 864-280-7023</a>
-   <a class="btn alt" href="#quote">Get a quote</a>
+<header class="dark">
+ <div class="wrap brand">
+  <svg aria-hidden="true"><use href="#shield"/></svg>
+  <div><span class="name">Noble Electric</span><span class="sub">Licensed electrician &middot; Seneca, SC</span></div>
+  <a class="tel" href="tel:+18642807023">(864) 280-7023</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="dark hero" aria-labelledby="h-h">
+ <div class="wrap hero-grid">
+  <div>
+   <h1 id="h-h">Let us help. <span>Choose safety.</span></h1>
+   <p class="lead">Residential and commercial electrical work around Seneca, from a breaker that won't stay on to a new panel, lighting, dock power and generator hookups.</p>
+   <div class="flyer">
+    <div>
+     <h3>Do you have&hellip;</h3>
+     <ul>
+      <li><svg aria-hidden="true"><use href="#bolt"/></svg>Flickering lights?</li>
+      <li><svg aria-hidden="true"><use href="#bolt"/></svg>Loose outlets?</li>
+      <li><svg aria-hidden="true"><use href="#bolt"/></svg>Breakers tripping?</li>
+     </ul>
+    </div>
+    <div class="need">
+     <h3>Do you need&hellip;</h3>
+     <ul>
+      <li><svg aria-hidden="true"><use href="#bolt"/></svg>New light fixtures?</li>
+      <li><svg aria-hidden="true"><use href="#bolt"/></svg>Panel upgrade?</li>
+      <li><svg aria-hidden="true"><use href="#bolt"/></svg>Dock power?</li>
+     </ul>
+    </div>
+   </div>
+   <p class="choose">Choose a licensed electrician. <span class="hot">Choose Noble Electric.</span></p>
+   <div class="row">
+    <a class="btn" href="tel:+18642807023"><svg aria-hidden="true"><use href="#phone"/></svg>Call or text (864) 280-7023</a>
+    <a class="btn ghost" href="#quote">Get a quote</a>
+   </div>
+   <ul class="facts">
+    <li>5.0 on Google (4 reviews)</li>
+    <li>Residential &amp; commercial</li>
+    <li>Opens 7am</li>
+   </ul>
   </div>
-  <ul class="facts">
-   <li>5.0 on Google (4 reviews)</li>
-   <li>Residential &amp; commercial</li>
-   <li>Dock inspections &amp; repairs</li>
-  </ul>
-  <div class="hero-art" aria-hidden="true">
-   <svg viewBox="0 0 640 124" width="100%" role="presentation"><g fill="none" stroke="#1d5f93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 55h110l10-24 14 48 14-48 14 48 14-48 10 24h110"/><circle cx="288" cy="55" r="10" fill="#f2c94c"/><path d="M298 55h70M368 33v44M378 40v30M378 55h60"/><path d="M438 55h40a20 20 0 1 1 40 0 20 20 0 1 1-40 0" stroke="#12304d"/><path d="M518 55h112"/></g><text x="12" y="118" font-family="Barlow Condensed,sans-serif" font-size="34" fill="#12304d" letter-spacing="2">SUPPLY</text><text x="360" y="118" font-family="Barlow Condensed,sans-serif" font-size="34" fill="#12304d" letter-spacing="2">STORAGE</text><text x="540" y="118" font-family="Barlow Condensed,sans-serif" font-size="34" fill="#12304d" letter-spacing="2">LOAD</text></svg>
+  <div class="panel-art">
+   <svg viewBox="0 0 240 300" role="img" aria-label="Illustration of a breaker panel with its door open, two rows of breakers and a main breaker at the top">
+    <rect x="30" y="8" width="180" height="284" rx="6" fill="#2a2a2a" stroke="#fff" stroke-width="3"/>
+    <rect x="44" y="22" width="152" height="256" rx="3" fill="#8f949a"/>
+    <path d="M100 8V0M120 8V0M140 8V0" stroke="#fff" stroke-width="5"/>
+    <rect x="92" y="32" width="56" height="34" rx="3" fill="#111"/>
+    <rect x="108" y="40" width="24" height="18" rx="2" fill="#e3001b"/>
+    <rect x="114" y="74" width="12" height="190" fill="#c9a86a"/>
+    <g fill="#111">
+     <rect x="64" y="76" width="46" height="18" rx="2"/><rect x="130" y="76" width="46" height="18" rx="2"/>
+     <rect x="64" y="99" width="46" height="18" rx="2"/><rect x="130" y="99" width="46" height="18" rx="2"/>
+     <rect x="64" y="122" width="46" height="18" rx="2"/><rect x="130" y="122" width="46" height="18" rx="2"/>
+     <rect x="64" y="145" width="46" height="18" rx="2"/><rect x="130" y="145" width="46" height="18" rx="2"/>
+     <rect x="64" y="168" width="46" height="18" rx="2"/><rect x="130" y="168" width="46" height="18" rx="2"/>
+     <rect x="64" y="191" width="46" height="18" rx="2"/><rect x="130" y="191" width="46" height="18" rx="2"/>
+     <rect x="64" y="214" width="46" height="18" rx="2"/><rect x="130" y="214" width="46" height="18" rx="2"/>
+     <rect x="64" y="237" width="46" height="18" rx="2"/><rect x="130" y="237" width="46" height="18" rx="2"/>
+    </g>
+    <g fill="#e6e6e6">
+     <rect x="72" y="82" width="12" height="6"/><rect x="156" y="82" width="12" height="6"/>
+     <rect x="72" y="105" width="12" height="6"/><rect x="156" y="105" width="12" height="6"/>
+     <rect x="72" y="128" width="12" height="6"/><rect x="156" y="128" width="12" height="6"/>
+     <rect x="72" y="151" width="12" height="6"/><rect x="156" y="151" width="12" height="6"/>
+     <rect x="72" y="174" width="12" height="6"/><rect x="156" y="174" width="12" height="6"/>
+     <rect x="72" y="197" width="12" height="6"/><rect x="156" y="197" width="12" height="6"/>
+     <rect x="72" y="220" width="12" height="6"/><rect x="156" y="220" width="12" height="6"/>
+     <rect x="72" y="243" width="12" height="6"/><rect x="156" y="243" width="12" height="6"/>
+    </g>
+    <path d="M52 76v186M188 76v186" stroke="#d9d9d9" stroke-width="4" stroke-dasharray="3 3"/>
+   </svg>
   </div>
-  <dl class="tb"><div><dt>Drawn for</dt><dd>Noble Electric LLC</dd></div><div><dt>Location</dt><dd>Seneca, SC</dd></div><div><dt>Scope</dt><dd>Residential &amp; commercial</dd></div><div><dt>Scale</dt><dd>NTS</dd></div></dl>
  </div>
 </section>
 
-<section id="services" aria-labelledby="s-h">
- <span class="node" aria-hidden="true" style="top:56px"></span>
- <div class="sheet">
-  <span class="tag">Sheet &middot; Services</span>
-  <h2 id="s-h">What we wire, fix &amp; inspect</h2>
-  <ul class="grid">
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><rect x="7" y="5" width="22" height="26" rx="3"/><path d="M14 13v5M22 13v5M18 24v4"/></svg>Outlets and switches</li>
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><circle cx="18" cy="18" r="12"/><path d="M12 18l4 4 8-9"/></svg>Troubleshooting</li>
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M4 26h28M8 26v6M28 26v6M4 20h28M10 20v-8"/><path d="M10 12c3-6 9-6 12 0" /></svg>Dock inspections and repairs</li>
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M13 27h10M14 31h8M11 14a7 7 0 1 1 14 0c0 4-3 5-3 9h-8c0-4-3-5-3-9z"/></svg>Lights and fans</li>
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M18 3v6M6 10l4 4M30 10l-4 4M5 22h8M23 22h8"/><circle cx="18" cy="22" r="5"/></svg>Exterior lighting</li>
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><rect x="6" y="4" width="24" height="28" rx="2"/><path d="M12 10h12M12 16h12M12 22h6"/></svg>Panel and service upgrades</li>
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M20 3L8 20h9l-2 13 13-18h-9z"/></svg>Manual generator transfer switches</li>
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M4 30V14l14-9 14 9v16zM14 30V20h8v10"/></svg>Remodels and new construction</li>
-   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><rect x="5" y="9" width="26" height="22"/><path d="M5 15h26M11 21h4M21 21h4M11 26h4M21 26h4"/></svg>Commercial</li>
+<section class="band" id="services" aria-labelledby="s-h">
+ <div class="wrap">
+  <p class="kicker">Services</p>
+  <h2 id="s-h">What we fix, wire <span class="hot">&amp; install</span></h2>
+  <ul class="svc">
+   <li><svg class="ic" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="2.6" stroke-linejoin="round"><rect x="9" y="5" width="22" height="30" rx="3"/><path d="M16 14v5M24 14v5M20 25v3" stroke-linecap="round"/><path d="M33 6l-4 6h3l-2 5" stroke="#e3001b"/></svg><h3>Troubleshooting</h3><p>Flickering lights, loose or dead outlets and switches, and breakers that keep tripping.</p></li>
+   <li><svg class="ic" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="2.6"><rect x="8" y="3" width="24" height="34" rx="2"/><rect x="16" y="7" width="8" height="5" fill="#e3001b" stroke="none"/><path d="M13 16h6M21 16h6M13 21h6M21 21h6M13 26h6M21 26h6M13 31h6M21 31h6"/></svg><h3>Panel &amp; service upgrades</h3><p>Panel upgrades and new panels for remodels, additions and new construction.</p></li>
+   <li><svg class="ic" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round"><path d="M20 3v6M12 13a8 8 0 0 1 16 0c0 5-4 6-4 11h-8c0-5-4-6-4-11zM16 29h8M17 33h6"/><path d="M5 12h3M32 12h3M8 4l2 2M32 4l-2 2" stroke="#e3001b"/></svg><h3>Light fixtures &amp; fans</h3><p>New fixtures and ceiling fans, swapped or added where you want them.</p></li>
+   <li><svg class="ic" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="2.6" stroke-linejoin="round"><path d="M4 22L20 9l16 13M8 19v15h24V19"/><path d="M16 34v-8h8v8"/><path d="M3 37l5-5M37 37l-5-5" stroke="#e3001b" stroke-linecap="round"/></svg><h3>Outdoor &amp; landscape lighting</h3><p>Exterior lights that wash the gables, light the walk and show off the yard after dark.</p></li>
+   <li><svg class="ic" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="2.6"><circle cx="13" cy="10" r="6"/><rect x="5" y="20" width="14" height="16" rx="1"/><rect x="23" y="18" width="13" height="16" rx="1"/><path d="M19 27h4" /><path d="M31 21l-3 5h3l-2 5" stroke="#e3001b" stroke-linejoin="round"/></svg><h3>Generator transfer switches</h3><p>Manual transfer switch hookups so a portable generator can safely back up your house.</p></li>
+   <li><svg class="ic" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="2.6" stroke-linejoin="round"><path d="M4 18L20 6l16 12v18H4z"/><path d="M11 25h18" stroke="#e3001b"/><rect x="10" y="28" width="6" height="8"/><rect x="24" y="28" width="6" height="5"/></svg><h3>Shop &amp; outbuilding wiring</h3><p>Subpanels, LED lighting and outlets for workshops, garages and sheds.</p></li>
   </ul>
+  <p class="also">Also on the list: dock inspections and repairs, remodels, new construction and commercial work.</p>
  </div>
 </section>
 
-<section id="docks" aria-labelledby="d-h">
- <span class="node" aria-hidden="true" style="top:56px"></span>
- <div class="dock">
-  <div class="txt">
-   <p class="eyebrow">Lake-life specialty</p>
-   <h2 id="d-h">Dock inspections &amp; repairs</h2>
-   <p>Water and electricity need extra respect. Noble Electric lists dock inspections and repairs among its services, so lake homeowners have someone local to call about dock power and lighting.</p>
-   <a class="btn" href="tel:+18642807023">Call about your dock</a>
+<section class="band dark" id="docks" aria-labelledby="d-h">
+ <div class="wrap dock">
+  <div>
+   <p class="kicker">Lake life</p>
+   <h2 id="d-h">Dock power, <span class="hot">done safely.</span></h2>
+   <p>Water and electricity need extra respect. Noble Electric handles dock power plus dock inspections and repairs, so lake homeowners around Seneca have someone local to call about dock lighting and outlets.</p>
+   <a class="btn" href="tel:+18642807023"><svg aria-hidden="true"><use href="#phone"/></svg>Call about your dock</a>
   </div>
-  <svg viewBox="0 0 480 320" role="img" aria-label="Illustration of a wooden dock with a lit lamp post over a lake at dusk">
-   <rect width="480" height="320" fill="#1d5f93"/>
-   <rect width="480" height="130" fill="#f2c94c"/>
-   <circle cx="360" cy="95" r="38" fill="#fff6cf"/>
-   <path d="M0 130l60-50 50 30 70-55 80 70 60-40 60 45 100-30v130H0z" fill="#154a74"/>
-   <rect y="150" width="480" height="170" fill="#2a74ad"/>
-   <g stroke="#cfe3f5" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"><path d="M30 190h60M130 220h90M300 200h70M390 250h60M40 270h80M240 285h100"/></g>
-   <g fill="#8a5a2b"><rect x="40" y="190" width="400" height="16"/><rect x="40" y="206" width="400" height="6" fill="#5e3b1a"/>
-   <rect x="70" y="206" width="12" height="70"/><rect x="170" y="206" width="12" height="70"/><rect x="270" y="206" width="12" height="70"/><rect x="370" y="206" width="12" height="70"/></g>
-   <g stroke="#5e3b1a" stroke-width="3"><path d="M90 190v16M130 190v16M210 190v16M250 190v16M330 190v16M410 190v16"/></g>
-   <rect x="396" y="110" width="8" height="82" fill="#12304d"/>
-   <rect x="386" y="98" width="28" height="16" rx="3" fill="#fffdf5" stroke="#12304d" stroke-width="3"/>
-   <path d="M392 114l-24 76h88l-24-76z" fill="#f2c94c" opacity=".35"/>
-   <g fill="none" stroke="#fffdf5" stroke-width="2" stroke-dasharray="4 5"><path d="M400 192v50M400 242h-80M320 242v-30"/></g>
-   <circle cx="320" cy="212" r="6" fill="#f2c94c" stroke="#12304d" stroke-width="2"/>
-   <path d="M60 300h360" stroke="#cfe3f5" stroke-width="2" opacity=".5"/>
+  <svg viewBox="0 0 480 300" role="img" aria-label="Illustration of a wooden dock at night with a lit lamp post and a power pedestal over the lake">
+   <rect width="480" height="300" fill="#121212"/>
+   <circle cx="90" cy="60" r="22" fill="#f2f2f2"/><circle cx="100" cy="54" r="20" fill="#121212"/>
+   <g fill="#fff"><circle cx="200" cy="40" r="1.6"/><circle cx="260" cy="70" r="1.4"/><circle cx="330" cy="30" r="1.6"/><circle cx="160" cy="95" r="1.2"/><circle cx="420" cy="80" r="1.4"/></g>
+   <path d="M0 140l70-36 50 22 70-44 80 52 60-28 60 32 90-22v24H0z" fill="#262626"/>
+   <rect y="146" width="480" height="154" fill="#1d1d1d"/>
+   <g stroke="#5a5a5a" stroke-width="3" stroke-linecap="round"><path d="M30 178h60M130 206h80M40 262h70M240 280h90"/></g>
+   <path d="M352 196l-32 104h124l-28-104z" fill="#fff4d6" opacity=".12"/>
+   <g fill="#7a5230"><rect x="40" y="180" width="400" height="16"/><rect x="40" y="196" width="400" height="5" fill="#4d3219"/>
+    <rect x="70" y="196" width="12" height="74"/><rect x="170" y="196" width="12" height="74"/><rect x="270" y="196" width="12" height="74"/><rect x="370" y="196" width="12" height="74"/></g>
+   <g stroke="#4d3219" stroke-width="3"><path d="M90 180v16M130 180v16M210 180v16M250 180v16M330 180v16M410 180v16"/></g>
+   <path d="M378 100l-40 80h100l-40-80z" fill="#fff4d6" opacity=".18"/>
+   <rect x="384" y="96" width="8" height="86" fill="#d9d9d9"/>
+   <rect x="374" y="84" width="28" height="16" rx="3" fill="#fff4d6" stroke="#d9d9d9" stroke-width="3"/>
+   <rect x="292" y="146" width="22" height="34" rx="3" fill="#e9e9e9"/>
+   <rect x="297" y="152" width="12" height="10" rx="1" fill="#111"/>
+   <path d="M304 166l-5 7h4l-2 5" stroke="#e3001b" stroke-width="2.4" fill="none" stroke-linejoin="round"/>
   </svg>
  </div>
 </section>
 
-<section id="why" aria-labelledby="w-h">
- <span class="node" aria-hidden="true" style="top:56px"></span>
- <div class="open">
+<section class="band" id="why" aria-labelledby="w-h">
+ <div class="wrap">
+  <p class="kicker">Why Noble</p>
   <h2 id="w-h">Why neighbors call Noble</h2>
   <div class="why">
+   <div class="safe"><svg viewBox="0 0 44 52" aria-hidden="true"><use href="#shield"/></svg><h3>Choose Safety</h3><p>Choose a licensed electrician. Panels, docks and generator hookups are no place for guesswork.</p></div>
    <div><h3>Local &amp; direct</h3><p>A Seneca-area electrical company, so you talk to the people who do the work.</p></div>
    <div><h3>Home or business</h3><p>Residential and commercial jobs, small repairs through new construction.</p></div>
    <div><h3>Early start</h3><p>Open from 7am Monday through Thursday, so a morning problem gets a morning call.</p></div>
   </div>
-  <h3 style="margin-top:22px">Hours</h3>
+  <h3 style="margin-top:28px">Hours</h3>
   <ul class="hrs">
    <li><span>Mon &ndash; Wed</span><span>7am &ndash; 7pm</span></li>
    <li><span>Thursday</span><span>7am &ndash; 5pm</span></li>
@@ -213,65 +302,93 @@ footer{padding:30px 16px 20px;text-align:center;font-size:.9rem;color:var(--ink)
  </div>
 </section>
 
-<section id="textback" aria-labelledby="m-h">
- <span class="node" aria-hidden="true" style="top:56px"></span>
- <div class="sheet">
-  <span class="tag">Sheet &middot; Text-back</span>
-  <div class="mc">
-   <div>
-    <h2 id="m-h">Never miss a call — we text you back in seconds</h2>
-    <p>Up on a ladder or out on a dock, you can't always pick up. With missed-call text-back, every call you miss gets an instant, friendly text from Noble Electric, so the customer stays with you instead of dialing the next name on the list.</p>
-    <p><strong>Included in the demo concept:</strong> automatic reply, your own wording, no app to learn.</p>
-   </div>
-   <div class="phone" role="img" aria-label="Phone screen showing a missed call followed by an automatic text from Noble Electric">
-    <div class="screen">
-     <div class="time">Today 2:14 PM</div>
-     <div class="missed"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 5l6 6M5 5v5M5 5h5"/><path d="M4 14c4-4 12-4 16 0l-2 3-3-1v-2c-2-1-4-1-6 0v2l-3 1z" fill="#fff" stroke="none"/></svg></span><span><b>Missed call</b>Unknown caller</span></div>
-     <div class="bub in"><span class="auto">AUTO-REPLY</span><br>Hi, this is Noble Electric. Sorry we missed your call! What can we help with? We'll get back to you shortly.<small>Sent 3 seconds later</small></div>
-     <div class="bub out">Outlet in the garage stopped working.</div>
-     <div class="bub in typing" aria-hidden="true"><i></i><i></i><i></i></div>
-    </div>
+<section class="band dark" id="textback" aria-labelledby="m-h">
+ <div class="wrap mc">
+  <div>
+   <p class="kicker">Missed-call text-back</p>
+   <h2 id="m-h">Never miss a call — we text you back in seconds</h2>
+   <p>Up in an attic or out on a dock, you can't always pick up. With missed-call text-back, every call you miss gets an instant, friendly text from Noble Electric, so the customer stays with you instead of dialing the next name on the list.</p>
+   <ul class="ticks"><li>Automatic reply within seconds</li><li>Your own wording</li><li>No app to learn</li></ul>
+  </div>
+  <div class="phone" role="img" aria-label="Phone screen showing a missed call followed by an automatic text from Noble Electric">
+   <div class="screen">
+    <div class="time">Today 2:14 PM</div>
+    <div class="missed"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" style="color:#fff"><use href="#phone"/></svg></span><span><b>Missed call</b>(864) 555-0142</span></div>
+    <div class="bub in"><span class="from">Noble Electric</span><br>Hi, this is Noble Electric. Sorry we missed your call! What can we help with? We'll get back to you shortly.<small>Sent 3 seconds later</small></div>
+    <div class="bub out">Breaker for the kitchen keeps tripping.</div>
+    <div class="bub in typing" aria-hidden="true"><i></i><i></i><i></i></div>
    </div>
   </div>
  </div>
 </section>
 
-<section id="reviews" aria-labelledby="r-h">
- <span class="node" aria-hidden="true" style="top:56px"></span>
- <div class="open">
+<section class="band" id="reviews" aria-labelledby="r-h">
+ <div class="wrap">
+  <p class="kicker">Reviews</p>
   <h2 id="r-h">What customers might say</h2>
   <span class="label">Sample reviews</span>
   <div class="revs">
-   <figure class="rev" style="margin:0"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote style="margin:6px 0">"Quick to respond and the work looked clean. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
-   <figure class="rev" style="margin:0"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote style="margin:6px 0">"Explained the problem plainly and fixed it the same visit. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
-   <figure class="rev" style="margin:0"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote style="margin:6px 0">"Easy to schedule, showed up when they said. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
+   <figure class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"Quick to respond and the work looked clean. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
+   <figure class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"Explained the problem plainly and fixed it the same visit. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
+   <figure class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"Easy to schedule, showed up when they said. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
   </div>
  </div>
 </section>
 
-<section id="quote" aria-labelledby="q-h">
- <span class="node" aria-hidden="true" style="top:56px"></span>
- <div class="sheet">
-  <span class="tag">Sheet &middot; Quote</span>
+<section class="band dark" id="area" aria-labelledby="a-h">
+ <div class="wrap area">
+  <div>
+   <p class="kicker">Service area</p>
+   <h2 id="a-h">Serving the <span class="hot">Seneca area</span></h2>
+   <p>Based in Seneca in Oconee County. Not sure if your address is covered? Call or text and ask.</p>
+   <ul class="contact">
+    <li><svg viewBox="0 0 24 24" style="color:#ff4040" aria-hidden="true"><use href="#phone"/></svg><a href="tel:+18642807023">(864) 280-7023<small>Mobile &middot; call or text</small></a></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="#ff4040" stroke-width="2.2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:nobleelectricsc@gmail.com">nobleelectricsc@gmail.com<small>Email</small></a></li>
+   </ul>
+  </div>
+  <div class="map">
+   <svg viewBox="40 6 314 306" role="img" aria-label="Map of Oconee, Pickens, Anderson and Greenville counties with Seneca marked as Noble Electric's home base">
+    <path d="M196.5,55.2L222.6,40.3L242.6,33.0L270.4,22.9L276.5,25.1L287.0,12.0L295.7,18.8L329.6,17.6L327.0,119.3L346.1,138.3L324.4,196.6L324.4,211.8L305.2,226.9L287.0,242.1L201.7,308.0L201.7,295.1L193.9,284.5L189.6,269.4L179.1,261.8L176.5,245.6L169.6,229.5L162.6,226.4L140.9,228.4L126.9,223.6L113.9,211.5L98.3,191.3L83.5,189.5L57.4,167.3L53.9,158.7L61.7,146.1L60.9,137.0L83.5,110.5L110.4,93.3L113.0,75.1L137.4,67.3L164.3,58.7L192.2,50.1L196.5,55.2Z" fill="#232323" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+    <circle cx="150.7" cy="167.7" r="26" fill="#e3001b" opacity=".16"/>
+    <circle cx="150.7" cy="167.7" r="26" fill="none" stroke="#ff4040" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <g fill="#c4c4c4" font-family="Barlow,sans-serif" font-weight="600" font-size="12.5">
+     <circle cx="123.8" cy="144.5" r="2.6"/><text x="120" y="137" text-anchor="end">Walhalla</text>
+     <circle cx="116" cy="173.9" r="2.6"/><text x="111" y="178" text-anchor="end">Westminster</text>
+     <circle cx="178.7" cy="168.4" r="2.6"/><text x="184" y="165">Clemson</text>
+     <circle cx="224.1" cy="221.3" r="2.6"/><text x="230" y="225">Anderson</text>
+     <circle cx="286.2" cy="118.6" r="2.6"/><text x="286.2" y="108" text-anchor="middle">Greenville</text>
+     <circle cx="235.9" cy="125.4" r="2.6"/><text x="241" y="129">Easley</text>
+    </g>
+    <path d="M150.7 151.5l-5.6 9.2h4.1l-1.8 7.3 7.6-10.6h-4.3z" fill="#fff"/>
+    <circle cx="150.7" cy="167.7" r="3.6" fill="#fff" stroke="#e3001b" stroke-width="2"/>
+    <text x="150.7" y="209" text-anchor="middle" font-family="Barlow,sans-serif" font-weight="700" font-size="15" fill="#fff">SENECA</text>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="quote" aria-labelledby="q-h">
+ <div class="wrap">
+  <p class="kicker">Quote</p>
   <h2 id="q-h">Request a quote</h2>
-  <p><strong>Service area:</strong> Seneca area.</p>
+  <p>Tell us what's going on. Prefer to talk? <a href="tel:+18642807023">Call or text (864) 280-7023</a> or email <a href="mailto:nobleelectricsc@gmail.com">nobleelectricsc@gmail.com</a>.</p>
   <form id="f" novalidate>
    <div><label for="n">Your name</label><input id="n" name="n" autocomplete="name"></div>
    <div><label for="p">Phone</label><input id="p" name="p" type="tel" autocomplete="tel"></div>
-   <div class="full"><label for="t">What do you need?</label><select id="t"><option>Outlets or switches</option><option>Troubleshooting</option><option>Dock inspection or repair</option><option>Lights or fans</option><option>Panel or service upgrade</option><option>Generator transfer switch</option><option>Remodel or new construction</option><option>Commercial</option></select></div>
+   <div class="full"><label for="t">What do you need?</label><select id="t"><option>Troubleshooting (lights, outlets, breakers)</option><option>Panel upgrade or new panel</option><option>Light fixtures or fans</option><option>Outdoor or landscape lighting</option><option>Dock power, inspection or repair</option><option>Generator transfer switch</option><option>Shop or outbuilding wiring</option><option>Remodel or new construction</option><option>Commercial</option></select></div>
    <div class="full"><label for="d">Details</label><textarea id="d" name="d"></textarea></div>
    <div class="full"><button class="btn" type="submit">Send quote request</button></div>
-   <div class="full msg" id="msg" role="status" aria-live="polite">Demo only — this form is not connected and nothing was sent. Please call 864-280-7023.</div>
+   <div class="full msg" id="msg" role="status" aria-live="polite">Demo only — this form is not connected and nothing was sent. Please call or text (864) 280-7023.</div>
   </form>
  </div>
 </section>
 </main>
 
-<footer>Demo preview built by David — not the official site. Noble Electric LLC, Seneca area.</footer>
+<footer>Demo preview built by David — not the official site.<br>Noble Electric LLC &middot; Seneca area &middot; <a href="tel:+18642807023">(864) 280-7023</a> &middot; <a href="mailto:nobleelectricsc@gmail.com">nobleelectricsc@gmail.com</a></footer>
 
-<div class="callbar"><a href="tel:+18642807023">Call 864-280-7023</a></div>
+<div class="callbar"><a class="btn" href="tel:+18642807023"><svg aria-hidden="true"><use href="#phone"/></svg>Call or text (864) 280-7023</a></div>
 <script>
-document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('msg');m.classList.add('show');m.focus&&m.setAttribute('tabindex','-1');m.focus();});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('msg');m.classList.add('show');m.setAttribute('tabindex','-1');m.focus();});
 </script>
 </body>
 </html>
