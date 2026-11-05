@@ -9,7 +9,7 @@ Every `.md` file and `leads/` stay off the live site via `.assetsignore`.
 ## Every demo needs
 - `<meta name="robots" content="noindex, nofollow">` and a fixed banner reading "Demo preview built by David — not the official site."
 - Sections: hero, services, why-us, a "Never miss a call — we text you back in seconds" phone/SMS mock, "Sample reviews" (clearly placeholder), a quote form, the service area, and a tap-to-call link with the real phone number.
-- One self-contained `demos/<slug>/index.html`, mobile-first, with no real photos of the business.
+- One `demos/<slug>/index.html` (inline CSS/JS), mobile-first. Real photos and logos are allowed only when David supplies them (screenshots of their Facebook, Google, menus or site); otherwise use CSS/SVG art.
 - Use only facts from the lead record. Never invent ratings, owners, years, hours, prices, menu items, "free estimates" or licenses.
 
 ## Theme from the real business first
@@ -22,7 +22,8 @@ Every `.md` file and `leads/` stay off the live site via `.assetsignore`.
 - A dead or broken website is a pitch angle: put it in the text, phone script and email.
 - Related businesses that appear in their posts (sister restaurants, partners) are separate leads. Note them in the tracker; never mix their info into this demo.
 - If David says something in a screenshot is unrelated (e.g. a random website), ignore it everywhere.
-- Then re-theme the demo from their real colors, logo style and photos (don't copy their logo or photos), and rewrite that lead's text, phone script and email in the Lead Tracker to use the new details.
+- Use their real logo and best photos on the demo: crop cleanly from the screenshots with Python/PIL into `demos/<slug>/img/` (WebP, max 1200px wide, about 150KB or less each), with no app UI in the crop (side-panel tabs, play buttons, Google Maps overlays, Facebook chrome). Give logos on a plain white background a transparent background; keep busy-background logos as a neat rounded badge. Add descriptive alt text. Skip any image that's blurry or too low-res.
+- Then re-theme the demo from their real colors, logo style and photos, and rewrite that lead's text, phone script and email in the Lead Tracker to use the new details.
 
 ## Illustrations must be accurate
 - Any map, state shape, or town layout must match real geography. Use `tools/geo/sc-outline.json` (all of SC) or `tools/geo/upstate-outline.json` (Oconee, Pickens, Anderson and Greenville counties). Each has an SVG path plus town x,y positions in its viewBox. Never hand-draw a blob and call it SC.
