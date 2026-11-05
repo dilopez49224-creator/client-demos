@@ -42,6 +42,7 @@ a{color:var(--red-d);font-weight:600}
 /* top brand bar */
 .brand{display:flex;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}
 .brand svg{width:44px;height:52px;flex:none}
+.brand .helm{width:34px;height:auto;flex:none;border-radius:4px}
 .brand .name{font:800 1.9rem/1 "Barlow Condensed",sans-serif;text-transform:uppercase;color:var(--red-hi);letter-spacing:.01em}
 .brand .sub{display:block;font:600 .8rem/1.3 "Barlow",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#d6d6d6;margin-top:3px}
 .brand .tel{margin-left:auto;display:none;text-decoration:none;font-weight:700}
@@ -75,6 +76,12 @@ a{color:var(--red-d);font-weight:600}
 .dock{display:grid;gap:26px;align-items:center}
 .dock > svg{display:block;width:100%;height:auto;border-radius:8px;border:2px solid #333}
 /* why */
+.gal{display:grid;gap:14px;margin-top:22px}
+.gal figure{margin:0;background:var(--coal);border:2px solid var(--line);border-radius:8px;overflow:hidden}
+.gal img{display:block;width:100%;height:auto;aspect-ratio:5/6;object-fit:cover}
+.gal .wide img{aspect-ratio:auto}
+.gal figcaption{padding:10px 14px;font-weight:700;color:#fff;border-top:3px solid var(--red)}
+.foot-logo{display:block;width:min(100%,275px);height:auto;margin:0 auto 14px;border-radius:6px}
 .why{display:grid;gap:14px;margin-top:22px}
 .why > div{background:var(--snow);border-radius:8px;padding:18px 18px 8px;border-top:5px solid var(--ink)}
 .why > div.safe{background:var(--black);color:#fff;border-top-color:var(--red)}
@@ -140,6 +147,8 @@ footer a{color:#fff}
  .svc{grid-template-columns:repeat(3,1fr)}
  .dock{grid-template-columns:1fr 1.1fr;gap:40px}
  .why{grid-template-columns:repeat(4,1fr)}
+ .gal{grid-template-columns:repeat(3,1fr)}
+ .gal .wide{grid-column:1/-1}
  .mc{grid-template-columns:1.1fr .9fr}
  .revs{grid-template-columns:repeat(3,1fr)}
  .area{grid-template-columns:.9fr 1.1fr;gap:40px}
@@ -162,7 +171,7 @@ footer a{color:#fff}
 
 <header class="dark">
  <div class="wrap brand">
-  <svg aria-hidden="true"><use href="#shield"/></svg>
+  <img class="helm" src="img/logo-icon.webp" width="88" height="154" alt="Noble Electric logo: a white Spartan helmet with a red lightning bolt">
   <div><span class="name">Noble Electric</span><span class="sub">Licensed electrician &middot; Seneca, SC</span></div>
   <a class="tel" href="tel:+18642807023">(864) 280-7023</a>
  </div>
@@ -250,6 +259,19 @@ footer a{color:#fff}
    <li><svg class="ic" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="2.6" stroke-linejoin="round"><path d="M4 18L20 6l16 12v18H4z"/><path d="M11 25h18" stroke="#e3001b"/><rect x="10" y="28" width="6" height="8"/><rect x="24" y="28" width="6" height="5"/></svg><h3>Shop &amp; outbuilding wiring</h3><p>Subpanels, LED lighting and outlets for workshops, garages and sheds.</p></li>
   </ul>
   <p class="also">Also on the list: dock inspections and repairs, remodels, new construction and commercial work.</p>
+ </div>
+</section>
+
+<section class="band dark" id="work" aria-labelledby="g-h">
+ <div class="wrap">
+  <span class="kicker">Real jobs</span>
+  <h2 id="g-h">Recent <span class="hot">work</span></h2>
+  <div class="gal">
+   <figure class="wide"><img src="img/house-lighting-night.webp" width="1200" height="636" loading="lazy" alt="A large craftsman-style house at night with soffit and gable lighting glowing along the rooflines and a lit tree in the yard"><figcaption>Exterior and landscape lighting</figcaption></figure>
+   <figure><img src="img/panel-install.webp" width="711" height="846" loading="lazy" alt="A new breaker panel installed between wall studs in a house under construction, with service cables entering the top and outlet boxes below"><figcaption>New construction panel</figcaption></figure>
+   <figure><img src="img/meter-transfer-switch.webp" width="710" height="861" loading="lazy" alt="An outdoor electric meter with gray disconnect and transfer switch boxes mounted on a brown wooden deck frame"><figcaption>Meter and transfer switch</figcaption></figure>
+   <figure><img src="img/workshop-wiring.webp" width="710" height="856" loading="lazy" alt="A wired workshop interior with LED shop lights on the rafters, a subpanel on the wall and outlets along the studs"><figcaption>Workshop wiring and lighting</figcaption></figure>
+  </div>
  </div>
 </section>
 
@@ -384,7 +406,7 @@ footer a{color:#fff}
 </section>
 </main>
 
-<footer>Demo preview built by David — not the official site.<br>Noble Electric LLC &middot; Seneca area &middot; <a href="tel:+18642807023">(864) 280-7023</a> &middot; <a href="mailto:nobleelectricsc@gmail.com">nobleelectricsc@gmail.com</a></footer>
+<footer><img class="foot-logo" src="img/logo-lockup.webp" width="550" height="154" loading="lazy" alt="Noble Electric logo: Spartan helmet with a red bolt beside the words Noble Electric in red">Demo preview built by David — not the official site.<br>Noble Electric LLC &middot; Seneca area &middot; <a href="tel:+18642807023">(864) 280-7023</a> &middot; <a href="mailto:nobleelectricsc@gmail.com">nobleelectricsc@gmail.com</a></footer>
 
 <div class="callbar"><a class="btn" href="tel:+18642807023"><svg aria-hidden="true"><use href="#phone"/></svg>Call or text (864) 280-7023</a></div>
 <script>
