@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mike Durham Auto | Auto repair in Central, SC</title>
+<meta name="description" content="Honest auto repair on West Main Street in Central, SC. Call ahead, appointments book up.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --steel:#1F3A52; --safety:#F26A1B; --wash:#E3E9ED; --ticket:#F7F9FA; --asphalt:#26303A;
+  --disp:'Saira Condensed','Arial Narrow',Impact,sans-serif;
+  --body:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.55 var(--body);color:var(--asphalt);background:var(--wash)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--safety);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:var(--asphalt);color:#cdd6dc;font:500 13px var(--body);text-align:center;padding:7px 12px}
+.top{background:var(--steel);color:#fff}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font:800 30px/1 var(--disp);letter-spacing:.01em}
+.status{display:inline-flex;align-items:center;gap:10px;font-weight:600;background:#fff;color:var(--asphalt);border-radius:99px;padding:7px 16px}
+.dot{width:12px;height:12px;border-radius:50%;background:#98a3ab}
+.status.open .dot{background:#2E8B57}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:var(--safety);color:#fff;font:600 17px var(--body);border:0;border-radius:4px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#d85a10}
+h1{font:800 clamp(44px,7vw,84px)/.95 var(--disp);color:var(--steel);max-width:11ch}
+h2{font:800 clamp(30px,4.4vw,44px)/1 var(--disp);color:var(--steel);margin-bottom:16px}
+.hero{padding:34px 0 56px}
+.hero .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:start}
+.lede{font-size:20px;max-width:30ch;margin:16px 0 14px}
+.rating{font-weight:600}
+.ticket{background:var(--ticket);border:2px solid var(--steel);border-radius:4px;padding:22px 22px 24px;position:relative;box-shadow:8px 8px 0 var(--steel)}
+.ticket h2{margin-bottom:4px;font-size:34px}
+.ticket .sub{margin-bottom:14px;font-size:15px;color:#52606b}
+.chips{display:flex;flex-wrap:wrap;gap:8px;border:0;padding:0;margin:0 0 16px}
+.chips legend{font-weight:600;margin-bottom:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0}
+.chips span{display:inline-block;padding:9px 14px;border:2px solid var(--steel);border-radius:4px;cursor:pointer;min-height:44px;background:#fff}
+.chips input:checked+span{background:var(--steel);color:#fff;font-weight:600}
+.chips input:focus-visible+span{outline:3px solid var(--safety);outline-offset:2px}
+form{display:grid;gap:12px}
+form label.f{display:grid;gap:5px;font-weight:600;font-size:15px}
+input[type=text],input[type=tel],textarea{font:inherit;padding:11px;border-radius:4px;border:2px solid #b9c4cc;background:#fff;color:var(--asphalt);width:100%}
+.note{min-height:1.5em;font-weight:600;color:var(--steel)}
+.info{background:var(--steel);color:#fff;padding:54px 0}
+.info .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px}
+.info h2{color:#fff}
+.hrs{border-collapse:collapse;width:100%;font-size:18px}
+.hrs td{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.25)}
+.hrs td:last-child{text-align:right;font-weight:600}
+.hrs tr.today td{color:#FFB27F}
+.info p{margin-bottom:10px}
+.info a{color:#FFB27F}
+.say{padding:56px 0}
+.say blockquote{font:600 clamp(26px,4vw,44px)/1.08 var(--disp);color:var(--steel);max-width:26ch}
+.say cite{display:block;margin-top:12px;font-style:normal;font-size:15px}
+.ahead{margin-top:12px;font-weight:600}
+footer{padding:22px 0;font-size:15px}
+@media (max-width:860px){.hero .grid,.info .grid{grid-template-columns:1fr}.ticket{box-shadow:5px 5px 0 var(--steel)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* --- Demo preview additions (banner, text-back, sample reviews) --- */
+:root{--dp-banner-h:40px}
+html{scroll-padding-top:var(--dp-banner-h)}
+body{padding-top:var(--dp-banner-h)}
+.dp-banner{position:fixed;top:0;left:0;right:0;z-index:1000;min-height:40px;display:flex;align-items:center;justify-content:center;padding:8px 16px;background:var(--safety);color:#fff;font:600 14px/1.3 var(--body);text-align:center;box-shadow:0 1px 0 rgba(0,0,0,.12)}
+.dp-textback{background:var(--ticket);padding:60px 0}
+.dp-textback .dp-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.dp-textback p{max-width:46ch;margin-bottom:14px}
+.dp-textback .dp-fine{font-size:14px;opacity:.75;margin:0}
+.dp-phone{width:290px;max-width:100%;margin:0 auto;background:var(--steel);border-radius:38px;padding:12px;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.dp-screen{background:#fff;border-radius:28px;padding:14px 12px 18px;min-height:470px;display:flex;flex-direction:column;gap:12px;color:var(--steel);font:14px/1.4 var(--body)}
+.dp-notch{width:88px;height:22px;background:var(--steel);border-radius:0 0 14px 14px;margin:-14px auto 10px}
+.dp-missed{display:flex;align-items:center;gap:10px;background:var(--wash);border:1px solid #b9c4cc;border-radius:14px;padding:10px 12px}
+.dp-missed svg{flex:none;width:34px;height:34px;border-radius:9px;background:#C62828;padding:7px;color:#fff}
+.dp-missed b{display:block;font-size:14px}
+.dp-missed small{display:block;font-size:12px;opacity:.75}
+.dp-thread{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.dp-from{font-size:12px;font-weight:600;opacity:.7;padding-left:6px}
+.dp-bubble{align-self:flex-start;max-width:88%;background:var(--steel);color:#fff;padding:10px 13px;border-radius:18px 18px 18px 4px;font-size:14px}
+.dp-meta{font-size:11px;opacity:.65;padding-left:6px}
+.dp-reviews{background:var(--wash);padding:60px 0;border-top:2px solid var(--steel)}
+.dp-reviews .dp-fine{font-size:15px;opacity:.8;margin:-8px 0 22px;max-width:60ch}
+.dp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;list-style:none;padding:0}
+.dp-card{background:var(--ticket);border:2px solid var(--steel);border-radius:4px;box-shadow:8px 8px 0 var(--steel);padding:20px 22px 22px}
+.dp-stars{color:var(--safety);font-size:18px;letter-spacing:2px;margin-bottom:8px}
+.dp-card p{margin-bottom:12px}
+.dp-card cite{font-style:normal;font-weight:700;font-size:15px}
+.dp-card cite small{display:block;font-weight:500;font-size:13px;opacity:.7}
+@media (max-width:820px){.dp-textback .dp-grid,.dp-cards{grid-template-columns:1fr}.dp-phone{margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="dp-banner">Demo preview built by David — not the official site.</div>
+<div class="demo">Sample mockup prepared for Mike Durham Auto. This is not their official site.</div>
+
+<div class="top"><div class="wrap">
+  <div class="logo">Mike Durham Auto</div>
+  <span class="status" id="status" role="status"><i class="dot"></i><span>Checking hours</span></span>
+</div></div>
+
+<main>
+<section class="hero"><div class="wrap grid">
+  <div>
+    <h1>A mechanic you can trust.</h1>
+    <p class="lede">Auto repair on West Main Street in Central, SC.</p>
+    <p class="rating">4.9 stars from 74 Google reviews</p>
+    <p class="ahead">Appointments book up. Call ahead: <a href="tel:+18646393400">864-639-3400</a></p>
+  </div>
+  <div class="ticket">
+    <h2>Tell us what the car is doing</h2>
+    <p class="sub">Fill out the repair ticket and we'll call you back.</p>
+    <form id="qf">
+      <fieldset class="chips"><legend>Pick what fits</legend>
+        <label><input type="radio" name="c" value="The check engine light is on."><span>Check engine light</span></label>
+        <label><input type="radio" name="c" value="The brakes squeal or grind."><span>Brakes squeal or grind</span></label>
+        <label><input type="radio" name="c" value="It won't start."><span>Won't start</span></label>
+        <label><input type="radio" name="c" value="I need an oil change."><span>Oil change</span></label>
+        <label><input type="radio" name="c" value="The A/C is not cold."><span>A/C not cold</span></label>
+        <label><input type="radio" name="c" value=""><span>Something else</span></label>
+      </fieldset>
+      <label class="f">Your name<input type="text" required autocomplete="name"></label>
+      <label class="f">Phone<input type="tel" required autocomplete="tel"></label>
+      <label class="f">Year, make and model<input type="text" placeholder="2015 Ford Expedition"></label>
+      <label class="f">What's going on?<textarea id="concern" rows="3"></textarea></label>
+      <button class="btn" type="submit">Send my repair ticket</button>
+      <p class="note" id="note" role="status"></p>
+    </form>
+  </div>
+</div></section>
+
+<section class="info"><div class="wrap grid">
+  <div>
+    <h2>Shop hours</h2>
+    <table class="hrs">
+      <tr data-days="Mon Tue Wed Thu Fri"><td>Monday to Friday</td><td>8am to 5pm</td></tr>
+      <tr data-days="Sat Sun"><td>Saturday and Sunday</td><td>Closed</td></tr>
+    </table>
+  </div>
+  <div>
+    <h2>Find the shop</h2>
+    <p>224 W Main St<br>Central, SC 29630</p>
+    <p><a href="https://maps.apple.com/?q=Mike+Durham+Auto+224+W+Main+St+Central+SC">Open in Maps</a></p>
+  </div>
+  <div>
+    <h2>Call</h2>
+    <p><a href="tel:+18646393400">864-639-3400</a></p>
+    <p>Calling is the fastest way to get on the schedule.</p>
+  </div>
+</div></section>
+
+<section class="say"><div class="wrap">
+  <blockquote>"I can trust Mike to do an incredible job repairing my vehicle without the fear of being overcharged."</blockquote>
+  <cite>Google review, 5 stars</cite>
+</div></section>
+
+<section class="dp-textback" id="textback"><div class="wrap dp-grid">
+  <div>
+    <h2>Never miss a call — we text you back in seconds</h2>
+    <p>When a call to Mike Durham Auto goes unanswered, the caller gets a text back right away, so they know you saw them and can reply without calling again.</p>
+    <p class="dp-fine">Sample message shown. The wording is set with Mike Durham Auto before it goes live.</p>
+  </div>
+  <div class="dp-phone" role="img" aria-label="Phone showing a missed call followed by an instant text reply from Mike Durham Auto">
+    <div class="dp-screen">
+      <div class="dp-notch"></div>
+      <div class="dp-missed">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2z"/><path d="M15 3l6 6M21 3l-6 6"/></svg>
+        <div><b>Missed call</b><small>Incoming call &middot; just now</small></div>
+      </div>
+      <div class="dp-thread">
+        <span class="dp-from">Mike Durham Auto</span>
+        <div class="dp-bubble">Hi, this is Mike Durham Auto. Sorry we missed your call! Tell us what the car is doing and we'll get you on the schedule.</div>
+        <span class="dp-meta">Sent automatically, seconds after the missed call</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="dp-reviews" id="sample-reviews"><div class="wrap">
+  <h2>Sample reviews</h2>
+  <p class="dp-fine">Placeholder reviews for this preview only. They are not from real customers; the business's own reviews go here.</p>
+  <ul class="dp-cards">
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Straight answers and no upsell. Car was ready when promised."</p><cite>Tom<small>Sample review</small></cite></li>
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Explained the problem in plain English and fixed it the first time."</p><cite>Angela<small>Sample review</small></cite></li>
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Fair pricing and they called before doing any extra work."</p><cite>Kevin<small>Sample review</small></cite></li>
+  </ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">Mike Durham Auto &middot; 224 W Main St, Central, SC &middot; 864-639-3400</div></footer>
+
+<script>
+const HRS={Mon:[480,1020],Tue:[480,1020],Wed:[480,1020],Thu:[480,1020],Fri:[480,1020]};
+const ORDER=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function fmt(m){const h=Math.floor(m/60),mm=m%60,ap=h>=12?'PM':'AM',h12=((h+11)%12)+1;return h12+(mm?':'+String(mm).padStart(2,'0'):'')+' '+ap}
+function now(){
+  const f=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'});
+  const p=Object.fromEntries(f.formatToParts(new Date()).map(x=>[x.type,x.value]));
+  return {d:p.weekday,m:(+p.hour)*60+(+p.minute)};
+}
+(function(){
+  const t=now(), el=document.getElementById('status'), txt=el.querySelector('span:last-child');
+  const h=HRS[t.d];
+  if(h&&t.m>=h[0]&&t.m<h[1]){el.classList.add('open');txt.textContent='Open now, until '+fmt(h[1])}
+  else{
+    let i=ORDER.indexOf(t.d),nx=null;
+    for(let k=0;k<8;k++){const d=ORDER[(i+k)%7],hh=HRS[d];if(hh&&(k>0||t.m<hh[0])){nx={d:d,k:k,o:hh[0]};break}}
+    txt.textContent=nx?('Closed. Opens '+(nx.k===0?'today':nx.k===1?'tomorrow':nx.d)+' at '+fmt(nx.o)):'Closed';
+  }
+  document.querySelectorAll('.hrs tr').forEach(r=>{if(r.dataset.days.split(' ').includes(t.d))r.classList.add('today')});
+})();
+document.querySelectorAll('input[name=c]').forEach(r=>r.addEventListener('change',()=>{document.getElementById('concern').value=r.value}));
+document.getElementById('qf').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('note').textContent='Demo form. When the site is live, this sends your ticket straight to the shop.';
+});
+</script>
+<script>
+(function(){var b=document.querySelector('.dp-banner');if(!b)return;function f(){document.documentElement.style.setProperty('--dp-banner-h',b.offsetHeight+'px')}f();addEventListener('resize',f);addEventListener('load',f)})();
+</script>
+</body>
+</html>
