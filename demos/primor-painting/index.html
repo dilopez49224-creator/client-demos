@@ -22,9 +22,9 @@ html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;padding-top:2.6rem;padding-bottom:4.75rem;font-family:"Instrument Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--wall);overflow-x:hidden}
 h1,h2,h3{font-family:Syne,system-ui,sans-serif;font-weight:800;line-height:1.05;margin:0 0 .5em;letter-spacing:-.025em}
-h1{font-size:clamp(2.4rem,8vw,4.8rem)}
+h1{font-size:clamp(2.4rem,7vw,4.1rem)}
 h2{font-size:clamp(1.8rem,5vw,2.8rem)}
-h3{font-size:1.15rem;font-weight:700}
+h3{font-size:1.25rem;font-weight:700}
 p{margin:0 0 1em}
 a{color:var(--plum-d)}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--plum);outline-offset:3px;border-radius:4px}
@@ -42,7 +42,7 @@ section{padding:4.5rem 0}
 
 header.site{position:sticky;top:2.6rem;z-index:90;background:rgba(250,250,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
-.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font-family:Syne,sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:.04em}
+.brand{display:flex;align-items:center;gap:.6rem;min-height:44px;text-decoration:none;color:var(--ink);font-family:Syne,sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:.04em}
 .brand .chips{display:flex;gap:3px}
 .brand .chips i{width:9px;height:26px;border-radius:3px;display:block}
 .brand small{font-family:"Instrument Sans",sans-serif;font-weight:400;font-size:.8rem;letter-spacing:.02em;color:var(--mute);margin-left:.2rem}
@@ -97,13 +97,23 @@ header.site{position:sticky;top:2.6rem;z-index:90;background:rgba(250,250,248,.9
 .serv p{margin:0;color:var(--mute);font-size:.98rem}
 .serv .code{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:.4rem;display:block}
 
+/* sheen guide */
+.sheen{margin-top:2.75rem;padding-top:1.75rem;border-top:1px solid var(--line)}
+.sheen h3{font-size:1rem;margin-bottom:1.1rem}
+.sheen ul{list-style:none;margin:0;padding:0;display:grid;gap:1.1rem}
+@media (min-width:720px){.sheen ul{grid-template-columns:repeat(4,1fr);gap:1.5rem}}
+.sheen li{display:grid;grid-template-columns:auto 1fr;gap:.85rem;align-items:start;font-size:.95rem;line-height:1.45;color:var(--mute)}
+.sheen li b{display:block;color:var(--ink);font-family:Syne,sans-serif;font-weight:700;font-size:1rem;margin-bottom:.15rem}
+.sheen .sw{width:40px;height:40px;border-radius:7px;background:var(--plum);position:relative;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(43,36,56,.08)}
+.sheen .sw::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,var(--gloss)) 0 46%,transparent 47%)}
+
 /* why */
-.why-grid{display:grid;gap:1.25rem;margin-top:2rem}
-@media (min-width:720px){.why-grid{grid-template-columns:repeat(3,1fr)}}
-.why{padding:1.5rem;border-radius:var(--r);background:#fff;border:1px solid var(--line);border-top:6px solid var(--c)}
-.why .ic{width:44px;height:44px;border-radius:50%;background:var(--wall-2);color:var(--plum);display:grid;place-items:center;margin-bottom:1rem}
-.why .ic svg{width:22px;height:22px}
-.why p{margin:0;color:var(--mute)}
+.why-grid{display:grid;gap:0;margin-top:2.25rem;border-top:1px solid var(--line)}
+@media (min-width:720px){.why-grid{grid-template-columns:repeat(3,1fr);column-gap:2.5rem}}
+.why{padding:1.5rem 0;border-bottom:1px solid var(--line)}
+@media (min-width:720px){.why{border-bottom:0;padding:1.75rem 0 0}}
+.why .dot{display:block;width:36px;height:14px;border-radius:3px;background:var(--c);margin-bottom:1rem}
+.why p{margin:0;color:var(--mute);max-width:38ch}
 
 /* missed call */
 .mc{background:var(--plum-x);color:#fff}
@@ -132,9 +142,9 @@ header.site{position:sticky;top:2.6rem;z-index:90;background:rgba(250,250,248,.9
 .rev-note{display:inline-block;background:var(--butter);color:var(--ink);font-family:Syne,sans-serif;font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .7rem;border-radius:6px;margin-bottom:1rem}
 .rev-grid{display:grid;gap:1.25rem;margin-top:1.5rem}
 @media (min-width:720px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
-.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;border-left:6px solid var(--c)}
+.rev{padding:.25rem 0 .25rem 1.25rem;border-left:5px solid var(--c)}
 .rev .stars{color:var(--plum);letter-spacing:.1em}
-.rev p{font-style:italic;margin:.6rem 0 .8rem}
+.rev p{font-style:italic;margin:.6rem 0 .8rem;max-width:34ch}
 .rev footer{font-size:.85rem;color:var(--mute)}
 
 /* form */
@@ -211,9 +221,9 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
         <p class="lead">PRIMOR paints the inside of homes around Seneca: clean lines, even coats, and a room you can move back into fast.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="tel:8645564453">Call 864-556-4453</a>
-          <a class="btn btn-ghost" href="sms:8645564453">Text us instead</a>
+          <a class="btn btn-ghost" href="sms:8645564453">Text a photo of the room</a>
         </div>
-        <p class="hero-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Calls and texts both welcome. Send a photo of the room and we'll go from there.</p>
+        <p class="hero-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Calls and texts both welcome. A photo and a rough room count is enough to start.</p>
       </div>
       <div class="fan" role="img" aria-label="Illustration of five paint swatch cards fanned out: plum, blush, sage, butter and sky">
         <div class="chip" style="--rot:-28deg;--c:var(--plum)"><span class="hole"></span><div class="col"></div><div class="lab"><b>Plum Dusk</b><span>PR-01 · Matte</span></div></div>
@@ -246,6 +256,15 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
           <div class="body"><span class="code">Scope · whole interior</span><h3>Whole-home interior</h3><p>Moving in, selling, or just done with the old color everywhere. A full interior repaint, room by room, start to finish.</p></div>
         </article>
       </div>
+      <div class="sheen">
+        <h3>Not sure which sheen? A quick guide.</h3>
+        <ul>
+          <li><span class="sw" style="--gloss:.06" aria-hidden="true"></span><span><b>Flat / matte</b>Ceilings and low-traffic bedrooms. Hides roller marks and small wall flaws.</span></li>
+          <li><span class="sw" style="--gloss:.18;background:var(--sage)" aria-hidden="true"></span><span><b>Eggshell</b>Living rooms, dining rooms and hallways. Soft glow, easy to touch up.</span></li>
+          <li><span class="sw" style="--gloss:.38;background:var(--blush)" aria-hidden="true"></span><span><b>Satin</b>Kitchens, baths and kids' rooms. Wipes clean without shining.</span></li>
+          <li><span class="sw" style="--gloss:.62;background:var(--butter)" aria-hidden="true"></span><span><b>Semi-gloss</b>Trim, doors and cabinets. Tough, scrubbable and catches the light.</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -255,17 +274,17 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
       <h2 id="why-h"><span class="stripe" style="--stripe:var(--butter)">Easy to reach,</span> easy to live with.</h2>
       <div class="why-grid">
         <article class="why" style="--c:var(--plum)">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></div>
+          <span class="dot" aria-hidden="true"></span>
           <h3>Call or text, your choice</h3>
           <p>PRIMOR takes calls and texts. Snap a photo of the room, send it over, and skip the phone tag.</p>
         </article>
         <article class="why" style="--c:var(--blush)">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/></svg></div>
+          <span class="dot" aria-hidden="true"></span>
           <h3>Interior is the specialty</h3>
           <p>Not a jack-of-all-trades. Interior walls are the whole job, so the prep, cut-in and cleanup get full attention.</p>
         </article>
         <article class="why" style="--c:var(--sage)">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <span class="dot" aria-hidden="true"></span>
           <h3>Local to Seneca</h3>
           <p>Based in the Seneca area, so estimates and start dates don't depend on a crew driving in from an hour away.</p>
         </article>
