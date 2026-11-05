@@ -41,6 +41,8 @@ All 17 use the design skill: 14 got a separate polish pass and 3 (one-shot-exter
 - `demos/primor-painting/`
 - `demos/jl-stone-painting/`
 
+**Added later (5 more, for pipeline leads l10-l14):** `demos/charles-als-barber/`, `demos/ferkalo-handyman/`, `demos/pressley-auto/`, `demos/one-stop-shop-auto/`, `demos/towne-pendleton/`. That makes 22 demo sites in total.
+
 Root `index.html` is blank except for noindex, and `robots.txt` disallows all crawlers.
 
 ## Part 3: Vercel upgrades: done (9/9)
