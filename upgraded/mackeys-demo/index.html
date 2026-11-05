@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mackey's Exterior Pro Wash | Pressure washing in Pendleton, SC</title>
+<meta name="description" content="Pressure washing for houses, driveways, porches and flagstone in Pendleton, SC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hose:#0E2A33; --spray:#0097A9; --rinse:#E4F1F2; --suds:#FFFFFF; --mildew:#5E6B3A;
+  --line:rgba(14,42,51,.18);
+  --disp:'Barlow Condensed','Arial Narrow',Impact,sans-serif;
+  --body:'Barlow',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:18px/1.55 var(--body);color:var(--hose);background:var(--rinse)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--spray);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:var(--hose);color:#cfe4e8;font:500 13px var(--body);text-align:center;padding:7px 12px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+.logo{font:800 28px/1 var(--disp);letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:var(--hose);color:#fff;font:600 17px var(--body);border:0;border-radius:4px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#17434f}
+.btn.ghost{background:transparent;color:var(--hose);border:2px solid var(--hose)}
+h1{font:800 clamp(44px,7vw,88px)/.94 var(--disp);letter-spacing:-.005em;max-width:16ch}
+h2{font:800 clamp(34px,5vw,52px)/1 var(--disp);margin-bottom:22px}
+.hero{padding:26px 0 56px}
+.hero .lede{max-width:52ch;margin:14px 0 18px;font-size:19px}
+.hero .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:22px}
+.rating{font-weight:600}
+
+/* before / after */
+.ba{position:relative;aspect-ratio:16/8;min-height:260px;border-radius:6px;overflow:hidden;background:#999;--p:50%;box-shadow:0 0 0 2px var(--hose)}
+.layer{position:absolute;inset:0;overflow:hidden;background:var(--sky)}
+.layer.after{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.clean{--sky:#CFE9F1;--w1:#F7FAFA;--w2:#CBD6D8;--trim:#FFFFFF;--glass:#BFE3EC;--door:#1F5C6B;--c1:#D3D6D3;--c2:#B8BDB8;--found:#9FAAAC}
+.dirty{--sky:#B9CCCC;--w1:#A9B39A;--w2:#6B765B;--trim:#8C9582;--glass:#7C9696;--door:#2F4A47;--c1:#7B7E75;--c2:#5A5D55;--found:#4B5148}
+.wall{position:absolute;left:0;right:0;top:0;height:66%;background:repeating-linear-gradient(to bottom,var(--w1) 0 30px,var(--w2) 30px 33px)}
+.wall::after{content:"";position:absolute;left:0;right:0;bottom:0;height:9px;background:var(--found)}
+.win{position:absolute;left:12%;top:16%;width:24%;height:42%;background:var(--trim);padding:2.5%;display:grid;grid-template-columns:1fr 1fr;gap:3%}
+.win i{display:block;background:var(--glass)}
+.door{position:absolute;right:14%;top:11%;width:19%;height:55%;background:var(--trim);padding:0 5%;padding-top:5%}
+.door b{display:block;height:100%;background:var(--door)}
+.drive{position:absolute;left:0;right:0;bottom:0;height:34%;background:var(--c1)}
+.drive::before{content:"";position:absolute;left:34%;top:0;bottom:0;width:3px;background:var(--c2)}
+.drive::after{content:"";position:absolute;left:0;right:0;top:52%;height:3px;background:var(--c2)}
+.dirty .wall::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse 14% 26% at 8% 88%,rgba(45,62,26,.6),transparent 72%),
+  radial-gradient(ellipse 18% 34% at 42% 96%,rgba(45,62,26,.55),transparent 72%),
+  radial-gradient(ellipse 12% 28% at 80% 92%,rgba(45,62,26,.55),transparent 72%),
+  radial-gradient(ellipse 22% 22% at 62% 8%,rgba(35,48,25,.3),transparent 72%),
+  repeating-linear-gradient(90deg,transparent 0 41px,rgba(35,50,22,.2) 41px 45px,transparent 45px 97px)}
+.dirty .drive{background:
+  radial-gradient(ellipse 16% 30% at 20% 40%,rgba(30,36,20,.5),transparent 70%),
+  radial-gradient(ellipse 22% 26% at 70% 70%,rgba(30,36,20,.45),transparent 70%),var(--c1)}
+.handle{position:absolute;top:0;bottom:0;left:var(--p);width:4px;margin-left:-2px;background:#fff;box-shadow:0 0 0 1px rgba(14,42,51,.4);pointer-events:none}
+.handle span{position:absolute;top:50%;left:50%;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--spray);display:grid;place-items:center;font:700 20px var(--body);color:var(--hose)}
+.ba:focus-within .handle span{box-shadow:0 0 0 4px var(--hose)}
+.tag{position:absolute;top:12px;padding:4px 12px;background:rgba(14,42,51,.82);color:#fff;font:600 15px var(--body);border-radius:3px;pointer-events:none}
+.tag.l{left:12px}.tag.r{right:12px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;touch-action:pan-y}
+
+/* surfaces */
+.surfaces{background:var(--suds);padding:60px 0}
+.list{list-style:none;padding:0;border-top:2px solid var(--hose)}
+.list li{display:grid;grid-template-columns:72px 1fr;gap:6px 20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.list svg{width:72px;height:72px;border-radius:4px;grid-row:span 2}
+.list h3{font:800 30px/1 var(--disp)}
+.list p{max-width:56ch}
+.say{padding:56px 0}
+.say blockquote{font:600 clamp(30px,5vw,52px)/1.05 var(--disp);max-width:20ch}
+.say cite{display:block;margin-top:14px;font:500 16px var(--body);font-style:normal}
+
+/* quote */
+.quote{background:var(--hose);color:#fff;padding:60px 0}
+.quote .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:48px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px;border:0;padding:0}
+.chips legend{font-weight:600;margin-bottom:10px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0}
+.chips span{display:inline-block;padding:10px 16px;border:2px solid rgba(255,255,255,.5);border-radius:99px;cursor:pointer;min-height:44px}
+.chips input:checked+span{background:var(--spray);border-color:var(--spray);color:var(--hose);font-weight:600}
+.chips input:focus-visible+span{outline:3px solid #fff;outline-offset:2px}
+form{display:grid;gap:14px}
+form label.f{display:grid;gap:6px;font-weight:600}
+input[type=text],input[type=tel],textarea{font:inherit;padding:12px;border-radius:4px;border:2px solid transparent;background:#fff;color:var(--hose);width:100%}
+.quote .btn{background:var(--spray);color:var(--hose)}
+.quote .btn:hover{background:#2bb3c3}
+.note{min-height:1.5em;font-weight:600}
+.hours{display:grid;gap:4px}
+.hours dt{font:800 26px var(--disp)}
+.hours dd{margin:0 0 12px}
+footer{padding:26px 0;font-size:15px}
+@media (max-width:760px){.quote .grid{grid-template-columns:1fr}.ba{aspect-ratio:4/3}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* --- Demo preview additions (banner, text-back, sample reviews) --- */
+:root{--dp-banner-h:40px}
+html{scroll-padding-top:var(--dp-banner-h)}
+body{padding-top:var(--dp-banner-h)}
+.dp-banner{position:fixed;top:0;left:0;right:0;z-index:1000;min-height:40px;display:flex;align-items:center;justify-content:center;padding:8px 16px;background:var(--spray);color:var(--hose);font:600 14px/1.3 var(--body);text-align:center;box-shadow:0 1px 0 rgba(0,0,0,.12)}
+.dp-textback{background:var(--suds);padding:60px 0}
+.dp-textback .dp-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.dp-textback p{max-width:46ch;margin-bottom:14px}
+.dp-textback .dp-fine{font-size:14px;opacity:.75;margin:0}
+.dp-phone{width:290px;max-width:100%;margin:0 auto;background:var(--hose);border-radius:38px;padding:12px;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.dp-screen{background:#fff;border-radius:28px;padding:14px 12px 18px;min-height:470px;display:flex;flex-direction:column;gap:12px;color:var(--hose);font:14px/1.4 var(--body)}
+.dp-notch{width:88px;height:22px;background:var(--hose);border-radius:0 0 14px 14px;margin:-14px auto 10px}
+.dp-missed{display:flex;align-items:center;gap:10px;background:var(--rinse);border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.dp-missed svg{flex:none;width:34px;height:34px;border-radius:9px;background:#C62828;padding:7px;color:#fff}
+.dp-missed b{display:block;font-size:14px}
+.dp-missed small{display:block;font-size:12px;opacity:.75}
+.dp-thread{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.dp-from{font-size:12px;font-weight:600;opacity:.7;padding-left:6px}
+.dp-bubble{align-self:flex-start;max-width:88%;background:var(--hose);color:#fff;padding:10px 13px;border-radius:18px 18px 18px 4px;font-size:14px}
+.dp-meta{font-size:11px;opacity:.65;padding-left:6px}
+.dp-reviews{background:var(--rinse);padding:60px 0;border-top:2px solid var(--hose)}
+.dp-reviews .dp-fine{font-size:15px;opacity:.8;margin:-8px 0 22px;max-width:60ch}
+.dp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;list-style:none;padding:0}
+.dp-card{background:var(--suds);border:2px solid var(--hose);border-radius:6px;padding:20px 22px 22px}
+.dp-stars{color:var(--spray);font-size:18px;letter-spacing:2px;margin-bottom:8px}
+.dp-card p{margin-bottom:12px}
+.dp-card cite{font-style:normal;font-weight:700;font-size:15px}
+.dp-card cite small{display:block;font-weight:500;font-size:13px;opacity:.7}
+@media (max-width:820px){.dp-textback .dp-grid,.dp-cards{grid-template-columns:1fr}.dp-phone{margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="dp-banner">Demo preview built by David — not the official site.</div>
+<div class="demo">Sample mockup prepared for Mackey's Exterior Pro Wash. This is not their official site.</div>
+
+<header><div class="wrap">
+  <div class="logo">Mackey's Exterior Pro Wash</div>
+  <a class="btn" href="tel:+18644821546">Call 864-482-1546</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <h1>Your house is under all that green.</h1>
+  <p class="lede">Pressure washing for siding, driveways, porches and flagstone in Pendleton, SC. Drag the slider and see the difference.</p>
+  <div class="row">
+    <a class="btn" href="#quote">Get a free quote</a>
+    <span class="rating">5.0 stars from 20 Google reviews</span>
+  </div>
+  <div class="ba" id="ba">
+    <div class="layer before dirty" data-scene></div>
+    <div class="layer after clean" data-scene></div>
+    <div class="handle" aria-hidden="true"><span>&#8249;&#8250;</span></div>
+    <span class="tag l">After</span><span class="tag r">Before</span>
+    <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after washing">
+  </div>
+</div></section>
+
+<section class="surfaces"><div class="wrap">
+  <h2>What we wash</h2>
+  <ul class="list">
+    <li>
+      <svg viewBox="0 0 64 64" role="img" aria-label="Vinyl siding"><rect width="64" height="64" fill="#E9EEEE"/><path d="M0 12H64M0 24H64M0 36H64M0 48H64M0 60H64" stroke="#B3C0C3" stroke-width="2"/></svg>
+      <h3>House siding</h3><p>Dirt, algae and mildew off the walls, trim and porch posts.</p>
+    </li>
+    <li>
+      <svg viewBox="0 0 64 64" role="img" aria-label="Concrete"><rect width="64" height="64" fill="#C9CCC8"/><path d="M32 0V64M0 32H64" stroke="#9EA29D" stroke-width="2"/><g fill="#A9ADA8"><circle cx="10" cy="12" r="1.6"/><circle cx="22" cy="48" r="1.4"/><circle cx="48" cy="18" r="1.8"/><circle cx="52" cy="52" r="1.4"/><circle cx="40" cy="40" r="1.2"/></g></svg>
+      <h3>Driveways and sidewalks</h3><p>Oil spots, tire marks and green streaks lifted off concrete.</p>
+    </li>
+    <li>
+      <svg viewBox="0 0 64 64" role="img" aria-label="Wood deck"><rect width="64" height="64" fill="#A9774A"/><path d="M0 16H64M0 32H64M0 48H64" stroke="#7B5230" stroke-width="2"/><path d="M6 4q3 6 0 10M30 20q3 6 0 10M50 36q3 6 0 10M14 52q3 4 0 8" stroke="#8C5F38" stroke-width="1.5" fill="none"/></svg>
+      <h3>Porches and decks</h3><p>Wood and composite cleaned without tearing up the surface.</p>
+    </li>
+    <li>
+      <svg viewBox="0 0 64 64" role="img" aria-label="Flagstone"><rect width="64" height="64" fill="#6E736F"/><g stroke="#6E736F" stroke-width="2.5"><polygon points="3,3 28,5 25,26 5,24" fill="#A7ADA6"/><polygon points="31,5 61,3 59,22 28,26" fill="#B6BBB3"/><polygon points="3,28 24,29 27,60 4,61" fill="#9BA19A"/><polygon points="30,29 58,26 61,61 30,60" fill="#AEB3AB"/></g></svg>
+      <h3>Flagstone walkways</h3><p>Stone brought back to its real color.</p>
+    </li>
+  </ul>
+</div></section>
+
+<section class="say"><div class="wrap">
+  <blockquote>"Everything came out looking brand new."</blockquote>
+  <cite>Google review, 5 stars</cite>
+</div></section>
+
+<section class="dp-textback" id="textback"><div class="wrap dp-grid">
+  <div>
+    <h2>Never miss a call — we text you back in seconds</h2>
+    <p>When a call to Mackey's Exterior Pro Wash goes unanswered, the caller gets a text back right away, so they know you saw them and can reply without calling again.</p>
+    <p class="dp-fine">Sample message shown. The wording is set with Mackey's Exterior Pro Wash before it goes live.</p>
+  </div>
+  <div class="dp-phone" role="img" aria-label="Phone showing a missed call followed by an instant text reply from Mackey's Exterior Pro Wash">
+    <div class="dp-screen">
+      <div class="dp-notch"></div>
+      <div class="dp-missed">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2z"/><path d="M15 3l6 6M21 3l-6 6"/></svg>
+        <div><b>Missed call</b><small>Incoming call &middot; just now</small></div>
+      </div>
+      <div class="dp-thread">
+        <span class="dp-from">Mackey's Exterior Pro Wash</span>
+        <div class="dp-bubble">Hi, this is Mackey's Exterior Pro Wash. Sorry we missed your call! Tell us what needs washing and we'll get you a quote.</div>
+        <span class="dp-meta">Sent automatically, seconds after the missed call</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="dp-reviews" id="sample-reviews"><div class="wrap">
+  <h2>Sample reviews</h2>
+  <p class="dp-fine">Placeholder reviews for this preview only. They are not from real customers; the business's own reviews go here.</p>
+  <ul class="dp-cards">
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Driveway and siding look brand new. Quick, tidy and easy to book."</p><cite>Sarah<small>Sample review</small></cite></li>
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Showed up on time and the porch came out better than I expected."</p><cite>James<small>Sample review</small></cite></li>
+    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Fair price and they cleaned up after themselves. Would book again."</p><cite>Dana<small>Sample review</small></cite></li>
+  </ul>
+</div></section>
+
+<section class="quote" id="quote"><div class="wrap grid">
+  <div>
+    <h2>Get a free quote</h2>
+    <form id="qf">
+      <fieldset class="chips"><legend>What needs washing?</legend>
+        <label><input type="checkbox" name="s"><span>House</span></label>
+        <label><input type="checkbox" name="s"><span>Driveway</span></label>
+        <label><input type="checkbox" name="s"><span>Sidewalk</span></label>
+        <label><input type="checkbox" name="s"><span>Porch or deck</span></label>
+        <label><input type="checkbox" name="s"><span>Flagstone</span></label>
+        <label><input type="checkbox" name="s"><span>Something else</span></label>
+      </fieldset>
+      <label class="f">Your name<input type="text" required autocomplete="name"></label>
+      <label class="f">Phone<input type="tel" required autocomplete="tel"></label>
+      <label class="f">Anything we should know?<textarea rows="3"></textarea></label>
+      <button class="btn" type="submit">Request my quote</button>
+      <p class="note" id="note" role="status"></p>
+    </form>
+  </div>
+  <dl class="hours">
+    <dt>Hours</dt><dd>Monday to Saturday, 7am to 7pm<br>Sunday, 9am to 5pm</dd>
+    <dt>Where</dt><dd>Pendleton, SC and nearby</dd>
+    <dt>Call</dt><dd><a href="tel:+18644821546">864-482-1546</a></dd>
+  </dl>
+</div></section>
+</main>
+
+<footer><div class="wrap">Mackey's Exterior Pro Wash LLC &middot; Pendleton, SC &middot; 864-482-1546</div></footer>
+
+<template id="scene">
+  <div class="wall"><div class="win"><i></i><i></i><i></i><i></i></div><div class="door"><b></b></div></div>
+  <div class="drive"></div>
+</template>
+
+<script>
+const tpl=document.getElementById('scene');
+document.querySelectorAll('[data-scene]').forEach(el=>el.appendChild(tpl.content.cloneNode(true)));
+const ba=document.getElementById('ba'),rng=ba.querySelector('input');
+const set=v=>{ba.style.setProperty('--p',v+'%');rng.value=v};
+let touched=false;
+rng.addEventListener('input',()=>{touched=true;ba.style.setProperty('--p',rng.value+'%')});
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){set(55)}
+else{
+  set(0);const t0=performance.now(),D=1700;
+  const step=t=>{if(touched)return;const k=Math.min(1,(t-t0)/D),e=1-Math.pow(1-k,3);set(e*58);if(k<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step);
+}
+document.getElementById('qf').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('note').textContent='Demo form. When the site is live, this sends your request straight to Mackey\'s.';
+});
+</script>
+<script>
+(function(){var b=document.querySelector('.dp-banner');if(!b)return;function f(){document.documentElement.style.setProperty('--dp-banner-h',b.offsetHeight+'px')}f();addEventListener('resize',f);addEventListener('load',f)})();
+</script>
+</body>
+</html>
