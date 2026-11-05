@@ -119,6 +119,12 @@ section{padding:64px 0}
 .method-note{margin-top:20px;font-size:15px;color:var(--muted);border-left:4px solid var(--wood);padding:4px 0 4px 14px;max-width:70ch}
 
 /* services: an upgraded take on their sky-blue tile page */
+.jobs{background:#fff}
+.job-grid{display:grid;gap:18px;margin-top:26px;justify-items:center}
+.job{margin:0;width:100%;max-width:430px;background:var(--sky-xl);border:1px solid var(--line);border-radius:10px;padding:8px 8px 10px}
+.job.stairs{max-width:309px}
+.job img{display:block;width:100%;height:auto;border-radius:6px}
+.job figcaption{font-weight:600;font-size:15px;color:var(--ink);margin-top:8px;text-align:center}
 .services{background:var(--sky);position:relative}
 .services h2,.services .kicker{color:var(--ink)}
 .services .kicker{color:#4b2f18}
@@ -237,6 +243,7 @@ footer .fname{color:#fff;font:700 24px/1.2 Lora,Georgia,serif}
   .hero .grid{grid-template-columns:1.05fr 1fr;align-items:center;gap:48px}
   .vs{grid-template-columns:1fr 1fr}
   .tiles{grid-template-columns:1fr 1fr}
+  .job-grid{grid-template-columns:repeat(3,auto);justify-content:center;align-items:start}
   .commercial .grid{grid-template-columns:1fr 1fr;gap:48px}
   .why-grid{grid-template-columns:1fr 1fr}
   .textback .grid{grid-template-columns:1.1fr 1fr}
@@ -417,6 +424,20 @@ footer .fname{color:#fff;font:700 24px/1.2 Lora,Georgia,serif}
         <p>Send a photo or a quick description and we'll give you a free estimate.</p>
         <a class="btn primary" href="#quote">Get a free estimate</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- RECENT JOBS -->
+<section class="jobs" id="jobs" aria-labelledby="jobs-h">
+  <div class="wrap">
+    <span class="kicker">Recent jobs</span>
+    <h2 id="jobs-h">Real homes, really clean</h2>
+    <p class="lead">A few of Adam's own jobs from around the Upstate.</p>
+    <div class="job-grid">
+      <figure class="job"><img src="img/house-patio.webp" width="430" height="321" loading="lazy" alt="A white two-story brick home with a balcony, freshly washed, above a clean flagstone patio with two Adirondack chairs"><figcaption>Brick house and flagstone patio</figcaption></figure>
+      <figure class="job"><img src="img/house-walkway.webp" width="430" height="311" loading="lazy" alt="A yellow-sided ranch home with a white front porch and a bright, clean curved concrete walkway around a landscaped bed"><figcaption>Siding, porch and curved walkway</figcaption></figure>
+      <figure class="job stairs"><img src="img/stairs-before-after.webp" width="291" height="199" loading="lazy" alt="Stone-walled outdoor stairs side by side: green and grimy before on the left, clean gray steps after on the right"><figcaption>Stone stairs, before and after</figcaption></figure>
     </div>
   </div>
 </section>
