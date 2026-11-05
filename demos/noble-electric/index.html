@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Noble Electric LLC | Electrician in Seneca, SC</title>
+<meta name="description" content="Demo preview of a one-page site for Noble Electric LLC, electrical work and dock inspections in the Seneca area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6efd9;--paper2:#efe5c6;--ink:#12304d;--lake:#1d5f93;--lake-d:#154a74;--butter:#f2c94c;--line:#1d5f93;--white:#fffdf5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;padding-top:44px;padding-bottom:72px;background-color:var(--paper);
+ background-image:linear-gradient(rgba(29,95,147,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(29,95,147,.12) 1px,transparent 1px);
+ background-size:24px 24px;color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.03em;line-height:1.05;margin:0 0 .5em}
+h1{font-size:clamp(2.6rem,12vw,5rem);font-weight:700}
+h2{font-size:clamp(1.9rem,7vw,3rem);font-weight:700}
+h3{font-size:1.4rem;font-weight:600}
+p{margin:0 0 1em}
+a{color:var(--lake-d)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--butter)}
+.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:44px;background:var(--ink);color:#fff;text-align:center;font:600 13px/1.3 "IBM Plex Sans",sans-serif;padding:6px 12px;display:flex;align-items:center;justify-content:center}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px 0 44px;position:relative}
+/* circuit rail */
+.rail{position:absolute;left:18px;top:0;bottom:0;width:4px;background:var(--line);border-radius:2px}
+.node{position:absolute;left:10px;width:20px;height:20px;border-radius:50%;background:var(--butter);border:4px solid var(--line)}
+.node::after{content:"";position:absolute;left:16px;top:6px;width:18px;height:4px;background:var(--line)}
+section{position:relative;padding:44px 0 20px}
+.sheet{position:relative;background:var(--white);border:2px solid var(--ink);padding:22px 18px 24px;box-shadow:6px 6px 0 var(--lake)}
+.sheet .tag{position:absolute;top:-13px;right:12px;background:var(--butter);border:2px solid var(--ink);font:600 .8rem/1 "Barlow Condensed",sans-serif;letter-spacing:.12em;padding:5px 8px;text-transform:uppercase}
+.eyebrow{font:600 1rem "Barlow Condensed",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--lake-d);margin-bottom:.4em}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:10px 22px;background:var(--butter);color:var(--ink);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);font:700 1.35rem "Barlow Condensed",sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:6px 6px 0 var(--ink)}
+.btn.alt{background:var(--white)}
+/* hero */
+.hero{padding-top:30px}
+.hero .lead{font-size:1.15rem;max-width:34em}
+.hero .row{display:flex;flex-wrap:wrap;gap:14px;margin:22px 0 10px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.facts li{border:2px solid var(--ink);background:var(--paper2);padding:4px 10px;font-weight:600;font-size:.9rem}
+.hero-art{margin-top:24px}
+/* services */
+.grid{display:grid;gap:14px;grid-template-columns:1fr;padding:0;margin:0;list-style:none}
+.grid li{display:flex;gap:12px;align-items:center;border:2px solid var(--ink);background:var(--paper);padding:10px 12px;font-weight:500}
+.grid svg{flex:none;width:34px;height:34px}
+/* dock panel */
+.dock{background:var(--ink);color:#fff;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--butter);padding:0;overflow:hidden}
+.dock .txt{padding:22px 18px}
+.dock h2{color:var(--butter)}
+.dock .eyebrow{color:#cfe3f5}
+.dock a{color:#fff}
+.dock svg{display:block;width:100%;height:auto}
+/* why */
+.why{display:grid;gap:16px}
+.why div{border-left:6px solid var(--butter);padding:2px 0 2px 14px}
+/* missed call */
+.mc{display:grid;gap:26px;align-items:center}
+.phone{width:min(100%,290px);margin:0 auto;background:var(--ink);border-radius:34px;padding:14px 12px 18px;box-shadow:8px 8px 0 var(--butter);border:3px solid var(--ink)}
+.screen{background:#f4f8fb;border-radius:22px;padding:14px 12px;min-height:350px;color:#102a43;font-size:14px}
+.screen .time{text-align:center;font-size:12px;color:#44586b;margin-bottom:10px}
+.missed{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #c5d3df;border-radius:14px;padding:10px;margin-bottom:14px}
+.missed .ic{width:34px;height:34px;border-radius:50%;background:#b3261e;display:grid;place-items:center;flex:none}
+.missed b{display:block;color:#8a1c15}
+.bub{max-width:88%;padding:9px 12px;border-radius:16px;margin:0 0 10px;line-height:1.4}
+.bub.in{background:var(--lake-d);color:#fff;border-bottom-left-radius:4px}
+.bub.out{background:#fff;border:1px solid #c5d3df;margin-left:auto;border-bottom-right-radius:4px}
+.bub small{display:block;font-size:11px;opacity:.9;margin-top:3px}
+.auto{display:inline-block;background:var(--butter);color:var(--ink);font:700 .75rem "Barlow Condensed",sans-serif;letter-spacing:.1em;padding:2px 6px;margin-bottom:4px}
+.typing{display:flex;gap:4px;padding:8px 12px}.typing i{width:7px;height:7px;border-radius:50%;background:#7c93a8;animation:b 1.2s infinite}.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+@keyframes b{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-4px)}}
+/* reviews */
+.revs{display:grid;gap:14px}
+.rev{border:2px solid var(--ink);background:var(--paper);padding:14px 16px}
+.stars{color:#7a5a00;letter-spacing:2px}
+.label{display:inline-block;background:var(--ink);color:#fff;font:600 .95rem "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:3px 10px;margin-bottom:12px}
+/* form */
+form{display:grid;gap:14px}
+label{font-weight:600;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;padding:11px 12px;border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:0}
+textarea{min-height:110px}
+.msg{display:none;border:2px solid var(--ink);background:var(--butter);padding:12px 14px;font-weight:600}
+.msg.show{display:block}
+.hrs{margin:0;padding:0;list-style:none}
+.hrs li{display:flex;justify-content:space-between;border-bottom:1px dashed var(--lake);padding:5px 0;gap:12px}
+footer{padding:30px 16px 20px;text-align:center;font-size:.9rem;color:var(--ink)}
+/* sticky call */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--butter);border-top:3px solid var(--ink);padding:8px 12px;display:flex;justify-content:center}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;min-height:48px;background:var(--ink);color:#fff;text-decoration:none;font:700 1.35rem "Barlow Condensed",sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.callbar a:focus-visible{outline-color:#fff}
+@media(min-width:760px){
+ body{padding-bottom:0;font-size:18px}
+ .wrap{padding-left:70px}
+ .rail{left:30px}.node{left:22px}
+ .grid{grid-template-columns:1fr 1fr}
+ .why{grid-template-columns:repeat(3,1fr)}
+ .revs{grid-template-columns:repeat(3,1fr)}
+ .mc{grid-template-columns:1.1fr .9fr}
+ .dock{display:grid;grid-template-columns:1fr 1.1fr;align-items:center}
+ .callbar{display:none}
+ .sheet{padding:30px 32px 34px}
+ form{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="banner" role="note">Demo preview built by David — not the official site.</div>
+
+<main class="wrap" id="top">
+<div class="rail" aria-hidden="true"></div>
+
+<section class="hero">
+ <span class="node" aria-hidden="true" style="top:46px"></span>
+ <div class="sheet">
+  <span class="tag">Sheet 01 / Service</span>
+  <p class="eyebrow">Noble Electric LLC &middot; Seneca, SC</p>
+  <h1>Power, lights &amp; lake-side wiring.</h1>
+  <p class="lead">Residential and commercial electrical work for the Seneca area, from a stubborn outlet to a panel upgrade, plus dock inspections and repairs for folks on the water.</p>
+  <div class="row">
+   <a class="btn" href="tel:+18642807023">Call 864-280-7023</a>
+   <a class="btn alt" href="#quote">Request a quote</a>
+  </div>
+  <ul class="facts">
+   <li>5.0 on Google (4 reviews)</li>
+   <li>Residential &amp; commercial</li>
+   <li>Dock inspections &amp; repairs</li>
+  </ul>
+  <div class="hero-art" aria-hidden="true">
+   <svg viewBox="0 0 640 110" width="100%" role="presentation"><g fill="none" stroke="#1d5f93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 55h110l10-24 14 48 14-48 14 48 14-48 10 24h110"/><circle cx="288" cy="55" r="10" fill="#f2c94c"/><path d="M298 55h70M368 33v44M378 40v30M378 55h60"/><path d="M438 55h40a20 20 0 1 1 40 0 20 20 0 1 1-40 0" stroke="#12304d"/><path d="M518 55h112"/></g><text x="12" y="100" font-family="Barlow Condensed,sans-serif" font-size="14" fill="#12304d" letter-spacing="2">SUPPLY</text><text x="360" y="100" font-family="Barlow Condensed,sans-serif" font-size="14" fill="#12304d" letter-spacing="2">STORAGE</text><text x="540" y="100" font-family="Barlow Condensed,sans-serif" font-size="14" fill="#12304d" letter-spacing="2">LOAD</text></svg>
+  </div>
+ </div>
+</section>
+
+<section id="services" aria-labelledby="s-h">
+ <span class="node" aria-hidden="true" style="top:56px"></span>
+ <div class="sheet">
+  <span class="tag">Sheet 02 / Services</span>
+  <h2 id="s-h">What we wire, fix &amp; inspect</h2>
+  <ul class="grid">
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><rect x="7" y="5" width="22" height="26" rx="3"/><path d="M14 13v5M22 13v5M18 24v4"/></svg>Outlets and switches</li>
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><circle cx="18" cy="18" r="12"/><path d="M12 18l4 4 8-9"/></svg>Troubleshooting</li>
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M4 26h28M8 26v6M28 26v6M4 20h28M10 20v-8"/><path d="M10 12c3-6 9-6 12 0" /></svg>Dock inspections and repairs</li>
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M13 27h10M14 31h8M11 14a7 7 0 1 1 14 0c0 4-3 5-3 9h-8c0-4-3-5-3-9z"/></svg>Lights and fans</li>
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M18 3v6M6 10l4 4M30 10l-4 4M5 22h8M23 22h8"/><circle cx="18" cy="22" r="5"/></svg>Exterior lighting</li>
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><rect x="6" y="4" width="24" height="28" rx="2"/><path d="M12 10h12M12 16h12M12 22h6"/></svg>Panel and service upgrades</li>
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M20 3L8 20h9l-2 13 13-18h-9z"/></svg>Manual generator transfer switches</li>
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><path d="M4 30V14l14-9 14 9v16zM14 30V20h8v10"/></svg>Remodels and new construction</li>
+   <li><svg viewBox="0 0 36 36" fill="none" stroke="#1d5f93" stroke-width="2.5"><rect x="5" y="9" width="26" height="22"/><path d="M5 15h26M11 21h4M21 21h4M11 26h4M21 26h4"/></svg>Commercial</li>
+  </ul>
+ </div>
+</section>
+
+<section id="docks" aria-labelledby="d-h">
+ <span class="node" aria-hidden="true" style="top:56px"></span>
+ <div class="dock">
+  <div class="txt">
+   <p class="eyebrow">Lake-life specialty</p>
+   <h2 id="d-h">Dock inspections &amp; repairs</h2>
+   <p>Water and electricity need extra respect. Noble Electric lists dock inspections and repairs among its services, so lake homeowners have someone local to call about dock power and lighting.</p>
+   <a class="btn" href="tel:+18642807023">Call about your dock</a>
+  </div>
+  <svg viewBox="0 0 480 320" role="img" aria-label="Illustration of a wooden dock with a lit lamp post over a lake at dusk">
+   <rect width="480" height="320" fill="#1d5f93"/>
+   <rect width="480" height="130" fill="#f2c94c"/>
+   <circle cx="360" cy="95" r="38" fill="#fff6cf"/>
+   <path d="M0 130l60-50 50 30 70-55 80 70 60-40 60 45 100-30v130H0z" fill="#154a74"/>
+   <rect y="150" width="480" height="170" fill="#2a74ad"/>
+   <g stroke="#cfe3f5" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"><path d="M30 190h60M130 220h90M300 200h70M390 250h60M40 270h80M240 285h100"/></g>
+   <g fill="#8a5a2b"><rect x="40" y="190" width="400" height="16"/><rect x="40" y="206" width="400" height="6" fill="#5e3b1a"/>
+   <rect x="70" y="206" width="12" height="70"/><rect x="170" y="206" width="12" height="70"/><rect x="270" y="206" width="12" height="70"/><rect x="370" y="206" width="12" height="70"/></g>
+   <g stroke="#5e3b1a" stroke-width="3"><path d="M90 190v16M130 190v16M210 190v16M250 190v16M330 190v16M410 190v16"/></g>
+   <rect x="396" y="110" width="8" height="82" fill="#12304d"/>
+   <rect x="386" y="98" width="28" height="16" rx="3" fill="#fffdf5" stroke="#12304d" stroke-width="3"/>
+   <path d="M392 114l-24 76h88l-24-76z" fill="#f2c94c" opacity=".35"/>
+   <g fill="none" stroke="#fffdf5" stroke-width="2" stroke-dasharray="4 5"><path d="M400 192v50M400 242h-80M320 242v-30"/></g>
+   <circle cx="320" cy="212" r="6" fill="#f2c94c" stroke="#12304d" stroke-width="2"/>
+   <path d="M60 300h360" stroke="#cfe3f5" stroke-width="2" opacity=".5"/>
+  </svg>
+ </div>
+</section>
+
+<section id="why" aria-labelledby="w-h">
+ <span class="node" aria-hidden="true" style="top:56px"></span>
+ <div class="sheet">
+  <span class="tag">Sheet 03 / Why us</span>
+  <h2 id="w-h">Why neighbors call Noble</h2>
+  <div class="why">
+   <div><h3>Local &amp; direct</h3><p>A Seneca-area electrical company, so you talk to the people who do the work.</p></div>
+   <div><h3>Home or business</h3><p>Residential and commercial jobs, small repairs through new construction.</p></div>
+   <div><h3>Rated 5.0 on Google</h3><p>Currently 5.0 from 4 Google reviews.</p></div>
+  </div>
+  <h3 style="margin-top:22px">Hours</h3>
+  <ul class="hrs">
+   <li><span>Mon &ndash; Wed</span><span>7am &ndash; 7pm</span></li>
+   <li><span>Thursday</span><span>7am &ndash; 5pm</span></li>
+   <li><span>Friday</span><span>9am &ndash; 5pm</span></li>
+   <li><span>Sat &ndash; Sun</span><span>Closed</span></li>
+  </ul>
+ </div>
+</section>
+
+<section id="textback" aria-labelledby="m-h">
+ <span class="node" aria-hidden="true" style="top:56px"></span>
+ <div class="sheet">
+  <span class="tag">Sheet 04 / Feature</span>
+  <div class="mc">
+   <div>
+    <h2 id="m-h">Never miss a call — we text you back in seconds</h2>
+    <p>Up on a ladder or out on a dock, you can't always pick up. With missed-call text-back, every call you miss gets an instant, friendly text from Noble Electric, so the customer stays with you instead of dialing the next name on the list.</p>
+    <p><strong>Included in the demo concept:</strong> automatic reply, your own wording, no app to learn.</p>
+   </div>
+   <div class="phone" role="img" aria-label="Phone screen showing a missed call followed by an automatic text from Noble Electric">
+    <div class="screen">
+     <div class="time">Today 2:14 PM</div>
+     <div class="missed"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 5l6 6M5 5v5M5 5h5"/><path d="M4 14c4-4 12-4 16 0l-2 3-3-1v-2c-2-1-4-1-6 0v2l-3 1z" fill="#fff" stroke="none"/></svg></span><span><b>Missed call</b>Unknown caller</span></div>
+     <div class="bub in"><span class="auto">AUTO-REPLY</span><br>Hi, this is Noble Electric. Sorry we missed your call! What can we help with? We'll get back to you shortly.<small>Sent 3 seconds later</small></div>
+     <div class="bub out">Outlet in the garage stopped working.</div>
+     <div class="bub in typing" aria-hidden="true"><i></i><i></i><i></i></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="reviews" aria-labelledby="r-h">
+ <span class="node" aria-hidden="true" style="top:56px"></span>
+ <div class="sheet">
+  <span class="tag">Sheet 05 / Feedback</span>
+  <h2 id="r-h">What customers might say</h2>
+  <span class="label">Sample reviews</span>
+  <div class="revs">
+   <figure class="rev" style="margin:0"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote style="margin:6px 0">"Quick to respond and the work looked clean. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
+   <figure class="rev" style="margin:0"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote style="margin:6px 0">"Explained the problem plainly and fixed it the same visit. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
+   <figure class="rev" style="margin:0"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote style="margin:6px 0">"Easy to schedule, showed up when they said. Placeholder text for the demo."</blockquote><figcaption>Sample customer</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="quote" aria-labelledby="q-h">
+ <span class="node" aria-hidden="true" style="top:56px"></span>
+ <div class="sheet">
+  <span class="tag">Sheet 06 / Contact</span>
+  <h2 id="q-h">Request a quote</h2>
+  <p><strong>Service area:</strong> Seneca area.</p>
+  <form id="f" novalidate>
+   <div><label for="n">Your name</label><input id="n" name="n" autocomplete="name"></div>
+   <div><label for="p">Phone</label><input id="p" name="p" type="tel" autocomplete="tel"></div>
+   <div class="full"><label for="t">What do you need?</label><select id="t"><option>Outlets or switches</option><option>Troubleshooting</option><option>Dock inspection or repair</option><option>Lights or fans</option><option>Panel or service upgrade</option><option>Generator transfer switch</option><option>Remodel or new construction</option><option>Commercial</option></select></div>
+   <div class="full"><label for="d">Details</label><textarea id="d" name="d"></textarea></div>
+   <div class="full"><button class="btn" type="submit">Send request</button></div>
+   <div class="full msg" id="msg" role="status" aria-live="polite">Demo only — this form is not connected and nothing was sent. Please call 864-280-7023.</div>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>Demo preview built by David — not the official site. Noble Electric LLC, Seneca area.</footer>
+
+<div class="callbar"><a href="tel:+18642807023">Call 864-280-7023</a></div>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('msg');m.classList.add('show');m.focus&&m.setAttribute('tabindex','-1');m.focus();});
+</script>
+</body>
+</html>
