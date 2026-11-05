@@ -19,7 +19,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 body{margin:0;padding-top:2.6rem;padding-bottom:4.75rem;font-family:"DM Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--paper);overflow-x:hidden}
 h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
 h1{font-size:clamp(2.1rem,7.5vw,4.25rem)}
@@ -40,10 +40,11 @@ section{padding:4.5rem 0}
 /* header */
 header.site{position:sticky;top:2.6rem;z-index:90;background:rgba(251,247,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
-.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font-family:"Young Serif",serif;font-size:1.25rem}
+.brand{display:inline-flex;align-items:center;gap:.6rem;min-height:44px;text-decoration:none;color:var(--ink);font-family:"Young Serif",serif;font-size:1.25rem}
 .brand svg{width:34px;height:34px}
 .nav ul{display:none;list-style:none;margin:0;padding:0;gap:1.5rem}
-.nav ul a{text-decoration:none;color:var(--ink);font-weight:500}
+.nav ul a{text-decoration:none;color:var(--ink);font-weight:500;display:inline-flex;align-items:center;min-height:44px;padding:0 .2rem}
+a[href^="tel:"]:not(.btn):not(.big){display:inline-block;padding:10px 2px;margin:-10px 0;font-weight:700}
 .nav ul a:hover{color:var(--berry)}
 @media (min-width:860px){.nav ul{display:flex}}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.75rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit;transition:transform .15s,background .15s}
@@ -119,10 +120,11 @@ header.site{position:sticky;top:2.6rem;z-index:90;background:rgba(251,247,242,.9
 /* why us */
 .why-grid{display:grid;gap:1.25rem;margin-top:2rem}
 @media (min-width:720px){.why-grid{grid-template-columns:repeat(3,1fr)}}
-.why{background:var(--ticket);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;position:relative}
-.why .ic{width:48px;height:48px;border-radius:12px;background:var(--berry);color:#fff;display:grid;place-items:center;margin-bottom:1rem}
-.why .ic svg{width:26px;height:26px}
-.why p{margin:0;color:var(--mute)}
+.why{border-top:3px solid var(--apricot);padding:1.1rem 0 0;position:relative}
+.why .ic{color:var(--berry);display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem;font-family:"DM Mono",monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.why .ic svg{width:28px;height:28px}
+.why h3{font-size:1.3rem}
+.why p{margin:0;color:var(--mute);max-width:36ch}
 
 /* missed call */
 .mc{background:linear-gradient(180deg,var(--paper),var(--ticket))}
@@ -148,8 +150,8 @@ header.site{position:sticky;top:2.6rem;z-index:90;background:rgba(251,247,242,.9
 .rev-note{display:inline-block;background:var(--apricot-l);color:var(--berry-x);font-family:"DM Mono",monospace;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:.35rem .7rem;border-radius:6px;margin-bottom:1rem}
 .rev-grid{display:grid;gap:1.25rem;margin-top:1.5rem}
 @media (min-width:720px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
-.rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;position:relative}
-.rev .stars{color:var(--berry);letter-spacing:.1em;font-size:.95rem}
+.rev{background:var(--ticket);border:1px solid var(--line);border-left:2px dashed var(--berry);border-radius:0 var(--radius) var(--radius) 0;padding:1.4rem 1.5rem;position:relative}
+.rev .tag{display:inline-block;font-family:"DM Mono",monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--berry-d);border:1px solid var(--berry);border-radius:999px;padding:.25rem .6rem}
 .rev p{color:var(--ink);font-style:italic;margin:.6rem 0 .8rem}
 .rev footer{font-family:"DM Mono",monospace;font-size:.78rem;color:var(--mute)}
 
@@ -170,7 +172,7 @@ form .btn{width:100%}
 .form-msg{grid-column:1/-1;background:var(--apricot-l);color:var(--berry-x);padding:1rem;border-radius:10px;font-weight:500;display:none}
 .form-msg.show{display:block}
 .quote-call{display:flex;flex-direction:column;gap:.5rem;margin-top:1.5rem}
-.quote-call a.big{font-family:"Young Serif",serif;font-size:clamp(1.6rem,5vw,2.4rem);color:#fff;text-decoration:none}
+.quote-call a.big{font-family:"Young Serif",serif;font-size:clamp(1.6rem,5vw,2.4rem);color:#fff;text-decoration:none;display:inline-flex;align-items:center;min-height:48px;align-self:flex-start}
 .quote-call a.big:hover{color:var(--apricot)}
 
 /* area */
@@ -251,7 +253,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
             <div class="name" style="margin-top:.4rem">All J's Catering</div>
           </div>
           <div>
-            <div class="tiny">Call or text</div>
+            <div class="tiny">Call to book</div>
             <div class="big">864-985-8020</div>
           </div>
           <div class="barcode" aria-hidden="true"></div>
@@ -271,7 +273,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
         <li><span class="cu">Italian</span><span class="ds">Pastas, baked dishes and salads built for sharing.</span><span class="st">Now boarding</span></li>
         <li><span class="cu">Mexican</span><span class="ds">Taco bars, rice and beans, and all the fixings.</span><span class="st">Now boarding</span></li>
         <li><span class="cu">Soul food</span><span class="ds">The comfort classics, cooked the way they should be.</span><span class="st">Now boarding</span></li>
-        <li><span class="cu">Trays</span><span class="ds">Multi-passenger trays for flights, crews and meetings.</span><span class="st">Now boarding</span></li>
+        <li><span class="cu">Trays</span><span class="ds">Multi-passenger trays for flights, crews and meetings.</span><span class="st">In flight</span></li>
       </ul>
       <div class="meals" aria-label="Meal times served"><span>Breakfast</span><span>Lunch</span><span>Dinner</span><span>Airport catering</span></div>
     </div>
@@ -283,17 +285,17 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
       <h2 id="why-h">One call covers the whole menu.</h2>
       <div class="why-grid">
         <article class="why">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>Airport</div>
           <h3>Trusted for in-flight catering</h3>
           <p>All J's is listed for in-flight catering through the county airport. Trays that have to be right, on time, every time.</p>
         </article>
         <article class="why">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18"/><path d="M4 11a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M12 3v1"/></svg></div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18"/><path d="M4 11a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M12 3v1"/></svg>Cuisines</div>
           <h3>Four cuisines, one kitchen</h3>
           <p>BBQ, Italian, Mexican and soul food. Mix and match so picky eaters and big appetites leave happy.</p>
         </article>
         <article class="why">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Meal times</div>
           <h3>Breakfast through dinner</h3>
           <p>Early crew breakfasts, working lunches, evening receptions. Full-service from setup to the last plate.</p>
         </article>
@@ -340,19 +342,19 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
       <p style="color:var(--mute);max-width:60ch">These are example reviews to show how real customer feedback would appear on the live site. They are not real quotes.</p>
       <div class="rev-grid">
         <article class="rev">
-          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <span class="tag">BBQ · Lunch</span>
           <p>"Sample review: the BBQ spread fed our whole crew and there was still plenty to take home."</p>
-          <footer>Michael · Seneca</footer>
+          <footer>Michael · Seneca · Sample</footer>
         </article>
         <article class="rev">
-          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <span class="tag">Trays · Breakfast</span>
           <p>"Sample review: breakfast trays arrived right on schedule and everything was still hot."</p>
-          <footer>Angela · Anderson County</footer>
+          <footer>Angela · Anderson County · Sample</footer>
         </article>
         <article class="rev">
-          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <span class="tag">Italian + Soul · Dinner</span>
           <p>"Sample review: we mixed Italian and soul food for a family reunion and nobody could pick a favorite."</p>
-          <footer>Darnell · Oconee County</footer>
+          <footer>Darnell · Oconee County · Sample</footer>
         </article>
       </div>
     </div>
@@ -365,7 +367,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
         <h2 id="q-h">Tell us the date and the headcount. We'll handle the rest.</h2>
         <p>Weddings, corporate lunches, church functions, airport crews, family reunions. Send a few details or just call.</p>
         <div class="quote-call">
-          <span class="mono" style="font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--apricot)">Call or text</span>
+          <span class="mono" style="font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--apricot)">Or just call</span>
           <a class="big" href="tel:8649858020">864-985-8020</a>
         </div>
       </div>
@@ -432,7 +434,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-bet
 document.getElementById('quote-form').addEventListener('submit',function(e){
   e.preventDefault();
   var m=document.getElementById('form-msg');
-  m.textContent="Thanks! This is a demo, so the form isn't connected yet. On the live site your request would go straight to All J's. For now, call or text 864-985-8020.";
+  m.textContent="Thanks! This is a demo, so the form isn't connected yet. On the live site your request would go straight to All J's. For now, call 864-985-8020.";
   m.classList.add('show');
   m.scrollIntoView({behavior:'smooth',block:'nearest'});
 });
