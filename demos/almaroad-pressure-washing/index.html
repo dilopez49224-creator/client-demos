@@ -4,208 +4,268 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Almaroad Pressure Washing | Exterior Cleaning in Anderson, SC</title>
-<meta name="description" content="Demo preview of a one-page site for Almaroad Pressure Washing, owner-operated pressure washing and exterior cleaning in the Anderson area.">
+<title>Pressure Wash Anderson, by Almaroad Pressure Washing | Soft Wash &amp; Pressure Washing in the Upstate</title>
+<meta name="description" content="Demo preview for Pressure Wash Anderson by Almaroad Pressure Washing: soft-wash house washing, concrete cleaning and commercial pressure washing around Anderson, Greenville and Clemson, SC.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --deep:#022c3a;      /* ink */
-  --cyan:#0e7490;      /* primary */
-  --cyan-d:#0b5c73;
-  --cyan-l:#cdeff6;
-  --mist:#f0fdff;      /* page */
-  --white:#ffffff;
-  --lime:#a3e635;      /* accent */
-  --lime-d:#5a7f12;    /* accent text on light */
-  --grime:#5b5240;
-  --text:#123842;
-  --muted:#3f6672;
+  --sky:#8fb3dd;       /* their tile background */
+  --sky-l:#e8f0fa;
+  --sky-xl:#f5f9fd;
+  --sky-d:#2f5f96;     /* buttons / links */
+  --sky-dd:#244c7a;
+  --wood:#9a6a3c;
+  --wood-d:#6b4527;
+  --wood-l:#d9b48a;
+  --ink:#2a2119;       /* walnut ink */
+  --text:#3a3129;
+  --muted:#5f554b;
+  --white:#fff;
+  --line:#d6e2f0;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;padding-top:46px;padding-bottom:84px;background:var(--mist);color:var(--text);font:400 17px/1.6 Manrope,system-ui,sans-serif;overflow-x:hidden}
-h1,h2,h3{font-family:Fredoka,"Trebuchet MS",sans-serif;line-height:1.05;margin:0 0 .4em;color:var(--deep);letter-spacing:-.01em}
-h1{font-size:clamp(2.5rem,9vw,4.4rem);font-weight:700}
-h2{font-size:clamp(1.9rem,6.5vw,3rem);font-weight:600}
-h3{font-size:1.3rem;font-weight:600}
+body{margin:0;padding-top:46px;padding-bottom:84px;background:var(--white);color:var(--text);font:400 16px/1.65 Poppins,system-ui,sans-serif;overflow-x:hidden}
+h1,h2{font-family:Lora,Georgia,serif;color:var(--ink);line-height:1.12;margin:0 0 .45em;letter-spacing:-.005em}
+h1{font-size:clamp(2.35rem,9vw,3.9rem);font-weight:700}
+h2{font-size:clamp(1.85rem,6.6vw,2.75rem);font-weight:700}
+h3{font:600 1.08rem/1.3 Poppins,system-ui,sans-serif;color:var(--ink);margin:0 0 .35em}
 p{margin:0 0 1em}
-a{color:var(--cyan-d)}
+a{color:var(--sky-d)}
 img,svg{display:block;max-width:100%}
-:focus-visible{outline:3px solid var(--deep);outline-offset:3px;box-shadow:0 0 0 7px var(--lime)}
-.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:46px;background:var(--deep);color:#fff;text-align:center;font:700 13px/1.3 Manrope,sans-serif;padding:7px 12px;display:flex;align-items:center;justify-content:center;letter-spacing:.02em}
-.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-section{padding:56px 0}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font:800 .78rem/1 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-d);margin-bottom:14px}
-.eyebrow::before{content:"";width:14px;height:14px;border-radius:50% 50% 50% 0;background:var(--cyan);transform:rotate(-45deg)}
-.lead{font-size:1.15rem;color:var(--muted);max-width:60ch}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:999px;background:var(--cyan);color:#fff;border:0;font:700 1.05rem Manrope,sans-serif;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
-.btn:hover{background:var(--cyan-d);transform:translateY(-1px)}
-.btn.lime{background:var(--lime);color:var(--deep)}
-.btn.lime:hover{background:#b7f04e}
-.btn.ghost{background:var(--white);color:var(--deep);box-shadow:inset 0 0 0 2px var(--deep)}
-.btn.ghost:hover{background:var(--cyan-l)}
-.btn svg{width:22px;height:22px;flex:none}
+:focus-visible{outline:3px solid var(--sky-d);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+section{padding:64px 0}
+.kicker{display:inline-flex;align-items:center;gap:8px;font:600 13px/1.2 Poppins,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--wood-d);margin-bottom:12px}
+.kicker::before{content:"";width:22px;height:3px;border-radius:2px;background:var(--wood)}
+.lead{font-size:1.06rem;color:var(--muted);max-width:60ch}
+
+/* wood-grain strip, a nod to the plank header on their current site */
+.wood{background:
+  repeating-linear-gradient(90deg,transparent 0 118px,rgba(60,35,15,.45) 118px 120px,transparent 120px 237px,rgba(60,35,15,.35) 237px 239px),
+  repeating-linear-gradient(0deg,rgba(255,235,205,.10) 0 2px,transparent 2px 7px,rgba(70,40,15,.12) 7px 8px,transparent 8px 13px),
+  linear-gradient(180deg,#b07d4c 0%,#9a6a3c 45%,#8a5d33 100%)}
+.wood-strip{height:14px}
+
+.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:46px;background:var(--ink);color:#fff;text-align:center;font:600 13px/1.3 Poppins,sans-serif;padding:7px 12px;display:flex;align-items:center;justify-content:center}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:12px 22px;border-radius:10px;font:600 16px/1.2 Poppins,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn.primary{background:var(--sky-d);color:#fff}
+.btn.primary:hover{background:var(--sky-dd)}
+.btn.woodbtn{background:var(--wood-d);color:#fff}
+.btn.woodbtn:hover{background:#5a3920}
+.btn.ghost{background:#fff;color:var(--ink);border-color:var(--ink)}
+.btn:active{transform:translateY(1px)}
 
 /* header */
-.top{background:var(--white);border-bottom:1px solid var(--cyan-l)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:72px}
-.logo{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--deep);font:700 1.25rem Fredoka,sans-serif}
-.logo .drop{width:36px;height:36px;border-radius:50% 50% 50% 0;background:linear-gradient(135deg,var(--cyan),var(--deep));transform:rotate(-45deg);display:grid;place-items:center;flex:none}
-.logo .drop i{width:10px;height:10px;border-radius:50%;background:var(--lime);transform:rotate(45deg) translate(-3px,-3px)}
-.top .call{display:none}
-@media(min-width:720px){.top .call{display:inline-flex}}
+.top{position:relative;color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;text-shadow:0 1px 2px rgba(40,20,5,.5)}
+.logo .mark{width:40px;height:40px;flex:none;border-radius:50%;background:var(--sky);display:grid;place-items:center;box-shadow:0 0 0 3px rgba(255,255,255,.85)}
+.logo .mark svg{width:22px;height:22px}
+.logo .name{font:700 24px/1 Lora,Georgia,serif}
+.logo .name small{display:block;font:500 12px/1.3 Poppins,sans-serif;letter-spacing:.04em;margin-top:3px;opacity:.95}
+.top .call{min-height:44px;padding:8px 14px;background:#fff;color:var(--wood-d);font-size:15px}
+.top .call .num{display:none}
+@media(min-width:620px){.top .call .num{display:inline}}
 
 /* hero */
-.hero{position:relative;padding:40px 0 60px;overflow:hidden;background:
-  radial-gradient(900px 400px at 110% -10%,var(--cyan-l) 0,transparent 60%),
-  radial-gradient(600px 300px at -10% 110%,#e3fbc8 0,transparent 60%),var(--mist)}
-.hero .grid{display:grid;gap:36px;align-items:center}
-@media(min-width:900px){.hero .grid{grid-template-columns:1.05fr 1fr}}
-.hero h1 span{color:var(--cyan)}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 10px}
-.fineprint{font-size:.9rem;color:var(--muted)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
-.chips li{background:var(--white);border:1.5px solid var(--cyan-l);border-radius:999px;padding:6px 12px;font-size:.85rem;font-weight:600;color:var(--cyan-d)}
+.hero{background:linear-gradient(180deg,var(--sky) 0%,#b5cdea 55%,var(--sky-xl) 100%);padding:44px 0 56px;position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;background:#fff;border-radius:999px;opacity:.55;filter:blur(1px)}
+.hero::before{width:180px;height:40px;top:34px;right:-40px;box-shadow:-60px 18px 0 -6px #fff}
+.hero::after{width:140px;height:32px;top:120px;left:-50px}
+.hero .grid{display:grid;gap:30px;position:relative;z-index:1}
+.hero h1 em{font-style:italic;color:var(--sky-dd)}
+.hero .lead{color:#3c3730}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 14px}
+.cta-row .btn{flex:1 1 210px}
+.fine{font-size:14px;color:#4a4339;margin:0}
+.chips{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{background:rgba(255,255,255,.85);border:1px solid #fff;border-radius:999px;padding:6px 13px;font:500 13px/1.3 Poppins,sans-serif;color:var(--ink)}
 
-/* before/after reveal */
-.reveal{position:relative;border-radius:24px;overflow:hidden;background:var(--white);box-shadow:0 20px 50px -20px rgba(2,44,58,.45);aspect-ratio:4/3;isolation:isolate}
+.reveal{position:relative;margin:0;border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:#fff;border:6px solid #fff;box-shadow:0 18px 40px -20px rgba(36,76,122,.6)}
 .reveal .layer{position:absolute;inset:0}
 .reveal .layer svg{width:100%;height:100%}
-.reveal .dirty{clip-path:inset(0 calc(100% - var(--pos,55%)) 0 0)}
-.reveal .handle{position:absolute;top:0;bottom:0;left:var(--pos,55%);width:4px;background:var(--white);transform:translateX(-2px);pointer-events:none;box-shadow:0 0 0 1px rgba(2,44,58,.15)}
-.reveal .knob{position:absolute;top:50%;left:var(--pos,55%);transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:var(--lime);display:grid;place-items:center;pointer-events:none;box-shadow:0 6px 18px rgba(2,44,58,.35)}
-.reveal .knob svg{width:26px;height:26px}
-.reveal input[type=range]{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;-webkit-appearance:none;appearance:none}
-.reveal input[type=range]:focus-visible{opacity:1;outline:3px solid var(--deep);outline-offset:-4px}
-.reveal .tag{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font:700 .75rem/1 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;z-index:2;pointer-events:none}
-.reveal .tag.b{left:14px;background:var(--grime);color:#fff}
-.reveal .tag.a{right:14px;background:var(--lime);color:var(--deep)}
-.reveal figcaption{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-size:.8rem;color:var(--muted);pointer-events:none}
+.reveal .dirty{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.reveal .handle{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.15);pointer-events:none}
+.reveal .knob{position:absolute;top:50%;left:var(--pos);width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 4px 12px rgba(0,0,0,.25);pointer-events:none}
+.reveal .knob svg{width:22px;height:22px}
+.reveal input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.reveal .tag{position:absolute;top:10px;z-index:2;font:600 13px/1 Poppins,sans-serif;padding:6px 10px;border-radius:6px;pointer-events:none}
+.reveal .tag.b{left:10px;background:rgba(42,33,25,.82);color:#fff}
+.reveal .tag.a{right:10px;background:#fff;color:var(--ink)}
+.reveal figcaption{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.92);color:var(--ink);font:500 12px/1 Poppins,sans-serif;padding:6px 10px;border-radius:999px;white-space:nowrap;pointer-events:none}
 
-/* services */
-.services{background:var(--white)}
-.cards{display:grid;gap:18px;margin-top:28px}
-@media(min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:960px){.cards{grid-template-columns:repeat(3,1fr)}}
-.card{background:var(--mist);border-radius:20px;padding:24px;border:1.5px solid var(--cyan-l)}
-.card .ico{width:54px;height:54px;border-radius:16px;background:var(--cyan);display:grid;place-items:center;margin-bottom:16px}
-.card .ico svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.card p{margin:0;color:var(--muted);font-size:.98rem}
-p{max-width:65ch}
-.card.ask{background:var(--deep);color:#dff6fb;border-color:var(--deep)}
-.card.ask h3{color:#fff}
-.card.ask p{color:#bfe6ef}
-.card.ask .ico{background:var(--lime)}
-.card.ask .ico svg{stroke:var(--deep)}
+/* soft wash vs high pressure */
+.method{background:#fff}
+.vs{display:grid;gap:18px;margin-top:28px}
+.vs-card{border-radius:16px;padding:22px 20px;border:2px solid var(--line);background:var(--sky-xl)}
+.vs-card.hp{background:#faf5ef;border-color:#ead9c4}
+.vs-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.gauge{width:64px;height:64px;flex:none}
+.vs-head .lbl{font:600 13px/1.2 Poppins,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--sky-d)}
+.vs-card.hp .lbl{color:var(--wood-d)}
+.vs-head .ttl{font:700 26px/1.15 Lora,Georgia,serif;color:var(--ink)}
+.vs-card p{color:var(--muted);font-size:15px}
+.surf{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.surf li{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:6px 11px;font:500 14px/1.2 Poppins,sans-serif;color:var(--ink)}
+.vs-card.hp .surf li{border-color:#ead9c4}
+.surf li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--sky)}
+.vs-card.hp .surf li::before{background:var(--wood)}
+.method-note{margin-top:20px;font-size:15px;color:var(--muted);border-left:4px solid var(--wood);padding:4px 0 4px 14px;max-width:70ch}
 
-.guide{display:grid;gap:0;margin:28px 0 0;padding:0;border-top:1.5px solid var(--cyan-l)}
-.guide div{display:grid;gap:4px;padding:14px 0;border-bottom:1.5px solid var(--cyan-l)}
-.guide dt{font:600 1.05rem Fredoka,sans-serif;color:var(--deep)}
-.guide dd{margin:0;color:var(--muted);font-size:.95rem}
-@media(min-width:640px){.guide div{grid-template-columns:200px 1fr;gap:16px;align-items:baseline}}
+/* services: an upgraded take on their sky-blue tile page */
+.services{background:var(--sky);position:relative}
+.services h2,.services .kicker{color:var(--ink)}
+.services .kicker{color:#4b2f18}
+.services .kicker::before{background:var(--wood-d)}
+.services .lead{color:#2f2a24}
+.tiles{display:grid;grid-template-columns:1fr;gap:14px;margin-top:26px}
+.tile{background:#fff;border-radius:14px;padding:20px 18px;display:flex;gap:16px;align-items:flex-start;box-shadow:0 10px 24px -18px rgba(36,76,122,.9)}
+.tile .ico{width:56px;height:56px;flex:none;border-radius:12px;background:var(--sky-l);display:grid;place-items:center}
+.tile .ico svg{width:36px;height:36px;fill:none;stroke:var(--sky-dd);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.tile .ico .acc{stroke:var(--wood)}
+.tile p{margin:0;font-size:15px;color:var(--muted)}
+.tile .tagline{display:inline-block;margin-bottom:6px;font:600 12px/1.2 Poppins,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--wood-d)}
+.tile.cta{background:var(--ink);color:#fff;flex-direction:column}
+.tile.cta h3{color:#fff}
+.tile.cta p{color:#e7ddd2;margin-bottom:12px}
 
-/* why us */
-.why{background:var(--deep);color:#dff6fb;position:relative;overflow:hidden}
-.why::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(163,230,53,.18) 1.5px,transparent 1.6px);background-size:22px 22px;opacity:.6;pointer-events:none}
-.why .wrap{position:relative}
-.why h2{color:#fff}
-.why .eyebrow{color:var(--lime)}
-.why .eyebrow::before{background:var(--lime)}
-.why-grid{display:grid;gap:14px;margin-top:28px}
-@media(min-width:720px){.why-grid{grid-template-columns:repeat(2,1fr)}}
-.why-item{display:flex;gap:14px;padding:18px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
-.why-item .n{flex:none;width:44px;height:44px;border-radius:50%;background:var(--lime);display:grid;place-items:center}
-.why-item .n svg{width:24px;height:24px;stroke:var(--deep);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-.why-item h3{color:#fff;font-size:1.15rem;margin-bottom:.2em}
-.why-item p{margin:0;color:#bfe6ef;font-size:.95rem}
+/* commercial band */
+.commercial{background:var(--sky-xl);border-top:1px solid var(--line)}
+.commercial .grid{display:grid;gap:28px;align-items:center}
+.dt-art{background:#fff;border-radius:16px;border:2px solid var(--line);padding:10px;overflow:hidden}
+.dt-art svg{width:100%;height:auto}
+.checks{list-style:none;padding:0;margin:18px 0 22px;display:grid;gap:10px}
+.checks li{display:flex;gap:10px;align-items:flex-start}
+.checks svg{width:22px;height:22px;flex:none;margin-top:2px;fill:none;stroke:var(--sky-d);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 
-/* text-back */
-.textback{background:linear-gradient(180deg,var(--white),var(--mist))}
-.textback .grid{display:grid;gap:36px;align-items:center}
-@media(min-width:900px){.textback .grid{grid-template-columns:1fr 1fr}}
-.steps{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px}
-.steps li{display:flex;gap:12px;align-items:flex-start;background:var(--white);border:1.5px solid var(--cyan-l);border-radius:14px;padding:12px 14px}
-.steps li b{flex:none;width:30px;height:30px;border-radius:50%;background:var(--cyan);color:#fff;display:grid;place-items:center;font:700 .9rem Fredoka,sans-serif}
-.phone{width:min(300px,88%);margin:0 auto;background:var(--deep);border-radius:40px;padding:14px;box-shadow:0 30px 60px -25px rgba(2,44,58,.6);position:relative}
-.phone::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:110px;height:26px;background:var(--deep);border-radius:0 0 18px 18px;z-index:2}
-.screen{background:#f4fbfd;border-radius:28px;min-height:520px;padding:44px 14px 18px;display:flex;flex-direction:column;gap:10px;font-size:.9rem;color:var(--deep)}
-.screen .time{text-align:center;font-weight:800;font-size:.8rem;color:var(--muted)}
-.missed{background:#fff;border-radius:16px;padding:12px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 4px 14px rgba(2,44,58,.08);border-left:4px solid #e4572e}
-.missed .ic{width:36px;height:36px;border-radius:50%;background:#fde8e2;display:grid;place-items:center;flex:none}
-.missed .ic svg{width:20px;height:20px;stroke:#c2410c;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.missed b{display:block;font-size:.85rem}
-.missed span{font-size:.78rem;color:var(--muted)}
-.bubble{max-width:88%;padding:11px 14px;border-radius:18px;line-height:1.4;font-size:.86rem}
-.bubble.in{align-self:flex-start;background:#e6eef1;border-bottom-left-radius:4px}
-.bubble.out{align-self:flex-end;background:var(--cyan);color:#fff;border-bottom-right-radius:4px}
-.bubble small{display:block;opacity:.75;font-size:.7rem;margin-top:4px}
-.sms-label{text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-top:6px}
-@media(prefers-reduced-motion:no-preference){
-  .bubble.out{animation:pop .5s .6s both}
-  .missed{animation:pop .5s .1s both}
-  @keyframes pop{from{opacity:0;transform:translateY(8px) scale(.96)}to{opacity:1;transform:none}}
-}
+/* why */
+.why{background:#fff}
+.promise{margin:22px 0 30px;background:var(--sky-l);border-radius:16px;padding:26px 22px;position:relative;overflow:hidden}
+.promise::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:linear-gradient(180deg,#b07d4c,#8a5d33)}
+.promise blockquote{margin:0;font:600 italic 26px/1.3 Lora,Georgia,serif;color:var(--ink)}
+.promise cite{display:block;margin-top:12px;font:500 14px/1.3 Poppins,sans-serif;font-style:normal;color:var(--muted)}
+.why-grid{display:grid;gap:14px}
+.why-item{display:flex;gap:14px;padding:18px;border:1px solid var(--line);border-radius:14px}
+.why-item .n{width:44px;height:44px;flex:none;border-radius:50%;background:var(--wood-d);display:grid;place-items:center}
+.why-item .n svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.why-item p{margin:0;font-size:15px;color:var(--muted)}
+
+/* text back */
+.textback{background:linear-gradient(180deg,var(--sky-l),#fff)}
+.textback .grid{display:grid;gap:34px;align-items:center}
+.steps{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.steps li{display:flex;gap:12px;align-items:flex-start}
+.steps b{width:32px;height:32px;flex:none;border-radius:50%;background:var(--sky-d);color:#fff;display:grid;place-items:center;font:700 15px/1 Poppins,sans-serif}
+.phone{width:min(320px,100%);margin:0 auto;background:#1f1a15;border-radius:38px;padding:12px;box-shadow:0 24px 50px -24px rgba(42,33,25,.7)}
+.screen{background:#f4f6f9;border-radius:28px;padding:18px 14px 20px;min-height:470px}
+.screen .time{text-align:center;font:600 13px/1 Poppins,sans-serif;color:#333;margin-bottom:14px}
+.missed{display:flex;gap:10px;align-items:center;background:#fff;border-radius:14px;padding:11px 12px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.missed .ic{width:36px;height:36px;border-radius:50%;background:#fde3e1;display:grid;place-items:center;flex:none}
+.missed .ic svg{width:18px;height:18px;fill:none;stroke:#c0392b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.missed b{display:block;font:600 14px/1.2 Poppins,sans-serif;color:#222}
+.missed span{font-size:12px;color:#555}
+.sms-label{text-align:center;font:600 12px/1 Poppins,sans-serif;color:#555;margin:18px 0 10px}
+.sms-from{text-align:center;font:600 13px/1.2 Poppins,sans-serif;color:#222;margin-bottom:12px}
+.bubble{max-width:86%;padding:10px 13px;border-radius:18px;font-size:14px;line-height:1.45;margin-bottom:10px}
+.bubble small{display:block;font-size:12px;opacity:.8;margin-top:4px}
+.bubble.out{background:var(--sky-d);color:#fff;border-bottom-left-radius:6px}
+.bubble.in{background:#e1e5ea;color:#222;margin-left:auto;border-bottom-right-radius:6px}
 
 /* reviews */
-.reviews{background:var(--white)}
-.note{display:inline-block;background:#fff7d6;border:1.5px dashed #d9b84a;color:#6b5306;border-radius:10px;padding:6px 12px;font-size:.85rem;font-weight:700;margin-bottom:18px}
-.rev-grid{display:grid;gap:16px}
-@media(min-width:720px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
-.rev{padding:6px 0 6px 20px;border-left:5px solid var(--lime);position:relative}
-.rev::before{content:"\201C";display:block;font:700 3.2rem/0.6 Fredoka,serif;color:var(--cyan);margin:10px 0 10px}
-.rev p{position:relative;margin:0 0 12px;font-size:1.02rem}
-.rev .who{font-weight:700;font-size:.85rem;color:var(--cyan-d)}
-.rev .stars{color:#d99a06;letter-spacing:2px;font-size:.9rem}
+.reviews{background:#fff}
+.note{display:inline-block;background:#faf5ef;border:1px dashed var(--wood);border-radius:8px;padding:8px 12px;font-size:14px;color:var(--wood-d)}
+.rev-grid{display:grid;gap:14px;margin-top:22px}
+.rev{background:var(--sky-xl);border:1px solid var(--line);border-radius:14px;padding:20px}
+.rev .stars{color:var(--wood);font-size:18px;letter-spacing:3px}
+.rev p{margin:8px 0 10px;font-size:15px}
+.rev .who{font:600 14px/1.2 Poppins,sans-serif;color:var(--muted)}
+.ha{margin-top:18px;font-size:15px;color:var(--muted)}
 
-/* form */
-.quote{background:var(--mist)}
+/* quote */
+.quote{background:var(--sky)}
 .quote .grid{display:grid;gap:28px}
-@media(min-width:900px){.quote .grid{grid-template-columns:1fr 1.2fr}}
-form{background:var(--white);border-radius:24px;padding:24px;border:1.5px solid var(--cyan-l);box-shadow:0 20px 40px -30px rgba(2,44,58,.4)}
-.field{display:grid;gap:6px;margin-bottom:14px}
-.field label{font-weight:700;font-size:.9rem;color:var(--deep)}
-.field input,.field select,.field textarea{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid #9ccfdc;background:#fff;color:var(--text);min-height:48px}
-.field textarea{min-height:110px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan)}
+.quote .lead{color:#2f2a24}
+.quote .kicker{color:#4b2f18}
+.contact-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+.contact-list li{display:flex;gap:10px;align-items:center;font-weight:500;color:var(--ink)}
+.contact-list svg{width:22px;height:22px;flex:none;fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.contact-list a{color:var(--ink);font-weight:700}
+form{background:#fff;border-radius:16px;padding:22px 18px;box-shadow:0 18px 40px -24px rgba(36,76,122,.9)}
+.field{margin-bottom:14px}
 .two{display:grid;gap:0 14px}
-@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
-.msg{display:none;margin-top:14px;padding:14px;border-radius:12px;background:#ecfccb;color:#365314;font-weight:700}
+label{display:block;font:600 14px/1.3 Poppins,sans-serif;color:var(--ink);margin-bottom:6px}
+input,select,textarea{width:100%;font:400 16px/1.4 Poppins,sans-serif;color:var(--ink);background:var(--sky-xl);border:1.5px solid #b9cbe0;border-radius:10px;padding:11px 12px}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sky-d);box-shadow:0 0 0 3px rgba(47,95,150,.2)}
+.msg{display:none;margin:12px 0 0;font-size:14px;background:var(--sky-l);border-radius:10px;padding:10px 12px;color:var(--ink)}
 .msg.show{display:block}
-.contact-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
-.contact-list li{display:flex;gap:12px;align-items:center;min-height:44px}
-.contact-list svg{width:24px;height:24px;stroke:var(--cyan);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.contact-list a{display:inline-flex;align-items:center;min-height:44px;color:var(--deep);text-decoration:none;font-size:1.2rem;font-family:Fredoka,sans-serif}
 
 /* area */
-.area{background:var(--white)}
-.area .grid{display:grid;gap:30px;align-items:center}
-@media(min-width:800px){.area .grid{grid-template-columns:1fr 1fr}}
-.map{background:var(--mist);border-radius:24px;padding:16px;border:1.5px solid var(--cyan-l)}
+.area{background:#fff}
+.area .grid{display:grid;gap:28px;align-items:center}
+.map{background:var(--sky-xl);border:2px solid var(--line);border-radius:16px;padding:10px}
 .map svg{width:100%;height:auto}
-.area ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
-.area li{background:var(--cyan-l);color:var(--deep);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.9rem}
+.map-cap{font-size:13px;color:var(--muted);margin:8px 4px 0}
+.towns{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.towns li{background:var(--sky-l);border-radius:999px;padding:6px 14px;font:500 14px/1.3 Poppins,sans-serif;color:var(--ink)}
+.towns li.main{background:var(--sky-d);color:#fff;font-weight:600}
 
-footer{background:var(--deep);color:#bfe6ef;padding:36px 0 40px;font-size:.9rem}
-footer .wrap{display:grid;gap:10px}
-footer a{color:#fff;display:inline-block;padding:12px 2px}
+/* sign-off */
+.signoff{padding:0;background:var(--sky-xl)}
+.signoff .inner{padding:52px 16px 56px;text-align:center}
+.signoff .big{font:700 clamp(2rem,8vw,3rem)/1.15 Lora,Georgia,serif;color:var(--ink);margin:0 0 10px}
+.signoff .sig{font:italic 400 17px/1.3 Poppins,sans-serif;color:var(--muted);margin:0 0 24px}
+.signoff .cta-row{justify-content:center;max-width:520px;margin:0 auto}
 
-/* sticky call bar */
-.callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(240,253,255,.92);backdrop-filter:blur(8px);border-top:1px solid var(--cyan-l)}
-.callbar .btn{width:100%;font-size:1.1rem}
-@media(min-width:720px){.callbar{display:none}body{padding-bottom:0}}
+footer{background:var(--ink);color:#d8cfc5;padding:30px 0;font-size:14px}
+footer .wrap{display:grid;gap:8px}
+footer a{color:#fff}
+footer .fname{color:#fff;font:700 24px/1.2 Lora,Georgia,serif}
 
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
+.callbar .btn{width:100%}
+
+@media(min-width:760px){
+  section{padding:88px 0}
+  .hero{padding:72px 0 84px}
+  .hero .grid{grid-template-columns:1.05fr 1fr;align-items:center;gap:48px}
+  .vs{grid-template-columns:1fr 1fr}
+  .tiles{grid-template-columns:1fr 1fr}
+  .commercial .grid{grid-template-columns:1fr 1fr;gap:48px}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .textback .grid{grid-template-columns:1.1fr 1fr}
+  .rev-grid{grid-template-columns:repeat(3,1fr)}
+  .quote .grid{grid-template-columns:1fr 1.15fr;gap:48px;align-items:start}
+  .two{grid-template-columns:1fr 1fr}
+  .area .grid{grid-template-columns:1.1fr 1fr;gap:48px}
+  .promise{padding:34px 36px}
+  .promise blockquote{font-size:30px}
+}
+@media(min-width:1000px){
+  .tiles{grid-template-columns:repeat(4,1fr)}
+  .tile{flex-direction:column}
+  body{padding-bottom:0}
+  .callbar{display:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 </head>
 <body>
 <div class="banner" role="note">Demo preview built by David — not the official site.</div>
 
-<header class="top">
+<header class="top wood">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="Almaroad Pressure Washing home"><span class="drop" aria-hidden="true"><i></i></span>Almaroad Pressure Washing</a>
-    <a class="btn lime call" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>864-883-0126</a>
+    <a class="logo" href="#top" aria-label="Pressure Wash Anderson home">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#fff" stroke="#244c7a" stroke-width="1.6"><path d="M12 3c3 4.2 6 7.3 6 11a6 6 0 0 1-12 0c0-3.7 3-6.8 6-11z"/></svg></span>
+      <span class="name">Pressure Wash Anderson<small>by Almaroad Pressure Washing</small></span>
+    </a>
+    <a class="btn call" href="tel:+18648830126" aria-label="Call 864-883-0126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call<span class="num">&nbsp;864-883-0126</span></a>
   </div>
 </header>
 
@@ -214,152 +274,229 @@ footer a{color:#fff;display:inline-block;padding:12px 2px}
 <section class="hero" aria-labelledby="hero-h">
   <div class="wrap grid">
     <div>
-      <span class="eyebrow">Anderson, SC · Owner-operated</span>
-      <h1 id="hero-h">Your place, <span>looking new</span> again.</h1>
-      <p class="lead">Pressure washing and exterior cleaning for homes and businesses around Anderson. One owner, one standard: if it isn't clean, we're not done.</p>
+      <span class="kicker">Anderson · Greenville · Clemson</span>
+      <h1 id="hero-h">Deluxe pressure washing, <em>gentle</em> on your home.</h1>
+      <p class="lead">Soft-wash house washing, concrete cleaning and commercial pressure washing across the Upstate of South Carolina, for homes and businesses alike.</p>
       <div class="cta-row">
-        <a class="btn" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call 864-883-0126</a>
-        <a class="btn ghost" href="#quote">Get a quote</a>
+        <a class="btn primary" href="#quote">Get a free estimate</a>
+        <a class="btn ghost" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>864-883-0126</a>
       </div>
-      <p class="fineprint">Call, or send a photo of what needs cleaning. If we're mid-rinse, you get a text back right away.</p>
+      <p class="fine">Call, text, or send the form. Owner Adam Almaroad gets back to you.</p>
       <ul class="chips" aria-label="Highlights">
-        <li>Owner on every job</li>
-        <li>HomeAdvisor reviewers praise work ethic &amp; quality</li>
-        <li>Anderson area</li>
+        <li>Soft-wash specialists</li>
+        <li>Residential &amp; commercial</li>
+        <li>Free estimates</li>
       </ul>
     </div>
 
     <figure class="reveal" style="--pos:55%" id="reveal">
       <span class="tag b">Before</span><span class="tag a">After</span>
-      <!-- CLEAN layer (full) -->
       <div class="layer clean" aria-hidden="true">
         <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-          <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bdeefb"/><stop offset="1" stop-color="#f0fdff"/></linearGradient></defs>
+          <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fc0e6"/><stop offset="1" stop-color="#eef4fb"/></linearGradient></defs>
           <rect width="400" height="300" fill="url(#sky)"/>
-          <circle cx="330" cy="55" r="26" fill="#fff4b8"/>
-          <rect y="215" width="400" height="85" fill="#9bd36a"/>
-          <path d="M0 230 Q200 210 400 230 V300 H0Z" fill="#7dc24e"/>
-          <!-- driveway -->
-          <path d="M150 300 L185 215 H255 L300 300Z" fill="#e6e9ea"/>
-          <path d="M160 300 L190 215 H250 L290 300Z" fill="#f2f4f5"/>
-          <!-- house -->
-          <rect x="60" y="120" width="200" height="100" fill="#ffffff"/>
-          <rect x="60" y="120" width="200" height="100" fill="none" stroke="#d7e2e6" stroke-width="2"/>
-          <g stroke="#dfe8eb" stroke-width="1.5"><path d="M60 140H260M60 160H260M60 180H260M60 200H260"/></g>
-          <path d="M45 125 L160 55 L275 125Z" fill="#0e7490"/>
-          <rect x="200" y="70" width="18" height="40" fill="#0b5c73"/>
-          <rect x="140" y="165" width="40" height="55" fill="#0b5c73"/>
-          <circle cx="172" cy="195" r="2.5" fill="#a3e635"/>
-          <g fill="#bdeefb" stroke="#0b5c73" stroke-width="2"><rect x="80" y="140" width="38" height="34"/><rect x="202" y="140" width="38" height="34"/></g>
-          <g stroke="#0b5c73" stroke-width="2"><path d="M99 140v34M80 157h38M221 140v34M202 157h38"/></g>
-          <!-- bushes -->
-          <circle cx="85" cy="222" r="14" fill="#5aa83a"/><circle cx="110" cy="226" r="11" fill="#6fbe48"/><circle cx="240" cy="224" r="13" fill="#5aa83a"/>
-          <!-- sparkles -->
-          <g fill="#fff"><path d="M300 120l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="M40 90l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M330 190l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></g>
+          <ellipse cx="320" cy="58" rx="40" ry="12" fill="#fff" opacity=".8"/>
+          <rect y="215" width="400" height="85" fill="#8cc66a"/>
+          <path d="M0 230 Q200 210 400 230 V300 H0Z" fill="#76b555"/>
+          <path d="M150 300 L185 215 H255 L300 300Z" fill="#e4e6e6"/>
+          <path d="M160 300 L190 215 H250 L290 300Z" fill="#f3f4f4"/>
+          <rect x="60" y="120" width="200" height="100" fill="#fbfaf6"/>
+          <g stroke="#e3e0d6" stroke-width="1.5"><path d="M60 133H260M60 146H260M60 159H260M60 172H260M60 185H260M60 198H260M60 211H260"/></g>
+          <path d="M45 125 L160 55 L275 125Z" fill="#6b4527"/>
+          <path d="M45 125 L160 55 L275 125" fill="none" stroke="#4d311b" stroke-width="3"/>
+          <rect x="140" y="165" width="40" height="55" fill="#9a6a3c"/>
+          <circle cx="172" cy="195" r="2.5" fill="#f3d9a8"/>
+          <g fill="#cfe0f3" stroke="#2f5f96" stroke-width="2"><rect x="82" y="140" width="36" height="34"/><rect x="202" y="140" width="36" height="34"/></g>
+          <g stroke="#2f5f96" stroke-width="2"><path d="M100 140v34M82 157h36M220 140v34M202 157h36"/></g>
+          <g fill="#2f5f96"><rect x="72" y="140" width="8" height="34"/><rect x="120" y="140" width="8" height="34"/><rect x="192" y="140" width="8" height="34"/><rect x="240" y="140" width="8" height="34"/></g>
+          <circle cx="85" cy="222" r="14" fill="#4f9a35"/><circle cx="110" cy="226" r="11" fill="#63ad44"/><circle cx="240" cy="224" r="13" fill="#4f9a35"/>
+          <g fill="#fff"><path d="M300 130l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="M36 92l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M330 196l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></g>
         </svg>
       </div>
-      <!-- DIRTY layer (clipped) -->
       <div class="layer dirty" aria-hidden="true">
         <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-          <defs><linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fb6bd"/><stop offset="1" stop-color="#cfd8d6"/></linearGradient>
+          <defs><linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9b6c2"/><stop offset="1" stop-color="#d6dad7"/></linearGradient>
           <pattern id="grime" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="4" cy="5" r="2.2" fill="#4c5a3b" opacity=".55"/><circle cx="11" cy="11" r="1.6" fill="#5b5240" opacity=".5"/></pattern></defs>
           <rect width="400" height="300" fill="url(#sky2)"/>
-          <circle cx="330" cy="55" r="26" fill="#e9e3c5"/>
           <rect y="215" width="400" height="85" fill="#7f9a55"/>
           <path d="M0 230 Q200 210 400 230 V300 H0Z" fill="#6b8a44"/>
           <path d="M150 300 L185 215 H255 L300 300Z" fill="#8f9496"/>
           <path d="M160 300 L190 215 H250 L290 300Z" fill="#a4a9a8"/>
           <path d="M160 300 L190 215 H250 L290 300Z" fill="url(#grime)"/>
-          <rect x="60" y="120" width="200" height="100" fill="#d8d4c3"/>
+          <rect x="60" y="120" width="200" height="100" fill="#d6d2bf"/>
           <rect x="60" y="120" width="200" height="100" fill="url(#grime)"/>
-          <g stroke="#b9b5a3" stroke-width="1.5"><path d="M60 140H260M60 160H260M60 180H260M60 200H260"/></g>
+          <g stroke="#b9b5a3" stroke-width="1.5"><path d="M60 133H260M60 146H260M60 159H260M60 172H260M60 185H260M60 198H260M60 211H260"/></g>
           <path d="M60 120 h200 v30 q-60 10 -120 0 q-40 -6 -80 4z" fill="#6e7d4c" opacity=".55"/>
-          <path d="M45 125 L160 55 L275 125Z" fill="#4e6a63"/>
+          <path d="M45 125 L160 55 L275 125Z" fill="#4f4436"/>
           <path d="M70 120 L160 66 L250 120Z" fill="url(#grime)"/>
-          <rect x="200" y="70" width="18" height="40" fill="#3f4f52"/>
-          <rect x="140" y="165" width="40" height="55" fill="#4f5e5f"/>
-          <g fill="#9fb0b4" stroke="#4f5e5f" stroke-width="2"><rect x="80" y="140" width="38" height="34"/><rect x="202" y="140" width="38" height="34"/></g>
-          <g stroke="#4f5e5f" stroke-width="2"><path d="M99 140v34M80 157h38M221 140v34M202 157h38"/></g>
+          <rect x="140" y="165" width="40" height="55" fill="#6c5640"/>
+          <g fill="#9fa9ae" stroke="#4f5e5f" stroke-width="2"><rect x="82" y="140" width="36" height="34"/><rect x="202" y="140" width="36" height="34"/></g>
+          <g stroke="#4f5e5f" stroke-width="2"><path d="M100 140v34M82 157h36M220 140v34M202 157h36"/></g>
+          <g fill="#4a5a66"><rect x="72" y="140" width="8" height="34"/><rect x="120" y="140" width="8" height="34"/><rect x="192" y="140" width="8" height="34"/><rect x="240" y="140" width="8" height="34"/></g>
           <circle cx="85" cy="222" r="14" fill="#55753a"/><circle cx="110" cy="226" r="11" fill="#60824a"/><circle cx="240" cy="224" r="13" fill="#55753a"/>
         </svg>
       </div>
       <div class="handle" aria-hidden="true"></div>
-      <div class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#022c3a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
-      <input type="range" min="5" max="95" value="55" aria-label="Drag to compare before and after cleaning" id="slider">
+      <div class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2119" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+      <input type="range" min="5" max="95" value="55" aria-label="Drag to compare before and after soft washing" id="slider">
       <figcaption>Drag to compare · illustration</figcaption>
     </figure>
+  </div>
+</section>
+<div class="wood wood-strip" aria-hidden="true"></div>
+
+<!-- SOFT WASH VS HIGH PRESSURE -->
+<section class="method" id="method" aria-labelledby="method-h">
+  <div class="wrap">
+    <span class="kicker">How we clean</span>
+    <h2 id="method-h">Soft wash vs. high pressure</h2>
+    <p class="lead">More pressure isn't always better. Blasting siding or wood can damage it, so we match the method to the surface.</p>
+    <div class="vs">
+      <article class="vs-card">
+        <div class="vs-head">
+          <svg class="gauge" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#fff" stroke="#8fb3dd" stroke-width="3"/><path d="M12 42a21 21 0 0 1 40 0" fill="none" stroke="#e8f0fa" stroke-width="6" stroke-linecap="round"/><path d="M12 42a21 21 0 0 1 9-17" fill="none" stroke="#2f5f96" stroke-width="6" stroke-linecap="round"/><path d="M32 40L19 30" stroke="#2a2119" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="40" r="4" fill="#2a2119"/></svg>
+          <div><div class="lbl">Low pressure</div><div class="ttl">Soft wash</div></div>
+        </div>
+        <p>Environmentally friendly detergents remove dirt and kill organic growth on the surface, then a low-pressure rinse brings it back to looking like new.</p>
+        <ul class="surf" aria-label="Soft wash surfaces">
+          <li>Vinyl siding</li><li>Brick</li><li>Hardie board</li><li>Stucco</li><li>Decks</li><li>Fences</li>
+        </ul>
+      </article>
+      <article class="vs-card hp">
+        <div class="vs-head">
+          <svg class="gauge" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#fff" stroke="#d9b48a" stroke-width="3"/><path d="M12 42a21 21 0 0 1 40 0" fill="none" stroke="#f3e8da" stroke-width="6" stroke-linecap="round"/><path d="M12 42a21 21 0 0 1 40 0" fill="none" stroke="#9a6a3c" stroke-width="6" stroke-linecap="round"/><path d="M32 40L46 31" stroke="#2a2119" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="40" r="4" fill="#2a2119"/></svg>
+          <div><div class="lbl">High pressure</div><div class="ttl">Concrete only</div></div>
+        </div>
+        <p>Concrete driveways and sidewalks are one of the only times we use high pressure. It's what leaves them looking like new.</p>
+        <ul class="surf" aria-label="High pressure surfaces">
+          <li>Concrete driveways</li><li>Sidewalks</li>
+        </ul>
+      </article>
+    </div>
+    <p class="method-note">House washing by soft wash is our specialty. Same gentle process for your home or your business.</p>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section class="services" id="services" aria-labelledby="serv-h">
   <div class="wrap">
-    <span class="eyebrow">What we clean</span>
-    <h2 id="serv-h">Pressure washing &amp; exterior cleaning</h2>
-    <p class="lead">Dirt, mildew, pollen and years of weather don't stand a chance. Here's what folks around Anderson call us for most.</p>
-    <div class="cards">
-      <article class="card">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
-        <h3>House &amp; siding washing</h3>
-        <p>Vinyl, brick, stucco and painted surfaces washed to bring back the color your home had on day one.</p>
+    <span class="kicker">Our services</span>
+    <h2 id="serv-h">Seven ways we save you time</h2>
+    <p class="lead">Residential and commercial properties across the Upstate.</p>
+    <div class="tiles">
+      <article class="tile">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M6 19L20 8l14 11"/><path d="M9 17v16h22V17"/><path d="M17 33v-8h6v8"/><path class="acc" d="M28 4c1.4 2 2.5 3.4 2.5 5a2.5 2.5 0 0 1-5 0c0-1.6 1.1-3 2.5-5z"/></svg></div>
+        <div><span class="tagline">Our specialty</span><h3>House Washing (Soft Wash)</h3><p>Low pressure and eco-friendly detergents for vinyl, brick, Hardie board and stucco.</p></div>
       </article>
-      <article class="card">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20L9 4h6l5 16M7 14h10M8 9h8"/></svg></div>
-        <h3>Driveways, walks &amp; concrete</h3>
-        <p>Oil spots, tire marks, green algae and that gray grime that makes concrete look older than it is.</p>
+      <article class="tile">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M4 34L12 10h16l8 24z"/><path d="M8 22h24"/><ellipse class="acc" cx="20" cy="27" rx="6" ry="2.6"/><path class="acc" d="M20 24.4V16"/></svg></div>
+        <div><h3>Concrete Cleaning: Driveways &amp; Sidewalks</h3><p>High pressure, where it belongs, to lift the gray grime off concrete.</p></div>
       </article>
-      <article class="card">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 10h18M3 15h18M6 5v14M12 5v14M18 5v14"/></svg></div>
-        <h3>Decks, patios &amp; fences</h3>
-        <p>Wood and composite cleaned at the right pressure so it's fresh, not fuzzy or damaged.</p>
+      <article class="tile">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M7 34V9h18v25"/><path d="M25 16h8v18"/><path d="M4 34h32"/><path d="M11 13h3M18 13h3M11 19h3M18 19h3M11 25h3M18 25h3"/><path class="acc" d="M29 21v2M29 27v2"/></svg></div>
+        <div><h3>Commercial Properties</h3><p>Storefronts, offices and buildings that need to look their best.</p></div>
       </article>
-      <article class="card">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4zM4 12h16M9 7v10"/></svg></div>
-        <h3>Storefronts &amp; commercial</h3>
-        <p>Entrances, sidewalks and dumpster pads for shops and offices that want to look open for business.</p>
+      <article class="tile">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M5 18V9h20v9"/><path d="M3 9h24"/><path d="M15 18h10"/><rect x="18" y="12" width="6" height="5"/><path class="acc" d="M6 31v-5l3-5h10l3 5v5z"/><circle class="acc" cx="10" cy="31" r="2"/><circle class="acc" cx="18" cy="31" r="2"/><path d="M28 28h8M33 25l3 3-3 3"/></svg></div>
+        <div><h3>Restaurant Drive-Thru Pressure Washing</h3><p>Lanes, curbs and pads that see traffic all day long.</p></div>
       </article>
-      <article class="card">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div>
-        <h3>Soft washing for delicate surfaces</h3>
-        <p>Low pressure and the right cleaning solution where a blast of water would do more harm than good.</p>
+      <article class="tile">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M4 16l16-10 16 10"/><path d="M8 18h26v4a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3z"/><path d="M30 25v9"/><path class="acc" d="M14 30v2M20 29v2M25 31v2"/></svg></div>
+        <div><h3>Gutter Cleaning</h3><p>Clear gutters so rain goes where it should.</p></div>
       </article>
-      <article class="card ask">
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 9a3 3 0 1 1 4 2.8c-.7.3-1 .9-1 1.7V15M12 19h.01"/></svg></div>
-        <h3>Not sure if we clean it?</h3>
-        <p>Send a photo or just ask. If it's outside and dirty, there's a good chance we can help.</p>
+      <article class="tile">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M4 26h32M4 31h32"/><path d="M7 26V12M33 26V12M5 12h30"/><path d="M12 12v14M17 12v14M23 12v14M28 12v14"/><path class="acc" d="M7 31v4M33 31v4"/></svg></div>
+        <div><h3>Deck Cleaning</h3><p>Low pressure that cleans the wood without tearing it up.</p></div>
+      </article>
+      <article class="tile">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M7 34V11l3-4 3 4v23M18 34V11l3-4 3 4v23M29 34V11l3-4 3 4v23"/><path class="acc" d="M4 17h34M4 27h34"/></svg></div>
+        <div><h3>Fence Cleaning</h3><p>Low pressure for wood and vinyl fence lines.</p></div>
+      </article>
+      <article class="tile cta">
+        <h3>Not sure what you need?</h3>
+        <p>Send a photo or a quick description and we'll give you a free estimate.</p>
+        <a class="btn primary" href="#quote">Get a free estimate</a>
       </article>
     </div>
-    <dl class="guide" aria-label="How each surface gets cleaned">
-      <div><dt>Vinyl siding</dt><dd>Soft wash: low pressure, cleaning solution does the work</dd></div>
-      <div><dt>Concrete</dt><dd>High pressure with a surface cleaner for an even, streak-free finish</dd></div>
-      <div><dt>Wood decks</dt><dd>Low pressure with the grain so the wood stays smooth, not fuzzy</dd></div>
-      <div><dt>Roofs &amp; stucco</dt><dd>Soft wash only; high pressure is never used on these</dd></div>
-    </dl>
+  </div>
+</section>
+
+<!-- COMMERCIAL BAND -->
+<section class="commercial" id="commercial" aria-labelledby="com-h">
+  <div class="wrap grid">
+    <div class="dt-art" aria-hidden="true">
+      <svg viewBox="0 0 360 220">
+        <rect width="360" height="220" fill="#eef4fb"/>
+        <rect y="150" width="360" height="70" fill="#c9ccce"/>
+        <path d="M0 186H360" stroke="#fff" stroke-width="3" stroke-dasharray="18 14"/>
+        <!-- clean lane half -->
+        <rect x="180" y="150" width="180" height="70" fill="#dfe2e3"/>
+        <path d="M180 186H360" stroke="#fff" stroke-width="3" stroke-dasharray="18 14"/>
+        <!-- building -->
+        <rect x="40" y="62" width="250" height="88" fill="#f4ead9"/>
+        <rect x="30" y="50" width="270" height="16" fill="#9a6a3c"/>
+        <rect x="56" y="82" width="70" height="44" fill="#b9d0ea" stroke="#2f5f96" stroke-width="3"/>
+        <path d="M91 82v44" stroke="#2f5f96" stroke-width="3"/>
+        <rect x="150" y="96" width="34" height="54" fill="#6b4527"/>
+        <!-- drive-thru window + awning -->
+        <rect x="214" y="92" width="50" height="34" fill="#b9d0ea" stroke="#2f5f96" stroke-width="3"/>
+        <path d="M206 92h66l-8-14h-50z" fill="#2f5f96"/>
+        <rect x="194" y="16" width="112" height="28" rx="5" fill="#2a2119"/>
+        <text x="250" y="35.5" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14.5" font-weight="700" fill="#fff">DRIVE-THRU</text>
+        <path d="M250 44v6" stroke="#2a2119" stroke-width="4"/>
+        <!-- car -->
+        <path d="M70 178v-14l12-14h44l14 14v14z" fill="#2f5f96"/>
+        <path d="M88 154h16v10H80zM110 154h14l8 10h-22z" fill="#cfe0f3"/>
+        <circle cx="88" cy="180" r="9" fill="#2a2119"/><circle cx="126" cy="180" r="9" fill="#2a2119"/>
+        <path d="M150 170h22M164 163l8 7-8 7" stroke="#2a2119" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- grime spots on left lane -->
+        <g fill="#8d8a7e" opacity=".55"><ellipse cx="30" cy="205" rx="14" ry="5"/><ellipse cx="150" cy="208" rx="18" ry="5"/><ellipse cx="60" cy="160" rx="10" ry="3"/></g>
+        <!-- surface cleaner on the clean side -->
+        <ellipse cx="300" cy="200" rx="24" ry="8" fill="#9a6a3c"/>
+        <path d="M300 192l-22-40" stroke="#2a2119" stroke-width="4" stroke-linecap="round"/>
+        <path d="M270 150h16" stroke="#2a2119" stroke-width="5" stroke-linecap="round"/>
+        <g fill="#fff"><path d="M336 170l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M212 205l2 4 4 2-4 2-2 4-2-4-4-2 4-2z"/></g>
+      </svg>
+    </div>
+    <div>
+      <span class="kicker">For businesses</span>
+      <h2 id="com-h">Commercial &amp; restaurant drive-thrus</h2>
+      <p class="lead">Your lot and drive-thru lane are the first thing customers see. We pressure wash commercial properties and restaurant drive-thrus across the Upstate.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Restaurant drive-thru lanes and pads</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Building exteriors by soft wash</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Concrete sidewalks and entrances</span></li>
+      </ul>
+      <a class="btn woodbtn" href="#quote">Request a commercial estimate</a>
+    </div>
   </div>
 </section>
 
 <!-- WHY US -->
 <section class="why" id="why" aria-labelledby="why-h">
   <div class="wrap">
-    <span class="eyebrow">Why Almaroad</span>
-    <h2 id="why-h">Small enough to care. Serious about the work.</h2>
-    <p class="lead" style="color:#bfe6ef">You deal with the owner from the first call to the final rinse. No sales reps, no crews that have never seen your house before.</p>
+    <span class="kicker">Why Pressure Wash Anderson</span>
+    <h2 id="why-h">Ready to wow, every time</h2>
+    <div class="promise">
+      <blockquote>“We don't count any job complete until we've left your space looking amazing.”</blockquote>
+      <cite>Pressure Wash Anderson</cite>
+    </div>
     <div class="why-grid">
       <div class="why-item">
-        <div class="n"><svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg></div>
-        <div><h3>Owner-operated</h3><p>Adam Almaroad runs the business and does the work. The person who quotes the job is the person who shows up.</p></div>
+        <div class="n" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4.2 6 7.3 6 11a6 6 0 0 1-12 0c0-3.7 3-6.8 6-11z"/></svg></div>
+        <div><h3>Soft-wash specialists</h3><p>Low pressure and environmentally friendly detergents that kill organic growth instead of just blasting it.</p></div>
       </div>
       <div class="why-item">
-        <div class="n"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
-        <div><h3>Known for work ethic</h3><p>Customers on HomeAdvisor have praised the work ethic and quality of the finished job. That's the reputation we protect.</p></div>
+        <div class="n" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg></div>
+        <div><h3>Owner-run</h3><p>Adam Almaroad runs Pressure Wash Anderson. You deal with him directly.</p></div>
       </div>
       <div class="why-item">
-        <div class="n"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <div><h3>Right pressure, right surface</h3><p>Concrete gets the power it needs. Siding, wood and roofs get a gentler approach so nothing is stripped or scarred.</p></div>
+        <div class="n" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <div><h3>Praised for work ethic</h3><p>Customers on HomeAdvisor have praised the work ethic and quality of the finished job.</p></div>
       </div>
       <div class="why-item">
-        <div class="n"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg></div>
-        <div><h3>Local to Anderson</h3><p>Based right here, so a quick look at the job before quoting is an easy ask, not a road trip.</p></div>
+        <div class="n" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 10h18M7 3v4M17 3v4M5 6h14v14H5z"/></svg></div>
+        <div><h3>Free estimates</h3><p>Call, text or use the form and we'll tell you what your project needs.</p></div>
       </div>
     </div>
   </div>
@@ -369,26 +506,27 @@ footer a{color:#fff;display:inline-block;padding:12px 2px}
 <section class="textback" id="textback" aria-labelledby="tb-h">
   <div class="wrap grid">
     <div>
-      <span class="eyebrow">Call-back guarantee</span>
+      <span class="kicker">Always reachable</span>
       <h2 id="tb-h">Never miss a call — we text you back in seconds</h2>
-      <p class="lead">When the wand is running, the phone can't be answered. So if your call goes to voicemail, you get an automatic text from Almaroad Pressure Washing right away, and a real reply as soon as the job's done.</p>
+      <p class="lead">When the wand is running, the phone can't be answered. If your call goes unanswered, you get an automatic text from Pressure Wash Anderson right away, and a real reply as soon as the rinse is done.</p>
       <ol class="steps">
-        <li><b>1</b><span>You call while we're mid-rinse and it goes unanswered.</span></li>
-        <li><b>2</b><span>Within seconds, you get a text so you know we saw you.</span></li>
-        <li><b>3</b><span>Reply with your address and what needs cleaning; we text back a quote.</span></li>
+        <li><b>1</b><span>You call while we're on a job.</span></li>
+        <li><b>2</b><span>Within seconds, a text lets you know we saw it.</span></li>
+        <li><b>3</b><span>Reply with what needs washing and we follow up with your free estimate.</span></li>
       </ol>
     </div>
-    <div class="phone" role="img" aria-label="Phone mock-up: a missed call from a customer followed by an instant text reply from Almaroad Pressure Washing.">
+    <div class="phone" role="img" aria-label="Phone mock-up: a missed call followed by an instant text reply from Pressure Wash Anderson.">
       <div class="screen" aria-hidden="true">
         <div class="time">2:14 PM</div>
         <div class="missed">
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M16 2l6 6M22 2l-6 6"/><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg></div>
-          <div><b>Missed call</b><span>Customer · Anderson, SC · 2:14 PM</span></div>
+          <div><b>Missed call</b><span>Customer · 2:14 PM</span></div>
         </div>
         <div class="sms-label">Messages</div>
-        <div class="bubble out">Hey, this is Almaroad Pressure Washing. Sorry we missed you, we're on a job right now. What can we clean for you? Reply here and we'll get you a quote.<small>Sent 2:14 PM · automatic</small></div>
-        <div class="bubble in">Hi! Driveway and front of the house, two-story vinyl. Off Hwy 81.</div>
-        <div class="bubble out">Perfect. I can swing by Thursday morning for a look, or text me a photo and I'll quote it today.<small>Adam · 3:02 PM</small></div>
+        <div class="sms-from">Pressure Wash Anderson</div>
+        <div class="bubble out">Hi, this is Pressure Wash Anderson. Sorry we missed you, we're out on a job. What can we wash for you? Reply here for a free estimate.<small>2:14 PM · automatic</small></div>
+        <div class="bubble in">Hi! Vinyl siding has green on the north side, plus the driveway.</div>
+        <div class="bubble out">We can soft wash the siding and pressure wash the driveway. Text me a couple of photos and I'll get you an estimate.<small>Adam · 3:02 PM</small></div>
       </div>
     </div>
   </div>
@@ -397,14 +535,15 @@ footer a{color:#fff;display:inline-block;padding:12px 2px}
 <!-- REVIEWS -->
 <section class="reviews" id="reviews" aria-labelledby="rev-h">
   <div class="wrap">
-    <span class="eyebrow">Sample reviews</span>
+    <span class="kicker">Sample reviews</span>
     <h2 id="rev-h">What customers say</h2>
     <p class="note">Placeholder text for layout only. Real customer reviews go here.</p>
     <div class="rev-grid">
-      <article class="rev"><div class="stars" aria-label="5 star placeholder">★★★★★</div><p>Sample review: "The driveway looks brand new and he was careful around the flower beds. Showed up when he said he would."</p><div class="who">— Sarah, sample</div></article>
-      <article class="rev"><div class="stars" aria-label="5 star placeholder">★★★★★</div><p>Sample review: "Got our siding and back deck done in one morning. Fair price and he texted back fast when I had a question."</p><div class="who">— Mike, sample</div></article>
-      <article class="rev"><div class="stars" aria-label="5 star placeholder">★★★★★</div><p>Sample review: "Hard worker, no shortcuts. The green on the north side of the house is completely gone."</p><div class="who">— Linda, sample</div></article>
+      <article class="rev"><div class="stars" aria-label="Placeholder rating">★★★★★</div><p>Sample review: "The green is gone from our siding and nothing got damaged. Looks like a new house."</p><div class="who">Sample customer</div></article>
+      <article class="rev"><div class="stars" aria-label="Placeholder rating">★★★★★</div><p>Sample review: "Driveway and sidewalk look brand new. Easy to get an estimate by text."</p><div class="who">Sample customer</div></article>
+      <article class="rev"><div class="stars" aria-label="Placeholder rating">★★★★★</div><p>Sample review: "Our drive-thru lane hasn't looked this clean in years. Great work ethic."</p><div class="who">Sample business</div></article>
     </div>
+    <p class="ha">Real feedback: HomeAdvisor reviewers have praised Adam's work ethic and quality.</p>
   </div>
 </section>
 
@@ -412,13 +551,13 @@ footer a{color:#fff;display:inline-block;padding:12px 2px}
 <section class="quote" id="quote" aria-labelledby="q-h">
   <div class="wrap grid">
     <div>
-      <span class="eyebrow">Get a quote</span>
-      <h2 id="q-h">Tell us what needs a wash</h2>
-      <p class="lead">A few details and we'll get back to you with a price. No pressure (except on the concrete).</p>
+      <span class="kicker">Free estimate</span>
+      <h2 id="q-h">Get your free estimate</h2>
+      <p class="lead">Have a project? Tell us what needs washing and we'll get back to you with a free estimate.</p>
       <ul class="contact-list">
-        <li><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+18648830126">864-883-0126</a></li>
-        <li><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.7-.8L3 21l1.9-5.3A8.4 8.4 0 0 1 3 11.5a8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 9 8.4z"/></svg><span>Text works great too — photos welcome</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Serving the Anderson area</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+18648830126">864-883-0126</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.7-.8L3 21l1.9-5.3A8.4 8.4 0 0 1 3 11.5a8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 9 8.4z"/></svg><span>Texts and photos welcome</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Anderson, Greenville &amp; Clemson areas</span></li>
       </ul>
     </div>
     <form id="quote-form" novalidate>
@@ -426,15 +565,18 @@ footer a{color:#fff;display:inline-block;padding:12px 2px}
         <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
         <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
       </div>
-      <div class="field"><label for="addr">Address or neighborhood</label><input id="addr" name="addr" type="text" autocomplete="street-address" placeholder="Anderson, SC"></div>
-      <div class="field"><label for="what">What needs cleaning?</label>
+      <div class="field"><label for="addr">Address or town</label><input id="addr" name="addr" type="text" autocomplete="street-address" placeholder="Anderson, SC"></div>
+      <div class="field"><label for="type">Property type</label>
+        <select id="type" name="type"><option>Residential</option><option>Commercial</option></select>
+      </div>
+      <div class="field"><label for="what">What needs washing?</label>
         <select id="what" name="what">
-          <option>House / siding</option><option>Driveway or concrete</option><option>Deck, patio or fence</option><option>Storefront / commercial</option><option>Something else</option>
+          <option>House washing (soft wash)</option><option>Concrete: driveway or sidewalk</option><option>Commercial property</option><option>Restaurant drive-thru</option><option>Gutter cleaning</option><option>Deck cleaning</option><option>Fence cleaning</option><option>Something else</option>
         </select>
       </div>
-      <div class="field"><label for="notes">Anything we should know?</label><textarea id="notes" name="notes" placeholder="Two-story house, driveway has oil stains, etc."></textarea></div>
-      <button class="btn lime" type="submit" style="width:100%">Send my quote request</button>
-      <p class="msg" id="form-msg" role="status" aria-live="polite">Thanks! This is a demo, so nothing was sent, but on the real site your request would land in Adam's inbox and phone right away.</p>
+      <div class="field"><label for="notes">Project details</label><textarea id="notes" name="notes" placeholder="Brick two-story, mildew on the back side, plus the sidewalk"></textarea></div>
+      <button class="btn primary" type="submit" style="width:100%">Request my free estimate</button>
+      <p class="msg" id="form-msg" role="status" aria-live="polite">Thanks! This is a demo, so nothing was sent. On the real site your request would go straight to Adam.</p>
     </form>
   </div>
 </section>
@@ -442,27 +584,52 @@ footer a{color:#fff;display:inline-block;padding:12px 2px}
 <!-- SERVICE AREA -->
 <section class="area" id="area" aria-labelledby="area-h">
   <div class="wrap grid">
-    <div class="map" aria-hidden="true">
-      <svg viewBox="0 0 360 240">
-        <defs><pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#0e7490" opacity=".25"/></pattern></defs>
-        <rect width="360" height="240" rx="16" fill="url(#dots)"/>
-        <!-- radiating rings -->
-        <g fill="none" stroke="#0e7490" stroke-opacity=".35" stroke-width="2"><circle cx="180" cy="125" r="40"/><circle cx="180" cy="125" r="75" stroke-dasharray="6 6"/><circle cx="180" cy="125" r="110" stroke-dasharray="3 9"/></g>
-        <!-- roads -->
-        <g stroke="#9ccfdc" stroke-width="5" stroke-linecap="round" fill="none"><path d="M20 160 C100 140 160 150 250 60"/><path d="M60 30 C120 90 220 110 340 200"/><path d="M180 20 V230"/></g>
-        <!-- pin -->
-        <path d="M180 85 c-16 0 -26 12 -26 26 c0 20 26 44 26 44 s26 -24 26 -44 c0 -14 -10 -26 -26 -26z" fill="#a3e635" stroke="#022c3a" stroke-width="3"/>
-        <circle cx="180" cy="111" r="9" fill="#022c3a"/>
-        <text x="180" y="178" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="18" font-weight="700" fill="#022c3a">Anderson, SC</text>
-      </svg>
+    <div>
+      <div class="map" role="img" aria-label="Map of the Upstate counties of Oconee, Pickens, Anderson and Greenville, with Anderson, Greenville and Clemson highlighted.">
+        <svg viewBox="40 0 330 320" aria-hidden="true">
+          <path d="M196.5,55.2L222.6,40.3L242.6,33.0L270.4,22.9L276.5,25.1L287.0,12.0L295.7,18.8L329.6,17.6L327.0,119.3L346.1,138.3L324.4,196.6L324.4,211.8L305.2,226.9L287.0,242.1L201.7,308.0L201.7,295.1L193.9,284.5L189.6,269.4L179.1,261.8L176.5,245.6L169.6,229.5L162.6,226.4L140.9,228.4L126.9,223.6L113.9,211.5L98.3,191.3L83.5,189.5L57.4,167.3L53.9,158.7L61.7,146.1L60.9,137.0L83.5,110.5L110.4,93.3L113.0,75.1L137.4,67.3L164.3,58.7L192.2,50.1L196.5,55.2Z" fill="#cfe0f3" stroke="#2f5f96" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M178.7,168.4 L286.2,118.6 L224.1,221.3 Z" fill="#8fb3dd" fill-opacity=".45" stroke="#9a6a3c" stroke-width="2.5" stroke-dasharray="7 5"/>
+          <g fill="#5f554b">
+            <circle cx="235.9" cy="125.4" r="4"/><circle cx="265.8" cy="187.4" r="4"/><circle cx="261.9" cy="215.6" r="4"/><circle cx="150.7" cy="167.7" r="4"/>
+          </g>
+          <g font-family="Poppins, sans-serif" font-size="15" font-weight="500" fill="#3a3129" stroke="#f5f9fd" stroke-width="3.5" paint-order="stroke">
+            <text x="228" y="142" text-anchor="end">Easley</text>
+            <text x="273" y="185">Williamston</text>
+            <text x="270" y="226">Belton</text>
+            <text x="146" y="188" text-anchor="end">Seneca</text>
+          </g>
+          <g fill="#2f5f96" stroke="#fff" stroke-width="3">
+            <circle cx="286.2" cy="118.6" r="8"/><circle cx="178.7" cy="168.4" r="8"/><circle cx="224.1" cy="221.3" r="8"/>
+          </g>
+          <g font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#2a2119" stroke="#f5f9fd" stroke-width="4" paint-order="stroke">
+            <text x="286" y="100" text-anchor="middle">Greenville</text>
+            <text x="168" y="155" text-anchor="end">Clemson</text>
+            <text x="224" y="248" text-anchor="middle">Anderson</text>
+          </g>
+        </svg>
+      </div>
+      <p class="map-cap">Oconee, Pickens, Anderson and Greenville counties.</p>
     </div>
     <div>
-      <span class="eyebrow">Where we work</span>
-      <h2 id="area-h">Serving the Anderson area</h2>
-      <p class="lead">Based in Anderson and covering the surrounding area. A little outside town? Give us a call — if the drive makes sense, we'll come out.</p>
-      <ul aria-label="Service area">
-        <li>Anderson</li><li>Surrounding Anderson County</li><li>Ask about nearby areas</li>
+      <span class="kicker">Service area</span>
+      <h2 id="area-h">Serving the Upstate</h2>
+      <p class="lead">Communities around Anderson, Greenville and Clemson, residential and commercial. Not sure if you're in range? Just call.</p>
+      <ul class="towns" aria-label="Service area">
+        <li class="main">Anderson</li><li class="main">Greenville</li><li class="main">Clemson</li><li>Surrounding Upstate communities</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SIGN-OFF -->
+<section class="signoff" aria-labelledby="sign-h">
+  <div class="wood wood-strip" aria-hidden="true"></div>
+  <div class="wrap inner">
+    <p class="big" id="sign-h">Allow us to save you time!</p>
+    <p class="sig">— Adam Almaroad</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#quote">Get a free estimate</a>
+      <a class="btn ghost" href="tel:+18648830126">Call 864-883-0126</a>
     </div>
   </div>
 </section>
@@ -470,14 +637,14 @@ footer a{color:#fff;display:inline-block;padding:12px 2px}
 
 <footer>
   <div class="wrap">
-    <strong style="color:#fff;font-family:Fredoka,sans-serif;font-size:1.2rem">Almaroad Pressure Washing</strong>
-    <span>Pressure washing &amp; exterior cleaning · Anderson, SC · <a href="tel:+18648830126">864-883-0126</a></span>
+    <span class="fname">Pressure Wash Anderson</span>
+    <span>by Almaroad Pressure Washing · Soft wash &amp; pressure washing · Anderson, Greenville &amp; Clemson, SC · <a href="tel:+18648830126">864-883-0126</a></span>
     <span>Demo preview built by David — not the official site. Sample reviews are placeholders.</span>
   </div>
 </footer>
 
 <div class="callbar">
-  <a class="btn lime" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Tap to call 864-883-0126</a>
+  <a class="btn primary" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Tap to call 864-883-0126</a>
 </div>
 
 <script>
@@ -485,7 +652,7 @@ footer a{color:#fff;display:inline-block;padding:12px 2px}
   var s=document.getElementById('slider'),r=document.getElementById('reveal');
   if(s&&r){s.addEventListener('input',function(){r.style.setProperty('--pos',s.value+'%');});}
   var f=document.getElementById('quote-form'),m=document.getElementById('form-msg');
-  if(f){f.addEventListener('submit',function(e){e.preventDefault();m.classList.add('show');m.focus&&m.setAttribute('tabindex','-1');m.focus();});}
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();m.classList.add('show');m.setAttribute('tabindex','-1');m.focus();});}
 })();
 </script>
 </body>
