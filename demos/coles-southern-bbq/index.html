@@ -18,8 +18,11 @@ background-image:repeating-linear-gradient(0deg,rgba(90,60,30,.05) 0 2px,transpa
 h1,h2,h3{font-family:'Alfa Slab One',Georgia,serif;font-weight:400;line-height:1.08;margin:0 0 .6em;letter-spacing:.01em}
 h1{font-size:clamp(2.5rem,12vw,5.4rem);text-transform:uppercase}
 h2{font-size:clamp(1.8rem,7vw,3rem)}
-h3{font-size:1.25rem}
+h3{font-size:1.35rem}
 p{margin:0 0 1em}
+.measure{max-width:62ch}
+.eyebrow{font-family:'Caveat Brush',cursive;font-size:1.6rem;line-height:1.1;color:var(--emberd);margin:0 0 .25rem;display:block}
+.why .eyebrow{color:var(--gold)}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--ember);outline-offset:3px;box-shadow:0 0 0 6px #fff}
 .demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--ink);color:#fff;font-size:.8rem;line-height:1.25;text-align:center;padding:.5rem .75rem;min-height:3.4rem;display:flex;align-items:center;justify-content:center;font-weight:600}
@@ -51,15 +54,17 @@ background-image:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.07),transp
 .col li::after{content:"";order:2;flex:1;border-bottom:2px dotted rgba(244,241,232,.4);transform:translateY(-.2em)}
 .col li span{order:1}
 .board .note{text-align:center;font-family:'Caveat Brush',cursive;font-size:1.3rem;margin:1.3rem 0 0;color:var(--gold)}
-.service-pair{display:grid;gap:1rem;margin-top:1.6rem}
-.tag{background:var(--paper);border:2px solid var(--ink);padding:1rem 1.1rem;box-shadow:4px 4px 0 var(--ink)}
-.tag h3{margin-bottom:.3rem}
+.service-pair{display:grid;margin-top:1.8rem;background:var(--paper);border:2px solid var(--ink);border-radius:3px;overflow:hidden}
+.tag{padding:1.1rem 1.2rem;border-top:2px dashed rgba(42,28,20,.45)}
+.tag:first-child{border-top:0}
+.tag h3{margin-bottom:.3rem;font-size:1.2rem;text-transform:uppercase;letter-spacing:.04em}
+.tag p{margin:0;font-size:1rem}
 .why{background:var(--ink);color:var(--paper)}
 .why h2{color:var(--gold)}
 .why-grid{display:grid;gap:1.1rem;margin-top:1.4rem}
 .why-item{border-left:6px solid var(--ember);padding:.2rem 0 .2rem 1rem}
 .why-item h3{color:#fff;margin-bottom:.2rem}
-.woods{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 0;padding:0;list-style:none}
+.woods{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 0;padding:0;list-style:none}
 .woods li{background:var(--kraft);color:var(--ink);font-weight:800;padding:.35rem .9rem;border-radius:999px;border:2px solid var(--gold);text-transform:uppercase;font-size:.85rem;letter-spacing:.08em}
 .tb{background:var(--ember);color:#fff}
 .tb h2{max-width:22ch}
@@ -76,9 +81,11 @@ background-image:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.07),transp
 @keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .label{display:inline-block;background:var(--ink);color:var(--gold);font-weight:800;padding:.3rem .8rem;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;margin-bottom:1rem}
 .rev-row{display:grid;gap:1.1rem}
-.rev{background:var(--paper);border:2px solid var(--ink);padding:1.1rem;position:relative;box-shadow:4px 4px 0 var(--ink);margin:0}
+.rev{background:var(--paper);border:1px solid rgba(42,28,20,.35);padding:1.4rem 1.1rem 1rem;position:relative;margin:0;
+background-image:repeating-linear-gradient(0deg,transparent 0 27px,rgba(179,38,30,.14) 27px 28px);background-position:0 .9rem}
+.rev::before{content:"";position:absolute;top:-10px;left:50%;width:64px;height:20px;margin-left:-32px;background:rgba(240,195,106,.75);border:1px dashed rgba(42,28,20,.3);transform:rotate(-2deg)}
 .rev:nth-child(2){transform:rotate(.8deg)}.rev:nth-child(3){transform:rotate(-.6deg)}
-.rev p{margin:0 0 .7rem}.rev cite{font-style:normal;font-weight:800}
+.rev p{margin:0 0 .7rem;line-height:28px}.rev cite{font-style:normal;font-family:'Caveat Brush',cursive;font-size:1.25rem;color:var(--emberd)}
 .form-area{background:var(--paper);border-top:6px double var(--ink);border-bottom:6px double var(--ink)}
 .fgrid{display:grid;gap:1rem;margin-top:1rem}
 label{font-weight:800;display:block;margin-bottom:.25rem}
@@ -89,6 +96,7 @@ textarea{min-height:6rem}
 .area{display:grid;gap:1.2rem;align-items:center}
 .pin{width:5rem}
 footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1rem;font-size:.9rem}
+footer a{display:inline-flex;align-items:center;min-height:44px;padding:0 .4rem;font-weight:800;color:var(--gold)}
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--ink);padding:.6rem 1rem;display:flex;justify-content:center}
 .sticky .btn{width:100%;max-width:26rem;justify-content:center;box-shadow:none;border-color:#fff}
 @media(min-width:760px){
@@ -96,6 +104,7 @@ footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1
  .sheet{padding:3rem 3rem 3.4rem}.stamp{width:11rem;height:11rem;position:absolute;right:2rem;bottom:1.5rem;margin:0}
  .cols{grid-template-columns:repeat(3,1fr);gap:2rem}
  .service-pair{grid-template-columns:1fr 1fr 1fr}
+ .tag{border-top:0;border-left:2px dashed rgba(42,28,20,.45)}.tag:first-child{border-left:0}
  .why-grid{grid-template-columns:repeat(3,1fr)}
  .tb-grid{grid-template-columns:1.2fr 1fr}
  .rev-row{grid-template-columns:repeat(3,1fr)}
@@ -143,22 +152,24 @@ footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1
    </div>
    <p class="note">Call for what's smoking and how to book</p>
   </div>
-  <div class="service-pair">
-   <div class="tag"><h3>By the platter</h3><p>Simple for gatherings and get-togethers. Call to talk through what fits your crowd.</p></div>
-   <div class="tag"><h3>By the pound</h3><p>Order your favorites in bulk and feed the whole group.</p></div>
-   <div class="tag"><h3>Mobile catering</h3><p>The smoke comes to you. Ask about bringing it to your event.</p></div>
+  <div class="service-pair" role="list" aria-label="Three ways to order">
+   <div class="tag" role="listitem"><h3>By the platter</h3><p>Simple for gatherings and get-togethers. Call to talk through what fits your crowd.</p></div>
+   <div class="tag" role="listitem"><h3>By the pound</h3><p>Brisket, burnt ends, pulled pork, ribs — ordered in bulk to feed the whole group.</p></div>
+   <div class="tag" role="listitem"><h3>Mobile catering</h3><p>The smoke comes to you. Ask about bringing the pit to your event.</p></div>
   </div>
  </div>
 </section>
 
 <section class="why" id="why-us" aria-labelledby="why-h">
  <div class="wrap">
+  <span class="eyebrow">Seneca &amp; Westminster</span>
   <h2 id="why-h">Why folks call Cole's</h2>
   <div class="why-grid">
    <div class="why-item"><h3>Veteran-owned</h3><p>Proudly veteran-owned and run as a family operation.</p></div>
    <div class="why-item"><h3>Real wood smoke</h3><p>Natural wood charcoal and pellet, the old-fashioned way to flavor meat.</p></div>
    <div class="why-item"><h3>A real person answers</h3><p>Bookings happen by phone, so you talk to the people doing the cooking.</p></div>
   </div>
+  <span class="eyebrow" style="margin-top:1.6rem">In the woodpile</span>
   <ul class="woods" aria-label="Woods used for smoking"><li>Hickory</li><li>Mesquite</li><li>Apple</li><li>Pecan</li><li>Oak</li><li>Cherry</li></ul>
  </div>
 </section>
@@ -167,7 +178,7 @@ footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1
  <div class="wrap tb-grid">
   <div>
    <h2 id="tb-h">Never miss a call — we text you back in seconds</h2>
-   <p>When the pit is hot and your hands are full, a missed call doesn't have to mean a lost event. A friendly automatic text goes out right away, so the customer knows you got their call and can reply with the details.</p>
+   <p class="measure" style="max-width:48ch">When the pit is hot and your hands are full, a missed call doesn't have to mean a lost event. A friendly automatic text goes out right away, so the customer knows you got their call and can reply with the details.</p>
   </div>
   <div class="phone" role="img" aria-label="Phone showing a missed call followed by an automatic text reply from Cole's Southern BBQ">
    <div class="screen">
@@ -184,6 +195,7 @@ footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1
  <div class="wrap">
   <span class="label">Sample reviews</span>
   <h2 id="rev-h">What neighbors might say</h2>
+  <p class="measure" style="margin-bottom:1.6rem">Placeholder notes — on the real site these would be your own customers' words.</p>
   <div class="rev-row">
    <figure class="rev"><p>"Placeholder text about easy booking and great food."</p><cite>— Sample customer</cite></figure>
    <figure class="rev"><p>"Placeholder text about the team showing up on time."</p><cite>— Sample customer</cite></figure>
@@ -194,8 +206,9 @@ footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1
 
 <section class="form-area" id="quote" aria-labelledby="q-h">
  <div class="wrap">
+  <span class="eyebrow">Reunions, cookouts, company lunches</span>
   <h2 id="q-h">Ask about your event</h2>
-  <p>Tell us a little and we'll get back to you. (This form is a demo and does not send anything.)</p>
+  <p class="measure">Tell us the date, the headcount and what you're hungry for, and we'll get back to you. (This form is a demo and does not send anything.)</p>
   <form id="demoForm" novalidate>
    <div class="fgrid">
     <div><label for="n">Your name</label><input id="n" name="n" autocomplete="name"></div>
@@ -204,7 +217,7 @@ footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1
     <div><label for="g">Guests (approx.)</label><input id="g" name="g" inputmode="numeric"></div>
     <div class="full"><label for="m">What are you planning?</label><textarea id="m" name="m"></textarea></div>
    </div>
-   <p style="margin-top:1rem"><button class="btn btn-call" type="submit">Send request</button></p>
+   <p style="margin-top:1rem"><button class="btn btn-call" type="submit">Send my event details</button></p>
    <div id="demoMsg" role="status" aria-live="polite">Demo only — nothing was sent. On the real site this would reach Cole's Southern BBQ.</div>
   </form>
  </div>
@@ -213,12 +226,12 @@ footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1
 <section id="area" aria-labelledby="a-h">
  <div class="wrap area">
   <svg class="pin" viewBox="0 0 64 80" fill="none" stroke="#2A1C14" stroke-width="3" aria-hidden="true"><path d="M32 76C12 50 8 42 8 30a24 24 0 0148 0c0 12-4 20-24 46z" fill="#B3261E"/><circle cx="32" cy="30" r="9" fill="#F3E6CC"/></svg>
-  <div><h2 id="a-h">Where we roll</h2><p><strong>Seneca and Westminster area.</strong> Exact range isn't published, so call to ask whether we can reach your event.</p>
+  <div><h2 id="a-h">Where we roll</h2><p class="measure"><strong>Seneca and Westminster area.</strong> Exact range isn't published, so call to ask whether we can reach your event.</p>
   <a class="btn btn-call" href="tel:+18647100284">Call (864) 710-0284</a></div>
  </div>
 </section>
 
-<footer>Cole's Southern BBQ · Seneca, SC · Demo preview, not the official site.</footer>
+<footer>Cole's Southern BBQ · Seneca, SC · <a href="tel:+18647100284">(864) 710-0284</a> · Demo preview, not the official site.</footer>
 <div class="sticky"><a class="btn btn-call" href="tel:+18647100284">Tap to call (864) 710-0284</a></div>
 <script>
 document.getElementById('demoForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('demoMsg').classList.add('show')});
