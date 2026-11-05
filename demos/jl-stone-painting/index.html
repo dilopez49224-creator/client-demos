@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>J L Stone Painting &amp; Maintenance | Painting &amp; Popcorn Ceiling Removal in Seneca, SC</title>
+<meta name="description" content="Demo preview of a one-page site for J L Stone Painting &amp; Maintenance: painting, popcorn ceiling removal, paint stripping and shutter painting in the Seneca area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rust:#b5533c;
+  --rust-d:#8e3f2d;
+  --rust-l:#f3ddd6;
+  --ivory:#faf7f2;
+  --canvas:#f1ebe0;
+  --ink:#1e1b18;
+  --ink-2:#4a433c;
+  --sky:#9cc9d9;
+  --sky-d:#2f6f86;
+  --ochre:#e9c46a;
+  --ochre-d:#7a5c0e;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;padding-top:46px;padding-bottom:84px;color:var(--ink);font:400 17px/1.6 "Work Sans",system-ui,sans-serif;overflow-x:hidden;
+  background-color:var(--ivory);
+  background-image:repeating-linear-gradient(45deg,rgba(30,27,24,.035) 0 1px,transparent 1px 9px),repeating-linear-gradient(-45deg,rgba(30,27,24,.035) 0 1px,transparent 1px 9px)}
+h1,h2,h3{font-family:"Archivo Black",Impact,sans-serif;font-weight:400;line-height:1;margin:0 0 .45em;color:var(--ink);text-transform:uppercase;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,9.5vw,4.8rem)}
+h2{font-size:clamp(1.8rem,6.5vw,2.9rem)}
+h3{font-size:1.15rem;line-height:1.15}
+p{margin:0 0 1em}
+a{color:var(--rust-d)}
+svg{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 7px var(--ochre)}
+.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:46px;background:var(--ink);color:#fff;text-align:center;font:700 13px/1.3 "Work Sans",sans-serif;padding:7px 12px;display:flex;align-items:center;justify-content:center;letter-spacing:.02em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+section{padding:60px 0;position:relative}
+.lead{font-size:1.12rem;color:var(--ink-2);max-width:58ch}
+/* painter's tape label */
+.tape{display:inline-block;background:var(--ochre);color:var(--ochre-d);font:700 .78rem/1 "Work Sans",sans-serif;letter-spacing:.18em;text-transform:uppercase;padding:9px 16px;transform:rotate(-2deg);position:relative;margin-bottom:18px;
+  -webkit-mask:linear-gradient(90deg,transparent 0,#000 3px,#000 calc(100% - 3px),transparent 100%);mask:linear-gradient(90deg,transparent 0,#000 3px,#000 calc(100% - 3px),transparent 100%);
+  box-shadow:0 1px 2px rgba(30,27,24,.15)}
+.tape.sky{background:var(--sky);color:#123b4a}
+.tape.rust{background:var(--rust);color:#fff}
+.tape.r{transform:rotate(1.5deg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:4px;background:var(--rust);color:#fff;border:0;font:700 1rem "Work Sans",sans-serif;letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:background .15s,transform .15s;box-shadow:3px 3px 0 var(--ink)}
+.btn:hover{background:var(--rust-d);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.btn.ink{background:var(--ink);color:var(--ivory);box-shadow:3px 3px 0 var(--rust)}
+.btn.ink:hover{background:#000;box-shadow:4px 4px 0 var(--rust)}
+.btn.light{background:var(--white);color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.btn.light:hover{background:var(--canvas)}
+.btn svg{width:22px;height:22px;flex:none}
+
+/* header */
+.top{background:var(--white);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:74px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:400 1.1rem "Archivo Black",sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1}
+.logo small{display:block;font:600 .68rem "Work Sans",sans-serif;letter-spacing:.2em;color:var(--rust);margin-top:4px}
+.logo svg{width:38px;height:38px;flex:none}
+.top .call{display:none}
+@media(min-width:720px){.top .call{display:inline-flex}}
+
+/* hero */
+.hero{padding:40px 0 64px;overflow:hidden}
+.hero .grid{display:grid;gap:34px;align-items:center}
+@media(min-width:900px){.hero .grid{grid-template-columns:1fr 1fr}}
+.hero h1 .l1{display:block;color:var(--rust)}
+.hero h1 .l2{display:block}
+.hero h1 .l3{display:block;color:var(--sky-d)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:24px 0 12px}
+.fine{font-size:.9rem;color:var(--ink-2)}
+.ceiling{position:relative;background:var(--white);border:3px solid var(--ink);box-shadow:8px 8px 0 var(--sky);aspect-ratio:4/3;overflow:hidden}
+.ceiling svg{width:100%;height:100%}
+.ceiling .cap{position:absolute;left:12px;bottom:10px;font:700 .7rem "Work Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);background:rgba(255,255,255,.85);padding:4px 8px}
+@media(prefers-reduced-motion:no-preference){
+  .scraper{animation:scrape 4s ease-in-out infinite alternate}
+  .smooth{animation:grow 4s ease-in-out infinite alternate}
+  @keyframes scrape{from{transform:translateX(0)}to{transform:translateX(120px)}}
+  @keyframes grow{from{width:170px}to{width:290px}}
+}
+
+/* services */
+.services{background:var(--canvas);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.svc{display:grid;gap:26px 20px;margin-top:34px}
+@media(min-width:640px){.svc{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc{grid-template-columns:repeat(4,1fr)}}
+.job{background:var(--white);border:2px solid var(--ink);padding:40px 20px 22px;position:relative;box-shadow:5px 5px 0 var(--ink)}
+.job .tape{position:absolute;top:-14px;left:14px;margin:0}
+.job .ico{width:56px;height:56px;margin-bottom:14px;display:grid;place-items:center;border:2px solid var(--ink)}
+.job .ico svg{width:32px;height:32px;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.job:nth-child(1) .ico{background:var(--rust-l)}
+.job:nth-child(2) .ico{background:#d9ecf2}
+.job:nth-child(3) .ico{background:#fbefcf}
+.job:nth-child(4) .ico{background:#e3e7d3}
+.job p{margin:0;color:var(--ink-2);font-size:.95rem}
+.job .star{position:absolute;top:12px;right:12px;font:700 .68rem "Work Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--rust)}
+
+/* why */
+.why{background:var(--ink);color:var(--ivory);overflow:hidden}
+.why::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 60px,rgba(255,255,255,.035) 60px 62px);pointer-events:none}
+.why .wrap{position:relative}
+.why h2{color:var(--ivory)}
+.why .lead{color:#cfc7bd}
+.stripes{display:grid;gap:0;margin-top:30px;border:2px solid var(--ivory)}
+@media(min-width:800px){.stripes{grid-template-columns:repeat(3,1fr)}}
+.stripe{padding:24px 22px;border-top:2px solid var(--ivory)}
+.stripe:first-child{border-top:0}
+@media(min-width:800px){.stripe{border-top:0;border-left:2px solid var(--ivory)}.stripe:first-child{border-left:0}}
+.stripe .swatch{width:100%;height:14px;margin-bottom:18px}
+.stripe:nth-child(1) .swatch{background:var(--rust)}
+.stripe:nth-child(2) .swatch{background:var(--sky)}
+.stripe:nth-child(3) .swatch{background:var(--ochre)}
+.stripe h3{color:#fff;margin-bottom:.4em}
+.stripe p{margin:0;color:#cfc7bd;font-size:.95rem}
+
+/* text-back */
+.textback .grid{display:grid;gap:36px;align-items:center}
+@media(min-width:900px){.textback .grid{grid-template-columns:1fr 1fr}}
+.steps{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px;counter-reset:s}
+.steps li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;background:var(--white);border:2px solid var(--ink)}
+.steps li::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--rust);color:#fff;display:grid;place-items:center;font:400 .85rem "Archivo Black",sans-serif}
+.phone{width:min(300px,88%);margin:0 auto;background:var(--ink);border-radius:36px;padding:14px;box-shadow:10px 10px 0 var(--ochre);position:relative}
+.phone::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:110px;height:26px;background:var(--ink);border-radius:0 0 18px 18px;z-index:2}
+.screen{background:var(--ivory);border-radius:24px;min-height:520px;padding:44px 14px 18px;display:flex;flex-direction:column;gap:10px;font-size:.9rem;color:var(--ink)}
+.screen .time{text-align:center;font-weight:700;font-size:.8rem;color:var(--ink-2)}
+.missed{background:#fff;border-radius:12px;padding:12px 14px;display:flex;gap:12px;align-items:center;border:1.5px solid #e2d9cc;border-left:4px solid #c0392b}
+.missed .ic{width:36px;height:36px;border-radius:50%;background:#fbe4e0;display:grid;place-items:center;flex:none}
+.missed .ic svg{width:20px;height:20px;stroke:#b03a2e;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.missed b{display:block;font-size:.85rem}
+.missed span{font-size:.78rem;color:var(--ink-2)}
+.bubble{max-width:88%;padding:11px 14px;border-radius:16px;line-height:1.4;font-size:.86rem}
+.bubble.in{align-self:flex-start;background:#e6e1d7;border-bottom-left-radius:4px}
+.bubble.out{align-self:flex-end;background:var(--rust);color:#fff;border-bottom-right-radius:4px}
+.bubble small{display:block;opacity:.8;font-size:.7rem;margin-top:4px}
+.sms-label{text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);font-weight:700;margin-top:6px}
+@media(prefers-reduced-motion:no-preference){
+  .bubble.out{animation:pop .5s .6s both}.missed{animation:pop .5s .1s both}
+  @keyframes pop{from{opacity:0;transform:translateY(8px) scale(.96)}to{opacity:1;transform:none}}
+}
+
+/* reviews */
+.reviews{background:var(--canvas);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.note{display:inline-block;background:var(--white);border:2px dashed var(--rust);color:var(--rust-d);padding:6px 12px;font-size:.85rem;font-weight:700;margin-bottom:26px}
+.notes{display:grid;gap:26px 20px}
+@media(min-width:760px){.notes{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--white);border:2px solid var(--ink);padding:36px 20px 20px;position:relative;box-shadow:5px 5px 0 var(--sky)}
+.card:nth-child(2){box-shadow:5px 5px 0 var(--ochre)}
+.card:nth-child(3){box-shadow:5px 5px 0 var(--rust)}
+.card .tape{position:absolute;top:-14px;left:50%;translate:-50% 0;margin:0;transform:rotate(-2deg)}
+.card:nth-child(2) .tape{transform:rotate(1.5deg)}
+.card p{margin:0 0 10px;font-size:.98rem}
+.card .who{font-weight:700;font-size:.85rem;color:var(--rust-d)}
+
+/* form */
+.quote .grid{display:grid;gap:28px}
+@media(min-width:900px){.quote .grid{grid-template-columns:1fr 1.2fr}}
+form{background:var(--white);border:2px solid var(--ink);padding:24px;box-shadow:6px 6px 0 var(--ink)}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field label{font-weight:700;font-size:.9rem}
+.field input,.field select,.field textarea{width:100%;font:inherit;padding:12px 14px;border-radius:3px;border:2px solid #c9c0b3;background:var(--ivory);color:var(--ink);min-height:48px}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rust)}
+.two{display:grid;gap:0 14px}
+@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+.checks{display:grid;gap:8px;margin-bottom:16px}
+@media(min-width:560px){.checks{grid-template-columns:1fr 1fr}}
+.checks label{display:flex;gap:10px;align-items:center;font-weight:500;font-size:.95rem;min-height:44px;padding:6px 10px;border:2px solid #e2d9cc;background:var(--ivory);cursor:pointer}
+.checks input{width:20px;height:20px;accent-color:var(--rust);margin:0}
+.msg{display:none;margin-top:14px;padding:14px;background:#e3e7d3;color:#2f3d1a;font-weight:700;border-left:4px solid var(--rust)}
+.msg.show{display:block}
+.contact-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:14px}
+.contact-list li{display:flex;gap:12px;align-items:center;font-weight:500}
+.contact-list svg{width:24px;height:24px;stroke:var(--rust);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.contact-list a{color:var(--ink);text-decoration:none;font:400 1.2rem "Archivo Black",sans-serif}
+
+/* area */
+.area{background:var(--white);border-top:3px solid var(--ink)}
+.area .grid{display:grid;gap:30px;align-items:center}
+@media(min-width:800px){.area .grid{grid-template-columns:1fr 1fr}}
+.map{border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ochre);background:var(--ivory)}
+.area ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.area li{background:var(--ink);color:var(--ivory);padding:8px 14px;font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+
+footer{background:var(--ink);color:#cfc7bd;padding:36px 0 40px;font-size:.9rem}
+footer .wrap{display:grid;gap:10px}
+footer a{color:#fff}
+footer strong{color:#fff;font:400 1.1rem "Archivo Black",sans-serif;text-transform:uppercase}
+
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(250,247,242,.94);backdrop-filter:blur(8px);border-top:2px solid var(--ink)}
+.callbar .btn{width:100%;font-size:1.05rem;box-shadow:none}
+@media(min-width:720px){.callbar{display:none}body{padding-bottom:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="J L Stone Painting and Maintenance home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="6" width="24" height="12" rx="2" fill="#b5533c" stroke="#1e1b18" stroke-width="2"/><path d="M28 12h6v8h-12v6" fill="none" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="19" y="26" width="6" height="10" rx="1" fill="#e9c46a" stroke="#1e1b18" stroke-width="2"/></svg>
+      <span>J L Stone<small>Painting &amp; Maintenance</small></span>
+    </a>
+    <a class="btn call" href="tel:+18648850122"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>864-885-0122</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap grid">
+    <div>
+      <span class="tape">Seneca, SC · Painting &amp; Maintenance</span>
+      <h1 id="hero-h"><span class="l1">Fresh paint.</span><span class="l2">Smooth ceilings.</span><span class="l3">No more popcorn.</span></h1>
+      <p class="lead">J L Stone handles the jobs most painters skip: popcorn ceiling removal, paint stripping and shutter painting, along with clean, careful interior and exterior painting around Seneca.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+18648850122"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call 864-885-0122</a>
+        <a class="btn light" href="#quote">Request an estimate</a>
+      </div>
+      <p class="fine">Free estimates. Call, or send the form and we'll call you.</p>
+    </div>
+
+    <figure class="ceiling" aria-label="Illustration of a popcorn ceiling being scraped smooth">
+      <svg viewBox="0 0 400 300" aria-hidden="true">
+        <defs>
+          <pattern id="popcorn" width="12" height="12" patternUnits="userSpaceOnUse">
+            <circle cx="3" cy="4" r="2.2" fill="#d9d2c4"/><circle cx="9" cy="9" r="1.8" fill="#cfc7b7"/><circle cx="8" cy="2" r="1.2" fill="#e4ddd0"/>
+          </pattern>
+        </defs>
+        <!-- wall -->
+        <rect width="400" height="300" fill="#f3ddd6"/>
+        <!-- ceiling plane -->
+        <path d="M0 0 H400 V150 L330 195 H70 L0 150Z" fill="#efe9de"/>
+        <path d="M0 0 H400 V150 L330 195 H70 L0 150Z" fill="url(#popcorn)"/>
+        <!-- smooth portion (animated width) -->
+        <rect class="smooth" x="70" y="0" width="170" height="195" fill="#fbf8f3"/>
+        <!-- ceiling edges -->
+        <path d="M0 150 L70 195 H330 L400 150" fill="none" stroke="#1e1b18" stroke-width="3"/>
+        <path d="M0 150 L70 195 M330 195 L400 150" fill="none" stroke="#1e1b18" stroke-width="3"/>
+        <!-- crown line -->
+        <path d="M70 195 H330" fill="none" stroke="#b5533c" stroke-width="6"/>
+        <!-- walls below -->
+        <rect x="0" y="195" width="70" height="105" fill="#e6c9c0"/>
+        <rect x="330" y="195" width="70" height="105" fill="#e6c9c0"/>
+        <!-- scraper -->
+        <g class="scraper">
+          <rect x="200" y="60" width="14" height="150" rx="4" fill="#1e1b18"/>
+          <rect x="170" y="40" width="74" height="26" rx="3" fill="#9cc9d9" stroke="#1e1b18" stroke-width="3"/>
+          <rect x="170" y="36" width="74" height="8" fill="#1e1b18"/>
+        </g>
+        <!-- falling flakes -->
+        <g fill="#d9d2c4"><circle cx="150" cy="230" r="3"/><circle cx="165" cy="250" r="2.2"/><circle cx="180" cy="236" r="2.6"/><circle cx="140" cy="262" r="2"/><circle cx="195" cy="262" r="2.4"/></g>
+        <!-- drop cloth -->
+        <path d="M60 300 L95 240 H310 L345 300Z" fill="#e9c46a"/>
+        <path d="M95 240 H310 M110 262 H295 M125 282 H280" fill="none" stroke="#7a5c0e" stroke-opacity=".35" stroke-width="2"/>
+        <!-- labels -->
+        <g font-family="Work Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#1e1b18">
+          <text x="18" y="24">BEFORE</text><text x="342" y="24" fill="#8e3f2d">AFTER</text>
+        </g>
+      </svg>
+      <figcaption class="cap">Popcorn out, smooth finish in</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services" aria-labelledby="serv-h">
+  <div class="wrap">
+    <span class="tape sky r">The job list</span>
+    <h2 id="serv-h">What we do</h2>
+    <p class="lead">Four things, done properly. If your project is a mix of them, that's exactly the kind of work we take on.</p>
+    <div class="svc">
+      <article class="job">
+        <span class="tape rust">Painting</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="14" height="7" rx="1"/><path d="M17 6h3v5h-8v4M12 15v5h-3v-5"/></svg></div>
+        <h3>Interior &amp; exterior painting</h3>
+        <p>Walls, ceilings, trim and siding. Clean lines, even coats, and a tidy job site when we leave.</p>
+      </article>
+      <article class="job">
+        <span class="tape sky">Ceilings</span><span class="star">Specialty</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 5h18M3 5l3 4h12l3-4"/><path d="M8 9v7a2 2 0 0 0 4 0V9M14 13l6 6M20 13l-6 6"/></svg></div>
+        <h3>Popcorn ceiling removal</h3>
+        <p>We scrape the texture, smooth and skim the surface, then prime and paint for a flat, modern ceiling.</p>
+      </article>
+      <article class="job">
+        <span class="tape">Stripping</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20L14 10M14 10l3-3 3 3-3 3M4 20h5l5-5"/><path d="M3 4h6M3 7h4"/></svg></div>
+        <h3>Paint stripping</h3>
+        <p>Old, peeling or built-up paint taken back to a sound surface so the new coat actually lasts.</p>
+      </article>
+      <article class="job">
+        <span class="tape rust">Shutters</span><span class="star">Specialty</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="7" height="18" rx="1"/><rect x="13" y="3" width="7" height="18" rx="1"/><path d="M6 7h3M6 11h3M6 15h3M15 7h3M15 11h3M15 15h3"/></svg></div>
+        <h3>Shutter painting</h3>
+        <p>Faded shutters are the quickest curb-appeal fix there is. Removed, prepped, painted and rehung.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <span class="tape">Why J L Stone</span>
+    <h2 id="why-h">Prep is the whole job.</h2>
+    <p class="lead">Anybody can roll on a coat of paint. The difference shows a year later, and it comes down to the work nobody sees.</p>
+    <div class="stripes">
+      <div class="stripe"><div class="swatch" aria-hidden="true"></div><h3>We don't paint over problems</h3><p>Loose paint gets stripped, texture gets scraped, holes get filled. Then we paint.</p></div>
+      <div class="stripe"><div class="swatch" aria-hidden="true"></div><h3>The hard jobs are welcome</h3><p>Popcorn ceilings and paint stripping are messy, slow and skipped by many painters. We do them, and we do them cleanly.</p></div>
+      <div class="stripe"><div class="swatch" aria-hidden="true"></div><h3>Local to Seneca</h3><p>A Seneca-area business, so estimates are quick and we're close by if you need us back.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXT BACK -->
+<section class="textback" id="textback" aria-labelledby="tb-h">
+  <div class="wrap grid">
+    <div>
+      <span class="tape sky r">Call-back promise</span>
+      <h2 id="tb-h">Never miss a call — we text you back in seconds</h2>
+      <p class="lead">Up a ladder with a roller in hand, nobody can grab the phone. On this site, any call that goes unanswered gets an instant text from J L Stone Painting &amp; Maintenance, so your estimate request never falls through the cracks.</p>
+      <ol class="steps">
+        <li><span>You call while we're on a job and it rings out.</span></li>
+        <li><span>Seconds later, a text from J L Stone lands on your phone.</span></li>
+        <li><span>Reply with what you need painted or scraped; we text back to set up an estimate.</span></li>
+      </ol>
+    </div>
+    <div class="phone" role="img" aria-label="Phone mock-up: a missed call followed by an instant text reply from J L Stone Painting and Maintenance.">
+      <div class="screen" aria-hidden="true">
+        <div class="time">9:27 AM</div>
+        <div class="missed">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M16 2l6 6M22 2l-6 6"/><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><b>Missed call</b><span>Customer · Seneca, SC · 9:27 AM</span></div>
+        </div>
+        <div class="sms-label">Messages</div>
+        <div class="bubble out">Hi, this is J L Stone Painting &amp; Maintenance. Sorry we missed you, we're on a job site. What are you looking to have done? Reply here and we'll set up a free estimate.<small>Sent 9:27 AM · automatic</small></div>
+        <div class="bubble in">Hi, we want the popcorn ceiling taken off in the living room and hallway.</div>
+        <div class="bubble out">We do that all the time. I can come measure Wednesday after 4 or Saturday morning. Which works?<small>J L Stone · 12:05 PM</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews" aria-labelledby="rev-h">
+  <div class="wrap">
+    <span class="tape">Sample reviews</span>
+    <h2 id="rev-h">Sample reviews</h2>
+    <p class="note">Placeholder text for layout only. Real customer reviews go here.</p>
+    <div class="notes">
+      <article class="card"><span class="tape sky">Sample</span><p>"Sample review: Took the popcorn off three ceilings and you'd never know it was there. Dust was contained and they cleaned up every day."</p><div class="who">— Karen, sample</div></article>
+      <article class="card"><span class="tape">Sample</span><p>"Sample review: Shutters came back looking brand new. Quick estimate, fair price, showed up when they said."</p><div class="who">— Tom, sample</div></article>
+      <article class="card"><span class="tape rust">Sample</span><p>"Sample review: Stripped years of old paint off our porch rails before repainting. Should have called sooner."</p><div class="who">— Jennifer, sample</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote" id="quote" aria-labelledby="q-h">
+  <div class="wrap grid">
+    <div>
+      <span class="tape sky r">Free estimate</span>
+      <h2 id="q-h">Tell us about the job</h2>
+      <p class="lead">Check what you need, add a few details, and we'll call to set up a time to look at it.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+18648850122">864-885-0122</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Serving the Seneca area</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Free, no-obligation estimates</span></li>
+      </ul>
+    </div>
+    <form id="quote-form" novalidate>
+      <div class="two">
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="field"><label for="addr">Address or neighborhood</label><input id="addr" name="addr" type="text" autocomplete="street-address" placeholder="Seneca, SC"></div>
+      <fieldset style="border:0;padding:0;margin:0 0 4px"><legend style="font-weight:700;font-size:.9rem;margin-bottom:8px">What do you need?</legend>
+        <div class="checks">
+          <label><input type="checkbox" name="svc" value="painting">Interior / exterior painting</label>
+          <label><input type="checkbox" name="svc" value="popcorn">Popcorn ceiling removal</label>
+          <label><input type="checkbox" name="svc" value="stripping">Paint stripping</label>
+          <label><input type="checkbox" name="svc" value="shutters">Shutter painting</label>
+        </div>
+      </fieldset>
+      <div class="field"><label for="notes">Details</label><textarea id="notes" name="notes" placeholder="Rooms, square footage, colors you have in mind, anything else..."></textarea></div>
+      <button class="btn" type="submit" style="width:100%">Send estimate request</button>
+      <p class="msg" id="form-msg" role="status" aria-live="polite">Thanks! This is a demo, so nothing was sent, but on the real site your request would go straight to J L Stone's phone and email.</p>
+    </form>
+  </div>
+</section>
+
+<!-- AREA -->
+<section class="area" id="area" aria-labelledby="area-h">
+  <div class="wrap grid">
+    <div class="map" aria-hidden="true">
+      <svg viewBox="0 0 360 230">
+        <rect width="360" height="230" fill="#faf7f2"/>
+        <g fill="none" stroke="#e6dfd3" stroke-width="2"><path d="M0 46h360M0 92h360M0 138h360M0 184h360M72 0v230M144 0v230M216 0v230M288 0v230"/></g>
+        <g fill="none" stroke="#9cc9d9" stroke-width="7" stroke-linecap="round"><path d="M10 170 C90 120 200 150 350 60"/><path d="M60 15 C120 90 200 120 320 220"/></g>
+        <!-- painted swatch block -->
+        <rect x="120" y="60" width="120" height="90" fill="#b5533c" transform="rotate(-4 180 105)"/>
+        <rect x="120" y="60" width="120" height="90" fill="none" stroke="#1e1b18" stroke-width="3" transform="rotate(-4 180 105)"/>
+        <text x="180" y="112" text-anchor="middle" font-family="'Archivo Black', sans-serif" font-size="22" fill="#fff" transform="rotate(-4 180 105)">SENECA</text>
+        <text x="180" y="134" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#fff" transform="rotate(-4 180 105)">SOUTH CAROLINA</text>
+        <circle cx="180" cy="178" r="8" fill="#e9c46a" stroke="#1e1b18" stroke-width="3"/>
+      </svg>
+    </div>
+    <div>
+      <span class="tape">Where we work</span>
+      <h2 id="area-h">Serving the Seneca area</h2>
+      <p class="lead">Based in Seneca and working the surrounding area. Not sure if you're in range? Call and ask — it's a quick answer.</p>
+      <ul aria-label="Service area">
+        <li>Seneca</li><li>Surrounding area</li><li>Ask about your town</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>J L Stone Painting &amp; Maintenance</strong>
+    <span>Painting · Popcorn ceiling removal · Paint stripping · Shutter painting · Seneca, SC · <a href="tel:+18648850122">864-885-0122</a></span>
+    <span>Demo preview built by David — not the official site. Sample reviews are placeholders.</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn" href="tel:+18648850122"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Tap to call 864-885-0122</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('quote-form'),m=document.getElementById('form-msg');
+  if(f){f.addEventListener('submit',function(e){e.preventDefault();m.classList.add('show');m.setAttribute('tabindex','-1');m.focus();});}
+})();
+</script>
+</body>
+</html>
