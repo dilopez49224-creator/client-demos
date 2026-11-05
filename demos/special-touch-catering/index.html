@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Special Touch Catering by Sardi's | Clemson, SC</title>
+<meta name="description" content="Demo concept page for Special Touch Catering by Sardi's in Clemson.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--burg:#6b1d2a;--burg2:#4d121d;--champ:#e8d5a8;--champ2:#c9ad6b;--ivory:#fbf6e9;--ink:#2b1a1d;--gut:16px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;padding-top:44px;background:var(--ivory);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;line-height:1.55;overflow-x:hidden}
+h1,h2,h3{font-family:'Limelight','Cormorant Garamond',serif;font-weight:400;color:var(--burg);line-height:1.15;margin:0 0 .5em}
+a{color:var(--burg)}
+:focus-visible{outline:3px solid #1b4fd8;outline-offset:3px}
+.demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:#1c1214;color:#fff;font:600 13px/1.3 system-ui,sans-serif;text-align:center;padding:7px var(--gut);min-height:44px;display:flex;align-items:center;justify-content:center}
+section{scroll-margin-top:52px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-block;font-family:'Limelight',serif;letter-spacing:.06em;font-size:1rem;text-decoration:none;padding:14px 26px;border:2px solid var(--burg);background:var(--burg);color:var(--ivory);cursor:pointer;min-height:48px}
+.btn:hover{background:var(--burg2)}
+.btn.alt{background:transparent;color:var(--burg)}
+.btn.champ{background:var(--champ);color:var(--burg2);border-color:var(--champ)}
+/* deco ornament */
+.orn{display:block;margin:12px auto;color:var(--champ2);max-width:260px;width:70%}
+.frame{position:relative;border:2px solid var(--burg);padding:28px 20px;background:var(--ivory);margin:0 auto}
+.frame::before{content:"";position:absolute;inset:6px;border:1px solid var(--champ2);pointer-events:none}
+.frame>*{position:relative}
+.eyebrow{font-family:'Cormorant Garamond',serif;font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:.82rem;color:var(--burg)}
+/* hero */
+.hero{background:var(--burg);color:var(--champ);text-align:center;padding:48px 0 56px;position:relative}
+.hero .frame{background:transparent;border-color:var(--champ);max-width:760px;padding:38px 18px}
+.hero .frame::before{border-color:var(--champ2)}
+.hero h1{color:var(--champ);font-size:clamp(2rem,9vw,3.8rem);margin:.2em 0}
+.hero .eyebrow{color:var(--champ)}
+.hero p{max-width:34em;margin:0 auto 1em;font-size:1.15rem;color:#f6ead0}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:18px}
+.hero .btn.alt{color:var(--champ);border-color:var(--champ)}
+.hero .btn.alt:hover{background:rgba(232,213,168,.15)}
+.hero .note{font-size:.95rem;margin-top:16px;color:#f6ead0}
+/* generic sections */
+.sec{padding:56px 0}
+.sec h2{text-align:center;font-size:clamp(1.6rem,6vw,2.4rem)}
+.sec .lead{text-align:center;max-width:36em;margin:0 auto 1.5em}
+/* menu services */
+.menu{display:grid;gap:20px;grid-template-columns:1fr}
+.course{text-align:center}
+.course .num{font-family:'Limelight',serif;color:var(--champ2);font-size:.9rem;letter-spacing:.2em;color:#7a5f14}
+.course h3{font-size:1.35rem}
+.course p{margin:.4em 0 0}
+/* why us, ivory on champagne band */
+.band{background:var(--champ);border-top:2px solid var(--burg);border-bottom:2px solid var(--burg)}
+.why{display:grid;gap:22px;grid-template-columns:1fr;text-align:center}
+.why div{padding:0 8px}
+.why h3{font-size:1.2rem}
+.why svg{width:44px;height:44px;color:var(--burg)}
+.stat{font-family:'Limelight',serif;font-size:2.4rem;color:var(--burg);line-height:1}
+/* textback */
+.tb{background:var(--burg2);color:#f6ead0}
+.tb h2{color:var(--champ)}
+.tb .lead{color:#f6ead0}
+.tbgrid{display:grid;gap:30px;align-items:center;justify-items:center}
+.phone{width:270px;border:3px solid var(--champ);border-radius:34px;background:#1c1214;padding:14px 12px 20px;box-shadow:0 0 0 6px var(--burg)}
+.phone .notch{width:70px;height:6px;background:var(--champ2);border-radius:4px;margin:0 auto 12px}
+.screen{background:var(--ivory);border-radius:20px;padding:12px;min-height:310px;color:var(--ink);font:500 14px/1.4 system-ui,sans-serif}
+.missed{display:flex;align-items:center;gap:10px;background:#fbe3e3;border:1px solid #b3261e;color:#7a1410;padding:9px 10px;border-radius:12px;font-weight:700}
+.missed svg{width:22px;height:22px;flex:none}
+.missed small{display:block;font-weight:500}
+.bubble{max-width:88%;padding:9px 12px;border-radius:16px;margin-top:12px;background:var(--burg);color:#fff}
+.bubble.in{background:#e7e0cd;color:var(--ink);border-bottom-left-radius:4px}
+.bubble.out{margin-left:auto;border-bottom-right-radius:4px}
+.bubble b{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin-bottom:2px}
+.time{font-size:11px;color:#5a4a4d;margin-top:3px;text-align:right}
+.tbtext ul{padding-left:1.1em}
+.tbtext li{margin:.4em 0}
+.tbtext .small{font-size:.95rem;color:var(--champ)}
+/* reviews */
+.label{display:inline-block;border:2px solid var(--burg);color:var(--burg);font:700 .85rem/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:8px 12px;margin-bottom:18px}
+.reviews{display:grid;gap:18px;grid-template-columns:1fr}
+.rev{font-style:italic;font-size:1.1rem}
+.rev cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--burg)}
+.center{text-align:center}
+/* form */
+.formwrap{max-width:640px;margin:0 auto}
+form{display:grid;gap:14px;text-align:left}
+label{font-weight:700;letter-spacing:.04em;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:11px 12px;border:2px solid var(--burg);background:#fff;color:var(--ink);border-radius:0;min-height:46px}
+textarea{min-height:110px}
+.demo-msg{display:none;border:2px solid var(--burg);background:var(--champ);padding:12px 14px;font-weight:700;color:var(--burg2)}
+.demo-msg.show{display:block}
+/* area */
+.area{text-align:center;background:var(--burg);color:var(--champ);padding:50px 0}
+.area h2{color:var(--champ)}
+.area p{max-width:34em;margin:0 auto 1em;color:#f6ead0}
+footer{background:#1c1214;color:#e8dfd0;text-align:center;padding:26px var(--gut) 90px;font:15px/1.5 system-ui,sans-serif}
+footer a{color:var(--champ)}
+/* sticky mobile call */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--burg);border-top:2px solid var(--champ);padding:8px var(--gut);display:flex}
+.callbar a{flex:1;text-align:center;font-family:'Limelight',serif;color:var(--champ);text-decoration:none;font-size:1.05rem;padding:11px;min-height:48px;letter-spacing:.05em}
+@media(min-width:720px){
+ body{font-size:20px}
+ .menu{grid-template-columns:1fr 1fr}
+ .why{grid-template-columns:repeat(3,1fr)}
+ .reviews{grid-template-columns:repeat(3,1fr)}
+ .tbgrid{grid-template-columns:auto 1fr;gap:56px}
+ .callbar{display:none}
+ footer{padding-bottom:26px}
+ .frame{padding:34px 30px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+.fade{animation:rise .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="hero" id="top">
+ <div class="wrap">
+  <div class="frame fade">
+   <svg class="orn" viewBox="0 0 260 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 12h92M168 12h92"/><path d="M104 12l12-9 14 9 14-9 12 9-12 9-14-9-14 9z"/><circle cx="130" cy="12" r="3" fill="currentColor"/></svg>
+   <p class="eyebrow">Clemson, South Carolina</p>
+   <h1>Special Touch Catering <span style="display:block;font-size:.5em;margin-top:.3em">by Sardi's</span></h1>
+   <p>An evening-worth-dressing-for approach to catering. Tell us about your gathering and we will take care of the table.</p>
+   <div class="actions">
+    <a class="btn champ" href="tel:+18646547427">Call 864-654-7427</a>
+    <a class="btn alt" href="#quote">Request a quote</a>
+   </div>
+   <p class="note">Listed with 31 years in business. Catering tied to Sardi's Den in Clemson.</p>
+   <svg class="orn" viewBox="0 0 260 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 12h92M168 12h92"/><path d="M104 12l12-9 14 9 14-9 12 9-12 9-14-9-14 9z"/><circle cx="130" cy="12" r="3" fill="currentColor"/></svg>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="services" aria-labelledby="svc-h">
+ <div class="wrap">
+  <h2 id="svc-h">The Bill of Fare</h2>
+  <p class="lead">Catering for the occasions that matter to you. Reach out and we will talk through what your event needs.</p>
+  <div class="menu">
+   <article class="frame course"><div class="num">COURSE I</div><h3>Catering</h3><p>Catering tied to Sardi's Den in Clemson, planned around your guests and your gathering.</p></article>
+   <article class="frame course"><div class="num">COURSE II</div><h3>Parties &amp; Gatherings</h3><p>Birthdays, family dinners and get-togethers, handled so you can enjoy your own party.</p></article>
+   <article class="frame course"><div class="num">COURSE III</div><h3>Business &amp; Group Events</h3><p>Meetings, team lunches and group occasions with a simple, dependable setup.</p></article>
+   <article class="frame course"><div class="num">COURSE IV</div><h3>Custom Requests</h3><p>Have something specific in mind? Call and ask. We would be glad to hear about it.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="sec band" id="why" aria-labelledby="why-h">
+ <div class="wrap">
+  <h2 id="why-h">Why Choose Us</h2>
+  <svg class="orn" viewBox="0 0 260 24" fill="none" stroke="#6b1d2a" stroke-width="1.5" aria-hidden="true"><path d="M0 12h100M160 12h100"/><path d="M118 12l12-8 12 8-12 8z"/></svg>
+  <div class="why">
+   <div><div class="stat">31</div><h3>Years Listed</h3><p>Listed with 31 years in business, a long-running Clemson name.</p></div>
+   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h18M5 12a7 7 0 0114 0M2 16h20M12 5V3"/></svg><h3>Familiar Address</h3><p>Same address and phone as Sardi's Den, easy to find and easy to reach.</p></div>
+   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg><h3>Easy to Talk To</h3><p>Call or send a note. Tell us what you are planning and we will take it from there.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec tb" id="textback" aria-labelledby="tb-h">
+ <div class="wrap">
+  <h2 id="tb-h">Never miss a call — we text you back in seconds</h2>
+  <p class="lead">Busy in the kitchen or at an event? An automatic reply goes out right away, so no inquiry slips away.</p>
+  <div class="tbgrid">
+   <div class="phone" role="img" aria-label="Phone showing a missed call followed by an automatic text reply from Special Touch Catering by Sardi's">
+    <div class="notch"></div>
+    <div class="screen">
+     <div class="missed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2zM16 3l5 5M21 3l-5 5"/></svg><span>Missed call<small>Just now</small></span></div>
+     <div class="bubble out"><b>Special Touch Catering by Sardi's</b>Sorry we missed you! Tell us the date and number of guests and we will get right back to you.</div>
+     <div class="time">Sent automatically</div>
+     <div class="bubble in"><b>Customer</b>Planning a gathering in Clemson next month.</div>
+    </div>
+   </div>
+   <div class="tbtext">
+    <ul>
+     <li>Every missed call gets a friendly text back.</li>
+     <li>Customers can reply with their event details.</li>
+     <li>You pick up the conversation when you are free.</li>
+    </ul>
+    <p class="small">Illustration of how it could work for this business. Demo only.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="reviews" aria-labelledby="rev-h">
+ <div class="wrap center">
+  <h2 id="rev-h">Kind Words</h2>
+  <span class="label">Sample reviews</span>
+  <div class="reviews">
+   <blockquote class="frame rev" style="margin:0">“The planning was easy and the table looked wonderful.”<cite>Sample customer</cite></blockquote>
+   <blockquote class="frame rev" style="margin:0">“They made our get-together feel special without any stress.”<cite>Sample customer</cite></blockquote>
+   <blockquote class="frame rev" style="margin:0">“Friendly, quick to answer, and easy to work with.”<cite>Sample customer</cite></blockquote>
+  </div>
+  <p style="font-size:.95rem;margin-top:16px">These are invented placeholders for the demo, not real customer reviews.</p>
+ </div>
+</section>
+
+<section class="sec band" id="quote" aria-labelledby="q-h">
+ <div class="wrap formwrap">
+  <h2 id="q-h">Request a Quote</h2>
+  <div class="frame">
+   <form id="demoForm" novalidate>
+    <div><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name"></div>
+    <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+    <div><label for="f-date">Event date</label><input id="f-date" name="date" type="date"></div>
+    <div><label for="f-guests">Approximate guests</label><input id="f-guests" name="guests" type="number" min="1" inputmode="numeric"></div>
+    <div><label for="f-msg">Tell us about your event</label><textarea id="f-msg" name="msg"></textarea></div>
+    <button class="btn" type="submit">Send Request</button>
+    <div class="demo-msg" id="demoMsg" role="status" aria-live="polite">Demo only — this form does not send anything. On the real site it would reach Special Touch Catering.</div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="area" id="area" aria-labelledby="area-h">
+ <div class="wrap">
+  <svg class="orn" viewBox="0 0 260 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 12h100M160 12h100"/><path d="M118 12l12-8 12 8-12 8z"/></svg>
+  <h2 id="area-h">Service Area</h2>
+  <p>Proudly serving the Clemson area.</p>
+  <a class="btn champ" href="tel:+18646547427">Call 864-654-7427</a>
+ </div>
+</section>
+</main>
+
+<footer>Demo preview built by David — not the official site. Special Touch Catering by Sardi's, Clemson. <a href="tel:+18646547427">864-654-7427</a></footer>
+
+<div class="callbar"><a href="tel:+18646547427">Call 864-654-7427</a></div>
+
+<script>
+document.getElementById('demoForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('demoMsg').classList.add('show');});
+</script>
+</body>
+</html>
