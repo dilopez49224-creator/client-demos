@@ -58,11 +58,13 @@ section{padding:56px 0;scroll-margin-top:60px}
 
 /* ===== header ===== */
 header.site{background:#fff;border-bottom:1px solid var(--concrete-2)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
 .brand-name{display:block;font:800 1.15rem/1 'Figtree',sans-serif;letter-spacing:.12em;text-transform:uppercase}
 .brand small{display:block;margin-top:4px;font:700 12px/1.1 'Figtree',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--char)}
 .logo{width:42px;height:42px;flex:none}
+.logo-img{display:block;height:50px;width:auto}
+.logo-img.foot{height:auto;width:min(100%,300px);background:#fff;border-radius:10px;padding:12px 16px;box-sizing:content-box}
 .nav-links{display:none;gap:22px;list-style:none;margin:0;padding:0}
 .nav-links a{color:var(--char);text-decoration:none;font-weight:700}
 .nav-links a:hover{color:var(--navy);text-decoration:underline;text-underline-offset:5px}
@@ -118,7 +120,7 @@ header.site{background:#fff;border-bottom:1px solid var(--concrete-2)}
 /* ===== results ===== */
 .res{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--silver)}
 .res-fig{position:relative;margin:0;aspect-ratio:16/10;background:#ddd}
-.res-fig svg{display:block;width:100%;height:100%}
+.res-fig img{display:block;width:100%;height:100%;object-fit:cover}
 .res .tag{top:10px}
 .res-body{padding:14px 16px 16px;border-top:3px solid var(--navy)}
 .res-body h3{margin-bottom:4px}
@@ -235,8 +237,7 @@ footer .brand small{color:#d6deea}
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="One Shot Exterior Cleaning LLC, home">
-      <svg class="logo" aria-hidden="true"><use href="#reticle"/></svg>
-      <span><span class="brand-name">One Shot</span><small>Exterior Cleaning LLC</small></span>
+      <img class="logo-img" src="img/logo.webp" width="829" height="224" alt="">
     </a>
     <nav aria-label="Primary">
       <ul class="nav-links">
@@ -391,114 +392,42 @@ footer .brand small{color:#d6deea}
     <div class="wrap">
       <span class="kicker"><svg aria-hidden="true"><use href="#reticle"/></svg>Before &amp; after</span>
       <h2 id="res-h">Recent results</h2>
-      <p class="intro">Four surfaces One Shot cleans. Left half before, right half after.</p>
+      <p class="intro">Real jobs from One Shot's own posts. On the paired photos, the left half is before and the right half is after.</p>
       <div class="grid cols-4">
         <!-- 1 concrete driveway -->
         <article class="res">
-          <figure class="res-fig" role="img" aria-label="Concrete driveway, dark and stained before, bright after">
-            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <defs>
-                <clipPath id="c1"><rect width="160" height="200"/></clipPath>
-                <pattern id="g1" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="5" cy="6" r="3" fill="#4d4636" opacity=".3"/><circle cx="16" cy="15" r="4" fill="#3f3a2c" opacity=".25"/></pattern>
-              </defs>
-              <rect width="320" height="200" fill="#6fa25e"/>
-              <path d="M70 0h180l40 200H30z" fill="#e4e3de"/>
-              <g stroke="#c8c7c0" stroke-width="2"><path d="M60 50h199M48 105h223M37 160h245M160 0v200"/></g>
-              <g clip-path="url(#c1)">
-                <rect width="320" height="200" fill="#748259"/>
-                <path d="M70 0h180l40 200H30z" fill="#8e8574"/>
-                <path d="M70 0h180l40 200H30z" fill="url(#g1)"/>
-                <path d="M95 0 L75 200M130 0l-5 200" stroke="#5e574a" stroke-width="10" opacity=".35"/>
-                <ellipse cx="110" cy="135" rx="26" ry="10" fill="#3a342b" opacity=".5"/>
-                <g stroke="#6e6758" stroke-width="2"><path d="M60 50h100M48 105h112M37 160h123"/></g>
-              </g>
-              <path d="M160 0v200" stroke="#fff" stroke-width="3"/>
-            </svg>
-            <span class="tag b" aria-hidden="true">Before</span><span class="tag a" aria-hidden="true">After</span>
+          <figure class="res-fig">
+            <img src="img/driveway-after.webp" width="499" height="312" loading="lazy" alt="Concrete driveway after a One Shot wash, bright clean concrete between green lawns with the One Shot Exterior Cleaning logo stamped on it">
+            <span class="tag a" aria-hidden="true">After</span>
           </figure>
           <div class="res-body"><h3>Concrete driveway</h3><p>Years of dark film and tire tracks lifted in one visit.</p></div>
         </article>
         <!-- 2 pavers & steps -->
         <article class="res">
-          <figure class="res-fig" role="img" aria-label="Paver walkway and steps, mossy and dark before, tan and clean after">
-            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <defs>
-                <clipPath id="c2"><rect width="160" height="200"/></clipPath>
-                <pattern id="pa" width="40" height="24" patternUnits="userSpaceOnUse"><rect width="40" height="24" fill="#a8977c"/><rect x="1" y="1" width="38" height="10" fill="#d2bf9f"/><rect x="-19" y="13" width="38" height="10" fill="#c9b493"/><rect x="21" y="13" width="38" height="10" fill="#d6c4a6"/></pattern>
-                <pattern id="pb" width="40" height="24" patternUnits="userSpaceOnUse"><rect width="40" height="24" fill="#2f3a26"/><rect x="1" y="1" width="38" height="10" fill="#4f4a43"/><rect x="-19" y="13" width="38" height="10" fill="#45413a"/><rect x="21" y="13" width="38" height="10" fill="#57524a"/></pattern>
-              </defs>
-              <rect width="320" height="200" fill="#5e8a4d"/>
-              <rect x="40" y="0" width="240" height="20" fill="#cbb89a"/><rect x="40" y="20" width="240" height="6" fill="#9b8a6f"/>
-              <rect x="40" y="26" width="240" height="20" fill="#c7b394"/><rect x="40" y="46" width="240" height="6" fill="#958568"/>
-              <rect x="40" y="52" width="240" height="148" fill="url(#pa)"/>
-              <g clip-path="url(#c2)">
-                <rect width="320" height="200" fill="#4c6b3d"/>
-                <rect x="40" y="0" width="240" height="20" fill="#5a554c"/><rect x="40" y="20" width="240" height="6" fill="#36332d"/>
-                <rect x="40" y="26" width="240" height="20" fill="#554f46"/><rect x="40" y="46" width="240" height="6" fill="#322f2a"/>
-                <rect x="40" y="52" width="240" height="148" fill="url(#pb)"/>
-                <g fill="#7f9a3a" opacity=".75"><ellipse cx="70" cy="150" rx="22" ry="9"/><ellipse cx="120" cy="178" rx="26" ry="8"/><ellipse cx="95" cy="110" rx="14" ry="6"/><ellipse cx="60" cy="36" rx="12" ry="4"/></g>
-              </g>
-              <path d="M160 0v200" stroke="#fff" stroke-width="3"/>
-            </svg>
+          <figure class="res-fig">
+            <img src="img/pavers-before-after.webp" width="436" height="272" loading="lazy" alt="Paver walkway and steps side by side: dark and mossy before on the left, clean tan pavers after on the right">
             <span class="tag b" aria-hidden="true">Before</span><span class="tag a" aria-hidden="true">After</span>
           </figure>
           <div class="res-body"><h3>Paver walkway &amp; steps</h3><p>Moss and black growth cleared to the original tan.</p></div>
         </article>
         <!-- 3 vinyl siding -->
         <article class="res">
-          <figure class="res-fig" role="img" aria-label="Vinyl siding, mildew-stained before, clean cream after">
-            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <defs>
-                <clipPath id="c3"><rect width="160" height="200"/></clipPath>
-                <pattern id="lap" width="10" height="14" patternUnits="userSpaceOnUse"><rect width="10" height="14" fill="#f1e9d3"/><rect y="11" width="10" height="3" fill="#dccfb1"/></pattern>
-                <linearGradient id="mil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e8a5c" stop-opacity=".15"/><stop offset=".6" stop-color="#77744a" stop-opacity=".55"/><stop offset="1" stop-color="#6b6a45" stop-opacity=".35"/></linearGradient>
-              </defs>
-              <rect width="320" height="200" fill="url(#lap)"/>
-              <path d="M0 0h320v14H0z" fill="#4a4e54"/>
-              <rect x="56" y="54" width="44" height="66" fill="#3f4a55" stroke="#fff" stroke-width="5"/>
-              <rect x="226" y="54" width="44" height="66" fill="#3f4a55" stroke="#fff" stroke-width="5"/>
-              <g clip-path="url(#c3)">
-                <rect y="14" width="320" height="186" fill="#d8cca6" opacity=".55"/>
-                <rect y="14" width="320" height="186" fill="url(#mil)"/>
-                <path d="M20 30q6 60 0 160M128 40q-5 50 0 150" stroke="#6c6a44" stroke-width="7" opacity=".35" fill="none"/>
-                <rect x="56" y="54" width="44" height="66" fill="#3f4a55" stroke="#d3c7a4" stroke-width="5"/>
-              </g>
-              <path d="M160 0v200" stroke="#fff" stroke-width="3"/>
-            </svg>
+          <figure class="res-fig">
+            <img src="img/siding-before-after.webp" width="424" height="262" loading="lazy" alt="Vinyl siding side by side: green-gray mildew streaks before on the left, clean cream siding after on the right">
             <span class="tag b" aria-hidden="true">Before</span><span class="tag a" aria-hidden="true">After</span>
           </figure>
           <div class="res-body"><h3>Vinyl siding soft wash</h3><p>Green-gray mildew washed off at low pressure.</p></div>
         </article>
         <!-- 4 wood fence -->
         <article class="res">
-          <figure class="res-fig" role="img" aria-label="Wood privacy fence, weathered gray before, warm wood color after">
-            <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <defs>
-                <clipPath id="c4"><rect width="160" height="200"/></clipPath>
-                <pattern id="fa" width="16" height="200" patternUnits="userSpaceOnUse"><rect width="16" height="200" fill="#b06f3c"/><rect x="14" width="2" height="200" fill="#7f4c24"/><rect x="5" y="20" width="1" height="120" fill="#9a5e30"/></pattern>
-                <pattern id="fb" width="16" height="200" patternUnits="userSpaceOnUse"><rect width="16" height="200" fill="#6e6a60"/><rect x="14" width="2" height="200" fill="#46433d"/><rect x="5" y="20" width="1" height="120" fill="#5a574f"/></pattern>
-              </defs>
-              <rect width="320" height="200" fill="#dce7f2"/>
-              <rect y="168" width="320" height="32" fill="#6fa25e"/>
-              <rect x="0" y="28" width="320" height="146" fill="url(#fa)"/>
-              <rect x="0" y="62" width="320" height="10" fill="#9a5e30"/><rect x="0" y="134" width="320" height="10" fill="#9a5e30"/>
-              <rect x="94" y="18" width="16" height="158" fill="#8c5428"/><rect x="236" y="18" width="16" height="158" fill="#8c5428"/>
-              <g clip-path="url(#c4)">
-                <rect width="320" height="200" fill="#c8ccd0"/>
-                <rect y="168" width="320" height="32" fill="#6f8c55"/>
-                <rect x="0" y="28" width="320" height="146" fill="url(#fb)"/>
-                <rect x="0" y="62" width="320" height="10" fill="#57544c"/><rect x="0" y="134" width="320" height="10" fill="#57544c"/>
-                <rect x="94" y="18" width="16" height="158" fill="#4f4c45"/>
-                <path d="M0 150h160v24H0z" fill="#2f2c26" opacity=".35"/>
-              </g>
-              <path d="M160 0v200" stroke="#fff" stroke-width="3"/>
-            </svg>
+          <figure class="res-fig">
+            <img src="img/fence-before-after.webp" width="424" height="262" loading="lazy" alt="Wood privacy fence side by side: weathered gray boards before on the left, warm restored wood after on the right">
             <span class="tag b" aria-hidden="true">Before</span><span class="tag a" aria-hidden="true">After</span>
           </figure>
           <div class="res-body"><h3>Wood fence restoration</h3><p>Weathered gray boards brought back to warm wood.</p></div>
         </article>
       </div>
-      <p class="res-note">Drawings based on the surfaces in One Shot's own before-and-after posts. The live site would show the real photos.</p>
+      <p class="res-note">Photos from One Shot Exterior Cleaning's own before-and-after posts.</p>
     </div>
   </section>
 
@@ -632,11 +561,10 @@ footer .brand small{color:#d6deea}
 <footer>
   <div class="wrap">
     <a class="brand" href="#top" aria-label="One Shot Exterior Cleaning LLC, back to top">
-      <svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#fff"/><use href="#reticle" x="3" y="3" width="42" height="42"/></svg>
-      <span><span class="brand-name">One Shot</span><small>Exterior Cleaning LLC</small></span>
+      <img class="logo-img foot" src="img/logo.webp" width="829" height="224" loading="lazy" alt="">
     </a>
     <p>Pressure washing and exterior cleaning for homes and businesses across Easley, Greenville, Anderson and the Upstate.<br>Phone: <a href="tel:+18642939426">864-293-9426</a> · Mon–Fri 9am–5pm</p>
-    <p style="margin:0;font-size:14px;opacity:.85">Demo preview built by David — not the official site. No real photos or customer names are used.</p>
+    <p style="margin:0;font-size:14px;opacity:.85">Demo preview built by David — not the official site. Photos and logo are from One Shot's own posts; no customer names are used.</p>
   </div>
 </footer>
 
