@@ -62,7 +62,7 @@ section{padding:60px 0;position:relative}
 /* header */
 .top{background:var(--paper);border-bottom:3px double var(--butter-d)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:74px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--plum);font:400 1.5rem "Yeseva One",serif}
+.logo{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--plum);font:400 1.5rem "Yeseva One",serif}
 .logo svg{width:34px;height:34px}
 .top .call{display:none}
 @media(min-width:720px){.top .call{display:inline-flex}}
@@ -74,6 +74,8 @@ section{padding:60px 0;position:relative}
 .hero h1 em{font-style:normal;color:var(--olive)}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 12px}
 .fine{font-size:.9rem;color:var(--muted)}
+.ready{display:inline-flex;flex-wrap:wrap;gap:6px;vertical-align:middle;margin-left:2px}
+.ready b{font-weight:600;background:var(--olive-l);color:var(--olive-d);padding:3px 10px;border-radius:999px;font-size:.8rem;line-height:1.3}
 .table{position:relative;margin:0 auto;width:min(440px,100%)}
 .table svg{width:100%;height:auto}
 .table .label{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);background:var(--paper);border:1.5px solid var(--butter-d);border-radius:999px;padding:5px 12px;font-size:.75rem;color:var(--muted);font-weight:800;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
@@ -138,7 +140,7 @@ section{padding:60px 0;position:relative}
 
 /* guest book reviews */
 .reviews{background:var(--butter)}
-.note{display:inline-block;background:#fff;border:1.5px dashed var(--ember);color:var(--ember-d);border-radius:8px;padding:6px 12px;font-size:.85rem;font-weight:800;margin-bottom:22px}
+.note{display:inline-block;background:#fff;border:1.5px dashed var(--ember);color:var(--ember-d);border-radius:8px;padding:6px 12px;font-size:.85rem;font-weight:600;margin-bottom:22px}
 .book{background:var(--paper);border:1.5px solid var(--butter-d);border-radius:6px;padding:26px 22px;box-shadow:0 20px 40px -30px rgba(59,33,65,.5);display:grid;gap:22px;
   background-image:repeating-linear-gradient(transparent 0 31px,rgba(74,93,35,.18) 31px 32px)}
 @media(min-width:800px){.book{grid-template-columns:repeat(3,1fr);gap:30px}}
@@ -150,27 +152,27 @@ section{padding:60px 0;position:relative}
 .quote{background:var(--paper)}
 .quote .grid{display:grid;gap:28px}
 @media(min-width:900px){.quote .grid{grid-template-columns:1fr 1.2fr}}
-form{background:#fff;border:1.5px solid var(--butter-d);border-radius:12px;padding:24px;box-shadow:0 20px 40px -30px rgba(59,33,65,.4)}
+form{background:#fff;border:1.5px solid var(--butter-d);border-radius:12px;padding:24px}
 .field{display:grid;gap:6px;margin-bottom:14px}
-.field label{font-weight:800;font-size:.9rem;color:var(--plum)}
+.field label{font-weight:600;font-size:.9rem;color:var(--plum)}
 .field input,.field select,.field textarea{width:100%;font:inherit;padding:12px 14px;border-radius:8px;border:1.5px solid #d9cfae;background:var(--paper);color:var(--ink);min-height:48px}
 .field textarea{min-height:110px;resize:vertical}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--olive)}
 .two{display:grid;gap:0 14px}
 @media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
-.msg{display:none;margin-top:14px;padding:14px;border-radius:8px;background:var(--olive-l);color:var(--olive-d);font-weight:800}
+.msg{display:none;margin-top:14px;padding:14px;border-radius:8px;background:var(--olive-l);color:var(--olive-d);font-weight:600}
 .msg.show{display:block}
 .contact-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:14px}
-.contact-list li{display:flex;gap:12px;align-items:center;font-weight:600}
+.contact-list li{display:flex;gap:12px;align-items:center;font-weight:400}
 .contact-list svg{width:24px;height:24px;stroke:var(--ember-d);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.contact-list a{color:var(--plum);text-decoration:none;font:400 1.35rem "Yeseva One",serif}
+.contact-list a{color:var(--plum);text-decoration:none;font:400 1.35rem "Yeseva One",serif;display:inline-flex;align-items:center;min-height:44px}
 
 /* area */
 .area .grid{display:grid;gap:30px;align-items:center}
 @media(min-width:800px){.area .grid{grid-template-columns:1fr 1fr}}
 .map{background:var(--paper);border:1.5px solid var(--butter-d);border-radius:12px;padding:14px}
 .area ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
-.area li{background:var(--olive-l);color:var(--olive-d);padding:8px 14px;border-radius:999px;font-weight:800;font-size:.9rem}
+.area li{background:var(--olive-l);color:var(--olive-d);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.9rem}
 
 footer{background:var(--plum);color:#e3d3e6;padding:36px 0 40px;font-size:.9rem}
 footer .wrap{display:grid;gap:10px}
@@ -206,9 +208,9 @@ footer strong{color:#fff;font:400 1.4rem "Yeseva One",serif}
       <p class="lead">Viola's Catering feeds Seneca's gatherings — from the fellowship hall to the office break room to the backyard reunion. Tell us the date and the headcount, and we'll take the kitchen off your plate.</p>
       <div class="cta-row">
         <a class="btn" href="tel:+18648823200"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call 864-882-3200</a>
-        <a class="btn outline" href="#quote">Plan an event</a>
+        <a class="btn outline" href="#quote">Send your event details</a>
       </div>
-      <p class="fine">Located on Sandifer Blvd in Seneca. Call to talk through your date, your crowd and your budget.</p>
+      <p class="fine">On Sandifer Blvd in Seneca. Have these ready when you call: <span class="ready"><b>date</b><b>headcount</b><b>venue</b><b>drop-off or served</b></span></p>
     </div>
 
     <div class="table" aria-hidden="true">
@@ -259,8 +261,8 @@ footer strong{color:#fff;font:400 1.4rem "Yeseva One",serif}
 <!-- OCCASIONS / SERVICES -->
 <section class="occasions" id="services" aria-labelledby="serv-h">
   <div class="wrap">
-    <div class="center">
-      <p class="kicker center">What we cater</p>
+    <div>
+      <p class="kicker">What we cater</p>
       <h2 id="serv-h">Every kind of gathering</h2>
       <p class="lead">Catering for groups large and small around Seneca. Pick the occasion, we'll talk through the food.</p>
     </div>
@@ -290,7 +292,7 @@ footer strong{color:#fff;font:400 1.4rem "Yeseva One",serif}
       <li><span class="amp" aria-hidden="true">&amp;</span><div><h3>Local, on Sandifer Blvd</h3><p>We're right here in Seneca, not a franchise an hour away. Short drive, hot food, familiar faces.</p></div></li>
       <li><span class="amp" aria-hidden="true">&amp;</span><div><h3>One call does it</h3><p>Tell us the date, the place and how many to feed. We handle the planning so you can handle your guests.</p></div></li>
       <li><span class="amp" aria-hidden="true">&amp;</span><div><h3>Sized for your crowd</h3><p>A dozen people in a conference room or a few hundred at the fellowship hall — we cook for the number you give us.</p></div></li>
-      <li><span class="amp" aria-hidden="true">&amp;</span><div><h3>Straight answers on price</h3><p>You'll know what it costs before you commit. No surprises on the invoice.</p></div></li>
+      <li><span class="amp" aria-hidden="true">&amp;</span><div><h3>Clear on cost</h3><p>Call with your headcount and the kind of meal you want. We'll talk through what it costs before anything is booked.</p></div></li>
     </ul>
   </div>
 </section>
