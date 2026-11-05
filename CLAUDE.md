@@ -17,6 +17,13 @@ Every `.md` file and `leads/` stay off the live site via `.assetsignore`.
 - Only when there's nothing to go on, choose a direction from the niche and the business's personality.
 - Every site must still look distinct from the other demos (different fonts, palette and layout).
 
+## When David sends screenshots of a lead (Facebook, Google, menus, trucks)
+- Pull out every useful fact: correct phone (screenshots beat our research, so fix it everywhere: tracker, `leads/leads.json`, the demo's tel: links and the text-back mock), email, real business name, hours, address, services and events, tagline, follower and review counts, and whether their website works.
+- A dead or broken website is a pitch angle: put it in the text, phone script and email.
+- Related businesses that appear in their posts (sister restaurants, partners) are separate leads. Note them in the tracker; never mix their info into this demo.
+- If David says something in a screenshot is unrelated (e.g. a random website), ignore it everywhere.
+- Then re-theme the demo from their real colors, logo style and photos (don't copy their logo or photos), and rewrite that lead's text, phone script and email in the Lead Tracker to use the new details.
+
 ## Illustrations must be accurate
 - Any map, state shape, or town layout must match real geography. Use `tools/geo/sc-outline.json` (all of SC) or `tools/geo/upstate-outline.json` (Oconee, Pickens, Anderson and Greenville counties). Each has an SVG path plus town x,y positions in its viewBox. Never hand-draw a blob and call it SC.
 - If an accurate version isn't practical, use an abstract town list or pin row rather than a fake map.
