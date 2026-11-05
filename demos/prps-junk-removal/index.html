@@ -28,7 +28,7 @@ html{scroll-behavior:smooth}
 body{margin:0;padding-top:44px;padding-bottom:84px;background:var(--bone);color:var(--ink);font-family:'Albert Sans',system-ui,sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden}
 h1,h2,h3{font-family:'Unbounded',system-ui,sans-serif;font-weight:800;line-height:1.05;margin:0 0 .5em;letter-spacing:-.02em;text-wrap:balance;color:var(--forest)}
 h2{font-size:clamp(1.6rem,4.5vw,2.4rem)}
-h3{font-size:1.05rem;font-weight:600}
+h3{font-family:'Albert Sans',system-ui,sans-serif;letter-spacing:0;font-size:1.15rem;font-weight:700}
 p{margin:0 0 1em}
 a{color:var(--pink-ink)}
 :focus-visible{outline:3px solid var(--pink-hot);outline-offset:3px}
@@ -38,7 +38,7 @@ section{padding:56px 0;position:relative}
 .cut{border-top:3px dashed rgba(22,48,43,.35)}
 .cut::before,.cut::after{content:"";position:absolute;top:-14px;width:26px;height:26px;border-radius:50%;background:var(--bone)}
 .cut::before{left:-13px}.cut::after{right:-13px}
-.label{display:inline-block;font:600 .72rem/1 'Unbounded',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pink-ink);margin-bottom:12px}
+.label{display:inline-block;font:700 .8rem/1 'Albert Sans',system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pink-ink);margin-bottom:12px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:6px;font:700 1.1rem 'Albert Sans',sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .12s ease,background .12s ease}
 .btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--forest)}
 .btn svg{width:20px;height:20px;flex:none}
@@ -51,9 +51,9 @@ section{padding:56px 0;position:relative}
 /* ===== header ===== */
 header.site{background:var(--forest);color:#fff}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
-.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:800 1.15rem 'Unbounded',sans-serif;letter-spacing:-.02em}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:800 1.5rem 'Unbounded',sans-serif;letter-spacing:-.02em}
 .brand .mark{width:40px;height:40px;flex:none}
-.brand small{display:block;font:500 .7rem/1 'Albert Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pink-hot);margin-top:3px}
+.brand small{display:block;font:500 .75rem/1 'Albert Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pink-hot);margin-top:3px}
 .nav-links{display:none;gap:22px;list-style:none;margin:0;padding:0}
 .nav-links a{color:#fff;text-decoration:none;font-weight:600}
 .nav-links a:hover{text-decoration:underline;text-decoration-color:var(--pink-hot);text-decoration-thickness:3px;text-underline-offset:6px}
@@ -70,7 +70,7 @@ header.site{background:var(--forest);color:#fff}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
 .hero-art{position:relative;width:100%;max-width:420px;margin:0 auto}
 .truck{width:100%;height:auto;display:block}
-.stamp{position:absolute;right:-6px;top:-6px;transform:rotate(12deg);border:4px solid var(--pink-hot);color:var(--pink-hot);font:800 1.1rem/1 'Unbounded',sans-serif;letter-spacing:.1em;padding:10px 14px;border-radius:6px;text-transform:uppercase;background:rgba(22,48,43,.85)}
+.stamp{position:absolute;right:-6px;top:-6px;transform:rotate(12deg);border:4px solid var(--pink-hot);color:var(--pink-hot);font:800 1.5rem/1 'Unbounded',sans-serif;letter-spacing:.1em;padding:10px 14px;border-radius:6px;text-transform:uppercase;background:rgba(22,48,43,.85)}
 @media(prefers-reduced-motion:no-preference){
   .stamp{animation:slam .5s cubic-bezier(.2,1.4,.4,1) .4s both}
   @keyframes slam{from{opacity:0;transform:rotate(12deg) scale(1.8)}to{opacity:1;transform:rotate(12deg) scale(1)}}
@@ -78,7 +78,7 @@ header.site{background:var(--forest);color:#fff}
 .how{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:10px}
 @media(min-width:600px){.how{grid-template-columns:repeat(3,1fr)}}
 .how li{border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:12px 14px;color:#e6eeec;font-size:.95rem;display:flex;gap:10px;align-items:center}
-.how b{font-family:'Unbounded',sans-serif;font-weight:800;color:var(--pink-hot);font-size:1.3rem}
+.how b{font-family:'Unbounded',sans-serif;font-weight:800;color:var(--pink-hot);font-size:1.5rem}
 
 /* ===== loads ===== */
 .loads{background:var(--bone)}
@@ -101,7 +101,7 @@ header.site{background:var(--forest);color:#fff}
 .why-grid{display:grid;gap:14px}
 @media(min-width:800px){.why-grid{grid-template-columns:repeat(3,1fr)}}
 .why-card{padding:22px 20px;border-left:6px solid var(--pink);background:var(--white)}
-.why-card h3{font-size:1.05rem}
+.why-card h3{font-size:1.15rem}
 .why-card p{margin:0;color:var(--muted)}
 .why-card .big{font:800 2.2rem/1 'Unbounded',sans-serif;color:var(--forest);display:block;margin-bottom:10px}
 
@@ -116,12 +116,12 @@ header.site{background:var(--forest);color:#fff}
 .phone-screen{background:#f3f4f1;border-radius:28px;overflow:hidden;font-size:.9rem;color:var(--ink)}
 .phone-top{background:#fff;padding:0 16px 10px;text-align:center;border-bottom:1px solid #dfe3df}
 .notch{width:90px;height:22px;background:#0d1d1a;border-radius:0 0 16px 16px;margin:0 auto 10px}
-.phone-top b{display:block;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.95rem}
+.phone-top b{display:block;font-family:'Albert Sans',system-ui,sans-serif;font-weight:700;font-size:1rem}
 .phone-top small{color:var(--muted)}
 .msgs{padding:14px 12px 20px;display:flex;flex-direction:column;gap:10px}
 .missed{align-self:center;background:#fde8e8;color:#8a1c1c;border-radius:999px;padding:6px 12px;font-weight:700;font-size:.78rem;display:flex;align-items:center;gap:6px}
 .missed svg{width:14px;height:14px}
-.tstamp{align-self:center;color:var(--muted);font-size:.72rem}
+.tstamp{align-self:center;color:var(--muted);font-size:.75rem}
 .bubble{max-width:86%;padding:10px 13px;border-radius:16px;line-height:1.4}
 .bubble.out{align-self:flex-start;background:var(--forest);color:#fff;border-bottom-left-radius:4px}
 .bubble.in{align-self:flex-end;background:#dfe5e2;border-bottom-right-radius:4px}
@@ -133,7 +133,7 @@ header.site{background:var(--forest);color:#fff}
 }
 .tb-list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
 .tb-list li{display:flex;gap:12px;align-items:flex-start;color:#e6eeec}
-.tb-list .n{flex:none;width:28px;height:28px;border-radius:4px;background:var(--pink-hot);color:var(--forest);font:800 .85rem/28px 'Unbounded',sans-serif;text-align:center}
+.tb-list .n{flex:none;width:28px;height:28px;border-radius:4px;background:var(--pink-hot);color:var(--forest);font:700 .9rem/28px 'Albert Sans',system-ui,sans-serif;text-align:center}
 
 /* ===== reviews ===== */
 .reviews{background:var(--bone)}
@@ -243,7 +243,7 @@ footer .brand{margin-bottom:12px}
           <circle cx="150" cy="222" r="26" fill="#0d1d1a"/><circle cx="150" cy="222" r="11" fill="#cfdcd8"/>
           <circle cx="360" cy="222" r="26" fill="#0d1d1a"/><circle cx="360" cy="222" r="11" fill="#cfdcd8"/>
           <!-- door text -->
-          <text x="336" y="200" font-family="Unbounded, sans-serif" font-weight="800" font-size="18" fill="#ff2d8f">PRPS</text>
+          <text x="336" y="200" font-family="Albert Sans, system-ui, sans-serif" font-weight="700" font-size="18" fill="#ff2d8f">PRPS</text>
           <!-- strap -->
           <path d="M100 160 Q190 60 320 160" stroke="#ff2d8f" stroke-width="4" fill="none" stroke-dasharray="10 8"/>
         </svg>
@@ -421,7 +421,7 @@ footer .brand{margin-bottom:12px}
         <circle cx="260" cy="170" r="100" fill="#d41a80" opacity=".12"/>
         <circle cx="260" cy="170" r="100" fill="none" stroke="#d41a80" stroke-width="3" stroke-dasharray="8 8"/>
         <rect x="248" y="158" width="24" height="24" rx="4" fill="#16302b"/><rect x="256" y="166" width="8" height="8" fill="#ff2d8f"/>
-        <text x="282" y="166" font-family="Unbounded, sans-serif" font-weight="800" font-size="20" fill="#16302b">Anderson</text>
+        <text x="282" y="166" font-family="Albert Sans, system-ui, sans-serif" font-weight="700" font-size="20" fill="#16302b">Anderson</text>
         <text x="282" y="188" font-family="Albert Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#4b5a56">and surrounding area</text>
       </svg>
     </div>
