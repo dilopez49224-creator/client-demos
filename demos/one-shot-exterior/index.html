@@ -181,6 +181,14 @@ textarea{min-height:110px;resize:vertical}
 .towns li{background:var(--mist);border:1px solid #bfe0e3;border-radius:999px;padding:7px 14px;font-weight:600}
 .towns li.base{background:var(--teal);color:#fff;border-color:var(--teal)}
 .map{width:100%;height:auto;display:block;border-radius:var(--radius);background:var(--mist)}
+.corridor{padding:20px 16px 22px;border:1px solid #bfe0e3}
+.corridor-k{margin:0 0 14px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.corridor ol{list-style:none;margin:0;padding:0;display:flex;justify-content:space-between;position:relative}
+.corridor ol::before{content:"";position:absolute;left:12%;right:12%;top:7px;border-top:3px dashed #0f8e90}
+.corridor li{position:relative;flex:1;text-align:center;padding-top:24px;font-size:14px;font-weight:600;color:var(--ink)}
+.corridor li::before{content:"";position:absolute;top:0;left:50%;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:#0f8e90;border:3px solid var(--mist);box-sizing:border-box}
+.corridor li.base{font-weight:800}
+.corridor li.base::before{background:var(--teal);width:20px;height:20px;margin-left:-10px;top:-2px;box-shadow:0 0 0 4px rgba(34,193,195,.35)}
 
 /* ===== footer ===== */
 footer{background:var(--teal);color:#cfe8ea;padding:34px 0 40px;font-size:.95rem}
@@ -465,28 +473,12 @@ footer .brand{margin-bottom:10px}
           <li class="base">Easley</li><li>Anderson</li><li>Greenville</li><li>Mauldin</li><li>Simpsonville</li><li>Fountain Inn</li><li>Greenwood</li><li>Spartanburg</li><li>Duncan</li><li>Boiling Springs</li>
         </ul>
       </div>
-      <svg class="map" viewBox="0 0 520 360" role="img" aria-label="Stylized map showing the service towns around Easley, South Carolina">
-        <rect width="520" height="360" rx="14" fill="#e9f7f8"/>
-        <g stroke="#bfe0e3" stroke-width="1"><path d="M0 60H520M0 120H520M0 180H520M0 240H520M0 300H520M60 0V360M120 0V360M180 0V360M240 0V360M300 0V360M360 0V360M420 0V360M480 0V360"/></g>
-        <!-- roads -->
-        <path d="M40 250 C140 210 220 180 300 150 S440 90 500 60" stroke="#9fd3d6" stroke-width="6" fill="none" stroke-linecap="round"/>
-        <path d="M150 330 C180 270 230 220 320 200 S420 180 480 160" stroke="#9fd3d6" stroke-width="4" fill="none" stroke-linecap="round"/>
-        <!-- service ring -->
-        <circle cx="200" cy="200" r="150" fill="#22c1c3" opacity=".12"/>
-        <circle cx="200" cy="200" r="150" fill="none" stroke="#22c1c3" stroke-width="2" stroke-dasharray="8 8"/>
-        <g font-family="Source Sans 3, system-ui, sans-serif" font-size="14" font-weight="600" fill="#10262c">
-          <circle cx="200" cy="200" r="9" fill="#06343f"/><circle cx="200" cy="200" r="3.5" fill="#ffb703"/><text x="214" y="196" font-size="16" font-weight="700">Easley</text>
-          <circle cx="120" cy="280" r="6" fill="#0f8e90"/><text x="132" y="285">Anderson</text>
-          <circle cx="290" cy="190" r="6" fill="#0f8e90"/><text x="302" y="186">Greenville</text>
-          <circle cx="300" cy="236" r="6" fill="#0f8e90"/><text x="312" y="241">Mauldin</text>
-          <circle cx="330" cy="278" r="6" fill="#0f8e90"/><text x="342" y="283">Simpsonville</text>
-          <circle cx="345" cy="320" r="6" fill="#0f8e90"/><text x="357" y="325">Fountain Inn</text>
-          <circle cx="150" cy="335" r="6" fill="#0f8e90"/><text x="162" y="340">Greenwood</text>
-          <circle cx="430" cy="100" r="6" fill="#0f8e90"/><text x="442" y="96">Spartanburg</text>
-          <circle cx="385" cy="150" r="6" fill="#0f8e90"/><text x="397" y="146">Duncan</text>
-          <circle cx="455" cy="55" r="6" fill="#0f8e90"/><text x="360" y="42">Boiling Springs</text>
-        </g>
-      </svg>
+      <div class="map corridor" role="img" aria-label="West to east along the corridor: Anderson, Easley, Greenville, Spartanburg">
+        <p class="corridor-k">West to east</p>
+        <ol>
+          <li>Anderson</li><li class="base">Easley</li><li>Greenville</li><li>Spartanburg</li>
+        </ol>
+      </div>
     </div>
   </section>
 </main>
