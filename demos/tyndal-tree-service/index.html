@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tyndal Tree Service | Tree Removal &amp; Stump Removal in Anderson, SC</title>
+<meta name="description" content="Demo preview of a one-page site for Tyndal Tree Service, complete tree removal and stump removal in the Anderson, SC area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bark:#2b1d12;
+  --bark-2:#1b120b;
+  --tan:#d9a066;
+  --tan-d:#b57d45;
+  --lichen:#b5d334;
+  --lichen-d:#7a9410;
+  --pale:#f4efe6;
+  --pale-2:#e9e0d0;
+  --text:#2a2119;
+  --muted:#5e5245;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;padding-top:44px;padding-bottom:84px;background:var(--pale);color:var(--text);font:400 17px/1.6 "Red Hat Text",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;text-transform:uppercase;line-height:.95;margin:0 0 .4em;letter-spacing:.01em}
+h1{font-size:clamp(3.4rem,15vw,8rem);font-weight:900}
+h2{font-size:clamp(2.4rem,9vw,4.4rem);font-weight:800}
+h3{font-size:1.7rem;font-weight:800}
+p{margin:0 0 1em}
+a{color:var(--bark)}
+:focus-visible{outline:3px solid var(--lichen);outline-offset:3px;box-shadow:0 0 0 6px var(--bark)}
+.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:44px;background:#000;color:#fff;text-align:center;font:700 13px/1.3 "Red Hat Text",sans-serif;padding:6px 12px;display:flex;align-items:center;justify-content:center}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.eyebrow{display:inline-block;font:700 .8rem/1 "Red Hat Text",sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--lichen-d);margin-bottom:.9em}
+/* dark header */
+header.top{background:var(--bark);color:var(--pale);position:sticky;top:44px;z-index:80;border-bottom:3px solid var(--lichen)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;font-size:1.5rem;letter-spacing:.03em;color:var(--pale);text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand svg{width:32px;height:32px}
+nav.main{display:none}
+nav.main a{text-decoration:none;color:var(--pale);font-weight:700;font-size:.92rem;margin-left:22px;text-transform:uppercase;letter-spacing:.08em}
+nav.main a:hover{color:var(--lichen)}
+.callhead{display:none}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:12px 24px;background:var(--lichen);color:var(--bark-2);font:800 1.25rem "Big Shoulders Display",sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:3px solid var(--bark-2);box-shadow:5px 5px 0 var(--bark-2);cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--bark-2)}
+.btn.dark{background:var(--bark);color:var(--pale);border-color:var(--bark);box-shadow:5px 5px 0 var(--lichen)}
+.btn.dark:hover{box-shadow:8px 8px 0 var(--lichen)}
+.btn.tan{background:var(--tan);color:var(--bark-2)}
+.btn svg{width:22px;height:22px}
+/* hero with tree rings */
+.hero{background:var(--bark);color:var(--pale);position:relative;overflow:hidden;padding:48px 0 70px;clip-path:polygon(0 0,100% 0,100% calc(100% - 40px),0 100%)}
+.rings{position:absolute;right:-18%;top:-10%;width:90vw;max-width:760px;height:auto;opacity:.95;pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{color:var(--pale)}
+.hero h1 span{display:block;color:var(--lichen)}
+.hero .lead{font-size:1.2rem;max-width:30em;color:#e9dfd1}
+.hero .row{display:flex;flex-wrap:wrap;gap:16px;margin:26px 0 10px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0 0;padding:0;list-style:none;color:var(--tan);font-weight:700;font-size:.92rem;text-transform:uppercase;letter-spacing:.08em}
+.hero .meta li::before{content:"";display:inline-block;width:8px;height:8px;background:var(--lichen);margin-right:8px;vertical-align:middle}
+/* services */
+.services{padding:40px 0 56px}
+.jobs{display:grid;gap:18px;margin:26px 0 0;padding:0;list-style:none}
+.job{position:relative;background:#fff;border:3px solid var(--bark);padding:26px 22px 24px;box-shadow:8px 8px 0 var(--tan)}
+.job svg.ico{width:64px;height:64px;color:var(--bark);display:block;margin-bottom:12px}
+.job h3{margin-bottom:.3em}
+.job p{color:var(--muted);margin-bottom:12px}
+.job ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.job li{padding-left:22px;position:relative;font-weight:500}
+.job li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;background:var(--lichen);border:2px solid var(--bark);transform:rotate(45deg)}
+.job .tag{position:absolute;top:-14px;left:18px;background:var(--bark);color:var(--lichen);font:800 .85rem "Big Shoulders Display",sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:5px 10px}
+.steps{margin:34px 0 0;padding:0;list-style:none;display:grid;gap:12px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:50px 1fr;gap:12px;align-items:center;background:var(--pale-2);padding:12px 14px;border-left:6px solid var(--bark)}
+.steps li::before{content:counter(s);font:900 2rem/1 "Big Shoulders Display",sans-serif;color:var(--tan-d)}
+.steps b{display:block}
+/* why us: cut-edge dark band */
+.why{background:var(--tan);color:var(--bark-2);padding:70px 0 64px;clip-path:polygon(0 30px,100% 0,100% 100%,0 calc(100% - 30px));margin-top:-10px}
+.why .eyebrow{color:var(--bark)}
+.why .wrap{display:grid;gap:26px}
+.why ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.why li{background:rgba(255,255,255,.55);border:2px solid var(--bark);padding:16px 16px 14px;display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start}
+.why li svg{width:40px;height:40px;color:var(--bark)}
+.why li strong{display:block;font-family:"Big Shoulders Display",sans-serif;text-transform:uppercase;font-size:1.4rem;letter-spacing:.03em}
+/* missed call */
+.textback{padding:70px 0 60px;background:var(--pale)}
+.textback .wrap{display:grid;gap:34px;align-items:center}
+.textback p{color:var(--muted);max-width:34em}
+.textback ol{margin:0;padding-left:1.3em;display:grid;gap:8px;font-weight:500}
+.textback ol li::marker{color:var(--lichen-d);font-weight:700}
+.phone{width:300px;max-width:100%;margin:0 auto;background:var(--bark-2);border-radius:38px;padding:14px;box-shadow:0 20px 50px rgba(43,29,18,.35);border:3px solid #4a3523}
+.screen{background:#fff;border-radius:26px;padding:48px 14px 22px;position:relative;min-height:420px;overflow:hidden}
+.screen::before{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:90px;height:22px;background:var(--bark-2);border-radius:999px}
+.notif{background:var(--pale);border-radius:14px;padding:10px 12px;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center;font-size:.86rem;border:1px solid var(--pale-2)}
+.notif .dot{width:34px;height:34px;border-radius:50%;background:#d8321e;display:grid;place-items:center}
+.notif .dot svg{width:18px;height:18px}
+.notif b{display:block;color:#b3261e}
+.notif span{color:var(--muted)}
+.notif time{float:right;color:var(--muted);font-size:.78rem}
+.sms{margin-top:16px;display:grid;gap:8px}
+.sms .from{font:700 .72rem "Red Hat Text",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center}
+.bubble{background:var(--bark);color:#fff;border-radius:18px 18px 4px 18px;padding:11px 13px;font-size:.9rem;line-height:1.45;max-width:92%;justify-self:end}
+.bubble.in{background:var(--pale-2);color:var(--text);border-radius:18px 18px 18px 4px;justify-self:start}
+.sms .stamp2{font-size:.72rem;color:var(--muted);text-align:right}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sms .bubble{animation:rise .5s ease both}
+.sms .bubble:nth-child(2){animation-delay:.2s}
+.sms .bubble:nth-child(3){animation-delay:1.2s}
+/* reviews */
+.reviews{padding:60px 0;background:var(--bark);color:var(--pale);clip-path:polygon(0 0,100% 30px,100% 100%,0 100%)}
+.reviews h2{color:var(--pale)}
+.reviews .label{display:inline-block;background:var(--lichen);color:var(--bark-2);padding:5px 10px;font:800 .85rem "Big Shoulders Display",sans-serif;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+.reviews .intro{color:#d8ccbb;max-width:40em}
+.cards{display:grid;gap:16px;margin:24px 0 0;padding:0;list-style:none}
+.card{background:#3a2919;border:2px solid #5a4330;padding:20px 18px}
+.card q{display:block;font-size:1.05rem;margin:8px 0 12px;quotes:"\201C" "\201D";color:#fff}
+.card .who{display:flex;align-items:center;gap:10px;font-size:.9rem;color:#d8ccbb}
+.card .who i{width:34px;height:34px;border-radius:50%;background:var(--tan);color:var(--bark-2);display:grid;place-items:center;font:800 1rem "Big Shoulders Display",sans-serif;font-style:normal}
+.stars{color:var(--lichen);letter-spacing:2px}
+.reviews .fine{font-size:.88rem;color:#bdb0a0;margin-top:18px}
+/* quote */
+.quote{padding:60px 0}
+.quote .wrap{display:grid;gap:30px}
+form{background:#fff;border:3px solid var(--bark);padding:26px 20px;display:grid;gap:14px;box-shadow:8px 8px 0 var(--lichen)}
+label{display:grid;gap:6px;font-weight:700;font-size:.95rem}
+input,select,textarea{font:400 1rem "Red Hat Text",sans-serif;padding:12px 14px;border:2px solid #b8aa96;background:var(--pale);color:var(--text);min-height:48px;width:100%;border-radius:4px}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--bark);outline:none;box-shadow:0 0 0 4px rgba(181,211,52,.6)}
+.two{display:grid;gap:14px}
+.msg{display:none;background:var(--bark);color:#fff;padding:16px 18px;font-weight:500;border-left:6px solid var(--lichen)}
+.msg.show{display:block}
+.quote aside p{color:var(--muted)}
+/* service area */
+.area{padding:60px 0;background:var(--pale-2);clip-path:polygon(0 30px,100% 0,100% 100%,0 100%)}
+.area .wrap{display:grid;gap:30px;align-items:center}
+.area ul{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.area li{background:#fff;border:2px solid var(--bark);padding:6px 14px;font-weight:700;font-size:.92rem;text-transform:uppercase;letter-spacing:.06em}
+.map{max-width:380px;width:100%;margin:0 auto}
+.map svg{width:100%;height:auto;display:block}
+footer{padding:40px 0 30px;background:var(--bark-2);color:#c9bba8;font-size:.92rem}
+footer .wrap{display:grid;gap:10px}
+footer a{color:#fff}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,230,.94);backdrop-filter:blur(8px);border-top:3px solid var(--bark)}
+.sticky .btn{width:100%;box-shadow:none}
+.sticky .btn:hover{transform:none}
+@media (min-width:700px){
+  .jobs{grid-template-columns:1fr 1fr}
+  .why .wrap{grid-template-columns:.8fr 1.2fr}
+  .textback .wrap{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .quote .wrap{grid-template-columns:.8fr 1.2fr}
+  .two{grid-template-columns:1fr 1fr}
+  .area .wrap{grid-template-columns:1fr 1fr}
+  form{padding:32px 30px}
+  .hero{padding:70px 0 100px}
+}
+@media (min-width:900px){
+  nav.main{display:block}
+  .callhead{display:inline-flex;min-height:44px;padding:8px 18px;font-size:1.05rem;box-shadow:none}
+  .callhead:hover{transform:none}
+  .sticky{display:none}
+  body{padding-bottom:0}
+}
+</style>
+</head>
+<body>
+<div class="banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Tyndal Tree Service home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#d9a066"/><circle cx="16" cy="16" r="11" fill="none" stroke="#2b1d12" stroke-width="2"/><circle cx="16" cy="16" r="7" fill="none" stroke="#2b1d12" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="#2b1d12"/></svg>
+      Tyndal Tree Service
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#quote">Estimate</a>
+    </nav>
+    <a class="btn callhead" href="tel:8649065272"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>864-906-5272</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h-hero">
+  <!-- growth-ring illustration -->
+  <svg class="rings" viewBox="0 0 600 600" aria-hidden="true">
+    <g fill="none" stroke="#d9a066" stroke-width="2.5" opacity=".7">
+      <path d="M300 60c130 0 240 108 240 240S430 540 300 540 60 432 60 300 170 60 300 60z"/>
+      <path d="M300 96c112 0 204 92 204 204S412 504 300 504 96 412 96 300 188 96 300 96z" transform="rotate(8 300 300)"/>
+      <path d="M300 130c94 0 170 76 170 170S394 470 300 470 130 394 130 300 206 130 300 130z" transform="rotate(-6 300 300)"/>
+      <path d="M300 160c77 0 140 63 140 140S377 440 300 440 160 377 160 300 223 160 300 160z" transform="rotate(14 300 300)"/>
+      <path d="M300 190c61 0 110 49 110 110S361 410 300 410 190 361 190 300 239 190 300 190z" transform="rotate(-11 300 300)"/>
+      <path d="M300 218c45 0 82 37 82 82s-37 82-82 82-82-37-82-82 37-82 82-82z" transform="rotate(20 300 300)"/>
+      <path d="M300 245c30 0 55 25 55 55s-25 55-55 55-55-25-55-55 25-55 55-55z"/>
+      <circle cx="300" cy="300" r="30"/>
+    </g>
+    <g fill="none" stroke="#b5d334" stroke-width="1.5" opacity=".5">
+      <path d="M300 78c122 0 222 100 222 222S422 522 300 522 78 422 78 300 178 78 300 78z" transform="rotate(-4 300 300)"/>
+      <path d="M300 112c104 0 188 84 188 188S404 488 300 488 112 404 112 300 196 112 300 112z" transform="rotate(10 300 300)"/>
+      <path d="M300 175c69 0 125 56 125 125s-56 125-125 125-125-56-125-125 56-125 125-125z" transform="rotate(-18 300 300)"/>
+    </g>
+    <circle cx="300" cy="300" r="10" fill="#b5d334"/>
+    <path d="M300 300L520 520" stroke="#2b1d12" stroke-width="9" stroke-linecap="round"/>
+    <path d="M300 300L520 520" stroke="#b5d334" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 10"/>
+  </svg>
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--lichen)">Anderson, SC · Tree &amp; stump removal</span>
+    <h1 id="h-hero">Tree down.<span>Stump gone.</span></h1>
+    <p class="lead">Tyndal Tree Service takes on complete tree removal and stump removal around Anderson. Leaning oak over the roof, storm damage in the yard, or the stump you've been mowing around for years — one call handles it.</p>
+    <div class="row">
+      <a class="btn" href="tel:8649065272"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call 864-906-5272</a>
+      <a class="btn dark" href="#quote">Request an estimate</a>
+    </div>
+    <ul class="meta">
+      <li>Based on Druid Hills Dr, Anderson</li>
+      <li>Serving the Anderson area</li>
+    </ul>
+  </div>
+</section>
+
+<section class="services" id="services" aria-labelledby="h-services">
+  <div class="wrap">
+    <span class="eyebrow">What we do</span>
+    <h2 id="h-services">Two jobs. Done right.</h2>
+    <ol class="jobs">
+      <li class="job">
+        <span class="tag">Service 01</span>
+        <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 54V30"/><path d="M32 30L18 44M32 30l14 14"/><path d="M32 30c-12 0-20-8-20-16 0-6 4-10 10-10 4 0 7 2 10 6 3-4 6-6 10-6 6 0 10 4 10 10 0 8-8 16-20 16z"/><path d="M8 58h48"/><path d="M44 56l12-12M48 44l8 12" stroke-dasharray="3 4"/></svg>
+        <h3>Complete tree removal</h3>
+        <p>Dead, dying, storm-damaged or just too close to the house — we take the whole tree down safely and get it off your property.</p>
+        <ul>
+          <li>Hazard and leaning trees</li>
+          <li>Storm damage and fallen limbs</li>
+          <li>Trees crowding roofs, drives and lines</li>
+          <li>Multiple trees, one visit</li>
+        </ul>
+      </li>
+      <li class="job">
+        <span class="tag">Service 02</span>
+        <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="32" cy="24" rx="18" ry="7"/><path d="M14 24v14c0 4 8 7 18 7s18-3 18-7V24"/><ellipse cx="32" cy="24" rx="11" ry="4"/><ellipse cx="32" cy="24" rx="5" ry="2"/><path d="M6 56h52"/><path d="M12 50c4-2 8-2 12 0s8 2 12 0 8-2 12 0" stroke-dasharray="2 4"/></svg>
+        <h3>Stump removal</h3>
+        <p>Finish the job. We remove the stump so you get flat ground back — no tripping hazard, no mowing around it, no sprouting regrowth.</p>
+        <ul>
+          <li>Old stumps from past removals</li>
+          <li>Stumps from trees we take down</li>
+          <li>Clearing for fences, patios and new lawn</li>
+          <li>Multiple stumps on one visit</li>
+        </ul>
+      </li>
+    </ol>
+    <ol class="steps" aria-label="How a job goes">
+      <li><div><b>Call or send the form</b>Tell us where the tree or stump is and what's around it.</div></li>
+      <li><div><b>We look and quote</b>Straight answer on what it takes to remove it.</div></li>
+      <li><div><b>We remove it</b>Tree down, stump out, and you've got your yard back.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="why" id="why" aria-labelledby="h-why">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Why Tyndal</span>
+      <h2 id="h-why">Local crew. Straight talk.</h2>
+      <p>A tree problem is usually urgent and usually expensive to ignore. We keep it simple: look at it, quote it, remove it.</p>
+    </div>
+    <ul>
+      <li>
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4c-8 0-14 6-14 14 0 10 14 18 14 18s14-8 14-18c0-8-6-14-14-14z"/><circle cx="20" cy="18" r="5"/></svg>
+        <div><strong>Right here in Anderson</strong>Based on Druid Hills Dr — you're calling a neighbor, not a call center.</div>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30l8-8 6 6 14-14"/><path d="M26 14h8v8"/></svg>
+        <div><strong>Tree and stump in one call</strong>No second contractor for the stump. We take the tree down and finish the ground.</div>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="8" width="28" height="24" rx="3"/><path d="M6 16h28M14 8V4M26 8V4"/></svg>
+        <div><strong>Clear quotes before we start</strong>You know what the job costs before a saw starts.</div>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="4" width="20" height="32" rx="4"/><path d="M17 32h6"/><path d="M15 14l3 3 7-7"/></svg>
+        <div><strong>Never lose your call</strong>Miss us while we're up a tree? You get a text back in seconds — see below.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="textback" id="textback" aria-labelledby="h-text">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Built into this site</span>
+      <h2 id="h-text">Never miss a call — we text you back in seconds</h2>
+      <p>When the saw is running, you can't answer the phone. Most people who get voicemail just call the next tree service. With missed-call text-back, every unanswered call gets an instant text from Tyndal Tree Service, so the lead waits for you.</p>
+      <ol>
+        <li>A homeowner calls while you're on a job.</li>
+        <li>They get a text from Tyndal Tree Service within seconds.</li>
+        <li>You reply when you're back on the ground — the job is still yours.</li>
+      </ol>
+    </div>
+    <div class="phone" role="img" aria-label="Phone mock-up: a missed call followed by an instant text reply from Tyndal Tree Service">
+      <div class="screen">
+        <div class="notif">
+          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/><path d="M16 3l5 5M21 3l-5 5"/></svg></span>
+          <div><time>10:42 AM</time><b>Missed call</b><span>Tyndal Tree Service</span></div>
+        </div>
+        <div class="sms">
+          <span class="from">Text message · Tyndal Tree Service</span>
+          <div class="bubble">This is Tyndal Tree Service — sorry we missed your call, we're on a job. Is this a tree removal or a stump? Text the address and we'll call you right back.</div>
+          <div class="bubble in">Big pine leaning toward the house on Whitehall Rd. Can you come look this week?</div>
+          <span class="stamp2">Sent 10:42 AM · auto-reply in 3 seconds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews" aria-labelledby="h-reviews">
+  <div class="wrap">
+    <span class="label">Sample reviews</span>
+    <h2 id="h-reviews">What neighbors would say here</h2>
+    <p class="intro">Placeholder reviews to show the layout. Real Google reviews from Anderson customers would go in these slots.</p>
+    <ul class="cards">
+      <li class="card"><span class="stars" aria-label="5 stars">★★★★★</span><q>Had a dead oak hanging over the carport. Came out, quoted it, and it was gone two days later. Yard was cleaner than before.</q><div class="who"><i aria-hidden="true">J</i>James · Sample review</div></li>
+      <li class="card"><span class="stars" aria-label="5 stars">★★★★★</span><q>Three old stumps I'd been mowing around for years. Took them out in one morning. Should've called sooner.</q><div class="who"><i aria-hidden="true">K</i>Karen · Sample review</div></li>
+      <li class="card"><span class="stars" aria-label="5 stars">★★★★★</span><q>Storm dropped a limb on the fence. They texted back right away and had it cleared the next day.</q><div class="who"><i aria-hidden="true">T</i>Tony · Sample review</div></li>
+    </ul>
+    <p class="fine">Sample reviews are illustrative placeholders using generic first names — not real customer quotes.</p>
+  </div>
+</section>
+
+<section class="quote" id="quote" aria-labelledby="h-quote">
+  <div class="wrap">
+    <aside>
+      <span class="eyebrow">Request an estimate</span>
+      <h2 id="h-quote">Tell us about the tree.</h2>
+      <p>Where it is, how big it is and what's near it. We'll follow up by phone or text to set a time to look.</p>
+      <p><strong>Faster by phone:</strong> <a href="tel:8649065272">864-906-5272</a></p>
+    </aside>
+    <form id="quoteForm" novalidate>
+      <div class="two">
+        <label>Your name <input type="text" name="name" autocomplete="name" placeholder="First and last name"></label>
+        <label>Phone <input type="tel" name="phone" autocomplete="tel" placeholder="864-555-0100"></label>
+      </div>
+      <label>Address or area in Anderson <input type="text" name="addr" autocomplete="street-address" placeholder="Street or neighborhood"></label>
+      <label>What do you need?
+        <select name="type"><option>Tree removal</option><option>Stump removal</option><option>Tree and stump removal</option><option>Storm damage cleanup</option><option>Not sure — come look</option></select>
+      </label>
+      <label>Details <textarea name="msg" placeholder="How tall is it? Near a house, fence or power line? How many stumps?"></textarea></label>
+      <button class="btn" type="submit">Send my request</button>
+      <p class="msg" id="formMsg" role="status" aria-live="polite">Thanks! This demo form doesn't send yet — on the live site, Tyndal Tree Service would get your request instantly and text you back.</p>
+    </form>
+  </div>
+</section>
+
+<section class="area" id="area" aria-labelledby="h-area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Service area</span>
+      <h2 id="h-area">Anderson and the surrounding area</h2>
+      <p style="color:var(--muted);max-width:36em">Based on Druid Hills Dr in Anderson, SC. If you're nearby and not sure we cover you, call — we'll tell you straight.</p>
+      <ul><li>Anderson, SC</li><li>Anderson area</li></ul>
+    </div>
+    <div class="map" aria-hidden="true">
+      <svg viewBox="0 0 380 300">
+        <circle cx="190" cy="150" r="130" fill="#fff" stroke="#2b1d12" stroke-width="3"/>
+        <circle cx="190" cy="150" r="96" fill="none" stroke="#d9a066" stroke-width="2" stroke-dasharray="7 7"/>
+        <circle cx="190" cy="150" r="62" fill="none" stroke="#d9a066" stroke-width="2" stroke-dasharray="7 7"/>
+        <g stroke="#e9e0d0" stroke-width="3"><path d="M70 110c40 10 80 30 120 40s90 20 120 10"/><path d="M190 20c-10 40-20 90 0 130s20 90 0 130"/><path d="M80 210c40-20 90-30 150-30"/></g>
+        <g transform="translate(190,150)">
+          <circle r="22" fill="#b5d334" opacity=".5"/>
+          <path d="M0-26c-9 0-15 7-15 15 0 11 15 25 15 25s15-14 15-25c0-8-6-15-15-15z" fill="#2b1d12"/><circle cy="-11" r="5" fill="#b5d334"/>
+          <text y="44" text-anchor="middle" font-family="'Big Shoulders Display',sans-serif" font-weight="800" font-size="20" fill="#2b1d12">ANDERSON</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top">Tyndal Tree Service</a>
+    <p>Complete tree removal · Stump removal · Druid Hills Dr, Anderson, SC<br>Phone: <a href="tel:8649065272">864-906-5272</a></p>
+    <p style="font-size:.82rem;opacity:.8">Demo preview built by David. Not the official Tyndal Tree Service website. Sample reviews are placeholders.</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn" href="tel:8649065272"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Tap to call 864-906-5272</a>
+</div>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('formMsg').classList.add('show');
+  this.querySelector('button').textContent='Request sent (demo)';
+});
+</script>
+</body>
+</html>
