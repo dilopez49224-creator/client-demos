@@ -47,8 +47,14 @@ Root `index.html` is blank except for noindex, and `robots.txt` disallows all cr
 Each live page was fetched read-only and copied into `upgraded/<project>/index.html`. The additions are the demo banner, noindex meta, a text-back section and a "Sample reviews" section, each styled to match the site. The rest of each page is unchanged. **Nothing was deployed or changed on Vercel.** See `upgraded/README.md`.
 Projects: mackeys-demo, carolina-lawn-demo, mike-durham-demo, dyars-diner-demo, mac-smiths-demo, bangkok-demo, fastbay-demo, michaels-property-demo, ultimate-hair-demo.
 
-## Next steps
-1. Deploy `demos/*` and `upgraded/*` to Cloudflare Pages.
-2. Put each live URL in the Lead Tracker's `demo_url` and in the `[DEMO LINK]` spot of each pitch text.
-3. For leads l01-l09, untick "demo upgrade" once the upgraded copy is live.
-4. Re-check flagged leads before texting: Carolina Catering's site status, and likely landlines (Manna From Heaven, Special Touch). Call landlines instead of texting.
+## Live
+- **Hosting:** Cloudflare Worker `david-demos`, served from this repo (auto-deploys on push to `main`).
+  - New demos: `https://david-demos.dilopez49224.workers.dev/demos/<slug>/`
+  - Upgraded sites: `https://david-demos.dilopez49224.workers.dev/upgraded/<project>/`
+- **Not published:** `.assetsignore` keeps `leads/` and all `.md` files off the site.
+- **Old Vercel links:** all 9 `*.vercel.app` demos forward (307) to their upgraded Cloudflare copies. Keep those Vercel projects as long as the old links are in use.
+- **Lead Tracker:** has all 31 leads with live demo links and, for each lead, a tailored text, phone script and email/Facebook message.
+
+## Before contacting anyone
+- Check whether Carolina Catering's own website loads; if it doesn't, that's your opener.
+- Call or visit landlines (Manna From Heaven, Special Touch, Mike Durham) instead of texting them.
