@@ -22,7 +22,7 @@ body{margin:0;padding-top:2.6rem;padding-bottom:5rem;font-family:Chivo,system-ui
 h1,h2,h3{font-family:"Stardos Stencil",Impact,sans-serif;font-weight:700;line-height:1;margin:0 0 .5em;text-transform:uppercase;letter-spacing:.01em}
 h1{font-size:clamp(2.6rem,8.5vw,4.8rem)}
 h2{font-size:clamp(1.9rem,5vw,2.9rem)}
-h3{font-size:1.15rem;letter-spacing:.04em}
+h3{font-family:Chivo,sans-serif;font-weight:800;font-size:1.15rem;line-height:1.15;letter-spacing:.04em}
 p{margin:0 0 1em;max-width:62ch}
 a{color:var(--denim)}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--red);outline-offset:3px}
@@ -41,7 +41,7 @@ section{padding:4.5rem 0}
   repeating-linear-gradient(to right,transparent 0 11px,rgba(36,28,18,.55) 11px 12px,transparent 12px 24px),
   #f5d94a;
   background-size:96px 100%,48px 100%,48px 60%,24px 35%,auto;background-repeat:repeat-x;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);position:relative}
-.ruler::after{content:"16\" O.C. · stud spacing";position:absolute;right:1rem;top:50%;transform:translateY(-50%);font:800 .7rem/1 Chivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;background:#f5d94a;padding:0 .4rem;color:var(--ink)}
+.ruler::after{content:"16\" O.C. · stud spacing";position:absolute;right:1rem;top:50%;transform:translateY(-50%);font:800 .75rem/1 Chivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;background:#f5d94a;padding:0 .4rem;color:var(--ink)}
 
 .demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--denim-x);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:.55rem 1rem}
 
@@ -49,8 +49,8 @@ header.site{position:sticky;top:2.6rem;z-index:90;background:var(--cream);border
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
 .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);min-height:48px}
 .brand .mark{width:40px;height:40px;flex:none}
-.brand b{font-family:"Stardos Stencil",sans-serif;font-weight:700;font-size:1.25rem;line-height:1;display:block;text-transform:uppercase}
-.brand small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:.15rem}
+.brand b{font-family:"Stardos Stencil",sans-serif;font-weight:700;font-size:1.5rem;line-height:1;display:block;text-transform:uppercase}
+.brand small{display:block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:.15rem}
 .nav ul{display:none;list-style:none;margin:0;padding:0;gap:1.3rem}
 .nav ul a{text-decoration:none;color:var(--ink);font-weight:600;display:inline-block;padding:.6rem .2rem}
 .nav ul a:hover{color:var(--red)}
@@ -82,8 +82,8 @@ header.site{position:sticky;top:2.6rem;z-index:90;background:var(--cream);border
 .tag-card::before{content:"";position:absolute;top:-14px;left:50%;width:28px;height:28px;border-radius:50%;background:var(--kraft);border:2px solid var(--ink);transform:translateX(-50%)}
 .tag-card.big{max-width:440px;margin:1.5rem auto 0;transform:rotate(-1.5deg)}
 .tag-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px dashed var(--rule);padding-bottom:.6rem;margin:.4rem 0 .8rem;gap:1rem}
-.tag-head b{font-family:"Stardos Stencil",sans-serif;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em}
-.tag-head span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:800}
+.tag-head b{font-family:Chivo,sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em}
+.tag-head span{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:800}
 .tag-list{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
 .tag-list li{display:flex;gap:.7rem;align-items:flex-start;font-size:.98rem}
 .tag-list .box{width:20px;height:20px;border:2px solid var(--ink);border-radius:3px;flex:none;margin-top:.2rem;position:relative;background:#fff}
@@ -98,7 +98,7 @@ header.site{position:sticky;top:2.6rem;z-index:90;background:var(--cream);border
 @media (min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
 .svc{background:var(--cream);border:2px solid var(--ink);border-radius:10px;padding:1.6rem 1.2rem 1.2rem;position:relative}
 .svc::before{content:"";position:absolute;top:-12px;left:1.2rem;width:22px;height:22px;border-radius:50%;background:var(--kraft);border:2px solid var(--ink)}
-.svc .num{position:absolute;top:-.8rem;right:1rem;background:var(--denim);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.12em;padding:.3rem .55rem;border-radius:4px;text-transform:uppercase}
+.svc .num{position:absolute;top:-.8rem;right:1rem;background:var(--denim);color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.12em;padding:.3rem .55rem;border-radius:4px;text-transform:uppercase}
 .svc svg{width:38px;height:38px;margin-bottom:.6rem}
 .svc h3{margin-bottom:.35rem}
 .svc p{margin:0;font-size:.97rem;color:var(--mute)}
@@ -131,8 +131,8 @@ header.site{position:sticky;top:2.6rem;z-index:90;background:var(--cream);border
 .bubble.missed{align-self:flex-start;background:#fbe3de;color:#8a2512;display:flex;gap:.5rem;align-items:center;font-weight:800;border-radius:12px}
 .bubble.missed svg{width:18px;height:18px;flex:none}
 .bubble.sms{align-self:flex-end;background:var(--denim);color:#fff;border-bottom-right-radius:4px;animation:pop .5s .6s both}
-.bubble.sms b{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-bottom:.25rem}
-.stamp{font-size:.7rem;color:var(--mute);align-self:flex-end}
+.bubble.sms b{display:block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-bottom:.25rem}
+.stamp{font-size:.75rem;color:var(--mute);align-self:flex-end}
 @keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 
 /* reviews */
