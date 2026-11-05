@@ -51,6 +51,7 @@ header.top{background:var(--white);border-bottom:1px solid var(--line)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:70px}
 .brand{font-family:Marcellus,serif;font-size:1.4rem;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:10px;min-height:44px;letter-spacing:.01em}
 .brand svg{width:38px;height:38px;flex:none}
+.brand img{height:46px;width:auto;flex:none;display:block}
 nav.main{display:none}
 nav.main a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;margin-left:16px;display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
 nav.main a:hover{color:var(--wine)}
@@ -103,12 +104,16 @@ a[href^="tel:"]:not(.btn),a[href^="mailto:"]{display:inline-block;padding:10px 2
 .steps span{color:#cfc5b6}
 .easy .fine{font-size:.92rem;color:#b9ae9e;margin-top:18px}
 .easy a{color:var(--gold-l)}
-.box{max-width:360px;width:100%;margin:0 auto}
-.box svg{width:100%;height:auto;display:block}
+.box{width:228px;margin:0 auto;padding:10px;border:1px solid var(--gold);background:#1d1916;text-align:center}
+.box img{display:block;width:206px;height:206px}
+.box figcaption{font-size:.9rem;color:#d8cfc1;margin-top:8px}
 /* why */
 .why{padding:60px 0}
 .why .wrap{display:grid;gap:30px;align-items:start}
 .years{display:inline-flex;flex-direction:column;align-items:center;padding:22px 30px;border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:5px;background:var(--white);margin-top:10px}
+.event-pic{margin:28px 0 0;width:228px;padding:10px;background:var(--white);border:1px solid var(--line);box-shadow:0 14px 30px rgba(21,19,18,.14)}
+.event-pic img{display:block;width:206px;height:206px}
+.event-pic figcaption{font-size:.9rem;color:var(--muted);margin-top:8px;text-align:center}
 .years b{font:400 3.4rem/1 Marcellus,serif;color:var(--wine)}
 .years span{font:700 .8rem Karla,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-top:6px}
 .why ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
@@ -179,6 +184,7 @@ footer{padding:42px 0 34px;background:var(--ink);color:#cfc5b6;font-size:.92rem;
 footer .wrap{display:grid;gap:8px}
 footer a{color:#fff}
 footer .brand{color:#fff}
+footer .foot-logo{width:150px;height:auto;background:#fffdf9;border-radius:12px;padding:14px 18px;box-sizing:content-box;border:2px solid var(--gold);margin-bottom:6px}
 footer .script{color:var(--gold-l);font-size:1.9rem;margin:-4px 0 6px}
 /* sticky call */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,249,.94);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
@@ -210,7 +216,7 @@ footer .script{color:var(--gold-l);font-size:1.9rem;margin:-4px 0 6px}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Carolina Catering home">
-      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M12.5 24C7 23.5 6 15.5 11.5 14 11 8 18.5 6 21 10.5 23.5 5.5 31.5 7.5 30 14c5.5 1.5 4.5 9.5-1.5 10z" fill="#fffdf9" stroke="#151312" stroke-width="1.8" stroke-linejoin="round"/><rect x="12.5" y="24" width="16" height="7" rx="1" fill="#fffdf9" stroke="#151312" stroke-width="1.8"/><path d="M15 20.5c1-2 2.5-3 4-3.3M22.5 17.6c1.7.4 2.8 1.3 3.5 2.6" fill="none" stroke="#151312" stroke-width="1.3" stroke-linecap="round"/><path d="M8 35h25" stroke="#c69a45" stroke-width="1.6" stroke-linecap="round"/><circle cx="20.5" cy="27.5" r="1.4" fill="#7d1d2c"/></svg>
+      <img src="img/logo.webp" width="160" height="125" alt="">
       Carolina Catering
     </a>
     <nav class="main" aria-label="Main">
@@ -342,25 +348,10 @@ footer .script{color:var(--gold-l);font-size:1.9rem;margin:-4px 0 6px}
       </ol>
       <p class="fine">Call <a href="tel:8646569542">(864) 656-9542</a> for this week's menu and pickup stops.</p>
     </div>
-    <div class="box" aria-hidden="true">
-      <!-- Illustration: three-compartment take-home meal container with fork -->
-      <svg viewBox="0 0 360 300">
-        <rect x="46" y="30" width="268" height="240" rx="26" fill="#0d0b0a" stroke="#c69a45" stroke-width="2"/>
-        <rect x="60" y="44" width="240" height="104" rx="16" fill="#1d1916" stroke="#3a332d" stroke-width="2"/>
-        <rect x="60" y="158" width="114" height="98" rx="16" fill="#1d1916" stroke="#3a332d" stroke-width="2"/>
-        <rect x="186" y="158" width="114" height="98" rx="16" fill="#1d1916" stroke="#3a332d" stroke-width="2"/>
-        <!-- main: two golden portions -->
-        <ellipse cx="128" cy="96" rx="52" ry="38" fill="#d9a65a"/><ellipse cx="128" cy="90" rx="44" ry="28" fill="#e8bd73"/>
-        <ellipse cx="232" cy="96" rx="52" ry="38" fill="#d9a65a"/><ellipse cx="232" cy="90" rx="44" ry="28" fill="#e8bd73"/>
-        <path d="M98 84q30-14 60 0M202 84q30-14 60 0" stroke="#fff6e4" stroke-width="4" fill="none" stroke-linecap="round" opacity=".85"/>
-        <!-- sides: green vegetables -->
-        <g fill="#5d7f3a"><circle cx="96" cy="196" r="13"/><circle cx="122" cy="186" r="11"/><circle cx="140" cy="212" r="13"/><circle cx="104" cy="226" r="11"/><circle cx="222" cy="196" r="13"/><circle cx="250" cy="188" r="11"/><circle cx="266" cy="214" r="13"/><circle cx="230" cy="226" r="11"/></g>
-        <g fill="#e39b3a"><rect x="116" y="204" width="14" height="8" rx="3"/><rect x="88" y="208" width="12" height="7" rx="3"/><rect x="242" y="206" width="14" height="8" rx="3"/><rect x="214" y="210" width="12" height="7" rx="3"/></g>
-        <!-- fork -->
-        <g stroke="#e9e1d4" stroke-width="3" stroke-linecap="round" fill="none"><path d="M20 70v30M27 70v30M34 70v30"/><path d="M20 98q0 14 7 16q7-2 7-16"/></g>
-        <path d="M24.5 114h5l-1 128q-1.5 6-3 0z" fill="#e9e1d4"/>
-      </svg>
-    </div>
+    <figure class="box">
+      <img src="img/boxed-meal.webp" width="206" height="206" loading="lazy" alt="A Carolina Catering boxed meal: two golden entrée portions over two compartments of sautéed vegetables, with a plastic fork and knife">
+      <figcaption>A boxed meal from our kitchen</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -370,6 +361,10 @@ footer .script{color:var(--gold-l);font-size:1.9rem;margin:-4px 0 6px}
       <span class="kicker">Why Carolina Catering</span>
       <h2 id="h-why">More than twelve years of Upstate celebrations.</h2>
       <div class="years" aria-hidden="true"><b>12+</b><span>Years serving the Upstate</span></div>
+      <figure class="event-pic">
+        <img src="img/event-table.webp" width="206" height="206" loading="lazy" alt="A round banquet table set by Carolina Catering with white linens, folded napkins in wine glasses, red flowers and a lit centerpiece in a wood-beamed hall">
+        <figcaption>A table set for a celebration</figcaption>
+      </figure>
     </div>
     <ul>
       <li>
@@ -488,6 +483,7 @@ footer .script{color:var(--gold-l);font-size:1.9rem;margin:-4px 0 6px}
 
 <footer>
   <div class="wrap">
+    <img class="foot-logo" src="img/logo.webp" width="160" height="125" loading="lazy" alt="Carolina Catering logo: a chef's hat with a CC monogram over a crossed fork and spoon, with the words a Delicious Difference">
     <a class="brand" href="#top">Carolina Kitchen and Catering</a>
     <span class="script" aria-hidden="true">a Delicious Difference</span>
     <p>Weddings · Anniversaries · Baby showers · Eatin' Easy weekly meals<br>Serving Upstate South Carolina<br>Phone: <a href="tel:8646569542">(864) 656-9542</a> · <a href="mailto:info@carolinacatering.net">info@carolinacatering.net</a></p>
