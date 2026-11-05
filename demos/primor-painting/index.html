@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>PRIMOR LLC | Interior Painting in Seneca, SC</title>
+<meta name="description" content="PRIMOR LLC: interior painting for homes in the Seneca, SC area. Call or text 864-556-4453 for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#6B4E9B;--plum-d:#513A78;--plum-x:#3A2858;
+  --blush:#E8B4B8;--sage:#A8C5B5;--butter:#F0D58C;--sky:#B9CBE3;--clay:#D9A08A;
+  --wall:#FAFAF8;--wall-2:#F1EEF5;--line:#E2DCEA;
+  --ink:#2B2438;--mute:#625A72;
+  --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;padding-top:2.6rem;padding-bottom:4.75rem;font-family:"Instrument Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--wall);overflow-x:hidden}
+h1,h2,h3{font-family:Syne,system-ui,sans-serif;font-weight:800;line-height:1.05;margin:0 0 .5em;letter-spacing:-.025em}
+h1{font-size:clamp(2.4rem,8vw,4.8rem)}
+h2{font-size:clamp(1.8rem,5vw,2.8rem)}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0 0 1em}
+a{color:var(--plum-d)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--plum);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1120px,100% - 2rem);margin-inline:auto}
+section{padding:4.5rem 0}
+.eyebrow{font-family:Syne,sans-serif;font-weight:600;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--plum);margin:0 0 .75rem}
+
+/* roller-stripe headings */
+.stripe{position:relative;display:inline-block;z-index:0}
+.stripe::before{content:"";position:absolute;left:-.3em;right:-.3em;bottom:.05em;height:.42em;background:var(--stripe,var(--butter));z-index:-1;border-radius:3px;transform-origin:left center;transform:scaleX(0)}
+.stripe.in::before{transform:scaleX(1);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.stripe::before{transform:none;transition:none}}
+
+.demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--plum-x);color:#fff;text-align:center;font-size:.85rem;font-weight:500;padding:.55rem 1rem}
+
+header.site{position:sticky;top:2.6rem;z-index:90;background:rgba(250,250,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font-family:Syne,sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:.04em}
+.brand .chips{display:flex;gap:3px}
+.brand .chips i{width:9px;height:26px;border-radius:3px;display:block}
+.brand small{font-family:"Instrument Sans",sans-serif;font-weight:400;font-size:.8rem;letter-spacing:.02em;color:var(--mute);margin-left:.2rem}
+.nav ul{display:none;list-style:none;margin:0;padding:0;gap:1.5rem}
+.nav ul a{text-decoration:none;color:var(--ink);font-weight:500}
+.nav ul a:hover{color:var(--plum)}
+@media (min-width:900px){.nav ul{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.75rem 1.4rem;border-radius:999px;font-weight:700;font-family:"Instrument Sans",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:transform .15s,background .15s}
+.btn-primary{background:var(--plum);color:#fff}
+.btn-primary:hover{background:var(--plum-d);transform:translateY(-1px)}
+.btn-ghost{background:#fff;color:var(--plum-d);border-color:var(--plum)}
+.btn-ghost:hover{background:var(--wall-2)}
+.btn svg{width:20px;height:20px}
+.nav .btn{display:none}
+@media (min-width:600px){.nav .btn{display:inline-flex}}
+
+/* hero */
+.hero{padding:3.5rem 0 3rem;position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:3rem;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:1.1fr 1fr}}
+.hero-copy .lead{font-size:1.2rem;color:var(--mute);max-width:36ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.hero-note{margin-top:1.25rem;font-size:.95rem;color:var(--mute);display:flex;align-items:center;gap:.5rem}
+.hero-note svg{width:18px;height:18px;color:var(--plum)}
+
+/* swatch fan */
+.fan{position:relative;height:clamp(300px,60vw,420px);width:min(100%,460px);margin-inline:auto}
+.chip{position:absolute;left:50%;bottom:0;width:clamp(120px,30vw,170px);height:clamp(260px,52vw,380px);margin-left:calc(clamp(120px,30vw,170px) / -2);border-radius:12px 12px 8px 8px;background:#fff;box-shadow:0 18px 40px -18px rgba(43,36,56,.45),0 0 0 1px rgba(43,36,56,.06);transform-origin:50% 95%;transform:rotate(var(--rot));display:flex;flex-direction:column;overflow:hidden}
+.chip .col{flex:1;background:var(--c)}
+.chip .lab{padding:.6rem .7rem .7rem;font-size:.72rem;line-height:1.3}
+.chip .lab b{display:block;font-family:Syne,sans-serif;font-weight:700;font-size:.78rem;color:var(--ink)}
+.chip .lab span{color:var(--mute);font-variant-numeric:tabular-nums}
+.chip .hole{position:absolute;top:10px;left:50%;width:10px;height:10px;border-radius:50%;background:var(--wall);transform:translateX(-50%);box-shadow:inset 0 1px 2px rgba(0,0,0,.25)}
+@media (prefers-reduced-motion:no-preference){
+  .chip{animation:fanin .9s cubic-bezier(.2,.7,.2,1) both}
+  .chip:nth-child(1){animation-delay:.05s}.chip:nth-child(2){animation-delay:.15s}.chip:nth-child(3){animation-delay:.25s}.chip:nth-child(4){animation-delay:.35s}.chip:nth-child(5){animation-delay:.45s}
+  @keyframes fanin{from{transform:rotate(0) translateY(20px);opacity:0}to{transform:rotate(var(--rot));opacity:1}}
+}
+
+/* chip strip divider */
+.chipstrip{display:grid;grid-template-columns:repeat(6,1fr);height:14px}
+.chipstrip span{display:block}
+
+/* services */
+.services{background:var(--wall-2)}
+.serv-grid{display:grid;gap:1.25rem;margin-top:2rem}
+@media (min-width:720px){.serv-grid{grid-template-columns:repeat(3,1fr)}}
+.serv{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.serv .swatch{height:96px;background:var(--c);position:relative}
+.serv .swatch::after{content:"";position:absolute;right:14px;bottom:-14px;width:28px;height:28px;border-radius:50%;background:#fff;border:1px solid var(--line)}
+.serv .body{padding:1.4rem 1.4rem 1.5rem}
+.serv p{margin:0;color:var(--mute);font-size:.98rem}
+.serv .code{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:.4rem;display:block}
+
+/* why */
+.why-grid{display:grid;gap:1.25rem;margin-top:2rem}
+@media (min-width:720px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why{padding:1.5rem;border-radius:var(--r);background:#fff;border:1px solid var(--line);border-top:6px solid var(--c)}
+.why .ic{width:44px;height:44px;border-radius:50%;background:var(--wall-2);color:var(--plum);display:grid;place-items:center;margin-bottom:1rem}
+.why .ic svg{width:22px;height:22px}
+.why p{margin:0;color:var(--mute)}
+
+/* missed call */
+.mc{background:var(--plum-x);color:#fff}
+.mc .eyebrow{color:var(--butter)}
+.mc h2{color:#fff}
+.mc .wrap{display:grid;gap:2.5rem;align-items:center}
+@media (min-width:900px){.mc .wrap{grid-template-columns:1fr 1fr}}
+.mc p,.mc li{color:#DCD4E8}
+.mc ul{padding-left:1.2rem}
+.mc li{margin-bottom:.5rem}
+.phone{width:min(300px,100%);margin-inline:auto;aspect-ratio:9/18.5;background:#1B1426;border-radius:40px;padding:12px;box-shadow:0 30px 60px -25px rgba(0,0,0,.7),0 0 0 2px #4A3A66;position:relative}
+.phone .screen{background:var(--wall);border-radius:30px;height:100%;overflow:hidden;position:relative;display:flex;flex-direction:column;color:var(--ink)}
+.phone .island{width:84px;height:24px;background:#1B1426;border-radius:14px;margin:10px auto 0}
+.phone .time{font-weight:500;font-size:.8rem;text-align:center;margin-top:.6rem}
+.phone .thread{padding:1rem .9rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+.bubble{max-width:88%;padding:.7rem .85rem;border-radius:18px;font-size:.86rem;line-height:1.4;opacity:0;transform:translateY(8px);animation:pop .5s ease forwards}
+.bubble.missed{align-self:center;background:#fff;color:var(--ink);border:1px solid var(--line);display:flex;gap:.5rem;align-items:center;border-radius:14px;font-weight:500;max-width:95%;animation-delay:.3s}
+.bubble.missed svg{width:18px;height:18px;color:#B3261E;flex:none}
+.bubble.sms{align-self:flex-start;background:var(--plum);color:#fff;border-bottom-left-radius:6px;animation-delay:1.4s}
+.bubble.sms b{display:block;font-family:Syne,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--butter);margin-bottom:.25rem}
+.stamp{align-self:flex-start;font-size:.72rem;color:var(--mute);opacity:0;animation:pop .4s ease 2.1s forwards;margin-left:.3rem}
+@keyframes pop{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.bubble,.stamp{animation:none;opacity:1;transform:none}}
+
+/* reviews */
+.rev-note{display:inline-block;background:var(--butter);color:var(--ink);font-family:Syne,sans-serif;font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .7rem;border-radius:6px;margin-bottom:1rem}
+.rev-grid{display:grid;gap:1.25rem;margin-top:1.5rem}
+@media (min-width:720px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;border-left:6px solid var(--c)}
+.rev .stars{color:var(--plum);letter-spacing:.1em}
+.rev p{font-style:italic;margin:.6rem 0 .8rem}
+.rev footer{font-size:.85rem;color:var(--mute)}
+
+/* form */
+.quote{background:var(--wall-2)}
+.quote .wrap{display:grid;gap:2.5rem}
+@media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1.2fr;align-items:start}}
+.quote .lead{color:var(--mute)}
+.contact-ways{display:grid;gap:.75rem;margin-top:1.5rem}
+.way{display:flex;align-items:center;gap:1rem;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.1rem;text-decoration:none;color:var(--ink)}
+.way:hover{border-color:var(--plum)}
+.way .ic{width:44px;height:44px;border-radius:50%;background:var(--c);display:grid;place-items:center;flex:none}
+.way .ic svg{width:22px;height:22px;color:var(--ink)}
+.way b{display:block;font-family:Syne,sans-serif;font-weight:700;font-size:1.05rem}
+.way span{color:var(--mute);font-size:.92rem}
+form{background:#fff;border-radius:var(--r);padding:1.5rem;display:grid;gap:1rem;border:1px solid var(--line)}
+@media (min-width:560px){form{grid-template-columns:1fr 1fr}}
+.f-full{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:.9rem;margin-bottom:.35rem}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:.8rem .9rem;border:1.5px solid #C9C1D6;border-radius:8px;background:#fff;color:var(--ink);min-height:48px}
+textarea{min-height:120px;resize:vertical}
+form .btn{width:100%}
+.form-msg{grid-column:1/-1;background:var(--sage);color:var(--ink);padding:1rem;border-radius:8px;font-weight:500;display:none}
+.form-msg.show{display:block}
+
+/* area */
+.area .wrap{display:grid;gap:2rem;align-items:center}
+@media (min-width:900px){.area .wrap{grid-template-columns:1fr 1fr}}
+.room{position:relative;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:linear-gradient(180deg,var(--sage) 0 68%,#D8CFC2 68% 70%,#EFE8DD 70%);border:1px solid var(--line)}
+.room .roller{position:absolute;left:14%;top:12%;width:34%;height:46%;background:var(--plum);border-radius:4px;box-shadow:inset 0 0 0 2px rgba(0,0,0,.05)}
+.room .roller::after{content:"";position:absolute;right:-6px;bottom:-40%;width:6px;height:60%;background:#8A7F93;border-radius:3px;transform:rotate(-20deg);transform-origin:top}
+.room .tag{position:absolute;right:1rem;bottom:1rem;background:#fff;border-radius:8px;padding:.6rem .9rem;font-size:.85rem;box-shadow:0 8px 20px -10px rgba(0,0,0,.3)}
+.room .tag b{display:block;font-family:Syne,sans-serif}
+.area-list{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.6rem}
+.area-list li{display:flex;gap:.7rem;align-items:center;font-weight:500}
+.area-list li::before{content:"";width:12px;height:12px;border-radius:3px;background:var(--plum);flex:none}
+
+footer.site{padding:2.5rem 0 1rem;border-top:1px solid var(--line);color:var(--mute);font-size:.92rem}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
+
+.sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:95;padding:.6rem 1rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(250,250,248,.95);border-top:1px solid var(--line);backdrop-filter:blur(8px);display:grid;grid-template-columns:1fr auto;gap:.6rem}
+.sticky-call .btn-ghost{padding-inline:1rem}
+@media (min-width:900px){.sticky-call{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="site">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top" aria-label="PRIMOR LLC home">
+      <span class="chips" aria-hidden="true"><i style="background:var(--plum)"></i><i style="background:var(--blush)"></i><i style="background:var(--sage)"></i><i style="background:var(--butter)"></i></span>
+      PRIMOR <small>Interior painting</small>
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why us</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#area">Area</a></li>
+      <li><a href="#quote">Get a quote</a></li>
+    </ul>
+    <a class="btn btn-primary" href="tel:8645564453">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      864-556-4453
+    </a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Interior painting · Seneca, SC</p>
+        <h1 id="hero-h">Pick the color. <span class="stripe" style="--stripe:var(--blush)">We'll make it look like it was always there.</span></h1>
+        <p class="lead">PRIMOR paints the inside of homes around Seneca: clean lines, even coats, and a room you can move back into fast.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:8645564453">Call 864-556-4453</a>
+          <a class="btn btn-ghost" href="sms:8645564453">Text us instead</a>
+        </div>
+        <p class="hero-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Calls and texts both welcome. Send a photo of the room and we'll go from there.</p>
+      </div>
+      <div class="fan" role="img" aria-label="Illustration of five paint swatch cards fanned out: plum, blush, sage, butter and sky">
+        <div class="chip" style="--rot:-28deg;--c:var(--plum)"><span class="hole"></span><div class="col"></div><div class="lab"><b>Plum Dusk</b><span>PR-01 · Matte</span></div></div>
+        <div class="chip" style="--rot:-14deg;--c:var(--blush)"><span class="hole"></span><div class="col"></div><div class="lab"><b>Soft Blush</b><span>PR-02 · Eggshell</span></div></div>
+        <div class="chip" style="--rot:0deg;--c:var(--sage)"><span class="hole"></span><div class="col"></div><div class="lab"><b>Seneca Sage</b><span>PR-03 · Eggshell</span></div></div>
+        <div class="chip" style="--rot:14deg;--c:var(--butter)"><span class="hole"></span><div class="col"></div><div class="lab"><b>Morning Butter</b><span>PR-04 · Satin</span></div></div>
+        <div class="chip" style="--rot:28deg;--c:var(--sky)"><span class="hole"></span><div class="col"></div><div class="lab"><b>Lake Sky</b><span>PR-05 · Matte</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="chipstrip" aria-hidden="true"><span style="background:var(--plum)"></span><span style="background:var(--blush)"></span><span style="background:var(--sage)"></span><span style="background:var(--butter)"></span><span style="background:var(--sky)"></span><span style="background:var(--clay)"></span></div>
+
+  <section class="services" id="services" aria-labelledby="serv-h">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2 id="serv-h"><span class="stripe" style="--stripe:var(--sage)">Interior painting,</span> whatever the size of the job.</h2>
+      <p style="color:var(--mute);max-width:60ch">PRIMOR focuses on one thing: painting the inside of your home well. From a single accent wall to every room in the house.</p>
+      <div class="serv-grid">
+        <article class="serv" style="--c:var(--blush)">
+          <div class="swatch"></div>
+          <div class="body"><span class="code">Scope · one room</span><h3>A single room refresh</h3><p>One bedroom, the living room, a nursery before the baby comes. Quick turnaround so you're not living around drop cloths for a week.</p></div>
+        </article>
+        <article class="serv" style="--c:var(--sage)">
+          <div class="swatch"></div>
+          <div class="body"><span class="code">Scope · several rooms</span><h3>Multiple rooms</h3><p>Kitchen, hallway and den in one visit. Consistent color and finish from room to room, with a plan that keeps your home usable while we work.</p></div>
+        </article>
+        <article class="serv" style="--c:var(--butter)">
+          <div class="swatch"></div>
+          <div class="body"><span class="code">Scope · whole interior</span><h3>Whole-home interior</h3><p>Moving in, selling, or just done with the old color everywhere. A full interior repaint, room by room, start to finish.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <p class="eyebrow">Why PRIMOR</p>
+      <h2 id="why-h"><span class="stripe" style="--stripe:var(--butter)">Easy to reach,</span> easy to live with.</h2>
+      <div class="why-grid">
+        <article class="why" style="--c:var(--plum)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></div>
+          <h3>Call or text, your choice</h3>
+          <p>PRIMOR takes calls and texts. Snap a photo of the room, send it over, and skip the phone tag.</p>
+        </article>
+        <article class="why" style="--c:var(--blush)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/></svg></div>
+          <h3>Interior is the specialty</h3>
+          <p>Not a jack-of-all-trades. Interior walls are the whole job, so the prep, cut-in and cleanup get full attention.</p>
+        </article>
+        <article class="why" style="--c:var(--sage)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <h3>Local to Seneca</h3>
+          <p>Based in the Seneca area, so estimates and start dates don't depend on a crew driving in from an hour away.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mc" id="textback" aria-labelledby="mc-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Demo feature</p>
+        <h2 id="mc-h">Never miss a call — we text you back in seconds</h2>
+        <p>You're mid-wall with a roller in hand and the phone rings. Instead of losing that homeowner to the next painter on Angi, missed-call text-back sends an instant text from PRIMOR, so the conversation starts even when you can't pick up.</p>
+        <ul>
+          <li>Reply goes out seconds after the missed call</li>
+          <li>Sent in the PRIMOR name, from your number</li>
+          <li>Asks for a photo and room count so you can quote fast</li>
+        </ul>
+      </div>
+      <div class="phone" role="img" aria-label="Phone mock-up showing a missed call followed by an instant text reply from PRIMOR LLC">
+        <div class="screen">
+          <div class="island"></div>
+          <div class="time">3:07 PM</div>
+          <div class="thread">
+            <div class="bubble missed">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2l6 6M22 2l-6 6"/><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              <span>Missed call · 3:07 PM</span>
+            </div>
+            <div class="bubble sms">
+              <b>PRIMOR LLC</b>
+              Hi, this is PRIMOR. Sorry we missed your call, we're on a job. Which rooms are you thinking about painting? Text a photo or two and we'll get back to you with a quote.
+            </div>
+            <div class="stamp">Sent automatically · 3:07 PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <span class="rev-note">Sample reviews · placeholder text</span>
+      <h2 id="rev-h">Sample reviews</h2>
+      <p style="color:var(--mute);max-width:60ch">Example reviews showing how real customer feedback would appear on the live site once PRIMOR starts collecting them. Not real quotes.</p>
+      <div class="rev-grid">
+        <article class="rev" style="--c:var(--plum)">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Sample review: two bedrooms and the hallway done in a day and a half. Clean edges, no drips, furniture put back."</p>
+          <footer>Rebecca · Seneca</footer>
+        </article>
+        <article class="rev" style="--c:var(--blush)">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Sample review: I texted a photo of my kitchen on a Sunday and had a quote Monday morning. Easy."</p>
+          <footer>Luis · Seneca area</footer>
+        </article>
+        <article class="rev" style="--c:var(--sage)">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Sample review: whole-house repaint before we listed it. Looked brand new in the photos."</p>
+          <footer>Dana · Seneca</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote" aria-labelledby="q-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Get a quote</p>
+        <h2 id="q-h"><span class="stripe" style="--stripe:var(--blush)">Tell us about the room.</span></h2>
+        <p class="lead">Call, text, or use the form. A photo and a rough idea of the color you want is plenty to start.</p>
+        <div class="contact-ways">
+          <a class="way" href="tel:8645564453" style="--c:var(--butter)">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <span><b>Call 864-556-4453</b><span>Tap to call from your phone</span></span>
+          </a>
+          <a class="way" href="sms:8645564453" style="--c:var(--sage)">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <span><b>Text 864-556-4453</b><span>Send a photo of the room</span></span>
+          </a>
+        </div>
+      </div>
+      <form id="quote-form" novalidate>
+        <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div><label for="f-rooms">How many rooms?</label>
+          <select id="f-rooms" name="rooms"><option>1 room</option><option>2 to 3 rooms</option><option>4 or more rooms</option><option>Whole home interior</option></select></div>
+        <div><label for="f-town">Town</label><input id="f-town" name="town" type="text" placeholder="Seneca, SC" autocomplete="address-level2"></div>
+        <div class="f-full"><label for="f-msg">Colors, timing, anything else</label><textarea id="f-msg" name="message" placeholder="e.g. Living room and hallway, a light sage green, sometime next month"></textarea></div>
+        <div class="f-full"><button class="btn btn-primary" type="submit">Request a quote</button></div>
+        <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="area" id="area" aria-labelledby="area-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Service area</p>
+        <h2 id="area-h"><span class="stripe" style="--stripe:var(--sage)">Seneca</span> and the surrounding area.</h2>
+        <p style="color:var(--mute);max-width:52ch">PRIMOR serves homes in the Seneca, SC area. Nearby but not sure? Call or text and ask.</p>
+        <ul class="area-list">
+          <li>Seneca, SC</li>
+          <li>Surrounding Seneca area</li>
+        </ul>
+      </div>
+      <div class="room" role="img" aria-label="Illustration of a room wall being painted plum over sage">
+        <div class="roller"></div>
+        <div class="tag"><b>Seneca, SC</b>Interior painting</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>PRIMOR LLC · Seneca, SC · <a href="tel:8645564453">864-556-4453</a></span>
+    <span>Demo preview built by David. Not the official site.</span>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <a class="btn btn-primary" href="tel:8645564453">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    Call 864-556-4453
+  </a>
+  <a class="btn btn-ghost" href="sms:8645564453" aria-label="Text 864-556-4453">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Text
+  </a>
+</div>
+
+<script>
+document.getElementById('quote-form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var m=document.getElementById('form-msg');
+  m.textContent="Thanks! This is a demo, so the form isn't connected yet. On the live site your request would go straight to PRIMOR. For now, call or text 864-556-4453.";
+  m.classList.add('show');
+  m.scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+(function(){
+  var els=document.querySelectorAll('.stripe');
+  if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.4});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
