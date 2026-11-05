@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>PRPS Junk Removal | Anderson, SC</title>
+<meta name="description" content="Demo concept page for PRPS Junk Removal in Anderson, SC. Call, point at the junk, and it's gone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Albert+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#16302b;
+  --forest-2:#214a41;
+  --pink:#d41a80;       /* buttons, UI (white text 5:1) */
+  --pink-hot:#ff2d8f;   /* large display type on forest */
+  --pink-ink:#a8125f;   /* small text on bone */
+  --bone:#ece6da;
+  --bone-2:#f6f2ea;
+  --ink:#14211e;
+  --muted:#4b5a56;
+  --white:#fff;
+  --gut:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;padding-top:44px;padding-bottom:84px;background:var(--bone);color:var(--ink);font-family:'Albert Sans',system-ui,sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden}
+h1,h2,h3{font-family:'Unbounded',system-ui,sans-serif;font-weight:800;line-height:1.05;margin:0 0 .5em;letter-spacing:-.02em;text-wrap:balance;color:var(--forest)}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem)}
+h3{font-size:1.05rem;font-weight:600}
+p{margin:0 0 1em}
+a{color:var(--pink-ink)}
+:focus-visible{outline:3px solid var(--pink-hot);outline-offset:3px}
+.demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:#0d1d1a;color:#fff;font:700 13px/1.3 system-ui,sans-serif;text-align:center;padding:7px var(--gut);min-height:44px;display:flex;align-items:center;justify-content:center}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 var(--gut)}
+section{padding:56px 0;position:relative}
+.cut{border-top:3px dashed rgba(22,48,43,.35)}
+.cut::before,.cut::after{content:"";position:absolute;top:-14px;width:26px;height:26px;border-radius:50%;background:var(--bone)}
+.cut::before{left:-13px}.cut::after{right:-13px}
+.label{display:inline-block;font:600 .72rem/1 'Unbounded',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pink-ink);margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:6px;font:700 1.1rem 'Albert Sans',sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .12s ease,background .12s ease}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--forest)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-pink{background:var(--pink);color:#fff}
+.btn-forest{background:var(--forest);color:#fff}
+.btn-forest:hover{box-shadow:4px 4px 0 var(--pink)}
+.btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-outline:hover{background:rgba(255,255,255,.08);box-shadow:4px 4px 0 var(--pink-hot)}
+
+/* ===== header ===== */
+header.site{background:var(--forest);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:800 1.15rem 'Unbounded',sans-serif;letter-spacing:-.02em}
+.brand .mark{width:40px;height:40px;flex:none}
+.brand small{display:block;font:500 .7rem/1 'Albert Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pink-hot);margin-top:3px}
+.nav-links{display:none;gap:22px;list-style:none;margin:0;padding:0}
+.nav-links a{color:#fff;text-decoration:none;font-weight:600}
+.nav-links a:hover{text-decoration:underline;text-decoration-color:var(--pink-hot);text-decoration-thickness:3px;text-underline-offset:6px}
+.nav-call{display:none}
+@media(min-width:860px){.nav-links{display:flex}.nav-call{display:inline-flex}}
+
+/* ===== hero ===== */
+.hero{background:var(--forest);color:#fff;padding:36px 0 56px;overflow:hidden}
+.hero h1{font-size:clamp(2.6rem,11vw,6.4rem);color:#fff;line-height:.95;margin-bottom:22px}
+.hero h1 .l2{display:block;color:var(--pink-hot)}
+.hero .lead{font-size:1.15rem;max-width:30rem;color:#cfdcd8}
+.hero-grid{display:grid;gap:30px}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.2fr .8fr;align-items:center;gap:40px}.hero{padding:64px 0 72px}}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.hero-art{position:relative;width:100%;max-width:420px;margin:0 auto}
+.truck{width:100%;height:auto;display:block}
+.stamp{position:absolute;right:-6px;top:-6px;transform:rotate(12deg);border:4px solid var(--pink-hot);color:var(--pink-hot);font:800 1.1rem/1 'Unbounded',sans-serif;letter-spacing:.1em;padding:10px 14px;border-radius:6px;text-transform:uppercase;background:rgba(22,48,43,.85)}
+@media(prefers-reduced-motion:no-preference){
+  .stamp{animation:slam .5s cubic-bezier(.2,1.4,.4,1) .4s both}
+  @keyframes slam{from{opacity:0;transform:rotate(12deg) scale(1.8)}to{opacity:1;transform:rotate(12deg) scale(1)}}
+}
+.how{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:10px}
+@media(min-width:600px){.how{grid-template-columns:repeat(3,1fr)}}
+.how li{border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:12px 14px;color:#e6eeec;font-size:.95rem;display:flex;gap:10px;align-items:center}
+.how b{font-family:'Unbounded',sans-serif;font-weight:800;color:var(--pink-hot);font-size:1.3rem}
+
+/* ===== loads ===== */
+.loads{background:var(--bone)}
+.load-grid{display:grid;gap:14px}
+@media(min-width:620px){.load-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.load-grid{grid-template-columns:repeat(4,1fr)}}
+.load{background:var(--white);border:2px solid var(--forest);border-radius:10px;padding:18px;display:grid;gap:8px}
+.load svg{width:100%;height:auto;display:block}
+.load b{font:800 1.5rem 'Unbounded',sans-serif;color:var(--forest)}
+.load span{color:var(--muted);font-size:.95rem}
+.load .price{font-weight:700;color:var(--pink-ink);font-size:.95rem}
+.haul{margin-top:36px;display:grid;gap:18px}
+@media(min-width:900px){.haul{grid-template-columns:.8fr 1.2fr;align-items:start;gap:40px}}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{display:flex;align-items:center;gap:8px;background:var(--white);border:1.5px solid var(--forest);border-radius:6px;padding:8px 12px;font-weight:500}
+.chips svg{width:18px;height:18px;flex:none;stroke:var(--pink);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+
+/* ===== why ===== */
+.why{background:var(--bone-2)}
+.why-grid{display:grid;gap:14px}
+@media(min-width:800px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why-card{padding:22px 20px;border-left:6px solid var(--pink);background:var(--white)}
+.why-card h3{font-size:1.05rem}
+.why-card p{margin:0;color:var(--muted)}
+.why-card .big{font:800 2.2rem/1 'Unbounded',sans-serif;color:var(--forest);display:block;margin-bottom:10px}
+
+/* ===== missed call ===== */
+.textback{background:var(--forest);color:#fff}
+.textback h2{color:#fff}
+.textback .label{color:var(--pink-hot)}
+.textback p{color:#cfdcd8;max-width:34rem}
+.tb-grid{display:grid;gap:36px}
+@media(min-width:900px){.tb-grid{grid-template-columns:1fr 1fr;align-items:center;gap:56px}}
+.phone{width:290px;max-width:100%;margin:0 auto;background:#0d1d1a;border-radius:38px;padding:12px;box-shadow:0 0 0 2px #2f5a50,0 30px 50px -24px rgba(0,0,0,.8)}
+.phone-screen{background:#f3f4f1;border-radius:28px;overflow:hidden;font-size:.9rem;color:var(--ink)}
+.phone-top{background:#fff;padding:0 16px 10px;text-align:center;border-bottom:1px solid #dfe3df}
+.notch{width:90px;height:22px;background:#0d1d1a;border-radius:0 0 16px 16px;margin:0 auto 10px}
+.phone-top b{display:block;font-family:'Unbounded',sans-serif;font-weight:800;font-size:.95rem}
+.phone-top small{color:var(--muted)}
+.msgs{padding:14px 12px 20px;display:flex;flex-direction:column;gap:10px}
+.missed{align-self:center;background:#fde8e8;color:#8a1c1c;border-radius:999px;padding:6px 12px;font-weight:700;font-size:.78rem;display:flex;align-items:center;gap:6px}
+.missed svg{width:14px;height:14px}
+.tstamp{align-self:center;color:var(--muted);font-size:.72rem}
+.bubble{max-width:86%;padding:10px 13px;border-radius:16px;line-height:1.4}
+.bubble.out{align-self:flex-start;background:var(--forest);color:#fff;border-bottom-left-radius:4px}
+.bubble.in{align-self:flex-end;background:#dfe5e2;border-bottom-right-radius:4px}
+@media(prefers-reduced-motion:no-preference){
+  .bubble.out{animation:pop .5s ease .6s both}
+  .bubble.in{animation:pop .5s ease 1.5s both}
+  .bubble.out.second{animation-delay:2.4s}
+  @keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+.tb-list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
+.tb-list li{display:flex;gap:12px;align-items:flex-start;color:#e6eeec}
+.tb-list .n{flex:none;width:28px;height:28px;border-radius:4px;background:var(--pink-hot);color:var(--forest);font:800 .85rem/28px 'Unbounded',sans-serif;text-align:center}
+
+/* ===== reviews ===== */
+.reviews{background:var(--bone)}
+.sample-note{display:inline-block;background:#fff;color:var(--pink-ink);border:2px dashed var(--pink);border-radius:6px;padding:6px 10px;font-size:.85rem;font-weight:700;margin-bottom:20px}
+.rev-grid{display:grid;gap:14px}
+@media(min-width:800px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{background:var(--white);border:2px solid var(--forest);border-radius:10px;padding:20px;position:relative}
+.rev::before{content:"“";position:absolute;top:-18px;left:14px;font:800 3rem/1 'Unbounded',sans-serif;color:var(--pink)}
+.rev blockquote{margin:10px 0 14px;font-size:1.02rem}
+.rev cite{font-style:normal;font-weight:700}
+.rev cite span{display:block;font-weight:400;font-size:.85rem;color:var(--muted)}
+
+/* ===== quote ===== */
+.quote{background:var(--bone-2)}
+.q-grid{display:grid;gap:28px}
+@media(min-width:900px){.q-grid{grid-template-columns:.9fr 1.1fr;align-items:start;gap:48px}}
+form{background:var(--white);border:2px solid var(--forest);border-radius:10px;padding:24px}
+.f{display:grid;gap:6px;margin-bottom:14px}
+label{font-weight:700;font-size:.95rem}
+input,select,textarea{font:inherit;padding:12px 14px;border:2px solid #a9b5b1;border-radius:6px;background:#fff;color:var(--ink);width:100%;min-height:48px}
+input:focus,select:focus,textarea:focus{border-color:var(--pink);outline:none;box-shadow:0 0 0 3px rgba(212,26,128,.3)}
+textarea{min-height:100px;resize:vertical}
+.f-row{display:grid;gap:14px}
+@media(min-width:560px){.f-row{grid-template-columns:1fr 1fr}}
+.form-msg{display:none;margin-top:14px;padding:14px;border-radius:6px;background:var(--forest);color:#fff;font-weight:600;border-left:6px solid var(--pink-hot)}
+.form-msg.show{display:block}
+.photo-tip{display:flex;gap:12px;align-items:flex-start;background:var(--white);border-left:6px solid var(--pink);padding:16px;margin-top:18px}
+.photo-tip svg{width:30px;height:30px;flex:none;stroke:var(--forest);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ===== area ===== */
+.area{background:var(--bone)}
+.area-grid{display:grid;gap:26px}
+@media(min-width:900px){.area-grid{grid-template-columns:1fr 1fr;align-items:center;gap:48px}}
+.area p{color:var(--muted)}
+.map{width:100%;height:auto;display:block;border-radius:10px;border:2px solid var(--forest)}
+
+footer{background:var(--forest);color:#cfdcd8;padding:36px 0 44px;font-size:.95rem}
+footer a{color:#fff}
+footer .brand{margin-bottom:12px}
+
+.sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));background:rgba(236,230,218,.95);backdrop-filter:blur(8px);border-top:2px solid var(--forest)}
+.sticky-call .btn{width:100%}
+.sticky-call .btn:hover{transform:none;box-shadow:none}
+@media(min-width:860px){.sticky-call{display:none}body{padding-bottom:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.btn:hover{transition:none;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="PRPS Junk Removal, home">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#ff2d8f"/><path d="M8 26h18l4-8h-8v-4H8z" fill="#16302b"/><circle cx="13" cy="29" r="3.5" fill="#16302b"/><circle cx="25" cy="29" r="3.5" fill="#16302b"/><path d="M12 14l3-5 3 5" stroke="#16302b" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>PRPS<small>Junk Removal · Anderson, SC</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#loads">Load sizes</a></li>
+        <li><a href="#why">Why PRPS</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#area">Service area</a></li>
+        <li><a href="#quote">Get a quote</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-pink nav-call" href="tel:+18647911731"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L9 9.7a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2.2z"/></svg>864-791-1731</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="label" style="color:var(--pink-hot)">Junk removal · Anderson, SC</span>
+        <h1 id="hero-h">Point at it.<span class="l2">It's gone.</span></h1>
+        <p class="lead">PRPS Junk Removal is a local Anderson-area hauler. Call, tell us what's piling up, and we'll load it and haul it off. You don't lift a thing.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-pink" href="tel:+18647911731"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L9 9.7a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2.2z"/></svg>Call 864-791-1731</a>
+          <a class="btn btn-outline" href="#quote">Get a quote</a>
+        </div>
+        <ol class="how" aria-label="How it works">
+          <li><b>1</b>Call or send the form</li>
+          <li><b>2</b>We show up and load it</li>
+          <li><b>3</b>We haul it away</li>
+        </ol>
+      </div>
+      <div class="hero-art">
+        <svg class="truck" viewBox="0 0 420 300" role="img" aria-label="Illustration of a pickup truck loaded with junk: a couch, a mattress and boxes">
+          <rect x="0" y="236" width="420" height="6" fill="#2f5a50"/>
+          <!-- junk pile -->
+          <rect x="120" y="120" width="130" height="38" rx="6" fill="#d9c2a3"/>
+          <rect x="118" y="100" width="40" height="40" rx="6" fill="#c9a97f"/>
+          <rect x="212" y="100" width="40" height="40" rx="6" fill="#c9a97f"/>
+          <rect x="150" y="78" width="90" height="26" rx="13" fill="#e9e3f3"/>
+          <path d="M160 91h70" stroke="#b8aed0" stroke-width="2" stroke-dasharray="6 6"/>
+          <rect x="258" y="112" width="42" height="46" fill="#b89b72"/><path d="M258 134h42M279 112v46" stroke="#8d7250" stroke-width="2"/>
+          <path d="M268 122l10-8 10 8" stroke="#8d7250" stroke-width="2" fill="none"/>
+          <!-- truck bed -->
+          <path d="M96 158h228v60H96z" fill="#214a41"/>
+          <path d="M96 158h228" stroke="#ff2d8f" stroke-width="6"/>
+          <!-- cab -->
+          <path d="M324 218V150l20-44h50l16 44v68z" fill="#16302b" stroke="#2f5a50" stroke-width="3"/>
+          <path d="M346 112h40l12 36h-62z" fill="#9fd8ce"/>
+          <rect x="398" y="186" width="14" height="10" rx="2" fill="#ffd166"/>
+          <!-- wheels -->
+          <circle cx="150" cy="222" r="26" fill="#0d1d1a"/><circle cx="150" cy="222" r="11" fill="#cfdcd8"/>
+          <circle cx="360" cy="222" r="26" fill="#0d1d1a"/><circle cx="360" cy="222" r="11" fill="#cfdcd8"/>
+          <!-- door text -->
+          <text x="336" y="200" font-family="Unbounded, sans-serif" font-weight="800" font-size="18" fill="#ff2d8f">PRPS</text>
+          <!-- strap -->
+          <path d="M100 160 Q190 60 320 160" stroke="#ff2d8f" stroke-width="4" fill="none" stroke-dasharray="10 8"/>
+        </svg>
+        <span class="stamp" aria-hidden="true">Hauled</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOAD SIZES / SERVICES ===== -->
+  <section class="loads cut" id="loads" aria-labelledby="loads-h">
+    <div class="wrap">
+      <span class="label">Junk removal</span>
+      <h2 id="loads-h">How much have you got?</h2>
+      <p style="max-width:40rem;color:var(--muted)">Junk removal is priced by how much of the truck your stuff fills. Tell us roughly which one it is and we'll give you a number over the phone.</p>
+      <div class="load-grid">
+        <article class="load">
+          <svg viewBox="0 0 160 70" aria-hidden="true"><rect x="4" y="18" width="150" height="46" rx="4" fill="#ece6da" stroke="#16302b" stroke-width="3"/><rect x="7" y="21" width="36" height="40" fill="#d41a80"/><path d="M4 18h150" stroke="#16302b" stroke-width="3"/></svg>
+          <b>¼ load</b><span>A few bulky items: an old couch, a dresser, a stack of boxes.</span><span class="price">Call for a price</span>
+        </article>
+        <article class="load">
+          <svg viewBox="0 0 160 70" aria-hidden="true"><rect x="4" y="18" width="150" height="46" rx="4" fill="#ece6da" stroke="#16302b" stroke-width="3"/><rect x="7" y="21" width="72" height="40" fill="#d41a80"/></svg>
+          <b>½ load</b><span>A cleared-out bedroom or a garage corner that got away from you.</span><span class="price">Call for a price</span>
+        </article>
+        <article class="load">
+          <svg viewBox="0 0 160 70" aria-hidden="true"><rect x="4" y="18" width="150" height="46" rx="4" fill="#ece6da" stroke="#16302b" stroke-width="3"/><rect x="7" y="21" width="108" height="40" fill="#d41a80"/></svg>
+          <b>¾ load</b><span>Most of a garage, a storage unit, or a move-out's worth of leftovers.</span><span class="price">Call for a price</span>
+        </article>
+        <article class="load">
+          <svg viewBox="0 0 160 70" aria-hidden="true"><rect x="4" y="18" width="150" height="46" rx="4" fill="#ece6da" stroke="#16302b" stroke-width="3"/><rect x="7" y="21" width="144" height="40" fill="#d41a80"/></svg>
+          <b>Full load</b><span>Whole-house cleanouts, estates, and the "just take it all" jobs.</span><span class="price">Call for a price</span>
+        </article>
+      </div>
+      <div class="haul">
+        <div>
+          <h3 style="font-size:1.3rem">Typical junk we haul</h3>
+          <p style="color:var(--muted);margin:0">If it's on this list, it goes on the truck. If it's not, call and ask anyway.</p>
+        </div>
+        <ul class="chips" aria-label="Typical items">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Couches &amp; furniture</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Mattresses</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Appliances</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Garage &amp; shed cleanouts</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Yard debris</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Move-out leftovers</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Estate cleanouts</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Odds and ends</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY ===== -->
+  <section class="why cut" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <span class="label">Why PRPS</span>
+      <h2 id="why-h">Local hauler. No runaround.</h2>
+      <div class="why-grid">
+        <article class="why-card">
+          <span class="big" aria-hidden="true">1</span>
+          <h3>One phone call</h3>
+          <p>No apps, no online booking maze. Call 864-791-1731, describe the pile, get a price.</p>
+        </article>
+        <article class="why-card">
+          <span class="big" aria-hidden="true">0</span>
+          <h3>Zero lifting for you</h3>
+          <p>We do the carrying, from the back bedroom or the far end of the yard to the truck.</p>
+        </article>
+        <article class="why-card">
+          <span class="big" aria-hidden="true">SC</span>
+          <h3>Anderson-area local</h3>
+          <p>A local Anderson-area hauler, not a national franchise call center. Your call rings here.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSED CALL TEXT-BACK ===== -->
+  <section class="textback" id="textback" aria-labelledby="tb-h">
+    <div class="wrap tb-grid">
+      <div>
+        <span class="label">Hands full of a couch?</span>
+        <h2 id="tb-h">Never miss a call — we text you back in seconds</h2>
+        <p>When we're carrying a sleeper sofa down a flight of stairs, we can't answer. So the caller instantly gets a text from PRPS Junk Removal. They reply with what they've got, and the job is half booked by the time we're back in the cab.</p>
+        <ol class="tb-list">
+          <li><span class="n">1</span><span>A customer calls while we're loading a truck.</span></li>
+          <li><span class="n">2</span><span>They get an automatic text back from PRPS in seconds.</span></li>
+          <li><span class="n">3</span><span>They reply with a photo or a list, and we call back with a price.</span></li>
+        </ol>
+      </div>
+      <div class="phone" role="img" aria-label="Phone mock-up: a missed call followed by an instant text reply from PRPS Junk Removal">
+        <div class="phone-screen">
+          <div class="phone-top"><div class="notch"></div><b>PRPS Junk Removal</b><small>864-791-1731</small></div>
+          <div class="msgs">
+            <span class="tstamp">Today 2:08 PM</span>
+            <span class="missed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M16 4l4 4-4 4M20 8h-7"/><path d="M4 6a16 16 0 0 0 14 14l2-2-3-3-2 1a11 11 0 0 1-7-7l1-2-3-3z"/></svg>Missed call</span>
+            <div class="bubble out">Hey, this is PRPS Junk Removal. Sorry we missed you — we're loading a truck right now. What do you need hauled? Text us a photo or a quick list and we'll get you a price.</div>
+            <div class="bubble in">Old sectional and a fridge in Anderson. Can you do this week?</div>
+            <div class="bubble out second">Yep, that's about a half load. We'll call you back within the hour to set a time.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews cut" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <span class="label">Sample reviews</span>
+      <h2 id="rev-h">Sample reviews</h2>
+      <p class="sample-note">Placeholder examples for this demo. Real customer reviews would go here.</p>
+      <div class="rev-grid">
+        <article class="rev">
+          <blockquote>"Called in the morning, the garage was empty by the afternoon. Didn't lift a finger."</blockquote>
+          <cite>Chris <span>Sample review · Anderson</span></cite>
+        </article>
+        <article class="rev">
+          <blockquote>"Took the old fridge and a couch nobody else wanted. Fair price, no surprises."</blockquote>
+          <cite>Angela <span>Sample review · Anderson area</span></cite>
+        </article>
+        <article class="rev">
+          <blockquote>"Cleared out my mom's house after the move. Respectful, quick, and they swept up after."</blockquote>
+          <cite>Robert <span>Sample review · Anderson area</span></cite>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE ===== -->
+  <section class="quote cut" id="quote" aria-labelledby="q-h">
+    <div class="wrap q-grid">
+      <div>
+        <span class="label">Get a quote</span>
+        <h2 id="q-h">Tell us what's piling up</h2>
+        <p style="color:var(--muted)">The fastest way is still a phone call. But if you'd rather type, fill this out and we'll call you back.</p>
+        <a class="btn btn-forest" href="tel:+18647911731"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L9 9.7a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2.2z"/></svg>Call 864-791-1731</a>
+        <div class="photo-tip">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <div><b>Tip:</b> a quick photo of the pile is the fastest way to get an accurate price. Text it to the number above.</div>
+        </div>
+      </div>
+      <form id="quote-form" novalidate aria-describedby="form-note">
+        <div class="f-row">
+          <div class="f"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+          <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="f"><label for="addr">Pickup address or area</label><input id="addr" name="addr" type="text" autocomplete="street-address" placeholder="e.g. Anderson"></div>
+        <div class="f"><label for="size">Roughly how much?</label>
+          <select id="size" name="size">
+            <option>¼ load — a few items</option><option>½ load</option><option>¾ load</option><option>Full load — take it all</option><option>Not sure</option>
+          </select>
+        </div>
+        <div class="f"><label for="items">What is it?</label><textarea id="items" name="items" placeholder="Sectional, mini fridge, about ten boxes of old magazines…"></textarea></div>
+        <button class="btn btn-pink" type="submit" style="width:100%">Send it — call me back</button>
+        <p id="form-note" style="margin:10px 0 0;font-size:.85rem;color:var(--muted)">Demo form — nothing is sent. On the live site this goes straight to PRPS.</p>
+        <div class="form-msg" id="form-msg" role="status" aria-live="polite">Got it. On the live site, PRPS would have this now and call you back with a price.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== AREA ===== -->
+  <section class="area cut" id="area" aria-labelledby="area-h">
+    <div class="wrap area-grid">
+      <div>
+        <span class="label">Service area</span>
+        <h2 id="area-h">Hauling around Anderson</h2>
+        <p>We serve Anderson and the surrounding area. A little outside town? Call and ask. If the truck can get there, we'll probably take the job.</p>
+        <a class="btn btn-forest" href="tel:+18647911731">Ask about your address</a>
+      </div>
+      <svg class="map" viewBox="0 0 520 340" role="img" aria-label="Stylized map centered on Anderson, South Carolina">
+        <rect width="520" height="340" fill="#f6f2ea"/>
+        <g stroke="#ddd5c6" stroke-width="1"><path d="M0 68H520M0 136H520M0 204H520M0 272H520M65 0V340M130 0V340M195 0V340M260 0V340M325 0V340M390 0V340M455 0V340"/></g>
+        <path d="M0 250C100 230 180 200 260 170S400 110 520 90" stroke="#fff" stroke-width="8" fill="none"/>
+        <path d="M0 250C100 230 180 200 260 170S400 110 520 90" stroke="#16302b" stroke-width="2" fill="none" stroke-dasharray="12 10"/>
+        <path d="M180 340C210 280 240 220 260 170S290 70 310 0" stroke="#fff" stroke-width="6" fill="none"/>
+        <circle cx="260" cy="170" r="100" fill="#d41a80" opacity=".12"/>
+        <circle cx="260" cy="170" r="100" fill="none" stroke="#d41a80" stroke-width="3" stroke-dasharray="8 8"/>
+        <rect x="248" y="158" width="24" height="24" rx="4" fill="#16302b"/><rect x="256" y="166" width="8" height="8" fill="#ff2d8f"/>
+        <text x="282" y="166" font-family="Unbounded, sans-serif" font-weight="800" font-size="20" fill="#16302b">Anderson</text>
+        <text x="282" y="188" font-family="Albert Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#4b5a56">and surrounding area</text>
+      </svg>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="PRPS Junk Removal, back to top">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#ff2d8f"/><path d="M8 26h18l4-8h-8v-4H8z" fill="#16302b"/><circle cx="13" cy="29" r="3.5" fill="#16302b"/><circle cx="25" cy="29" r="3.5" fill="#16302b"/><path d="M12 14l3-5 3 5" stroke="#16302b" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>PRPS<small>Junk Removal · Anderson, SC</small></span>
+    </a>
+    <p>Junk removal for the Anderson, SC area.<br>Phone: <a href="tel:+18647911731">864-791-1731</a></p>
+    <p style="margin:0;font-size:.85rem;opacity:.8">Demo preview built by David — not the official site. No real photos or customer names are used.</p>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <a class="btn btn-pink" href="tel:+18647911731"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L9 9.7a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2.2z"/></svg>Tap to call 864-791-1731</a>
+</div>
+
+<script>
+(function(){
+  var form=document.getElementById('quote-form'),msg=document.getElementById('form-msg');
+  if(form){form.addEventListener('submit',function(e){e.preventDefault();msg.classList.add('show');msg.setAttribute('tabindex','-1');msg.focus();});}
+})();
+</script>
+</body>
+</html>
