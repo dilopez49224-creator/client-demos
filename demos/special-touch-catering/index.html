@@ -16,7 +16,7 @@ html{scroll-behavior:smooth}
 body{margin:0;padding-top:44px;background:var(--ivory);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;line-height:1.55;overflow-x:hidden}
 h1,h2,h3{font-family:'Limelight','Cormorant Garamond',serif;font-weight:400;color:var(--burg);line-height:1.15;margin:0 0 .5em}
 a{color:var(--burg)}
-:focus-visible{outline:3px solid #1b4fd8;outline-offset:3px}
+:focus-visible{outline:3px solid var(--champ2);outline-offset:2px;box-shadow:0 0 0 7px var(--ink)}
 .demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:#1c1214;color:#fff;font:600 13px/1.3 system-ui,sans-serif;text-align:center;padding:7px var(--gut);min-height:44px;display:flex;align-items:center;justify-content:center}
 section{scroll-margin-top:52px}
 .wrap{max-width:1000px;margin:0 auto;padding:0 var(--gut)}
@@ -46,11 +46,14 @@ section{scroll-margin-top:52px}
 .sec h2{text-align:center;font-size:clamp(1.6rem,6vw,2.4rem)}
 .sec .lead{text-align:center;max-width:36em;margin:0 auto 1.5em}
 /* menu services */
-.menu{display:grid;gap:20px;grid-template-columns:1fr}
-.course{text-align:center}
-.course .num{font-family:'Limelight',serif;color:var(--champ2);font-size:.9rem;letter-spacing:.2em;color:#7a5f14}
-.course h3{font-size:1.35rem}
-.course p{margin:.4em 0 0}
+.menu{display:grid;grid-template-columns:1fr;text-align:left;max-width:860px}
+.course{padding:20px 0;border-top:1px solid var(--champ2)}
+.course:first-child{border-top:0;padding-top:4px}
+.course h3{font-size:1.4rem;display:flex;align-items:baseline;gap:12px;margin-bottom:.3em}
+.course h3::after{content:"";flex:1;border-bottom:1px dotted var(--champ2);transform:translateY(-.25em)}
+.course p{margin:0;max-width:40em}
+.ital{font-style:italic;color:var(--burg2)}
+.ital a{display:inline-block;padding:11px 4px;margin:-11px 0;font-weight:700}
 /* why us, ivory on champagne band */
 .band{background:var(--champ);border-top:2px solid var(--burg);border-bottom:2px solid var(--burg)}
 .why{display:grid;gap:22px;grid-template-columns:1fr;text-align:center}
@@ -79,8 +82,9 @@ section{scroll-margin-top:52px}
 .tbtext .small{font-size:.95rem;color:var(--champ)}
 /* reviews */
 .label{display:inline-block;border:2px solid var(--burg);color:var(--burg);font:700 .85rem/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:8px 12px;margin-bottom:18px}
-.reviews{display:grid;gap:18px;grid-template-columns:1fr}
-.rev{font-style:italic;font-size:1.1rem}
+.reviews{display:grid;gap:28px;grid-template-columns:1fr;text-align:left;margin-top:6px}
+.rev{font-style:italic;font-size:1.1rem;border-top:1px solid var(--champ2);padding-top:14px}
+.rev::before{content:"\201C";display:block;font-family:'Limelight',serif;font-style:normal;font-size:3rem;line-height:.55;color:var(--champ2);margin-bottom:10px}
 .rev cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--burg)}
 .center{text-align:center}
 /* form */
@@ -96,13 +100,15 @@ textarea{min-height:110px}
 .area h2{color:var(--champ)}
 .area p{max-width:34em;margin:0 auto 1em;color:#f6ead0}
 footer{background:#1c1214;color:#e8dfd0;text-align:center;padding:26px var(--gut) 90px;font:15px/1.5 system-ui,sans-serif}
-footer a{color:var(--champ)}
+footer a{color:var(--champ);display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
 /* sticky mobile call */
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--burg);border-top:2px solid var(--champ);padding:8px var(--gut);display:flex}
 .callbar a{flex:1;text-align:center;font-family:'Limelight',serif;color:var(--champ);text-decoration:none;font-size:1.05rem;padding:11px;min-height:48px;letter-spacing:.05em}
 @media(min-width:720px){
  body{font-size:20px}
- .menu{grid-template-columns:1fr 1fr}
+ .menu{grid-template-columns:1fr 1fr;column-gap:44px}
+ .course:nth-child(-n+2){border-top:0;padding-top:4px}
+ .course:nth-child(even){border-left:1px solid var(--champ2);padding-left:30px}
  .why{grid-template-columns:repeat(3,1fr)}
  .reviews{grid-template-columns:repeat(3,1fr)}
  .tbgrid{grid-template-columns:auto 1fr;gap:56px}
@@ -140,11 +146,14 @@ footer a{color:var(--champ)}
  <div class="wrap">
   <h2 id="svc-h">The Bill of Fare</h2>
   <p class="lead">Catering for the occasions that matter to you. Reach out and we will talk through what your event needs.</p>
+  <div class="frame">
   <div class="menu">
-   <article class="frame course"><div class="num">COURSE I</div><h3>Catering</h3><p>Catering tied to Sardi's Den in Clemson, planned around your guests and your gathering.</p></article>
-   <article class="frame course"><div class="num">COURSE II</div><h3>Parties &amp; Gatherings</h3><p>Birthdays, family dinners and get-togethers, handled so you can enjoy your own party.</p></article>
-   <article class="frame course"><div class="num">COURSE III</div><h3>Business &amp; Group Events</h3><p>Meetings, team lunches and group occasions with a simple, dependable setup.</p></article>
-   <article class="frame course"><div class="num">COURSE IV</div><h3>Custom Requests</h3><p>Have something specific in mind? Call and ask. We would be glad to hear about it.</p></article>
+   <article class="course"><h3>Catering</h3><p>Catering tied to Sardi's Den in Clemson, planned around your guests and your gathering.</p></article>
+   <article class="course"><h3>Parties &amp; Gatherings</h3><p>Birthdays, family dinners and get-togethers, handled so you can enjoy your own party.</p></article>
+   <article class="course"><h3>Business &amp; Group Events</h3><p>Meetings, team lunches and group occasions with a simple, dependable setup.</p></article>
+   <article class="course"><h3>Custom Requests</h3><p>Have something specific in mind? Call and ask. We would be glad to hear about it.</p></article>
+  </div>
+  <p class="ital" style="margin:22px 0 0;text-align:center">Menus and pricing are not published here — call <a href="tel:+18646547427">864-654-7427</a> to talk it through.</p>
   </div>
  </div>
 </section>
@@ -154,7 +163,7 @@ footer a{color:var(--champ)}
   <h2 id="why-h">Why Choose Us</h2>
   <svg class="orn" viewBox="0 0 260 24" fill="none" stroke="#6b1d2a" stroke-width="1.5" aria-hidden="true"><path d="M0 12h100M160 12h100"/><path d="M118 12l12-8 12 8-12 8z"/></svg>
   <div class="why">
-   <div><div class="stat">31</div><h3>Years Listed</h3><p>Listed with 31 years in business, a long-running Clemson name.</p></div>
+   <div><div class="stat">31</div><h3>Years in Business</h3><p>Listed with 31 years in business, a long-running Clemson name.</p></div>
    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h18M5 12a7 7 0 0114 0M2 16h20M12 5V3"/></svg><h3>Familiar Address</h3><p>Same address and phone as Sardi's Den, easy to find and easy to reach.</p></div>
    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg><h3>Easy to Talk To</h3><p>Call or send a note. Tell us what you are planning and we will take it from there.</p></div>
   </div>
@@ -192,9 +201,9 @@ footer a{color:var(--champ)}
   <h2 id="rev-h">Kind Words</h2>
   <span class="label">Sample reviews</span>
   <div class="reviews">
-   <blockquote class="frame rev" style="margin:0">“The planning was easy and the table looked wonderful.”<cite>Sample customer</cite></blockquote>
-   <blockquote class="frame rev" style="margin:0">“They made our get-together feel special without any stress.”<cite>Sample customer</cite></blockquote>
-   <blockquote class="frame rev" style="margin:0">“Friendly, quick to answer, and easy to work with.”<cite>Sample customer</cite></blockquote>
+   <blockquote class="rev" style="margin:0">The planning was easy and the table looked wonderful.<cite>Sample customer</cite></blockquote>
+   <blockquote class="rev" style="margin:0">They made our get-together feel special without any stress.<cite>Sample customer</cite></blockquote>
+   <blockquote class="rev" style="margin:0">Friendly, quick to answer, and easy to work with.<cite>Sample customer</cite></blockquote>
   </div>
   <p style="font-size:.95rem;margin-top:16px">These are invented placeholders for the demo, not real customer reviews.</p>
  </div>
@@ -210,7 +219,7 @@ footer a{color:var(--champ)}
     <div><label for="f-date">Event date</label><input id="f-date" name="date" type="date"></div>
     <div><label for="f-guests">Approximate guests</label><input id="f-guests" name="guests" type="number" min="1" inputmode="numeric"></div>
     <div><label for="f-msg">Tell us about your event</label><textarea id="f-msg" name="msg"></textarea></div>
-    <button class="btn" type="submit">Send Request</button>
+    <button class="btn" type="submit">Send my quote request</button>
     <div class="demo-msg" id="demoMsg" role="status" aria-live="polite">Demo only — this form does not send anything. On the real site it would reach Special Touch Catering.</div>
    </form>
   </div>
@@ -221,7 +230,7 @@ footer a{color:var(--champ)}
  <div class="wrap">
   <svg class="orn" viewBox="0 0 260 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 12h100M160 12h100"/><path d="M118 12l12-8 12 8-12 8z"/></svg>
   <h2 id="area-h">Service Area</h2>
-  <p>Proudly serving the Clemson area.</p>
+  <p>Proudly serving the Clemson area. Not sure if we reach you? Call and ask.</p>
   <a class="btn champ" href="tel:+18646547427">Call 864-654-7427</a>
  </div>
 </section>
