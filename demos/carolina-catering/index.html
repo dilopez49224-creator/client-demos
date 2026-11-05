@@ -4,181 +4,201 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Carolina Catering | Full-Service Catering in Anderson &amp; the Upstate</title>
-<meta name="description" content="Demo preview of a one-page site for Carolina Catering, full-service catering from finger food to full meals across Upstate South Carolina.">
+<title>Carolina Kitchen and Catering | Weddings, Anniversaries &amp; Baby Showers in the Upstate</title>
+<meta name="description" content="Demo preview of a one-page site for Carolina Kitchen and Catering: full-service catering for weddings, anniversaries and baby showers across Upstate South Carolina.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Great+Vibes&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#173f4b;        /* deep teal-navy */
-  --ink-2:#0f2c35;
-  --peach:#f0a35e;
-  --peach-d:#c97a33;
-  --linen:#fbf6ee;
-  --linen-2:#f3ead9;
-  --green:#2f6b5a;
-  --green-d:#214c40;
-  --white:#fffdf8;
-  --text:#1e3038;
-  --muted:#4a5e66;
+  --ink:#151312;
+  --char:#221d1a;
+  --ivory:#f8f3ea;
+  --ivory-2:#eee4d3;
+  --white:#fffdf9;
+  --wine:#7d1d2c;
+  --wine-d:#5e1420;
+  --red:#a82a36;
+  --gold:#c69a45;
+  --gold-l:#e8c77e;
+  --text:#2a2420;
+  --muted:#5e544c;
+  --line:#ddd1bd;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-body{margin:0;padding-top:44px;padding-bottom:84px;background:var(--linen);color:var(--text);font:400 17px/1.6 Figtree,system-ui,sans-serif;overflow-x:hidden}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.08;margin:0 0 .45em;color:var(--ink);letter-spacing:-.01em}
-h1{font-size:clamp(2.5rem,9vw,4.6rem);font-weight:700}
-h2{font-size:clamp(1.9rem,6.5vw,3rem)}
-h3{font-size:1.35rem}
+body{margin:0;padding-top:44px;padding-bottom:84px;background:var(--ivory);color:var(--text);font:400 17px/1.65 Karla,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Marcellus,Georgia,serif;font-weight:400;line-height:1.12;margin:0 0 .45em;color:var(--ink);letter-spacing:.005em}
+h1{font-size:clamp(2.5rem,10vw,4.5rem)}
+h2{font-size:clamp(1.9rem,6.6vw,2.9rem)}
+h3{font-size:1.45rem}
 p{margin:0 0 1em}
-a{color:var(--green-d)}
+a{color:var(--wine)}
 img,svg{max-width:100%}
-:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--peach)}
-.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:44px;background:var(--ink-2);color:#fff;text-align:center;font:600 13px/1.3 Figtree,sans-serif;padding:6px 12px;display:flex;align-items:center;justify-content:center}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.banner{position:fixed;top:0;left:0;right:0;z-index:100;min-height:44px;background:var(--ink);color:#fff;text-align:center;font:500 13px/1.3 Karla,sans-serif;padding:6px 12px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--gold)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-.eyebrow{display:inline-block;font:600 .8rem/1 Figtree,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:.9em}
-/* gingham tablecloth strip */
-.gingham{height:22px;background-color:var(--linen);
-  background-image:linear-gradient(90deg,rgba(47,107,90,.35) 50%,transparent 50%),linear-gradient(rgba(47,107,90,.35) 50%,transparent 50%);
-  background-size:22px 22px}
-.gingham.peach{background-image:linear-gradient(90deg,rgba(240,163,94,.5) 50%,transparent 50%),linear-gradient(rgba(240,163,94,.5) 50%,transparent 50%)}
+.kicker{display:inline-block;font:700 .8rem/1.3 Karla,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--wine);margin-bottom:1em}
+.script{font-family:"Great Vibes",cursive;font-weight:400;color:var(--wine);line-height:1.1}
+/* ornamental rule: line, diamond, line */
+.rule{display:flex;align-items:center;gap:12px;color:var(--gold);margin:6px 0 18px;max-width:220px}
+.rule::before,.rule::after{content:"";height:1px;flex:1;background:currentColor}
+.rule i{width:8px;height:8px;transform:rotate(45deg);border:1.5px solid currentColor;display:block}
+.center{text-align:center}.center .rule{margin-left:auto;margin-right:auto}
 /* header */
-header.top{background:var(--white);border-bottom:1px solid var(--linen-2)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:66px}
-.brand{font-family:Fraunces,serif;font-weight:700;font-size:1.35rem;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:10px;min-height:44px}
-.brand svg{width:34px;height:34px}
+header.top{background:var(--white);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:70px}
+.brand{font-family:Marcellus,serif;font-size:1.4rem;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:10px;min-height:44px;letter-spacing:.01em}
+.brand svg{width:38px;height:38px;flex:none}
 nav.main{display:none}
-nav.main a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;margin-left:14px;display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
-a[href^="tel:"]:not(.btn){display:inline-block;padding:10px 2px;margin:-10px 0;font-weight:600}
-nav.main a:hover{color:var(--green)}
-.callhead{display:none}
+nav.main a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;margin-left:16px;display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
+nav.main a:hover{color:var(--wine)}
+a[href^="tel:"]:not(.btn),a[href^="mailto:"]{display:inline-block;padding:10px 2px;margin:-10px 0;font-weight:700}
+.btn.callhead{display:none}
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:999px;background:var(--ink);color:#fff;font:600 1.05rem Figtree,sans-serif;text-decoration:none;border:2px solid var(--ink);cursor:pointer;transition:background .2s,transform .2s}
-.btn:hover{background:var(--green-d);border-color:var(--green-d);transform:translateY(-1px)}
-.btn.peach{background:var(--peach);border-color:var(--peach);color:var(--ink-2)}
-.btn.peach:hover{background:#f5b87f;border-color:#f5b87f}
-.btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{background:var(--white)}
-.btn svg{width:20px;height:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:3px;background:var(--wine);color:#fff;font:700 .95rem Karla,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1.5px solid var(--wine);cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--wine-d);border-color:var(--wine-d)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:#fff}
+.btn.gold{background:var(--gold-l);border-color:var(--gold-l);color:var(--ink)}
+.btn.gold:hover{background:#f1d797;border-color:#f1d797}
+.btn svg{width:20px;height:20px;flex:none}
 /* hero */
-.hero{padding:44px 0 36px;position:relative}
-.hero .wrap{display:grid;gap:34px;align-items:center}
-.hero .lead{font-size:1.2rem;max-width:32em;color:var(--muted)}
-.hero .lead strong{color:var(--ink)}
-.hero .row{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 8px}
+.hero{padding:42px 0 52px;background:linear-gradient(180deg,var(--white),var(--ivory))}
+.hero .wrap{display:grid;gap:36px;align-items:center}
+.hero .script{font-size:2.6rem;display:block;margin:-.1em 0 .35em}
+.hero .lead{font-size:1.15rem;max-width:32em;color:var(--muted)}
+.hero .lead strong{color:var(--ink);font-weight:700}
+.hero .row{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 10px}
 .hero .note{font-size:.95rem;color:var(--muted)}
-.hero h1 em{font-style:italic;font-weight:400;color:var(--green)}
-.platter{position:relative;aspect-ratio:1/1;max-width:420px;margin:0 auto;width:100%}
-.platter svg{width:100%;height:auto;display:block}
-/* services: menu card tiers */
-.services{padding:56px 0 48px;background:var(--white)}
-.tiers{display:grid;gap:18px;margin:28px 0 0;padding:0;list-style:none}
-.tier{position:relative;background:var(--linen);border:1px solid var(--linen-2);border-radius:18px;padding:26px 22px 24px;display:flex;flex-direction:column;gap:10px}
-.tier .num{display:flex;align-items:center;gap:10px;font-family:Fraunces,serif;font-style:italic;font-size:.95rem;color:var(--green);letter-spacing:.02em}
-.tier .num i{display:inline-flex;gap:4px}
-.tier .num b{width:10px;height:10px;border-radius:50%;border:1.5px solid currentColor;display:block}
-.tier .num b.on{background:currentColor}
-.tier.feast .num{color:var(--peach)}
-.tier h3{margin:0;font-size:1.6rem}
-.tier p{margin:0;color:var(--muted)}
-.tier ul{margin:6px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-.tier li{background:var(--white);border:1px solid var(--linen-2);border-radius:999px;padding:5px 12px;font-size:.88rem;font-weight:500;color:var(--ink)}
-.tier .ico{width:48px;height:48px;color:var(--ink)}
-.tier.feast{background:var(--ink);color:#fff;border-color:var(--ink)}
-.tier.feast h3,.tier.feast .ico{color:#fff}
-.tier.feast .num{color:var(--peach)}
-.tier.feast p{color:#d6e3e6}
-.tier.feast li{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#fff}
-.services .fine{margin-top:22px;color:var(--muted);font-size:.98rem;max-width:40em}
-/* why us */
-.why{padding:56px 0}
+.setting{max-width:440px;width:100%;margin:0 auto;position:relative}
+.setting svg{width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 24px 50px rgba(21,19,18,.22)}
+.setting::after{content:"";position:absolute;inset:10px;border:1px solid rgba(232,199,126,.45);border-radius:3px;pointer-events:none}
+/* occasions */
+.occasions{padding:60px 0 52px;background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.occasions .intro{max-width:40em;color:var(--muted);margin:0 auto}
+.occ{display:grid;gap:18px;margin:34px 0 0;padding:0;list-style:none}
+.occ li{background:var(--ivory);border:1px solid var(--line);padding:30px 22px 26px;text-align:center;position:relative}
+.occ li::before{content:"";position:absolute;inset:6px;border:1px solid var(--line);pointer-events:none}
+.occ svg{width:54px;height:54px;color:var(--wine);margin-bottom:6px}
+.occ h3{margin:0 0 .3em}
+.occ p{margin:0;color:var(--muted)}
+.range{margin:34px auto 0;max-width:46em;text-align:center}
+.range p{color:var(--muted);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{border:1px solid var(--ink);padding:6px 14px;font-weight:500;font-size:.92rem;color:var(--ink);background:var(--white)}
+/* eatin' easy */
+.easy{padding:60px 0;background:var(--ink);color:#e9e1d4;position:relative;overflow:hidden}
+.easy::before{content:"";position:absolute;top:-180px;left:50%;width:520px;height:360px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(232,199,126,.22),transparent);pointer-events:none}
+.easy .wrap{display:grid;gap:34px;align-items:center;position:relative}
+.easy h2{color:#fff}
+.easy .kicker{color:var(--gold-l)}
+.easy .rule{color:var(--gold)}
+.easy p{color:#d8cfc1;max-width:34em}
+.steps{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:14px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center;font:400 1.25rem Marcellus,serif;color:var(--gold-l)}
+.steps strong{display:block;color:#fff;font-weight:700}
+.steps span{color:#cfc5b6}
+.easy .fine{font-size:.92rem;color:#b9ae9e;margin-top:18px}
+.easy a{color:var(--gold-l)}
+.box{max-width:360px;width:100%;margin:0 auto}
+.box svg{width:100%;height:auto;display:block}
+/* why */
+.why{padding:60px 0}
 .why .wrap{display:grid;gap:30px;align-items:start}
-.why ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.why li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
-.why li svg{width:44px;height:44px;color:var(--green)}
-.why li strong{display:block;font-family:Fraunces,serif;font-size:1.2rem;color:var(--ink);margin-bottom:2px}
+.years{display:inline-flex;flex-direction:column;align-items:center;padding:22px 30px;border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:5px;background:var(--white);margin-top:10px}
+.years b{font:400 3.4rem/1 Marcellus,serif;color:var(--wine)}
+.years span{font:700 .8rem Karla,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-top:6px}
+.why ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.why li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.why li:last-child{border-bottom:0;padding-bottom:0}
+.why li svg{width:44px;height:44px;color:var(--wine)}
+.why li strong{display:block;font:400 1.25rem Marcellus,serif;color:var(--ink);margin-bottom:2px}
 .why li span{color:var(--muted)}
-.stamp{display:inline-grid;place-items:center;width:150px;height:150px;border-radius:50%;border:3px dashed var(--peach-d);color:var(--ink);text-align:center;font-family:Fraunces,serif;font-weight:700;line-height:1.1;padding:12px;background:var(--white);transform:rotate(-6deg)}
-.stamp b{font-size:2.6rem;display:block;color:var(--peach-d)}
-.stamp small{font:600 .72rem Figtree,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
 /* missed call */
-.textback{padding:56px 0;background:var(--ink);color:#fff}
+.textback{padding:60px 0;background:var(--wine-d);color:#fff;background-image:radial-gradient(circle at 85% 10%,rgba(232,199,126,.18),transparent 45%)}
 .textback h2{color:#fff}
-.textback .eyebrow{color:var(--peach)}
+.textback .kicker{color:var(--gold-l)}
 .textback .wrap{display:grid;gap:34px;align-items:center}
-.textback p{color:#d6e3e6;max-width:34em}
+.textback p{color:#f0dcdc;max-width:34em}
 .textback ol{margin:0;padding-left:1.2em;color:#fff;display:grid;gap:8px}
-.textback ol li::marker{color:var(--peach);font-weight:700}
-.phone{width:300px;max-width:100%;margin:0 auto;background:#0b1f26;border-radius:38px;padding:14px;box-shadow:0 20px 50px rgba(0,0,0,.35);border:3px solid #27454f}
-.screen{background:var(--linen);border-radius:26px;padding:48px 14px 22px;position:relative;min-height:420px;color:var(--text);overflow:hidden}
-.screen::before{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:90px;height:22px;background:#0b1f26;border-radius:999px}
-.notif{background:#fff;border-radius:14px;padding:10px 12px;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center;box-shadow:0 2px 8px rgba(23,63,75,.12);font-size:.86rem}
-.notif .dot{width:34px;height:34px;border-radius:50%;background:#e8514a;display:grid;place-items:center}
+.textback ol li::marker{color:var(--gold-l);font-weight:700}
+.phone{width:300px;max-width:100%;margin:0 auto;background:#111;border-radius:38px;padding:14px;box-shadow:0 20px 50px rgba(0,0,0,.4);border:2px solid var(--gold)}
+.screen{background:var(--ivory);border-radius:26px;padding:48px 14px 22px;position:relative;min-height:420px;color:var(--text);overflow:hidden}
+.screen::before{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:90px;height:22px;background:#111;border-radius:999px}
+.notif{background:#fff;border-radius:14px;padding:10px 12px;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center;box-shadow:0 2px 8px rgba(21,19,18,.12);font-size:.86rem;line-height:1.35}
+.notif .dot{width:34px;height:34px;border-radius:50%;background:#d93a3a;display:grid;place-items:center}
 .notif .dot svg{width:18px;height:18px}
 .notif b{display:block;color:#b3261e}
 .notif span{color:var(--muted)}
 .notif time{float:right;color:var(--muted);font-size:.78rem}
 .sms{margin-top:16px;display:grid;gap:8px}
-.sms .from{font:600 .75rem Figtree,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center}
-.bubble{background:var(--green);color:#fff;border-radius:18px 18px 4px 18px;padding:11px 13px;font-size:.9rem;line-height:1.45;max-width:92%;justify-self:end;position:relative}
+.sms .from{font:700 .75rem Karla,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center}
+.bubble{background:var(--wine);color:#fff;border-radius:18px 18px 4px 18px;padding:11px 13px;font-size:.9rem;line-height:1.45;max-width:92%;justify-self:end}
 .bubble.in{background:#fff;color:var(--text);border-radius:18px 18px 18px 4px;justify-self:start}
-.sms .stamp2{font-size:.72rem;color:var(--muted);text-align:right}
+.sms .stamp2{font-size:.75rem;color:var(--muted);text-align:right}
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .sms .bubble{animation:rise .5s ease both}
-.sms .bubble:nth-child(2){animation-delay:.2s}
 .sms .bubble:nth-child(3){animation-delay:1.2s}
 /* reviews */
-.reviews{padding:56px 0;background:var(--white)}
-.reviews .label{display:inline-block;background:var(--peach);color:var(--ink-2);border-radius:6px;padding:4px 10px;font:700 .78rem Figtree,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
-.cards{display:grid;gap:16px;margin:24px 0 0;padding:0;list-style:none}
-.card{padding:18px 4px 0;border-top:8px solid transparent;border-image:repeating-linear-gradient(90deg,var(--green) 0 11px,rgba(47,107,90,.25) 11px 22px) 8}
-.card q{font-family:Fraunces,serif;font-style:italic;font-size:1.12rem;color:var(--ink);display:block;margin-bottom:12px;quotes:"\201C" "\201D"}
-.card .who{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted)}
-.card .who i{width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font:700 .9rem Figtree,sans-serif;font-style:normal}
+.reviews{padding:60px 0;background:var(--white)}
+.reviews .label{display:inline-block;background:var(--ink);color:var(--gold-l);padding:5px 12px;font:700 .8rem Karla,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+.cards{display:grid;gap:18px;margin:26px 0 0;padding:0;list-style:none}
+.card{padding:26px 22px 22px;border:1px solid var(--line);background:var(--ivory);position:relative}
+.card::before{content:"\201C";position:absolute;top:-6px;left:18px;font:400 3.4rem/1 Marcellus,serif;color:var(--gold)}
+.card q{font-style:italic;font-size:1.08rem;color:var(--ink);display:block;margin:10px 0 14px;quotes:none}
+.card .who{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);font-weight:500}
+.card .who i{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--wine);color:var(--wine);display:grid;place-items:center;font:700 .9rem Karla,sans-serif;font-style:normal}
 .reviews .fine{font-size:.9rem;color:var(--muted);margin-top:18px}
-/* quote form */
-.quote{padding:56px 0}
+/* quote */
+.quote{padding:60px 0}
 .quote .wrap{display:grid;gap:30px}
-form{background:var(--white);border:1px solid var(--linen-2);border-radius:22px;padding:26px 20px;display:grid;gap:14px}
-label{display:grid;gap:6px;font-weight:600;font-size:.95rem;color:var(--ink)}
-input,select,textarea{font:400 1rem Figtree,sans-serif;padding:12px 14px;border:1.5px solid #b9c7cb;border-radius:12px;background:var(--linen);color:var(--text);min-height:48px;width:100%}
-textarea{min-height:110px;resize:vertical}
-input:focus,select:focus,textarea:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 4px rgba(47,107,90,.2)}
-.two{display:grid;gap:14px}
-.msg{display:none;background:var(--green);color:#fff;border-radius:14px;padding:16px 18px;font-weight:500}
-.msg.show{display:block}
 .quote aside p{color:var(--muted)}
-/* service area */
-.area{padding:56px 0;background:var(--linen-2)}
+.contact{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
+.contact li{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.contact svg{width:20px;height:20px;color:var(--wine);flex:none}
+form{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--wine);padding:26px 20px;display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:700;font-size:.95rem;color:var(--ink)}
+input,select,textarea{font:400 1rem Karla,sans-serif;padding:12px 14px;border:1.5px solid #c9bca8;border-radius:3px;background:var(--ivory);color:var(--text);min-height:48px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--wine);outline:none;box-shadow:0 0 0 4px rgba(125,29,44,.15)}
+.two{display:grid;gap:14px}
+.msg{display:none;background:var(--ink);color:#fff;padding:16px 18px;font-weight:500;border-left:4px solid var(--gold)}
+.msg.show{display:block}
+/* area */
+.area{padding:60px 0;background:var(--ivory-2)}
 .area .wrap{display:grid;gap:30px;align-items:center}
 .area ul{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
-.area li{background:var(--white);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.92rem;color:var(--ink);border:1px solid #e1d6c1}
+.area li{background:var(--white);padding:6px 14px;font-weight:700;font-size:.92rem;color:var(--ink);border:1px solid var(--line)}
 .map{max-width:380px;width:100%;margin:0 auto}
 .map svg{width:100%;height:auto;display:block}
 /* footer */
-footer{padding:36px 0 30px;background:var(--ink-2);color:#c9d8dd;font-size:.92rem}
-footer .wrap{display:grid;gap:10px}
+footer{padding:42px 0 34px;background:var(--ink);color:#cfc5b6;font-size:.92rem;border-top:3px solid var(--wine)}
+footer .wrap{display:grid;gap:8px}
 footer a{color:#fff}
 footer .brand{color:#fff}
+footer .script{color:var(--gold-l);font-size:1.9rem;margin:-4px 0 6px}
 /* sticky call */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(251,246,238,.92);backdrop-filter:blur(8px);border-top:1px solid #e1d6c1}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,249,.94);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
 .sticky .btn{width:100%}
 @media (min-width:700px){
-  .hero .wrap{grid-template-columns:1.1fr .9fr}
-  .tiers{grid-template-columns:repeat(3,1fr);align-items:end}
-  .tier:nth-child(1){margin-top:48px}.tier:nth-child(2){margin-top:24px}
-  .why .wrap{grid-template-columns:1fr 1.3fr}
+  .hero .wrap{grid-template-columns:1.05fr .95fr}
+  .hero .script{font-size:3.1rem}
+  .occ{grid-template-columns:repeat(3,1fr)}
+  .easy .wrap{grid-template-columns:1.1fr .9fr}
+  .why .wrap{grid-template-columns:.9fr 1.3fr}
   .textback .wrap{grid-template-columns:1fr 1fr}
   .cards{grid-template-columns:repeat(3,1fr)}
-  .quote .wrap{grid-template-columns:.8fr 1.2fr}
+  .quote .wrap{grid-template-columns:.85fr 1.15fr}
   .two{grid-template-columns:1fr 1fr}
   .area .wrap{grid-template-columns:1fr 1fr}
   form{padding:32px 30px}
 }
 @media (min-width:900px){
   nav.main{display:block}
-  .callhead{display:inline-flex;min-height:44px;padding:8px 18px;font-size:.95rem}
+  .btn.callhead{display:inline-flex;min-height:44px;padding:8px 18px;font-size:.85rem}
   .sticky{display:none}
   body{padding-bottom:0}
 }
@@ -190,13 +210,13 @@ footer .brand{color:#fff}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Carolina Catering home">
-      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#173f4b"/><path d="M8 24h24l-2 4H10z" fill="#f0a35e"/><path d="M11 23c0-5 4-9 9-9s9 4 9 9" fill="none" stroke="#fbf6ee" stroke-width="2.2"/><circle cx="20" cy="12.5" r="1.6" fill="#fbf6ee"/></svg>
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M12.5 24C7 23.5 6 15.5 11.5 14 11 8 18.5 6 21 10.5 23.5 5.5 31.5 7.5 30 14c5.5 1.5 4.5 9.5-1.5 10z" fill="#fffdf9" stroke="#151312" stroke-width="1.8" stroke-linejoin="round"/><rect x="12.5" y="24" width="16" height="7" rx="1" fill="#fffdf9" stroke="#151312" stroke-width="1.8"/><path d="M15 20.5c1-2 2.5-3 4-3.3M22.5 17.6c1.7.4 2.8 1.3 3.5 2.6" fill="none" stroke="#151312" stroke-width="1.3" stroke-linecap="round"/><path d="M8 35h25" stroke="#c69a45" stroke-width="1.6" stroke-linecap="round"/><circle cx="20.5" cy="27.5" r="1.4" fill="#7d1d2c"/></svg>
       Carolina Catering
     </a>
     <nav class="main" aria-label="Main">
-      <a href="#services">Menus</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#quote">Get a quote</a>
+      <a href="#occasions">Occasions</a><a href="#easy">Eatin' Easy</a><a href="#why">Why us</a><a href="#quote">Plan your event</a>
     </nav>
-    <a class="btn peach callhead" href="tel:8646170806"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>864-617-0806</a>
+    <a class="btn callhead" href="tel:8646569542"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>(864) 656-9542</a>
   </div>
 </header>
 
@@ -204,107 +224,169 @@ footer .brand{color:#fff}
 <section class="hero" aria-labelledby="h-hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Anderson, SC · Serving the Upstate 12+ years</span>
-      <h1 id="h-hero">From finger food <em>to feast.</em></h1>
-      <p class="lead">Full-service catering for Upstate South Carolina. <strong>Office lunches, weddings, reunions, church suppers, graduation parties</strong> — one call and the table is handled, start to finish.</p>
+      <span class="kicker">Carolina Kitchen and Catering · Upstate SC</span>
+      <h1 id="h-hero">It's your special day.</h1>
+      <span class="script" aria-hidden="true">a Delicious Difference</span>
+      <p class="lead">Whether you're <strong>starting your new lives together, celebrating a milestone anniversary or welcoming the newest member of your family</strong>, Carolina Catering can help make it a day to remember — full-service catering from finger food to full meals.</p>
       <div class="row">
-        <a class="btn peach" href="tel:8646170806"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call 864-617-0806</a>
-        <a class="btn ghost" href="#quote">Get a quote</a>
+        <a class="btn" href="tel:8646569542"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call (864) 656-9542</a>
+        <a class="btn line" href="#quote">Plan your event</a>
       </div>
-      <p class="note">Tell us the date and headcount — we'll build a menu around it.</p>
+      <p class="note">Serving Upstate South Carolina for more than 12 years.</p>
     </div>
-    <div class="platter" aria-hidden="true">
-      <!-- CSS/SVG illustration: tiered serving stand -->
+    <div class="setting" aria-hidden="true">
+      <!-- Illustration: top-down formal place setting on white linen under warm pendant light -->
       <svg viewBox="0 0 420 420">
         <defs>
-          <pattern id="ging" width="22" height="22" patternUnits="userSpaceOnUse">
-            <rect width="22" height="22" fill="#fbf6ee"/><rect width="11" height="22" fill="#2f6b5a" opacity=".28"/><rect width="22" height="11" fill="#2f6b5a" opacity=".28"/>
-          </pattern>
+          <radialGradient id="glow" cx="50%" cy="8%" r="75%">
+            <stop offset="0" stop-color="#6a4a22"/><stop offset=".45" stop-color="#2b2119"/><stop offset="1" stop-color="#161210"/>
+          </radialGradient>
+          <radialGradient id="warm" cx="50%" cy="30%" r="70%">
+            <stop offset="0" stop-color="#fffdf7"/><stop offset="1" stop-color="#f1e8d8"/>
+          </radialGradient>
         </defs>
-        <circle cx="210" cy="210" r="200" fill="url(#ging)"/>
-        <circle cx="210" cy="210" r="200" fill="none" stroke="#173f4b" stroke-width="3"/>
-        <!-- stand pole -->
-        <rect x="204" y="110" width="12" height="230" rx="6" fill="#173f4b"/>
-        <!-- bottom tier -->
-        <ellipse cx="210" cy="340" rx="150" ry="30" fill="#fffdf8" stroke="#173f4b" stroke-width="3"/>
-        <ellipse cx="210" cy="330" rx="150" ry="30" fill="#f0a35e" stroke="#173f4b" stroke-width="3"/>
-        <g fill="#2f6b5a"><circle cx="120" cy="325" r="11"/><circle cx="150" cy="332" r="11"/><circle cx="180" cy="326" r="11"/><circle cx="240" cy="326" r="11"/><circle cx="270" cy="333" r="11"/><circle cx="300" cy="325" r="11"/></g>
-        <g fill="#c94a2b"><circle cx="135" cy="315" r="6"/><circle cx="165" cy="320" r="6"/><circle cx="255" cy="316" r="6"/><circle cx="285" cy="321" r="6"/></g>
-        <!-- middle tier -->
-        <ellipse cx="210" cy="250" rx="110" ry="24" fill="#fffdf8" stroke="#173f4b" stroke-width="3"/>
-        <ellipse cx="210" cy="241" rx="110" ry="24" fill="#2f6b5a" stroke="#173f4b" stroke-width="3"/>
-        <g fill="#fbf6ee"><rect x="130" y="228" width="26" height="14" rx="4"/><rect x="166" y="232" width="26" height="14" rx="4"/><rect x="228" y="232" width="26" height="14" rx="4"/><rect x="264" y="228" width="26" height="14" rx="4"/></g>
-        <g fill="#f0a35e"><circle cx="143" cy="228" r="4"/><circle cx="179" cy="232" r="4"/><circle cx="241" cy="232" r="4"/><circle cx="277" cy="228" r="4"/></g>
-        <!-- top tier -->
-        <ellipse cx="210" cy="165" rx="70" ry="17" fill="#fffdf8" stroke="#173f4b" stroke-width="3"/>
-        <ellipse cx="210" cy="157" rx="70" ry="17" fill="#f0a35e" stroke="#173f4b" stroke-width="3"/>
-        <g fill="#173f4b"><path d="M180 155l10-14 10 14z"/><path d="M200 155l10-14 10 14z"/><path d="M220 155l10-14 10 14z"/></g>
-        <g fill="#c94a2b"><circle cx="190" cy="141" r="3.5"/><circle cx="210" cy="141" r="3.5"/><circle cx="230" cy="141" r="3.5"/></g>
-        <!-- finial -->
-        <circle cx="210" cy="104" r="12" fill="#f0a35e" stroke="#173f4b" stroke-width="3"/>
-        <!-- steam -->
-        <path d="M150 120c-8-10 8-18 0-28M270 120c-8-10 8-18 0-28" fill="none" stroke="#173f4b" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+        <rect width="420" height="420" fill="url(#glow)"/>
+        <!-- pendant lights -->
+        <g stroke="#c69a45" stroke-width="1.5">
+          <path d="M70 0v26M210 0v14M350 0v26"/>
+        </g>
+        <g fill="#151312" stroke="#c69a45" stroke-width="1.5">
+          <path d="M58 26h24l6 12H52z"/><path d="M198 14h24l6 12h-36z"/><path d="M338 26h24l6 12h-36z"/>
+        </g>
+        <g fill="#f6d68f"><ellipse cx="70" cy="40" rx="14" ry="3"/><ellipse cx="210" cy="28" rx="14" ry="3"/><ellipse cx="350" cy="40" rx="14" ry="3"/></g>
+        <!-- linen -->
+        <circle cx="210" cy="240" r="172" fill="url(#warm)"/>
+        <circle cx="210" cy="240" r="164" fill="none" stroke="#ddd1bd" stroke-width="1.2"/>
+        <!-- bread plate + butter knife -->
+        <circle cx="114" cy="142" r="26" fill="#fff" stroke="#151312" stroke-width="2"/>
+        <circle cx="114" cy="142" r="18" fill="none" stroke="#ddd1bd" stroke-width="1.2"/>
+        <path d="M98 150l30-15" stroke="#151312" stroke-width="3" stroke-linecap="round"/>
+        <!-- glasses -->
+        <circle cx="286" cy="118" r="17" fill="#fff" stroke="#151312" stroke-width="2"/>
+        <circle cx="286" cy="118" r="11" fill="none" stroke="#c9d3d6" stroke-width="2"/>
+        <circle cx="326" cy="146" r="18" fill="#fff" stroke="#151312" stroke-width="2"/>
+        <circle cx="326" cy="146" r="12" fill="#7d1d2c"/>
+        <!-- dessert spoon -->
+        <path d="M172 140h50" stroke="#151312" stroke-width="3" stroke-linecap="round"/>
+        <ellipse cx="236" cy="140" rx="13" ry="8" fill="#fff" stroke="#151312" stroke-width="2"/>
+        <!-- charger + plate -->
+        <circle cx="210" cy="250" r="86" fill="#e7d4a8" stroke="#c69a45" stroke-width="3"/>
+        <circle cx="210" cy="250" r="70" fill="#fff" stroke="#151312" stroke-width="2"/>
+        <circle cx="210" cy="250" r="52" fill="none" stroke="#e6ddcd" stroke-width="1.5"/>
+        <!-- folded napkin with ring -->
+        <g transform="rotate(-12 210 250)">
+          <rect x="174" y="226" width="72" height="48" rx="2" fill="#7d1d2c"/>
+          <path d="M174 238h72" stroke="#5e1420" stroke-width="1.5"/>
+          <rect x="203" y="221" width="14" height="58" rx="3" fill="#c69a45" stroke="#8f6c27" stroke-width="1"/>
+        </g>
+        <!-- fork (left) -->
+        <g fill="none" stroke="#151312" stroke-width="2.6" stroke-linecap="round">
+          <path d="M98 186v26M104 186v26M110 186v26M116 186v26"/>
+          <path d="M98 210q0 16 9 18q9-2 9-18"/>
+        </g>
+        <path d="M104.5 228h5l-1 92q-1.5 6-3 0z" fill="#151312"/>
+        <!-- knife (right) -->
+        <path d="M322 184q-14 16-12 66h12z" fill="#fff" stroke="#151312" stroke-width="2.2" stroke-linejoin="round"/>
+        <rect x="311" y="250" width="11" height="72" rx="5" fill="#151312"/>
+        <!-- spoon (right) -->
+        <ellipse cx="350" cy="206" rx="11" ry="17" fill="#fff" stroke="#151312" stroke-width="2.2"/>
+        <path d="M347.5 223h5l-1 98q-1.5 6-3 0z" fill="#151312"/>
+        <!-- rose petals scattered on linen -->
+        <g fill="#a82a36"><ellipse cx="150" cy="352" rx="6" ry="3.5" transform="rotate(30 150 352)"/><ellipse cx="270" cy="366" rx="6" ry="3.5" transform="rotate(-20 270 366)"/><ellipse cx="236" cy="380" rx="5" ry="3" transform="rotate(60 236 380)"/></g>
       </svg>
     </div>
   </div>
 </section>
-<div class="gingham" aria-hidden="true"></div>
 
-<section class="services" id="services" aria-labelledby="h-services">
+<section class="occasions" id="occasions" aria-labelledby="h-occ">
+  <div class="wrap center">
+    <span class="kicker">Celebrations we cater</span>
+    <h2 id="h-occ">Days worth remembering</h2>
+    <div class="rule" aria-hidden="true"><i></i></div>
+    <p class="intro">Carolina Catering is full-service: we plan the menu with you, then bring everything from finger food to a full meal so you can enjoy the day.</p>
+    <ul class="occ">
+      <li>
+        <svg viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="21" cy="32" r="11"/><circle cx="33" cy="32" r="11"/><path d="M27 6l4 6h-8z"/><path d="M27 12v8"/></svg>
+        <h3>Weddings</h3>
+        <p>For couples starting their new lives together, from the rehearsal to the reception.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h10l-1 13a4 4 0 0 1-8 0z"/><path d="M22 25v17M16 44h12"/><path d="M29 10h10l-1 13a4 4 0 0 1-8 0z"/><path d="M34 27v15M28 44h12"/><path d="M27 3v3M21 4l1 2M33 4l-1 2"/></svg>
+        <h3>Anniversaries</h3>
+        <p>Milestone dinners and parties that honor the years you've built together.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 22h26l-3 22H17z"/><path d="M12 22h30"/><path d="M20 22c0-6 3-11 7-11s7 5 7 11"/><path d="M27 11V7"/><circle cx="27" cy="5" r="2"/><path d="M21 31h12"/></svg>
+        <h3>Baby showers</h3>
+        <p>A beautiful spread for welcoming the newest member of your family.</p>
+      </li>
+    </ul>
+    <div class="range">
+      <p>And every kind of table in between:</p>
+      <ul class="chips"><li>Finger food</li><li>Hors d'oeuvres</li><li>Receptions</li><li>Boxed meals</li><li>Full meals</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="easy" id="easy" aria-labelledby="h-easy">
   <div class="wrap">
-    <span class="eyebrow">What we cater</span>
-    <h2 id="h-services">Pick the size of the spread. We handle the rest.</h2>
-    <p style="max-width:38em;color:var(--muted)">Carolina Catering is full-service — from light bites at a reception to a full meal for a crowd. Call and we'll tell you exactly what's included at each size.</p>
-    <ol class="tiers">
-      <li class="tier">
-        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30h36"/><path d="M10 30c0-8 6-13 14-13s14 5 14 13"/><circle cx="24" cy="14" r="2"/><path d="M4 36h40"/></svg>
-        <span class="num"><i aria-hidden="true"><b class="on"></b><b></b><b></b></i>Lightest spread</span>
-        <h3>Finger food</h3>
-        <p>Passed and plattered bites for receptions, open houses, showers and meetings.</p>
-        <ul><li>Appetizer platters</li><li>Hors d'oeuvres</li><li>Light receptions</li></ul>
-      </li>
-      <li class="tier">
-        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="18" width="36" height="16" rx="3"/><path d="M6 26h36M14 18v-6h20v6M10 34v6M38 34v6"/></svg>
-        <span class="num"><i aria-hidden="true"><b class="on"></b><b class="on"></b><b></b></i>Middle of the table</span>
-        <h3>Buffet &amp; drop-off</h3>
-        <p>Hot and cold spreads delivered and set up, ready for your guests to line up.</p>
-        <ul><li>Office lunches</li><li>Church &amp; family gatherings</li><li>Boxed meals</li></ul>
-      </li>
-      <li class="tier feast">
-        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="24" cy="30" rx="18" ry="6"/><path d="M8 30c0-9 7-16 16-16s16 7 16 16"/><path d="M24 14v-4M18 11l1-3M30 11l-1-3"/><circle cx="24" cy="9" r="1.5"/></svg>
-        <span class="num"><i aria-hidden="true"><b class="on"></b><b class="on"></b><b class="on"></b></i>The full feast</span>
-        <h3>Full meals &amp; feasts</h3>
-        <p>Complete, full-service meals for weddings, rehearsal dinners, banquets and big celebrations.</p>
-        <ul><li>Weddings</li><li>Banquets</li><li>Plated or family-style</li></ul>
-      </li>
-    </ol>
-    <p class="fine">Not sure which fits? Call and describe the event — we've been building Upstate menus for more than 12 years, and we'll point you to the right spread.</p>
+    <div>
+      <span class="kicker">Every week from our kitchen</span>
+      <h2 id="h-easy">Eatin' Easy</h2>
+      <div class="rule" aria-hidden="true"><i></i></div>
+      <p>Weekly featured heat-and-eat meals for busy weeknights. Choose a one-dish meal or a meal with a side, order ahead, and pick it up ready to warm.</p>
+      <ol class="steps">
+        <li><div><strong>See this week's featured meals</strong><span>A new lineup is posted each week.</span></div></li>
+        <li><div><strong>Order ahead</strong><span>One-dish meals or meals with a side.</span></div></li>
+        <li><div><strong>Pick up at a pop-up stop</strong><span>Heat, eat and enjoy your evening.</span></div></li>
+      </ol>
+      <p class="fine">Call <a href="tel:8646569542">(864) 656-9542</a> for this week's menu and pickup stops.</p>
+    </div>
+    <div class="box" aria-hidden="true">
+      <!-- Illustration: three-compartment take-home meal container with fork -->
+      <svg viewBox="0 0 360 300">
+        <rect x="46" y="30" width="268" height="240" rx="26" fill="#0d0b0a" stroke="#c69a45" stroke-width="2"/>
+        <rect x="60" y="44" width="240" height="104" rx="16" fill="#1d1916" stroke="#3a332d" stroke-width="2"/>
+        <rect x="60" y="158" width="114" height="98" rx="16" fill="#1d1916" stroke="#3a332d" stroke-width="2"/>
+        <rect x="186" y="158" width="114" height="98" rx="16" fill="#1d1916" stroke="#3a332d" stroke-width="2"/>
+        <!-- main: two golden portions -->
+        <ellipse cx="128" cy="96" rx="52" ry="38" fill="#d9a65a"/><ellipse cx="128" cy="90" rx="44" ry="28" fill="#e8bd73"/>
+        <ellipse cx="232" cy="96" rx="52" ry="38" fill="#d9a65a"/><ellipse cx="232" cy="90" rx="44" ry="28" fill="#e8bd73"/>
+        <path d="M98 84q30-14 60 0M202 84q30-14 60 0" stroke="#fff6e4" stroke-width="4" fill="none" stroke-linecap="round" opacity=".85"/>
+        <!-- sides: green vegetables -->
+        <g fill="#5d7f3a"><circle cx="96" cy="196" r="13"/><circle cx="122" cy="186" r="11"/><circle cx="140" cy="212" r="13"/><circle cx="104" cy="226" r="11"/><circle cx="222" cy="196" r="13"/><circle cx="250" cy="188" r="11"/><circle cx="266" cy="214" r="13"/><circle cx="230" cy="226" r="11"/></g>
+        <g fill="#e39b3a"><rect x="116" y="204" width="14" height="8" rx="3"/><rect x="88" y="208" width="12" height="7" rx="3"/><rect x="242" y="206" width="14" height="8" rx="3"/><rect x="214" y="210" width="12" height="7" rx="3"/></g>
+        <!-- fork -->
+        <g stroke="#e9e1d4" stroke-width="3" stroke-linecap="round" fill="none"><path d="M20 70v30M27 70v30M34 70v30"/><path d="M20 98q0 14 7 16q7-2 7-16"/></g>
+        <path d="M24.5 114h5l-1 128q-1.5 6-3 0z" fill="#e9e1d4"/>
+      </svg>
+    </div>
   </div>
 </section>
 
 <section class="why" id="why" aria-labelledby="h-why">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Why Carolina Catering</span>
-      <h2 id="h-why">Twelve-plus years of Upstate tables.</h2>
-      <div class="stamp" aria-hidden="true"><small>Serving the</small><b>12+</b><small>years · Upstate SC</small></div>
+      <span class="kicker">Why Carolina Catering</span>
+      <h2 id="h-why">More than twelve years of Upstate celebrations.</h2>
+      <div class="years" aria-hidden="true"><b>12+</b><span>Years serving the Upstate</span></div>
     </div>
     <ul>
       <li>
-        <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="22" cy="22" r="17"/><path d="M22 12v10l7 4"/></svg>
-        <div><strong>Full-service, start to finish</strong><span>You host the room; we handle the food from the first call to the last plate.</span></div>
+        <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="22" cy="22" r="17"/><path d="M22 12v10l7 4"/></svg>
+        <div><strong>Full-service, start to finish</strong><span>From the first call to the last plate, the food is handled so you can be present for your day.</span></div>
       </li>
       <li>
-        <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 30l6-14 8 10 6-6 8 10z"/><path d="M6 34h32"/></svg>
-        <div><strong>Any size event</strong><span>A tray of finger food for twelve or a full feast for the whole family reunion.</span></div>
+        <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30h32"/><path d="M10 30c0-7 5-12 12-12s12 5 12 12"/><circle cx="22" cy="15" r="2"/><path d="M4 35h36"/></svg>
+        <div><strong>Finger food to full meals</strong><span>Light bites for a shower or a complete dinner for a wedding reception.</span></div>
       </li>
       <li>
-        <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 6l4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1z"/></svg>
-        <div><strong>Rooted in the Upstate</strong><span>Based in Anderson and feeding Upstate South Carolina for more than 12 years.</span></div>
+        <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 38s-14-8-14-19a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 11-14 19-14 19z"/></svg>
+        <div><strong>Made for milestones</strong><span>Weddings, anniversaries and baby showers are what we love to cater.</span></div>
       </li>
       <li>
-        <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 34V16a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v18"/><path d="M6 34h32M16 20h12M16 26h8"/></svg>
-        <div><strong>Menus built around you</strong><span>Tell us the occasion, the crowd and the budget. We'll shape a menu to fit it.</span></div>
+        <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 6l4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1z"/></svg>
+        <div><strong>Rooted in the Upstate</strong><span>Serving Upstate South Carolina for more than 12 years.</span></div>
       </li>
     </ul>
   </div>
@@ -313,25 +395,25 @@ footer .brand{color:#fff}
 <section class="textback" id="textback" aria-labelledby="h-text">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Built into this site</span>
+      <span class="kicker">Built into this site</span>
       <h2 id="h-text">Never miss a call — we text you back in seconds</h2>
-      <p>Event planners call while you're plating a wedding. If a call goes unanswered, this site's missed-call text-back sends an instant text from Carolina Catering so the lead stays warm instead of calling the next caterer.</p>
+      <p>Brides and party planners call while you're serving someone else's big day. If a call goes unanswered, this site's missed-call text-back sends an instant text from Carolina Kitchen and Catering, so the booking stays yours.</p>
       <ol>
         <li>Someone calls and you can't pick up.</li>
-        <li>They get a text from Carolina Catering within seconds.</li>
-        <li>You reply when your hands are free — the booking is still yours.</li>
+        <li>They get a text from Carolina Kitchen and Catering within seconds.</li>
+        <li>You reply when your hands are free.</li>
       </ol>
     </div>
-    <div class="phone" role="img" aria-label="Phone mock-up: a missed call followed by an instant text reply from Carolina Catering">
+    <div class="phone" role="img" aria-label="Phone mock-up: a missed call followed by an instant text reply from Carolina Kitchen and Catering">
       <div class="screen">
         <div class="notif">
           <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/><path d="M16 3l5 5M21 3l-5 5"/></svg></span>
-          <div><time>2:14 PM</time><b>Missed call</b><span>Carolina Catering</span></div>
+          <div><time>2:14 PM</time><b>Missed call</b><span>(864) 656-9542</span></div>
         </div>
         <div class="sms">
-          <span class="from">Text message · Carolina Catering</span>
-          <div class="bubble">Hi, this is Carolina Catering — sorry we missed you! What date and roughly how many guests are you planning for? We'll get right back to you with options.</div>
-          <div class="bubble in">Oh great — Saturday the 21st, about 60 people for a rehearsal dinner.</div>
+          <span class="from">Text · Carolina Kitchen and Catering</span>
+          <div class="bubble">Hi, this is Carolina Kitchen and Catering — sorry we missed you! Is this for a wedding, anniversary or baby shower? Send the date and guest count and we'll get right back to you.</div>
+          <div class="bubble in">A wedding! Saturday, June 14th, about 120 guests.</div>
           <span class="stamp2">Sent 2:14 PM · auto-reply in 4 seconds</span>
         </div>
       </div>
@@ -342,12 +424,12 @@ footer .brand{color:#fff}
 <section class="reviews" id="reviews" aria-labelledby="h-reviews">
   <div class="wrap">
     <span class="label">Sample reviews</span>
-    <h2 id="h-reviews">What guests say after the plates are cleared</h2>
+    <h2 id="h-reviews">Kind words from the table</h2>
     <p style="color:var(--muted);max-width:40em">Placeholder reviews to show the layout. Your real Google and Facebook reviews would go here.</p>
     <ul class="cards">
-      <li class="card"><q>The finger food trays disappeared in twenty minutes. Setup was done before our guests even arrived.</q><div class="who"><i aria-hidden="true">M</i>Melissa · Sample review</div></li>
-      <li class="card"><q>Fed 120 at our reunion and nobody went back to an empty pan. Easy to work with from the first call.</q><div class="who"><i aria-hidden="true">D</i>Darnell · Sample review</div></li>
-      <li class="card"><q>Our office orders lunch from them every quarter now. Hot, on time, and the staff is a pleasure.</q><div class="who"><i aria-hidden="true">A</i>Ashley · Sample review</div></li>
+      <li class="card"><q>Our reception looked and tasted beautiful. We didn't think about the food once all night, which is exactly what we wanted.</q><div class="who"><i aria-hidden="true">K</i>Kayla · Sample review</div></li>
+      <li class="card"><q>We celebrated my parents' anniversary and every guest asked who catered. Easy to plan with from the first call.</q><div class="who"><i aria-hidden="true">J</i>James · Sample review</div></li>
+      <li class="card"><q>The baby shower spread was so pretty, and the finger food was gone by the end of the party.</q><div class="who"><i aria-hidden="true">T</i>Tasha · Sample review</div></li>
     </ul>
     <p class="fine">Sample reviews are illustrative placeholders using generic first names — not real customer quotes or ratings.</p>
   </div>
@@ -356,10 +438,14 @@ footer .brand{color:#fff}
 <section class="quote" id="quote" aria-labelledby="h-quote">
   <div class="wrap">
     <aside>
-      <span class="eyebrow">Get a quote</span>
-      <h2 id="h-quote">Tell us about the event.</h2>
-      <p>Date, headcount and the occasion are all we need to start. We'll follow up by phone or text with menu ideas and pricing.</p>
-      <p><strong>Prefer to talk?</strong> <a href="tel:8646170806">864-617-0806</a></p>
+      <span class="kicker">Event inquiry</span>
+      <h2 id="h-quote">Tell us about your day.</h2>
+      <div class="rule" aria-hidden="true"><i></i></div>
+      <p>The date, guest count and occasion are all we need to start. We'll follow up with menu ideas for your celebration.</p>
+      <ul class="contact">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:8646569542">(864) 656-9542</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@carolinacatering.net">info@carolinacatering.net</a></li>
+      </ul>
     </aside>
     <form id="quoteForm" novalidate>
       <div class="two">
@@ -368,33 +454,32 @@ footer .brand{color:#fff}
       </div>
       <div class="two">
         <label>Event date <input type="date" name="date"></label>
-        <label>Guests <input type="number" name="guests" min="1" placeholder="e.g. 60"></label>
+        <label>Guests <input type="number" name="guests" min="1" placeholder="e.g. 80"></label>
       </div>
       <label>Type of event
-        <select name="type"><option>Wedding or rehearsal dinner</option><option>Office or corporate lunch</option><option>Family reunion or party</option><option>Church or community event</option><option>Something else</option></select>
+        <select name="type"><option>Wedding</option><option>Anniversary</option><option>Baby shower</option><option>Other</option></select>
       </label>
-      <label>Anything else? <textarea name="msg" placeholder="Finger food only? Full meal? Any dietary needs?"></textarea></label>
-      <button class="btn" type="submit">Request my quote</button>
-      <p class="msg" id="formMsg" role="status" aria-live="polite">Thanks! This demo form doesn't send yet — on the live site, Carolina Catering would get your request instantly and text you back.</p>
+      <label>Tell us more <textarea name="msg" placeholder="Venue, finger food or a full meal, any dietary needs?"></textarea></label>
+      <button class="btn" type="submit">Send my inquiry</button>
+      <p class="msg" id="formMsg" role="status" aria-live="polite">Thank you! This demo form doesn't send yet — on the live site, Carolina Kitchen and Catering would get your inquiry instantly and text you back.</p>
     </form>
   </div>
 </section>
 
-<div class="gingham peach" aria-hidden="true"></div>
 <section class="area" id="area" aria-labelledby="h-area">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Service area</span>
-      <h2 id="h-area">Based in Anderson. Catering across the Upstate.</h2>
-      <p style="color:var(--muted);max-width:36em">We bring the spread to venues, offices, churches and homes throughout Upstate South Carolina. Outside the area? Call — we'll let you know.</p>
+      <span class="kicker">Service area</span>
+      <h2 id="h-area">Catering across the Upstate.</h2>
+      <p style="color:var(--muted);max-width:36em">We bring the meal to venues, churches, halls and homes throughout Upstate South Carolina. Planning outside the area? Call and ask.</p>
       <ul><li>Anderson</li><li>Upstate South Carolina</li></ul>
     </div>
     <div class="map" aria-hidden="true">
       <svg viewBox="0 0 400 350" role="img" aria-label="Outline of South Carolina with Anderson marked in the Upstate">
-      <path d="M31.8,30.3L57.2,22.2L59.1,23.9L66.9,19.1L75.0,15.3L82.3,13.5L84.2,14.2L87.6,10.0L89.0,13.2L95.4,11.5L147.8,13.9L177.1,15.2L192.5,16.2L193.0,20.5L191.1,24.4L192.5,26.1L200.8,20.2L212.6,36.3L211.4,47.3L261.1,48.1L281.7,48.6L298.8,48.7L323.3,73.2L331.9,82.6L361.0,111.9L386.9,138.7L383.3,139.3L373.2,143.4L365.7,148.8L355.9,158.6L350.9,165.0L349.0,168.6L344.5,173.3L340.6,180.9L337.0,195.0L337.8,199.4L335.9,203.3L331.9,207.1L325.5,210.4L323.0,218.3L318.3,217.5L313.5,218.8L310.5,215.6L306.0,218.3L303.2,223.4L304.1,225.9L306.3,225.1L306.3,227.8L302.1,229.4L297.1,233.0L294.6,237.2L285.1,242.0L282.3,238.9L279.2,239.5L278.9,242.1L283.7,243.9L282.3,248.7L275.3,252.9L273.4,256.1L270.6,255.7L263.9,257.5L259.1,262.3L257.5,260.8L247.4,268.1L245.2,266.4L241.0,268.7L240.4,266.3L236.8,266.3L235.7,269.7L239.9,276.5L237.9,282.5L229.0,287.5L223.7,289.1L223.2,285.8L217.9,282.5L214.8,284.3L214.2,286.8L217.6,288.0L221.5,292.8L217.3,298.1L210.3,302.9L207.8,302.9L203.1,308.3L204.5,310.0L202.0,309.7L195.8,303.9L192.7,305.3L186.9,302.5L185.5,297.5L186.6,295.4L183.5,290.0L186.3,286.4L184.7,280.3L179.4,272.1L180.5,269.3L174.1,262.8L167.1,258.8L163.7,254.9L165.1,251.6L164.0,247.7L163.7,243.4L162.6,240.8L162.6,233.9L160.1,232.7L159.6,228.7L156.2,223.6L157.6,218.1L152.3,214.6L147.8,209.9L145.3,210.0L137.8,205.6L135.6,201.9L136.1,198.6L133.0,199.0L129.4,195.6L130.5,193.2L122.7,186.5L123.8,183.9L122.7,180.8L124.7,177.3L123.6,175.4L119.4,173.2L114.4,165.7L109.6,162.7L106.3,162.6L102.6,159.5L102.4,156.2L99.9,152.9L98.7,148.0L90.6,140.0L82.6,135.8L77.3,130.0L74.7,129.9L71.7,121.7L67.8,117.8L65.5,112.4L62.2,110.5L60.2,105.0L60.2,100.8L57.2,96.6L56.3,92.6L53.0,90.1L52.1,84.9L49.9,79.8L47.7,78.8L39.9,80.1L33.5,75.9L27.0,67.5L22.3,67.0L13.9,60.3L13.1,55.1L15.3,53.0L15.0,50.1L22.3,41.6L30.9,36.1L31.8,30.3Z" fill="#fffdf8" stroke="#173f4b" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
-      <text x="200" y="342" text-anchor="middle" font-family="Fraunces,serif" font-style="italic" font-size="22" fill="#2f6b5a">Upstate South Carolina</text>
-      <circle cx="67.4" cy="77.1" r="15.2" fill="#173f4b" opacity=".18"/><circle cx="67.4" cy="77.1" r="7" fill="#173f4b" stroke="#fffdf8" stroke-width="2" vector-effect="non-scaling-stroke"/>
-      <text x="77.9" y="83.6" text-anchor="start" font-family="Figtree,sans-serif" font-weight="700" font-size="18.7" letter-spacing="0" fill="#173f4b" stroke="#fffdf8" stroke-width="4.1" stroke-linejoin="round" paint-order="stroke">Anderson</text>
+      <path d="M31.8,30.3L57.2,22.2L59.1,23.9L66.9,19.1L75.0,15.3L82.3,13.5L84.2,14.2L87.6,10.0L89.0,13.2L95.4,11.5L147.8,13.9L177.1,15.2L192.5,16.2L193.0,20.5L191.1,24.4L192.5,26.1L200.8,20.2L212.6,36.3L211.4,47.3L261.1,48.1L281.7,48.6L298.8,48.7L323.3,73.2L331.9,82.6L361.0,111.9L386.9,138.7L383.3,139.3L373.2,143.4L365.7,148.8L355.9,158.6L350.9,165.0L349.0,168.6L344.5,173.3L340.6,180.9L337.0,195.0L337.8,199.4L335.9,203.3L331.9,207.1L325.5,210.4L323.0,218.3L318.3,217.5L313.5,218.8L310.5,215.6L306.0,218.3L303.2,223.4L304.1,225.9L306.3,225.1L306.3,227.8L302.1,229.4L297.1,233.0L294.6,237.2L285.1,242.0L282.3,238.9L279.2,239.5L278.9,242.1L283.7,243.9L282.3,248.7L275.3,252.9L273.4,256.1L270.6,255.7L263.9,257.5L259.1,262.3L257.5,260.8L247.4,268.1L245.2,266.4L241.0,268.7L240.4,266.3L236.8,266.3L235.7,269.7L239.9,276.5L237.9,282.5L229.0,287.5L223.7,289.1L223.2,285.8L217.9,282.5L214.8,284.3L214.2,286.8L217.6,288.0L221.5,292.8L217.3,298.1L210.3,302.9L207.8,302.9L203.1,308.3L204.5,310.0L202.0,309.7L195.8,303.9L192.7,305.3L186.9,302.5L185.5,297.5L186.6,295.4L183.5,290.0L186.3,286.4L184.7,280.3L179.4,272.1L180.5,269.3L174.1,262.8L167.1,258.8L163.7,254.9L165.1,251.6L164.0,247.7L163.7,243.4L162.6,240.8L162.6,233.9L160.1,232.7L159.6,228.7L156.2,223.6L157.6,218.1L152.3,214.6L147.8,209.9L145.3,210.0L137.8,205.6L135.6,201.9L136.1,198.6L133.0,199.0L129.4,195.6L130.5,193.2L122.7,186.5L123.8,183.9L122.7,180.8L124.7,177.3L123.6,175.4L119.4,173.2L114.4,165.7L109.6,162.7L106.3,162.6L102.6,159.5L102.4,156.2L99.9,152.9L98.7,148.0L90.6,140.0L82.6,135.8L77.3,130.0L74.7,129.9L71.7,121.7L67.8,117.8L65.5,112.4L62.2,110.5L60.2,105.0L60.2,100.8L57.2,96.6L56.3,92.6L53.0,90.1L52.1,84.9L49.9,79.8L47.7,78.8L39.9,80.1L33.5,75.9L27.0,67.5L22.3,67.0L13.9,60.3L13.1,55.1L15.3,53.0L15.0,50.1L22.3,41.6L30.9,36.1L31.8,30.3Z" fill="#fffdf9" stroke="#151312" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <text x="200" y="342" text-anchor="middle" font-family="Marcellus,Georgia,serif" font-size="22" fill="#7d1d2c">Upstate South Carolina</text>
+      <circle cx="67.4" cy="77.1" r="15.2" fill="#c69a45" opacity=".35"/><circle cx="67.4" cy="77.1" r="7" fill="#7d1d2c" stroke="#fffdf9" stroke-width="2" vector-effect="non-scaling-stroke"/>
+      <text x="77.9" y="83.6" text-anchor="start" font-family="Karla,sans-serif" font-weight="700" font-size="18.7" letter-spacing="0" fill="#151312" stroke="#fffdf9" stroke-width="4.1" stroke-linejoin="round" paint-order="stroke">Anderson</text>
       </svg>
     </div>
   </div>
@@ -403,21 +488,22 @@ footer .brand{color:#fff}
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="#top">Carolina Catering</a>
-    <p>Full-service catering · Anderson, SC · Upstate South Carolina<br>Phone: <a href="tel:8646170806">864-617-0806</a></p>
-    <p style="font-size:.82rem;opacity:.8">Demo preview built by David. Not the official Carolina Catering website. Sample reviews are placeholders.</p>
+    <a class="brand" href="#top">Carolina Kitchen and Catering</a>
+    <span class="script" aria-hidden="true">a Delicious Difference</span>
+    <p>Weddings · Anniversaries · Baby showers · Eatin' Easy weekly meals<br>Serving Upstate South Carolina<br>Phone: <a href="tel:8646569542">(864) 656-9542</a> · <a href="mailto:info@carolinacatering.net">info@carolinacatering.net</a></p>
+    <p style="font-size:.82rem;opacity:.85">Demo preview built by David. Not the official Carolina Kitchen and Catering website. Sample reviews are placeholders.</p>
   </div>
 </footer>
 
 <div class="sticky">
-  <a class="btn peach" href="tel:8646170806"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Tap to call 864-617-0806</a>
+  <a class="btn" href="tel:8646569542"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Tap to call (864) 656-9542</a>
 </div>
 
 <script>
 document.getElementById('quoteForm').addEventListener('submit',function(e){
   e.preventDefault();
   document.getElementById('formMsg').classList.add('show');
-  this.querySelector('button').textContent='Request sent (demo)';
+  this.querySelector('button').textContent='Inquiry sent (demo)';
 });
 </script>
 </body>
