@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Charles &amp; Al's Barber | Barber shop in Clemson, SC</title>
+<meta name="description" content="Charles &amp; Al's Barber: an old-school barber shop in Clemson, SC. Haircuts, beard trims and hot-lather neck shaves. Call 864-654-3421.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Franklin:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121212;--ink-2:#2a2a2a;--paper:#fafaf7;--paper-2:#f0efe9;--line:#d9d7cf;
+  --red:#d62839;--red-d:#b11d2c;--blue:#1d4e89;--blue-d:#153a66;--mute:#5a5a56;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:6rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;padding-top:2.6rem;padding-bottom:5rem;font-family:"Libre Franklin",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--paper);overflow-x:hidden}
+h1,h2,h3{font-family:"Abril Fatface",Georgia,serif;font-weight:400;line-height:1.02;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.8rem,9vw,5.4rem)}
+h2{font-size:clamp(2rem,5vw,3rem)}
+h3{font-size:1.25rem;font-family:"Libre Franklin",sans-serif;font-weight:800;letter-spacing:.01em}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:min(1100px,100% - 2rem);margin-inline:auto}
+section{padding:4.5rem 0}
+.eyebrow{display:inline-block;font-weight:800;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin:0 0 .8rem;border-bottom:2px solid var(--red);padding-bottom:.2rem}
+
+/* barber pole stripe utility */
+.pole{background:repeating-linear-gradient(135deg,var(--red) 0 14px,var(--paper) 14px 28px,var(--blue) 28px 42px,var(--paper) 42px 56px)}
+.checker{background-color:var(--paper);background-image:linear-gradient(45deg,var(--ink) 25%,transparent 25%,transparent 75%,var(--ink) 75%),linear-gradient(45deg,var(--ink) 25%,transparent 25%,transparent 75%,var(--ink) 75%);background-size:36px 36px;background-position:0 0,18px 18px}
+
+.demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--ink);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:.55rem 1rem}
+
+header.site{position:sticky;top:2.6rem;z-index:90;background:var(--paper);border-bottom:2px solid var(--ink)}
+header.site::before{content:"";display:block;height:8px}
+header.site.pole-top::before{background:repeating-linear-gradient(135deg,var(--red) 0 12px,var(--paper) 12px 24px,var(--blue) 24px 36px,var(--paper) 36px 48px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);min-height:48px}
+.brand .mark{width:38px;height:38px;flex:none}
+.brand b{font-family:"Abril Fatface",serif;font-weight:400;font-size:1.3rem;line-height:1;display:block}
+.brand small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:.15rem}
+.nav ul{display:none;list-style:none;margin:0;padding:0;gap:1.3rem}
+.nav ul a{text-decoration:none;color:var(--ink);font-weight:600;display:inline-block;padding:.6rem .2rem;border-bottom:2px solid transparent}
+.nav ul a:hover{border-bottom-color:var(--red)}
+@media (min-width:900px){.nav ul{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.75rem 1.4rem;font-weight:800;font-size:1rem;text-decoration:none;border:2px solid var(--ink);border-radius:2px;cursor:pointer;transition:background .15s,color .15s,transform .15s;font-family:inherit}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d);border-color:var(--red-d)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--ink-2)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.nav .btn{display:none}
+@media (min-width:600px){.nav .btn{display:inline-flex}}
+
+/* hero: shop-front sign */
+.hero{padding:3rem 0 0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:2.5rem;align-items:center}
+@media (min-width:940px){.hero .wrap{grid-template-columns:1.1fr .9fr}}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero h1 .amp{font-style:italic;color:var(--blue)}
+.hero .lead{font-size:1.2rem;color:var(--ink-2);max-width:40ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.6rem}
+.hero-ctas .num{font-size:.9rem;color:var(--mute);width:100%;margin:.2rem 0 0}
+.hero-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem;padding:0;list-style:none}
+.hero-tags li{font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border:2px solid var(--ink);padding:.35rem .7rem;border-radius:999px}
+
+.sign{position:relative;margin-inline:auto;width:min(420px,100%)}
+.sign-board{background:var(--ink);color:var(--paper);padding:2rem 1.5rem 1.6rem;border:6px double var(--paper);outline:4px solid var(--ink);text-align:center;position:relative}
+.sign-board .est{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:#bdbdb6;margin:0 0 .6rem}
+.sign-board .big{font-family:"Abril Fatface",serif;font-size:clamp(2.2rem,7vw,3rem);line-height:1;margin:0}
+.sign-board .big span{display:block;color:var(--red);font-size:.55em;margin:.35rem 0;font-family:"Libre Franklin",sans-serif;font-weight:800;letter-spacing:.3em}
+.sign-board .sub{font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;margin:.8rem 0 0;color:#e6e6df}
+.sign-board .divider{width:60px;height:3px;background:var(--red);margin:1rem auto}
+.sign-pole{position:absolute;left:-26px;top:-26px;width:34px;height:150px;border-radius:17px;border:3px solid var(--ink);overflow:hidden;background:var(--paper);box-shadow:0 10px 20px -10px rgba(0,0,0,.5)}
+.sign-pole::before{content:"";position:absolute;inset:-100% 0 0;background:repeating-linear-gradient(135deg,var(--red) 0 12px,var(--paper) 12px 24px,var(--blue) 24px 36px,var(--paper) 36px 48px);animation:spin 3s linear infinite}
+@keyframes spin{to{transform:translateY(50%)}}
+.sign-pole::after{content:"";position:absolute;left:6px;right:6px;top:-6px;height:12px;background:var(--ink);border-radius:50%}
+@media (max-width:480px){.sign-pole{left:-14px;top:-18px;width:26px;height:110px}}
+.floor{height:70px;margin-top:-1px;border-top:3px solid var(--ink)}
+
+/* services price board */
+.board{background:var(--ink);color:var(--paper)}
+.board .eyebrow{color:#ff8a94;border-color:#ff8a94}
+.board h2{color:#fff}
+.board .intro{color:#d6d6cf}
+.menu{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:0;border-top:1px solid #3a3a3a}
+.menu li{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:.9rem;padding:1.05rem 0;border-bottom:1px solid #3a3a3a}
+.menu .dots{display:none}
+.menu .n{font-family:"Abril Fatface",serif;font-size:1.35rem;color:#fff}
+.menu .dots{border-bottom:2px dotted #5a5a5a;transform:translateY(-6px)}
+.menu .d{font-size:.95rem;color:#cfcfc8;grid-column:1 / -1;margin-top:-.35rem;max-width:55ch}
+.menu .ask{font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#ff8a94;white-space:nowrap}
+@media (min-width:700px){.menu li{grid-template-columns:auto 1fr auto}.menu .dots{display:block}.menu .d{grid-column:1 / span 2}}
+.board-foot{margin-top:1.4rem;font-size:.92rem;color:#bdbdb6}
+
+/* why-us: two-column, left-aligned */
+.why .wrap{display:grid;gap:2.5rem}
+@media (min-width:900px){.why .wrap{grid-template-columns:.8fr 1.2fr;align-items:start}}
+.why-list{list-style:none;margin:0;padding:0;display:grid;gap:1.2rem}
+.why-list li{display:grid;grid-template-columns:52px 1fr;gap:1rem;align-items:start}
+.why-list .ic{width:52px;height:52px;border:2px solid var(--ink);border-radius:50%;display:grid;place-items:center;background:#fff}
+.why-list .ic svg{width:26px;height:26px}
+.why-list h3{margin:.2rem 0 .25rem}
+.why-list p{margin:0;color:var(--ink-2)}
+.why .sticky-note{background:var(--blue);color:#fff;padding:1.5rem;border-radius:2px;max-width:34ch;font-size:1.05rem;position:relative}
+.why .sticky-note::after{content:"";position:absolute;left:1.5rem;bottom:-14px;border:14px solid transparent;border-top-color:var(--blue);border-bottom:0;border-left:0}
+.why .sticky-note b{font-family:"Abril Fatface",serif;font-weight:400;font-size:1.5rem;display:block;margin-bottom:.4rem}
+
+/* missed call */
+.mc{background:var(--paper-2);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.mc .wrap{display:grid;gap:2.5rem;align-items:center}
+@media (min-width:900px){.mc .wrap{grid-template-columns:1.1fr .9fr}}
+.mc ul{padding-left:1.2rem;margin:0}
+.mc li{margin:.4rem 0}
+.phone{width:min(300px,100%);margin-inline:auto;aspect-ratio:9/18.5;background:var(--ink);border-radius:40px;padding:12px;box-shadow:0 30px 60px -25px rgba(0,0,0,.6);position:relative}
+.phone .screen{background:#fff;border-radius:30px;height:100%;overflow:hidden;display:flex;flex-direction:column}
+.phone .island{width:84px;height:24px;background:var(--ink);border-radius:14px;margin:10px auto 0}
+.phone .time{font-weight:800;font-size:.8rem;text-align:center;margin-top:.6rem}
+.phone .thread{padding:1rem .9rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+.bubble{font-size:.84rem;line-height:1.45;padding:.7rem .85rem;border-radius:16px;max-width:92%}
+.bubble.missed{align-self:flex-start;background:#fde8ea;color:#8f1120;display:flex;gap:.5rem;align-items:center;font-weight:800;border-radius:12px}
+.bubble.missed svg{width:18px;height:18px;flex:none}
+.bubble.sms{align-self:flex-end;background:var(--blue);color:#fff;border-bottom-right-radius:4px;animation:pop .5s .6s both}
+.bubble.sms b{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-bottom:.25rem}
+.stamp{font-size:.7rem;color:var(--mute);align-self:flex-end}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* reviews */
+.rev-note{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:#fff;border:2px dashed var(--ink);padding:.35rem .7rem;margin-bottom:1rem}
+.rev-grid{display:grid;gap:1.25rem;margin-top:2rem}
+@media (min-width:760px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{border-left:4px solid var(--red);padding:.4rem 0 .4rem 1.2rem}
+.rev .stars{color:var(--red);letter-spacing:.1em;font-size:.95rem}
+.rev p{margin:.5rem 0;font-size:1rem}
+.rev footer{font-size:.85rem;color:var(--mute);font-weight:600}
+
+/* form */
+.quote{background:var(--ink);color:var(--paper)}
+.quote .eyebrow{color:#ff8a94;border-color:#ff8a94}
+.quote h2{color:#fff}
+.quote .wrap{display:grid;gap:2.5rem}
+@media (min-width:900px){.quote .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.quote p{color:#d6d6cf}
+form{display:grid;gap:1rem;background:var(--paper);color:var(--ink);padding:1.5rem;border-radius:2px;border:3px solid var(--paper);outline:3px solid var(--red);outline-offset:-9px}
+.row{display:grid;gap:1rem}
+@media (min-width:600px){.row{grid-template-columns:1fr 1fr}}
+label{font-weight:800;font-size:.85rem;letter-spacing:.04em;display:block;margin-bottom:.3rem}
+input,select,textarea{width:100%;min-height:48px;padding:.7rem .85rem;border:2px solid var(--ink);border-radius:2px;background:#fff;font:inherit;color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+.msg{display:none;background:#e6f0fb;border:2px solid var(--blue);color:var(--blue-d);padding:1rem;font-weight:600}
+.msg.show{display:block}
+
+/* area */
+.area .wrap{display:grid;gap:2rem;align-items:center}
+@media (min-width:900px){.area .wrap{grid-template-columns:1fr 1fr}}
+.area-map{background:#fff;border:2px solid var(--ink);padding:1.5rem;position:relative}
+.area-map svg{width:100%;height:auto;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:1rem 0 0}
+.chips li{background:var(--ink);color:#fff;font-weight:800;font-size:.82rem;letter-spacing:.06em;padding:.45rem .8rem;border-radius:2px}
+.chips li.alt{background:var(--blue)}
+
+footer.site{background:var(--paper);border-top:2px solid var(--ink);padding:2rem 0 1.5rem;font-size:.95rem}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+footer.site a[href^="tel:"]{font-weight:800;display:inline-block;padding:11px 0}
+footer.site small{color:var(--mute);width:100%}
+
+.sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:95;padding:.6rem 1rem calc(.6rem + env(safe-area-inset-bottom));background:var(--paper);border-top:2px solid var(--ink)}
+.sticky-call .btn{width:100%}
+@media (min-width:900px){.sticky-call{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="site pole-top">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="13" y="2" width="14" height="36" rx="7" fill="#fafaf7" stroke="#121212" stroke-width="2"/><path d="M14 8l12-6M14 15l12-6M14 22l12-6M14 29l12-6M14 36l12-6" stroke="#d62839" stroke-width="3"/><path d="M14 11.5l12-6M14 18.5l12-6M14 25.5l12-6M14 32.5l12-6" stroke="#1d4e89" stroke-width="3"/><rect x="11" y="1" width="18" height="5" rx="2.5" fill="#121212"/><rect x="11" y="34" width="18" height="5" rx="2.5" fill="#121212"/></svg>
+      <span><b>Charles &amp; Al's</b><small>Barber · Clemson, SC</small></span>
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">The shop</a></li>
+      <li><a href="#textback">Text-back</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#area">Find us</a></li>
+    </ul>
+    <a class="btn btn-red" href="tel:8646543421"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call the shop</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Old-school barber shop · Clemson</p>
+        <h1 id="hero-h">A proper cut, <span class="amp">&amp;</span> a <em>straight-razor</em> finish.</h1>
+        <p class="lead">Charles &amp; Al's is a traditional barber shop in Clemson, SC. Clippers, shears, a hot lather neck shave and a conversation worth sitting still for.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-red" href="tel:8646543421">Call 864-654-3421</a>
+          <a class="btn btn-ghost" href="#services">See the service board</a>
+          <p class="num">Tap to call from your phone. No app, no account.</p>
+        </div>
+        <ul class="hero-tags" aria-label="At a glance">
+          <li>Clipper &amp; shear cuts</li>
+          <li>Beard work</li>
+          <li>Hot lather neck shave</li>
+        </ul>
+      </div>
+      <div class="sign" aria-hidden="true">
+        <div class="sign-pole"></div>
+        <div class="sign-board">
+          <p class="est">Clemson · South Carolina</p>
+          <p class="big">Charles<span>&amp;</span>Al's</p>
+          <div class="divider"></div>
+          <p class="sub">Barber shop</p>
+        </div>
+      </div>
+    </div>
+    <div class="floor checker" aria-hidden="true"></div>
+  </section>
+
+  <section class="board" id="services" aria-labelledby="serv-h">
+    <div class="wrap">
+      <p class="eyebrow">Service board</p>
+      <h2 id="serv-h">What's on the board.</h2>
+      <p class="intro">The standard menu of a traditional shop. Tell the barber the guard number and how you want the neckline, and he'll take it from there.</p>
+      <ul class="menu">
+        <li><span class="n">Haircut</span><span class="dots"></span><span class="ask">Ask at the chair</span><span class="d">Clippers, shears or both. Tapers, fades, scissor cuts, flat tops and the classic side part.</span></li>
+        <li><span class="n">Haircut &amp; beard trim</span><span class="dots"></span><span class="ask">Ask at the chair</span><span class="d">The cut plus your beard shaped, lined up and evened out.</span></li>
+        <li><span class="n">Beard trim</span><span class="dots"></span><span class="ask">Ask at the chair</span><span class="d">Length taken down, cheek and neck lines cleaned up.</span></li>
+        <li><span class="n">Hot lather neck shave</span><span class="dots"></span><span class="ask">Ask at the chair</span><span class="d">Straight razor and warm lather to finish the neckline and around the ears.</span></li>
+        <li><span class="n">Line-up / edge-up</span><span class="dots"></span><span class="ask">Ask at the chair</span><span class="d">Hairline, temples and neckline sharpened between full cuts.</span></li>
+        <li><span class="n">Kids' &amp; seniors' cuts</span><span class="dots"></span><span class="ask">Ask at the chair</span><span class="d">First haircuts to Sunday trims, all welcome.</span></li>
+      </ul>
+      <p class="board-foot">Prices are set in the shop, so this demo doesn't list them. Call <a href="tel:8646543421" style="color:#fff">864-654-3421</a> with any question.</p>
+    </div>
+  </section>
+
+  <section class="why" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">The shop</p>
+        <h2 id="why-h">Why folks keep the same barber for years.</h2>
+        <div class="sticky-note">
+          <b>Chair talk, Clemson style.</b>
+          A traditional shop runs on regulars: same chair, same barber, same conversation picked up where it left off.
+        </div>
+      </div>
+      <ul class="why-list">
+        <li>
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></svg></span>
+          <div><h3>Barbers, not stylists</h3><p>Clipper work, shear work and a blade finish are the whole job here, done the traditional way.</p></div>
+        </li>
+        <li>
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20V9l6-5 6 5v11"/><path d="M10 20v-6h4v6"/></svg></span>
+          <div><h3>A Clemson fixture</h3><p>An old-school shop in town: no gimmicks, no upsell, just a good cut and a handshake.</p></div>
+        </li>
+        <li>
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><h3>Call before you come</h3><p>One quick call tells you how the chairs look right now, so you're not waiting longer than you need to.</p></div>
+        </li>
+        <li>
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-2.8L7 19l1-6-4-4 5.5-.5z"/></svg></span>
+          <div><h3>Every age in the chair</h3><p>Students, dads, granddads and the little ones getting a first cut all get the same care.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mc" id="textback" aria-labelledby="mc-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Demo feature</p>
+        <h2 id="mc-h">Never miss a call — we text you back in seconds</h2>
+        <p>When both hands are busy with clippers, the phone rings out and that customer tries the shop down the road. Missed-call text-back sends an instant text in the Charles &amp; Al's name so they know you're open and cutting.</p>
+        <ul>
+          <li>Reply goes out seconds after a missed call</li>
+          <li>Sent from the shop's own number, in the shop's name</li>
+          <li>Tells them you're mid-cut and to come on by or text back</li>
+        </ul>
+      </div>
+      <div class="phone" role="img" aria-label="Phone mock-up showing a missed call followed by an instant text reply from Charles and Al's Barber">
+        <div class="screen">
+          <div class="island"></div>
+          <div class="time">11:15 AM</div>
+          <div class="thread">
+            <div class="bubble missed">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2l6 6M22 2l-6 6"/><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              <span>Missed call · 11:15 AM</span>
+            </div>
+            <div class="bubble sms">
+              <b>Charles &amp; Al's Barber</b>
+              Hey, this is Charles &amp; Al's Barber in Clemson. Sorry we missed you, we're mid-cut. Come on by, or text back and we'll let you know how the chairs look.
+            </div>
+            <div class="stamp">Sent automatically · 11:15 AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <span class="rev-note">Sample reviews · placeholder text</span>
+      <h2 id="rev-h">What a review wall could look like.</h2>
+      <p>These are example reviews to show the layout. Real customer reviews would go here.</p>
+      <div class="rev-grid">
+        <article class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Same cut every time, exactly how I ask for it. Number two on the sides, scissors on top. In and out."</p>
+          <footer>Mark · Clemson</footer>
+        </article>
+        <article class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Took my son for his first real haircut. Patient, quick, and he actually sat still for the hot towel."</p>
+          <footer>Daniel · Clemson</footer>
+        </article>
+        <article class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"A real barber shop. The straight-razor neck shave at the end is worth the trip by itself."</p>
+          <footer>Chris · Central</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote" aria-labelledby="q-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="q-h">Ask a question or request a time.</h2>
+        <p>Quickest is a call to <a href="tel:8646543421" style="color:#fff;font-weight:800">864-654-3421</a>. Or leave your details here and the shop gets back to you.</p>
+        <p>This demo form doesn't send anything yet. On the real site it would text the shop and email a copy.</p>
+      </div>
+      <form id="qform" novalidate>
+        <div class="row">
+          <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div><label for="f-svc">What do you need?</label>
+          <select id="f-svc" name="service">
+            <option>Haircut</option><option>Haircut &amp; beard trim</option><option>Beard trim</option><option>Hot lather neck shave</option><option>Line-up</option><option>Kid's or senior's cut</option><option>Something else</option>
+          </select>
+        </div>
+        <div><label for="f-msg">Anything else?</label><textarea id="f-msg" name="message" placeholder="When you'd like to come in, how many people, anything the barber should know."></textarea></div>
+        <button class="btn btn-red" type="submit">Send to the shop</button>
+        <p class="msg" id="qmsg" role="status">Thanks! This demo form doesn't send yet. For a real request, call 864-654-3421.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="area" id="area" aria-labelledby="area-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Find us</p>
+        <h2 id="area-h">Clemson's shop, with regulars from all around.</h2>
+        <p>Charles &amp; Al's is in Clemson, SC, an easy stop from campus, downtown and the towns next door.</p>
+        <ul class="chips" aria-label="Nearby towns">
+          <li>Clemson</li><li class="alt">Central</li><li>Pendleton</li><li class="alt">Seneca</li><li>Six Mile</li>
+        </ul>
+        <p style="margin-top:1.2rem"><a class="btn btn-ink" href="tel:8646543421">Call for directions</a></p>
+      </div>
+      <div class="area-map" aria-hidden="true">
+        <svg viewBox="0 0 400 260">
+          <rect width="400" height="260" fill="#fafaf7"/>
+          <path d="M0 150 C 80 120, 140 170, 220 130 S 360 120, 400 90" fill="none" stroke="#1d4e89" stroke-width="5" opacity=".35"/>
+          <path d="M40 0 C 90 60, 60 140, 120 200 S 200 240, 260 260" fill="none" stroke="#1d4e89" stroke-width="3" opacity=".25"/>
+          <path d="M0 210 L400 170" stroke="#121212" stroke-width="2" stroke-dasharray="6 6" opacity=".4"/>
+          <circle cx="205" cy="128" r="46" fill="none" stroke="#d62839" stroke-width="2" stroke-dasharray="4 5"/>
+          <g transform="translate(205 128)"><rect x="-10" y="-24" width="20" height="40" rx="10" fill="#fafaf7" stroke="#121212" stroke-width="2"/><path d="M-8 -16l16-8M-8 -8l16-8M-8 0l16-8M-8 8l16-8" stroke="#d62839" stroke-width="3"/><path d="M-8 -12l16-8M-8 -4l16-8M-8 4l16-8" stroke="#1d4e89" stroke-width="3"/></g>
+          <text x="205" y="190" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="800" font-size="15" fill="#121212">CLEMSON</text>
+          <text x="90" y="70" font-family="Libre Franklin,sans-serif" font-weight="600" font-size="12" fill="#5a5a56">Seneca</text>
+          <text x="300" y="60" font-family="Libre Franklin,sans-serif" font-weight="600" font-size="12" fill="#5a5a56">Central</text>
+          <text x="280" y="235" font-family="Libre Franklin,sans-serif" font-weight="600" font-size="12" fill="#5a5a56">Pendleton</text>
+          <text x="60" y="240" font-family="Libre Franklin,sans-serif" font-weight="600" font-size="12" fill="#5a5a56">Lake Hartwell</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span><strong>Charles &amp; Al's Barber</strong> · Clemson, SC</span>
+    <a href="tel:8646543421">864-654-3421</a>
+    <small>Demo preview built by David. Not affiliated with or endorsed by Charles &amp; Al's Barber. Reviews shown are placeholders.</small>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <a class="btn btn-red" href="tel:8646543421"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call the shop · 864-654-3421</a>
+</div>
+
+<script>
+document.getElementById('qform').addEventListener('submit',function(e){e.preventDefault();document.getElementById('qmsg').classList.add('show');this.querySelector('button').textContent='Sent (demo)';});
+</script>
+</body>
+</html>
