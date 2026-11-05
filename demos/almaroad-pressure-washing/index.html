@@ -123,6 +123,17 @@ section{padding:64px 0}
 .job-grid{display:grid;gap:18px;margin-top:26px;justify-items:center}
 .job{margin:0;width:100%;max-width:430px;background:var(--sky-xl);border:1px solid var(--line);border-radius:10px;padding:8px 8px 10px}
 .job.stairs{max-width:309px}
+.ba{position:relative;width:100%;max-width:127px;aspect-ratio:127/195;margin:0 auto;border-radius:6px;overflow:hidden;background:#cdd7e2;touch-action:pan-y}
+.ba img{position:absolute;inset:0;width:100%;height:100%;display:block;user-select:none;-webkit-user-drag:none}
+.ba .ba-before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 0 1px rgba(36,76,122,.35);pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:var(--pos);width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#fff;border:2px solid var(--sky);display:grid;place-items:center;box-shadow:0 3px 10px rgba(0,0,0,.3);pointer-events:none}
+.ba-knob svg{width:18px;height:18px}
+.ba-tag{position:absolute;z-index:1;font:600 12px/1 Poppins,sans-serif;padding:5px 7px;border-radius:5px;pointer-events:none}
+.ba-tag.b{top:6px;left:6px;background:rgba(42,33,25,.85);color:#fff}
+.ba-tag.a{bottom:6px;right:6px;background:var(--sky-d);color:#fff}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:2}
+.ba:has(input:focus-visible){outline:3px solid var(--sky-d);outline-offset:3px}
 .job img{display:block;width:100%;height:auto;border-radius:6px}
 .job figcaption{font-weight:600;font-size:15px;color:var(--ink);margin-top:8px;text-align:center}
 .services{background:var(--sky);position:relative}
@@ -261,10 +272,97 @@ footer .fname{color:#fff;font:700 24px/1.2 Lora,Georgia,serif}
   .callbar{display:none}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* pressure-wash intro (canvas; CSS grime + fade-out are the no-JS fallback) */
+.wash{position:fixed;inset:0;z-index:99;pointer-events:none;opacity:.92;overflow:hidden;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.03' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .24  0 0 0 0 .27  0 0 0 0 .16  0 0 0 1.3 -.45'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(ellipse at 22% 28%,rgba(88,104,56,.85),transparent 55%),radial-gradient(ellipse at 78% 72%,rgba(66,62,44,.9),transparent 60%),radial-gradient(ellipse at 60% 20%,rgba(104,100,72,.7),transparent 45%),linear-gradient(180deg,#6f7458,#5b5e45 60%,#4a4a38);animation:washOut .45s ease 2.5s forwards}
+.wash.live{background:none}
+.wash canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+@keyframes washOut{to{opacity:0;visibility:hidden}}
+@media(prefers-reduced-motion:reduce){.wash{display:none}}
 </style>
 </head>
 <body>
 <div class="banner" role="note">Demo preview built by David — not the official site.</div>
+<div class="wash" id="wash" aria-hidden="true"></div>
+<script>
+(function(){
+  var el=document.getElementById('wash');if(!el)return;
+  function done(){if(el&&el.parentNode)el.parentNode.removeChild(el);el=null;}
+  try{
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){done();return;}
+    var C={passes:[[.13,-1,0],[.38,1,.44],[.63,-1,.88],[.88,1,1.32]],dur:.64,band:.34,tilt:.05,wand:'#244c7a',grip:'#2f5f96',tint:'143,179,221',drop:'95,150,214'};
+    var W=window.innerWidth,H=window.innerHeight,dpr=Math.min(window.devicePixelRatio||1,2);
+    var c=document.createElement('canvas'),fx=document.createElement('canvas');
+    c.width=fx.width=Math.round(W*dpr);c.height=fx.height=Math.round(H*dpr);
+    var g=c.getContext('2d'),f=fx.getContext('2d');if(!g||!f)return;
+    /* grime: olive base, mottled noise octaves, drips and moss blotches */
+    var w=c.width,h=c.height,i,lg=g.createLinearGradient(0,0,0,h);
+    lg.addColorStop(0,'#6f7458');lg.addColorStop(.55,'#5c5f45');lg.addColorStop(1,'#4a4a38');
+    g.fillStyle=lg;g.fillRect(0,0,w,h);
+    var cols=[[84,96,52],[66,70,46],[106,104,76],[56,74,38],[94,86,60],[46,50,34],[120,116,88]];
+    [[70,.6],[22,.42],[7,.28],[2.5,.2]].forEach(function(o){
+      var s=o[0]*dpr,sw=Math.ceil(w/s)+1,sh=Math.ceil(h/s)+1,t=document.createElement('canvas');
+      t.width=sw;t.height=sh;var tc=t.getContext('2d'),id=tc.createImageData(sw,sh),d=id.data;
+      for(var j=0;j<d.length;j+=4){var k=cols[(Math.random()*cols.length)|0];d[j]=k[0];d[j+1]=k[1];d[j+2]=k[2];d[j+3]=Math.random()*255*o[1];}
+      tc.putImageData(id,0,0);g.imageSmoothingEnabled=true;g.drawImage(t,0,0,sw*s,sh*s);
+    });
+    g.lineCap='round';
+    for(i=0;i<22;i++){var dx=Math.random()*w,dy=Math.random()*h*.5,dh=h*(.15+Math.random()*.45),sg=g.createLinearGradient(0,dy,0,dy+dh);
+      sg.addColorStop(0,'rgba(36,40,24,.28)');sg.addColorStop(1,'rgba(36,40,24,0)');g.strokeStyle=sg;g.lineWidth=(1.5+Math.random()*4)*dpr;
+      g.beginPath();g.moveTo(dx,dy);for(var y2=dy;y2<dy+dh;y2+=14*dpr){dx+=(Math.random()-.5)*3*dpr;g.lineTo(dx,y2);}g.stroke();}
+    for(i=0;i<12;i++){var mx=Math.random()*w,my=Math.random()*h,mr=(40+Math.random()*120)*dpr,rg=g.createRadialGradient(mx,my,0,mx,my,mr);
+      rg.addColorStop(0,i%3?'rgba(70,92,40,.45)':'rgba(40,40,28,.45)');rg.addColorStop(1,'rgba(70,92,40,0)');g.fillStyle=rg;g.fillRect(mx-mr,my-mr,mr*2,mr*2);}
+    el.appendChild(c);el.appendChild(fx);el.className+=' live';
+    /* wash passes */
+    var bh=C.band*H,P=C.passes.map(function(p){return{y:p[0]*H,dir:p[1],t0:p[2],lx:null};}),drops=[],t0=null,last=0;
+    var end=Math.max.apply(null,P.map(function(p){return p.t0;}))+C.dur,fading=false;
+    function ease(p){return .65*p+.35*(.5-.5*Math.cos(Math.PI*p));}
+    function headX(p,q){var x0=-bh*.25,x1=W+bh*.25,e=ease(q);return p.dir>0?x0+(x1-x0)*e:x1-(x1-x0)*e;}
+    function headY(p,x){return p.y+C.tilt*H*(x/W-.5)*p.dir+Math.sin(x/W*Math.PI*2)*H*.008;}
+    g.globalCompositeOperation='destination-out';
+    function frame(ts){
+      if(!el)return;
+      if(t0===null){t0=ts;last=ts;}
+      var t=(ts-t0)/1000,dt=Math.min(.05,(ts-last)/1000);last=ts;
+      f.setTransform(1,0,0,1,0,0);f.clearRect(0,0,fx.width,fx.height);f.setTransform(dpr,0,0,dpr,0,0);
+      P.forEach(function(p){
+        var q=(t-p.t0)/C.dur;if(q<0||(q>1&&p.lx===null))return;q=Math.min(q,1);
+        var x=headX(p,q),y=headY(p,x),lx=p.lx===null?x-p.dir*bh*.25:p.lx;
+        /* erase the stripe: soft top/bottom edges, hard enough middle */
+        var gr=g.createLinearGradient(0,(y-bh/2)*dpr,0,(y+bh/2)*dpr);
+        gr.addColorStop(0,'rgba(0,0,0,0)');gr.addColorStop(.17,'rgba(0,0,0,1)');gr.addColorStop(.83,'rgba(0,0,0,1)');gr.addColorStop(1,'rgba(0,0,0,0)');
+        g.fillStyle=gr;g.fillRect((Math.min(lx,x)-2)*dpr,(y-bh/2)*dpr,(Math.abs(x-lx)+4)*dpr,bh*dpr);
+        var rr=g.createRadialGradient(x*dpr,y*dpr,0,x*dpr,y*dpr,bh*.42*dpr);rr.addColorStop(0,'rgba(0,0,0,.5)');rr.addColorStop(1,'rgba(0,0,0,0)');
+        g.fillStyle=rr;g.fillRect((x-bh*.42)*dpr,(y-bh*.42)*dpr,bh*.84*dpr,bh*.84*dpr);
+        p.lx=q>=1?null:x;if(q>=1){p.t0=1e9;return;}
+        /* mist at the wand head */
+        var m=f.createRadialGradient(x,y,0,x,y,bh*.6);m.addColorStop(0,'rgba('+C.tint+',.34)');m.addColorStop(.5,'rgba(255,255,255,.14)');m.addColorStop(1,'rgba(255,255,255,0)');
+        f.fillStyle=m;f.fillRect(x-bh*.6,y-bh*.6,bh*1.2,bh*1.2);
+        /* fan spray from the nozzle to the surface */
+        var nx=x-p.dir*Math.min(70,W*.14),ny=y+bh*.5+30,fan=f.createLinearGradient(nx,ny,x,y);
+        fan.addColorStop(0,'rgba(255,255,255,.75)');fan.addColorStop(1,'rgba('+C.tint+',.22)');
+        f.fillStyle=fan;f.beginPath();f.moveTo(nx,ny);f.lineTo(x,y-bh*.42);f.lineTo(x,y+bh*.42);f.closePath();f.fill();
+        f.strokeStyle='rgba(255,255,255,.55)';f.lineWidth=1.2;f.beginPath();
+        for(var k=0;k<6;k++){f.moveTo(nx,ny);f.lineTo(x,y-bh*.4+bh*.8*k/5+(Math.random()-.5)*6);}f.stroke();
+        /* the wand: lance, nozzle tip and trigger gun */
+        var gx=nx-p.dir*150,gy=ny+130;
+        f.lineCap='round';f.strokeStyle=C.wand;f.lineWidth=6;f.beginPath();f.moveTo(gx,gy);f.lineTo(nx,ny);f.stroke();
+        f.strokeStyle=C.grip;f.lineWidth=11;f.beginPath();f.moveTo(nx+(gx-nx)*.04,ny+(gy-ny)*.04);f.lineTo(nx+(gx-nx)*.1,ny+(gy-ny)*.1);f.stroke();
+        f.fillStyle=C.wand;f.beginPath();f.moveTo(gx,gy);f.lineTo(gx+p.dir*8,gy+44);f.lineTo(gx-p.dir*12,gy+46);f.lineTo(gx-p.dir*16,gy+4);f.closePath();f.fill();
+        /* droplets */
+        for(k=0;k<4;k++)drops.push({x:x+(Math.random()-.3)*12*p.dir,y:y+(Math.random()-.5)*bh*.8,vx:p.dir*(80+Math.random()*260),vy:(Math.random()-.7)*160,l:.3+Math.random()*.35,r:.8+Math.random()*2,c:k%2?'255,255,255':C.drop});
+      });
+      for(var n=drops.length-1;n>=0;n--){var o=drops[n];o.l-=dt;if(o.l<=0){drops.splice(n,1);continue;}
+        o.vy+=900*dt;o.x+=o.vx*dt;o.y+=o.vy*dt;f.fillStyle='rgba('+o.c+','+Math.min(1,o.l*2.4)+')';f.beginPath();f.arc(o.x,o.y,o.r,0,6.283);f.fill();}
+      if(t>=end&&!fading){fading=true;el.style.transition='opacity .28s ease';el.style.opacity='0';setTimeout(done,300);}
+      if(el)requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+    setTimeout(done,2450);
+  }catch(e){}
+})();
+</script>
+
 
 <header class="top wood">
   <div class="wrap">
@@ -437,7 +535,17 @@ footer .fname{color:#fff;font:700 24px/1.2 Lora,Georgia,serif}
     <div class="job-grid">
       <figure class="job"><img src="img/house-patio.webp" width="430" height="321" loading="lazy" alt="A white two-story brick home with a balcony, freshly washed, above a clean flagstone patio with two Adirondack chairs"><figcaption>Brick house and flagstone patio</figcaption></figure>
       <figure class="job"><img src="img/house-walkway.webp" width="430" height="311" loading="lazy" alt="A yellow-sided ranch home with a white front porch and a bright, clean curved concrete walkway around a landscaped bed"><figcaption>Siding, porch and curved walkway</figcaption></figure>
-      <figure class="job stairs"><img src="img/stairs-before-after.webp" width="291" height="199" loading="lazy" alt="Stone-walled outdoor stairs side by side: green and grimy before on the left, clean gray steps after on the right"><figcaption>Stone stairs, before and after</figcaption></figure>
+      <figure class="job stairs">
+        <div class="ba" id="ba" style="--pos:50%">
+          <img class="ba-after" src="img/stairs-after.webp" width="127" height="195" alt="After: the same stone stairs washed clean, gray treads and dark railing">
+          <img class="ba-before" src="img/stairs-before.webp" width="127" height="195" alt="Before: stone-walled outdoor stairs green with moss and grime">
+          <span class="ba-tag b" aria-hidden="true">Before</span><span class="ba-tag a" aria-hidden="true">After</span>
+          <div class="ba-line" aria-hidden="true"></div>
+          <div class="ba-knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2119" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
+          <input type="range" id="ba-range" min="0" max="100" value="50" aria-label="Stone stairs before and after slider: drag or use arrow keys to compare">
+        </div>
+        <figcaption>Stone stairs, before and after · drag to compare</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -672,6 +780,8 @@ footer .fname{color:#fff;font:700 24px/1.2 Lora,Georgia,serif}
 (function(){
   var s=document.getElementById('slider'),r=document.getElementById('reveal');
   if(s&&r){s.addEventListener('input',function(){r.style.setProperty('--pos',s.value+'%');});}
+  var bs=document.getElementById('ba-range'),bb=document.getElementById('ba');
+  if(bs&&bb){bs.addEventListener('input',function(){bb.style.setProperty('--pos',bs.value+'%');});}
   var f=document.getElementById('quote-form'),m=document.getElementById('form-msg');
   if(f){f.addEventListener('submit',function(e){e.preventDefault();m.classList.add('show');m.setAttribute('tabindex','-1');m.focus();});}
 })();
