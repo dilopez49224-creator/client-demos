@@ -51,7 +51,7 @@ section{padding:56px 0}
 /* header */
 .top{background:var(--white);border-bottom:1px solid var(--cyan-l)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:72px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--deep);font:700 1.25rem Fredoka,sans-serif}
+.logo{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--deep);font:700 1.25rem Fredoka,sans-serif}
 .logo .drop{width:36px;height:36px;border-radius:50% 50% 50% 0;background:linear-gradient(135deg,var(--cyan),var(--deep));transform:rotate(-45deg);display:grid;place-items:center;flex:none}
 .logo .drop i{width:10px;height:10px;border-radius:50%;background:var(--lime);transform:rotate(45deg) translate(-3px,-3px)}
 .top .call{display:none}
@@ -67,7 +67,7 @@ section{padding:56px 0}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 10px}
 .fineprint{font-size:.9rem;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
-.chips li{background:var(--white);border:1.5px solid var(--cyan-l);border-radius:999px;padding:6px 12px;font-size:.85rem;font-weight:700;color:var(--cyan-d)}
+.chips li{background:var(--white);border:1.5px solid var(--cyan-l);border-radius:999px;padding:6px 12px;font-size:.85rem;font-weight:600;color:var(--cyan-d)}
 
 /* before/after reveal */
 .reveal{position:relative;border-radius:24px;overflow:hidden;background:var(--white);box-shadow:0 20px 50px -20px rgba(2,44,58,.45);aspect-ratio:4/3;isolation:isolate}
@@ -93,11 +93,18 @@ section{padding:56px 0}
 .card .ico{width:54px;height:54px;border-radius:16px;background:var(--cyan);display:grid;place-items:center;margin-bottom:16px}
 .card .ico svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .card p{margin:0;color:var(--muted);font-size:.98rem}
+p{max-width:65ch}
 .card.ask{background:var(--deep);color:#dff6fb;border-color:var(--deep)}
 .card.ask h3{color:#fff}
 .card.ask p{color:#bfe6ef}
 .card.ask .ico{background:var(--lime)}
 .card.ask .ico svg{stroke:var(--deep)}
+
+.guide{display:grid;gap:0;margin:28px 0 0;padding:0;border-top:1.5px solid var(--cyan-l)}
+.guide div{display:grid;gap:4px;padding:14px 0;border-bottom:1.5px solid var(--cyan-l)}
+.guide dt{font:600 1.05rem Fredoka,sans-serif;color:var(--deep)}
+.guide dd{margin:0;color:var(--muted);font-size:.95rem}
+@media(min-width:640px){.guide div{grid-template-columns:200px 1fr;gap:16px;align-items:baseline}}
 
 /* why us */
 .why{background:var(--deep);color:#dff6fb;position:relative;overflow:hidden}
@@ -146,10 +153,10 @@ section{padding:56px 0}
 .note{display:inline-block;background:#fff7d6;border:1.5px dashed #d9b84a;color:#6b5306;border-radius:10px;padding:6px 12px;font-size:.85rem;font-weight:700;margin-bottom:18px}
 .rev-grid{display:grid;gap:16px}
 @media(min-width:720px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
-.rev{background:var(--mist);border-radius:20px;padding:22px;border:1.5px solid var(--cyan-l);position:relative}
-.rev::before{content:"\201C";position:absolute;top:-8px;left:18px;font:700 4rem/1 Fredoka,serif;color:var(--cyan-l)}
-.rev p{position:relative;margin:0 0 12px;font-size:.98rem}
-.rev .who{font-weight:800;font-size:.85rem;color:var(--cyan-d)}
+.rev{padding:6px 0 6px 20px;border-left:5px solid var(--lime);position:relative}
+.rev::before{content:"\201C";display:block;font:700 3.2rem/0.6 Fredoka,serif;color:var(--cyan);margin:10px 0 10px}
+.rev p{position:relative;margin:0 0 12px;font-size:1.02rem}
+.rev .who{font-weight:700;font-size:.85rem;color:var(--cyan-d)}
 .rev .stars{color:#d99a06;letter-spacing:2px;font-size:.9rem}
 
 /* form */
@@ -158,7 +165,7 @@ section{padding:56px 0}
 @media(min-width:900px){.quote .grid{grid-template-columns:1fr 1.2fr}}
 form{background:var(--white);border-radius:24px;padding:24px;border:1.5px solid var(--cyan-l);box-shadow:0 20px 40px -30px rgba(2,44,58,.4)}
 .field{display:grid;gap:6px;margin-bottom:14px}
-.field label{font-weight:800;font-size:.9rem;color:var(--deep)}
+.field label{font-weight:700;font-size:.9rem;color:var(--deep)}
 .field input,.field select,.field textarea{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid #9ccfdc;background:#fff;color:var(--text);min-height:48px}
 .field textarea{min-height:110px;resize:vertical}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan)}
@@ -167,9 +174,9 @@ form{background:var(--white);border-radius:24px;padding:24px;border:1.5px solid 
 .msg{display:none;margin-top:14px;padding:14px;border-radius:12px;background:#ecfccb;color:#365314;font-weight:700}
 .msg.show{display:block}
 .contact-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
-.contact-list li{display:flex;gap:12px;align-items:center;font-weight:700}
+.contact-list li{display:flex;gap:12px;align-items:center;min-height:44px}
 .contact-list svg{width:24px;height:24px;stroke:var(--cyan);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.contact-list a{color:var(--deep);text-decoration:none;font-size:1.2rem;font-family:Fredoka,sans-serif}
+.contact-list a{display:inline-flex;align-items:center;min-height:44px;color:var(--deep);text-decoration:none;font-size:1.2rem;font-family:Fredoka,sans-serif}
 
 /* area */
 .area{background:var(--white)}
@@ -178,11 +185,11 @@ form{background:var(--white);border-radius:24px;padding:24px;border:1.5px solid 
 .map{background:var(--mist);border-radius:24px;padding:16px;border:1.5px solid var(--cyan-l)}
 .map svg{width:100%;height:auto}
 .area ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
-.area li{background:var(--cyan-l);color:var(--deep);padding:8px 14px;border-radius:999px;font-weight:700;font-size:.9rem}
+.area li{background:var(--cyan-l);color:var(--deep);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.9rem}
 
 footer{background:var(--deep);color:#bfe6ef;padding:36px 0 40px;font-size:.9rem}
 footer .wrap{display:grid;gap:10px}
-footer a{color:#fff}
+footer a{color:#fff;display:inline-block;padding:12px 2px}
 
 /* sticky call bar */
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(240,253,255,.92);backdrop-filter:blur(8px);border-top:1px solid var(--cyan-l)}
@@ -212,12 +219,12 @@ footer a{color:#fff}
       <p class="lead">Pressure washing and exterior cleaning for homes and businesses around Anderson. One owner, one standard: if it isn't clean, we're not done.</p>
       <div class="cta-row">
         <a class="btn" href="tel:+18648830126"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>Call 864-883-0126</a>
-        <a class="btn ghost" href="#quote">Get a free quote</a>
+        <a class="btn ghost" href="#quote">Get a quote</a>
       </div>
-      <p class="fineprint">Free estimates. Text or call — if we're on a job, we'll text you right back.</p>
+      <p class="fineprint">Call, or send a photo of what needs cleaning. If we're mid-rinse, you get a text back right away.</p>
       <ul class="chips" aria-label="Highlights">
         <li>Owner on every job</li>
-        <li>Praised for work ethic &amp; quality</li>
+        <li>HomeAdvisor reviewers praise work ethic &amp; quality</li>
         <li>Anderson area</li>
       </ul>
     </div>
@@ -322,6 +329,12 @@ footer a{color:#fff}
         <p>Send a photo or just ask. If it's outside and dirty, there's a good chance we can help.</p>
       </article>
     </div>
+    <dl class="guide" aria-label="How each surface gets cleaned">
+      <div><dt>Vinyl siding</dt><dd>Soft wash: low pressure, cleaning solution does the work</dd></div>
+      <div><dt>Concrete</dt><dd>High pressure with a surface cleaner for an even, streak-free finish</dd></div>
+      <div><dt>Wood decks</dt><dd>Low pressure with the grain so the wood stays smooth, not fuzzy</dd></div>
+      <div><dt>Roofs &amp; stucco</dt><dd>Soft wash only; high pressure is never used on these</dd></div>
+    </dl>
   </div>
 </section>
 
@@ -346,7 +359,7 @@ footer a{color:#fff}
       </div>
       <div class="why-item">
         <div class="n"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg></div>
-        <div><h3>Simple, upfront pricing</h3><p>Tell us what needs cleaning and roughly how big it is. You'll get a straight number before any work starts.</p></div>
+        <div><h3>Local to Anderson</h3><p>Based right here, so a quick look at the job before quoting is an easy ask, not a road trip.</p></div>
       </div>
     </div>
   </div>
@@ -385,7 +398,7 @@ footer a{color:#fff}
 <section class="reviews" id="reviews" aria-labelledby="rev-h">
   <div class="wrap">
     <span class="eyebrow">Sample reviews</span>
-    <h2 id="rev-h">Sample reviews</h2>
+    <h2 id="rev-h">What customers say</h2>
     <p class="note">Placeholder text for layout only. Real customer reviews go here.</p>
     <div class="rev-grid">
       <article class="rev"><div class="stars" aria-label="5 star placeholder">★★★★★</div><p>Sample review: "The driveway looks brand new and he was careful around the flower beds. Showed up when he said he would."</p><div class="who">— Sarah, sample</div></article>
@@ -399,7 +412,7 @@ footer a{color:#fff}
 <section class="quote" id="quote" aria-labelledby="q-h">
   <div class="wrap grid">
     <div>
-      <span class="eyebrow">Free quote</span>
+      <span class="eyebrow">Get a quote</span>
       <h2 id="q-h">Tell us what needs a wash</h2>
       <p class="lead">A few details and we'll get back to you with a price. No pressure (except on the concrete).</p>
       <ul class="contact-list">
