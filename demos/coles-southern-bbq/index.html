@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cole's Southern BBQ | Mobile BBQ Catering in Seneca, SC</title>
+<meta name="description" content="Veteran-owned, family-operated mobile BBQ catering serving Seneca and Westminster.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat+Brush&family=Karla:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--kraft:#D8B98A;--paper:#F3E6CC;--ember:#B3261E;--emberd:#8F1C15;--ink:#2A1C14;--board:#24302B;--chalk:#F4F1E8;--gold:#F0C36A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;padding-top:3.4rem;font-family:Karla,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;color:var(--ink);background:var(--kraft);
+background-image:repeating-linear-gradient(0deg,rgba(90,60,30,.05) 0 2px,transparent 2px 7px),radial-gradient(circle at 20% 10%,rgba(255,255,255,.18),transparent 40%);overflow-x:hidden;padding-bottom:4.5rem}
+h1,h2,h3{font-family:'Alfa Slab One',Georgia,serif;font-weight:400;line-height:1.08;margin:0 0 .6em;letter-spacing:.01em}
+h1{font-size:clamp(2.5rem,12vw,5.4rem);text-transform:uppercase}
+h2{font-size:clamp(1.8rem,7vw,3rem)}
+h3{font-size:1.25rem}
+p{margin:0 0 1em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px;box-shadow:0 0 0 6px #fff}
+.demo-banner{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--ink);color:#fff;font-size:.8rem;line-height:1.25;text-align:center;padding:.5rem .75rem;min-height:3.4rem;display:flex;align-items:center;justify-content:center;font-weight:600}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1rem}
+section{padding:3.2rem 0;position:relative}
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:3.2rem;padding:.7rem 1.4rem;border-radius:4px;font-weight:800;text-decoration:none;font-size:1.1rem;border:3px solid var(--ink);cursor:pointer;font-family:inherit}
+.btn-call{background:var(--ember);color:#fff;box-shadow:4px 4px 0 var(--ink)}
+.btn-call:hover{background:var(--emberd)}
+.btn-alt{background:var(--paper);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.hero{padding:2rem 0 3.5rem;overflow:hidden}
+.sheet{background:var(--paper);border:2px solid var(--ink);padding:1.6rem 1.2rem 2rem;position:relative;box-shadow:8px 8px 0 rgba(42,28,20,.35);transform:rotate(-.6deg);
+background-image:repeating-linear-gradient(0deg,transparent 0 31px,rgba(179,38,30,.12) 31px 32px)}
+.sheet::before,.sheet::after{content:"";position:absolute;top:-14px;width:80px;height:26px;background:rgba(240,195,106,.75);border:1px dashed rgba(42,28,20,.3)}
+.sheet::before{left:12%;transform:rotate(-4deg)}.sheet::after{right:12%;transform:rotate(3deg)}
+.kicker{font-family:'Caveat Brush',cursive;font-size:1.7rem;color:var(--emberd);margin:0 0 .2rem}
+.hero h1 em{font-style:normal;color:var(--emberd);display:block}
+.hero .lead{font-size:1.15rem;max-width:34rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.4rem}
+.stamp{width:8rem;height:8rem;transform:rotate(12deg);color:var(--emberd);display:block;margin:1.6rem 0 -.4rem auto}
+.smoke{position:absolute;right:1rem;top:-2rem;width:5rem;opacity:.35}
+.board{background:var(--board);color:var(--chalk);border:14px solid #7A5230;border-radius:6px;padding:1.4rem 1.1rem 1.8rem;box-shadow:inset 0 0 40px rgba(0,0,0,.5),6px 6px 0 rgba(42,28,20,.4);position:relative;
+background-image:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.07),transparent 60%)}
+.board h2{font-family:'Caveat Brush',cursive;font-size:clamp(2.4rem,9vw,3.8rem);color:var(--gold);text-align:center;margin-bottom:.1em}
+.board .sub{text-align:center;font-family:'Caveat Brush',cursive;font-size:1.35rem;margin-bottom:1.3rem;color:#E8E2CF}
+.cols{display:grid;gap:1.4rem}
+.col h3{font-family:'Caveat Brush',cursive;font-size:1.9rem;color:var(--gold);border-bottom:2px dashed rgba(244,241,232,.5);padding-bottom:.2rem;margin-bottom:.6rem}
+.col ul{list-style:none;margin:0;padding:0}
+.col li{font-family:'Caveat Brush',cursive;font-size:1.55rem;line-height:1.25;display:flex;gap:.5rem;align-items:baseline;padding:.1rem 0}
+.col li::after{content:"";order:2;flex:1;border-bottom:2px dotted rgba(244,241,232,.4);transform:translateY(-.2em)}
+.col li span{order:1}
+.board .note{text-align:center;font-family:'Caveat Brush',cursive;font-size:1.3rem;margin:1.3rem 0 0;color:var(--gold)}
+.service-pair{display:grid;gap:1rem;margin-top:1.6rem}
+.tag{background:var(--paper);border:2px solid var(--ink);padding:1rem 1.1rem;box-shadow:4px 4px 0 var(--ink)}
+.tag h3{margin-bottom:.3rem}
+.why{background:var(--ink);color:var(--paper)}
+.why h2{color:var(--gold)}
+.why-grid{display:grid;gap:1.1rem;margin-top:1.4rem}
+.why-item{border-left:6px solid var(--ember);padding:.2rem 0 .2rem 1rem}
+.why-item h3{color:#fff;margin-bottom:.2rem}
+.woods{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 0;padding:0;list-style:none}
+.woods li{background:var(--kraft);color:var(--ink);font-weight:800;padding:.35rem .9rem;border-radius:999px;border:2px solid var(--gold);text-transform:uppercase;font-size:.85rem;letter-spacing:.08em}
+.tb{background:var(--ember);color:#fff}
+.tb h2{max-width:22ch}
+.tb-grid{display:grid;gap:2rem;align-items:center}
+.phone{width:min(17rem,100%);margin:0 auto;background:#17100c;border-radius:2rem;padding:.8rem;border:3px solid #000;box-shadow:8px 8px 0 rgba(0,0,0,.35)}
+.screen{background:#F6F1E7;border-radius:1.4rem;padding:1rem .8rem 1.2rem;color:var(--ink);min-height:21rem;font-size:.92rem}
+.missed{display:flex;gap:.6rem;align-items:center;background:#fff;border-radius:.8rem;padding:.55rem .7rem;border:1px solid #d9cfba;margin-bottom:1rem}
+.missed svg{flex:none}
+.missed b{display:block;color:#B3261E;font-size:.9rem}
+.missed small{color:#4b3d33}
+.bubble{background:#E4DBC8;border-radius:1rem 1rem 1rem .2rem;padding:.65rem .8rem;margin:.5rem 2rem .5rem 0}
+.bubble.me{background:var(--emberd);color:#fff;border-radius:1rem 1rem .2rem 1rem;margin:.5rem 0 .5rem 2rem;animation:pop .6s ease both .4s}
+.stamp-t{font-size:.72rem;color:#4b3d33;text-align:center;margin-bottom:.4rem}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.label{display:inline-block;background:var(--ink);color:var(--gold);font-weight:800;padding:.3rem .8rem;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;margin-bottom:1rem}
+.rev-row{display:grid;gap:1.1rem}
+.rev{background:var(--paper);border:2px solid var(--ink);padding:1.1rem;position:relative;box-shadow:4px 4px 0 var(--ink);margin:0}
+.rev:nth-child(2){transform:rotate(.8deg)}.rev:nth-child(3){transform:rotate(-.6deg)}
+.rev p{margin:0 0 .7rem}.rev cite{font-style:normal;font-weight:800}
+.form-area{background:var(--paper);border-top:6px double var(--ink);border-bottom:6px double var(--ink)}
+.fgrid{display:grid;gap:1rem;margin-top:1rem}
+label{font-weight:800;display:block;margin-bottom:.25rem}
+input,select,textarea{width:100%;font:inherit;padding:.7rem;border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:3px;min-height:2.9rem}
+textarea{min-height:6rem}
+#demoMsg{display:none;margin-top:1rem;padding:1rem;background:var(--gold);border:2px solid var(--ink);font-weight:800}
+#demoMsg.show{display:block}
+.area{display:grid;gap:1.2rem;align-items:center}
+.pin{width:5rem}
+footer{background:var(--ink);color:var(--paper);text-align:center;padding:2rem 1rem;font-size:.9rem}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--ink);padding:.6rem 1rem;display:flex;justify-content:center}
+.sticky .btn{width:100%;max-width:26rem;justify-content:center;box-shadow:none;border-color:#fff}
+@media(min-width:760px){
+ body{padding-bottom:0}.sticky{display:none}
+ .sheet{padding:3rem 3rem 3.4rem}.stamp{width:11rem;height:11rem;position:absolute;right:2rem;bottom:1.5rem;margin:0}
+ .cols{grid-template-columns:repeat(3,1fr);gap:2rem}
+ .service-pair{grid-template-columns:1fr 1fr 1fr}
+ .why-grid{grid-template-columns:repeat(3,1fr)}
+ .tb-grid{grid-template-columns:1.2fr 1fr}
+ .rev-row{grid-template-columns:repeat(3,1fr)}
+ .fgrid{grid-template-columns:1fr 1fr}.fgrid .full{grid-column:1/-1}
+ .area{grid-template-columns:auto 1fr}
+ .demo-banner{font-size:.95rem}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">Demo preview built by David — not the official site.</div>
+
+<header class="hero" id="top">
+ <div class="wrap">
+  <div class="sheet">
+   <svg class="smoke" viewBox="0 0 80 100" fill="none" stroke="#2A1C14" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M20 95c-14-18 14-26 0-44s14-26 0-44"/><path d="M45 95c-14-18 14-26 0-44s14-26 0-44" opacity=".6"/><path d="M68 95c-12-16 12-24 0-40" opacity=".4"/></svg>
+   <p class="kicker">Seneca, South Carolina</p>
+   <h1>Cole's <em>Southern BBQ</em></h1>
+   <p class="lead">Mobile BBQ catering, smoked over natural wood charcoal and pellet. Veteran-owned and family-operated, serving the Seneca and Westminster area.</p>
+   <div class="hero-actions">
+    <a class="btn btn-call" href="tel:+18647100284"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.4.55 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.2 2.3.55 3.4a1 1 0 01-.25 1z"/></svg>Call (864) 710-0284</a>
+    <a class="btn btn-alt" href="#quote">Ask about your event</a>
+   </div>
+   <svg class="stamp" viewBox="0 0 200 200" role="img" aria-label="Veteran-owned stamp">
+    <g fill="none" stroke="currentColor" stroke-width="6"><circle cx="100" cy="100" r="92"/><circle cx="100" cy="100" r="70" stroke-width="3"/></g>
+    <defs><path id="arcT" d="M30 100a70 70 0 0 1 140 0"/><path id="arcB" d="M24 104a76 76 0 0 0 152 0"/></defs>
+    <text font-family="Alfa Slab One" font-size="19" fill="currentColor" letter-spacing="3"><textPath href="#arcT" startOffset="50%" text-anchor="middle">VETERAN-OWNED</textPath></text>
+    <text font-family="Alfa Slab One" font-size="15" fill="currentColor" letter-spacing="3"><textPath href="#arcB" startOffset="50%" text-anchor="middle">FAMILY OPERATED</textPath></text>
+    <path d="M100 62l10 22 24 3-18 16 5 24-21-12-21 12 5-24-18-16 24-3z" fill="currentColor"/>
+   </svg>
+  </div>
+ </div>
+</header>
+
+<section id="services" aria-labelledby="svc-h">
+ <div class="wrap">
+  <div class="board">
+   <h2 id="svc-h">Today's Smoke</h2>
+   <p class="sub">Mobile BBQ catering, by the platter or by the pound</p>
+   <div class="cols">
+    <div class="col"><h3>From the Pit</h3><ul><li><span>Brisket</span></li><li><span>Burnt Ends</span></li><li><span>Pulled Pork</span></li><li><span>St. Louis Ribs</span></li></ul></div>
+    <div class="col"><h3>Birds</h3><ul><li><span>BBQ Chicken</span></li><li><span>Pulled Chicken</span></li><li><span>Turkey Legs</span></li></ul></div>
+    <div class="col"><h3>Sides &amp; Sweets</h3><ul><li><span>Baked Beans</span></li><li><span>Potato Salad</span></li><li><span>Slaw</span></li><li><span>Banana Pudding</span></li><li><span>Cobbler</span></li></ul></div>
+   </div>
+   <p class="note">Call for what's smoking and how to book</p>
+  </div>
+  <div class="service-pair">
+   <div class="tag"><h3>By the platter</h3><p>Simple for gatherings and get-togethers. Call to talk through what fits your crowd.</p></div>
+   <div class="tag"><h3>By the pound</h3><p>Order your favorites in bulk and feed the whole group.</p></div>
+   <div class="tag"><h3>Mobile catering</h3><p>The smoke comes to you. Ask about bringing it to your event.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="why" id="why-us" aria-labelledby="why-h">
+ <div class="wrap">
+  <h2 id="why-h">Why folks call Cole's</h2>
+  <div class="why-grid">
+   <div class="why-item"><h3>Veteran-owned</h3><p>Proudly veteran-owned and run as a family operation.</p></div>
+   <div class="why-item"><h3>Real wood smoke</h3><p>Natural wood charcoal and pellet, the old-fashioned way to flavor meat.</p></div>
+   <div class="why-item"><h3>A real person answers</h3><p>Bookings happen by phone, so you talk to the people doing the cooking.</p></div>
+  </div>
+  <ul class="woods" aria-label="Woods used for smoking"><li>Hickory</li><li>Mesquite</li><li>Apple</li><li>Pecan</li><li>Oak</li><li>Cherry</li></ul>
+ </div>
+</section>
+
+<section class="tb" id="text-back" aria-labelledby="tb-h">
+ <div class="wrap tb-grid">
+  <div>
+   <h2 id="tb-h">Never miss a call — we text you back in seconds</h2>
+   <p>When the pit is hot and your hands are full, a missed call doesn't have to mean a lost event. A friendly automatic text goes out right away, so the customer knows you got their call and can reply with the details.</p>
+  </div>
+  <div class="phone" role="img" aria-label="Phone showing a missed call followed by an automatic text reply from Cole's Southern BBQ">
+   <div class="screen">
+    <div class="missed"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.4.55 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.2 2.3.55 3.4"/><path d="M15 3l6 6M21 3l-6 6"/></svg><span><b>Missed call</b><small>Just now</small></span></div>
+    <div class="stamp-t">Text message</div>
+    <div class="bubble me">Hi, this is Cole's Southern BBQ! Sorry we missed your call. What date is your event and about how many people?</div>
+    <div class="bubble">Hi! Looking for catering for a family reunion.</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="reviews" aria-labelledby="rev-h">
+ <div class="wrap">
+  <span class="label">Sample reviews</span>
+  <h2 id="rev-h">What neighbors might say</h2>
+  <div class="rev-row">
+   <figure class="rev"><p>"Placeholder text about easy booking and great food."</p><cite>— Sample customer</cite></figure>
+   <figure class="rev"><p>"Placeholder text about the team showing up on time."</p><cite>— Sample customer</cite></figure>
+   <figure class="rev"><p>"Placeholder text about feeding a big group with no stress."</p><cite>— Sample customer</cite></figure>
+  </div>
+ </div>
+</section>
+
+<section class="form-area" id="quote" aria-labelledby="q-h">
+ <div class="wrap">
+  <h2 id="q-h">Ask about your event</h2>
+  <p>Tell us a little and we'll get back to you. (This form is a demo and does not send anything.)</p>
+  <form id="demoForm" novalidate>
+   <div class="fgrid">
+    <div><label for="n">Your name</label><input id="n" name="n" autocomplete="name"></div>
+    <div><label for="p">Phone</label><input id="p" name="p" type="tel" autocomplete="tel"></div>
+    <div><label for="d">Event date</label><input id="d" name="d" type="date"></div>
+    <div><label for="g">Guests (approx.)</label><input id="g" name="g" inputmode="numeric"></div>
+    <div class="full"><label for="m">What are you planning?</label><textarea id="m" name="m"></textarea></div>
+   </div>
+   <p style="margin-top:1rem"><button class="btn btn-call" type="submit">Send request</button></p>
+   <div id="demoMsg" role="status" aria-live="polite">Demo only — nothing was sent. On the real site this would reach Cole's Southern BBQ.</div>
+  </form>
+ </div>
+</section>
+
+<section id="area" aria-labelledby="a-h">
+ <div class="wrap area">
+  <svg class="pin" viewBox="0 0 64 80" fill="none" stroke="#2A1C14" stroke-width="3" aria-hidden="true"><path d="M32 76C12 50 8 42 8 30a24 24 0 0148 0c0 12-4 20-24 46z" fill="#B3261E"/><circle cx="32" cy="30" r="9" fill="#F3E6CC"/></svg>
+  <div><h2 id="a-h">Where we roll</h2><p><strong>Seneca and Westminster area.</strong> Exact range isn't published, so call to ask whether we can reach your event.</p>
+  <a class="btn btn-call" href="tel:+18647100284">Call (864) 710-0284</a></div>
+ </div>
+</section>
+
+<footer>Cole's Southern BBQ · Seneca, SC · Demo preview, not the official site.</footer>
+<div class="sticky"><a class="btn btn-call" href="tel:+18647100284">Tap to call (864) 710-0284</a></div>
+<script>
+document.getElementById('demoForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('demoMsg').classList.add('show')});
+</script>
+</body>
+</html>
