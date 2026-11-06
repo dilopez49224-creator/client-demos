@@ -26,6 +26,7 @@ Every `.md` file and `leads/` stay off the live site via `.assetsignore`.
 - Then re-theme the demo from their real colors, logo style and photos, and rewrite that lead's text, phone script and email in the Lead Tracker to use the new details.
 
 ## Illustrations must be accurate
+- Service-area maps use the FULL state from sc-outline.json, filled in the theme accent, with a pin at the business's town (not the Upstate-only outline).
 - Any map, state shape, or town layout must match real geography. Use `tools/geo/sc-outline.json` (all of SC) or `tools/geo/upstate-outline.json` (Oconee, Pickens, Anderson and Greenville counties). Each has an SVG path plus town x,y positions in its viewBox. Never hand-draw a blob and call it SC.
 - If an accurate version isn't practical, use an abstract town list or pin row rather than a fake map.
 - Real objects (tools, vehicles, food, equipment) should be recognizable and correct for the trade, and text inside SVGs must be readable (12px or more on screen).
