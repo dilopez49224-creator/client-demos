@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ZV Detailing | Mobile detailing in Clemson, SC</title>
+<meta name="description" content="Demo preview of a redesigned site for ZV Detailing, mobile car, truck and boat detailing in Clemson and on Lake Keowee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pearl:#EEF0F1; --white:#FFFFFF; --graphite:#17191C; --panel:#23272B; --chrome:#B9C0C6; --red:#D7263D; --redd:#B01D31; --mute:#5E676F; --lmute:#AEB6BC;
+  --disp:'Sora','Arial Black',system-ui,sans-serif;
+  --body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.6 var(--body);color:var(--graphite);background:var(--pearl);padding-top:38px}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.demo{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--graphite);color:#e3e7ea;font:600 13px/1.3 var(--body);text-align:center;padding:6px 12px;min-height:38px;display:flex;align-items:center;justify-content:center}
+header{background:var(--white);border-bottom:1px solid #dde1e4}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font:800 24px/1 var(--disp);letter-spacing:-.01em}
+.logo span{color:var(--red)}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:var(--red);color:#fff;font:800 16px var(--body);border:0;border-radius:6px;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--redd)}
+.btn.ghost{background:rgba(255,255,255,.08);color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.75)}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--mute)}
+.dot{width:10px;height:10px;border-radius:50%;background:#9aa3aa}
+.status.open .dot{background:#1f9d55}
+.tag{position:absolute;right:12px;bottom:12px;z-index:2;background:rgba(0,0,0,.62);color:#eef1f3;font:700 12px var(--body);padding:4px 10px;border-radius:4px}
+
+.hero{position:relative;min-height:min(82vh,720px);display:flex;align-items:flex-end;overflow:hidden;color:#fff}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;animation:kb 22s ease-out both}
+@keyframes kb{from{transform:scale(1.14) translate(1.5%,1%)}to{transform:none}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,25,28,.05) 20%,rgba(23,25,28,.92) 86%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:56px;width:100%}
+.hero .tag{bottom:auto;top:12px}
+h1{font:800 clamp(42px,8vw,100px)/.95 var(--disp);letter-spacing:-.03em;max-width:12ch}
+h1 .w{display:inline-block;opacity:0;transform:translateY(.5em);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.hero .rule{width:72px;height:5px;background:var(--red);margin-bottom:18px}
+.lede{max-width:46ch;margin:18px 0 24px;font-size:19px;color:#e7eaec}
+h2{font:800 clamp(30px,4.6vw,50px)/1.02 var(--disp);letter-spacing:-.025em;margin-bottom:14px}
+.sub{color:var(--mute);max-width:54ch;margin-bottom:28px}
+
+.services{padding:76px 0}
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sw{border-radius:10px;padding:16px 16px 20px;background:var(--white);box-shadow:0 1px 0 #d9dde0}
+.chip{height:96px;border-radius:6px;margin-bottom:14px;position:relative;overflow:hidden}
+.chip::after{content:"";position:absolute;inset:-40% -10%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.6) 50%,transparent 60%);transform:translateX(-60%);transition:transform .9s ease}
+.sw:hover .chip::after,.sw.in .chip::after{transform:translateX(60%)}
+.c1{background:linear-gradient(160deg,#8b939a,#3b4147)}
+.c2{background:linear-gradient(160deg,#c0293e,#5d0f1a)}
+.c3{background:radial-gradient(circle at 50% 50%,#e4e8eb 0 18%,#5a6168 19% 30%,#d5dade 31% 44%,#2f3438 45%)}
+.c4{background:linear-gradient(160deg,#2a2e33,#0d0f11);box-shadow:inset 0 0 0 3px #d7263d}
+.sw h3{font:800 19px var(--body);margin-bottom:4px}
+.sw p{font-size:15px;color:var(--mute)}
+
+.builder{background:var(--graphite);color:#fff;padding:76px 0}
+.builder .sub{color:var(--lmute)}
+.bgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+fieldset{border:0;padding:0;margin:0 0 22px}
+legend{font-weight:800;margin-bottom:10px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opts label{position:relative}
+.opts input{position:absolute;opacity:0}
+.opts span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:6px;box-shadow:inset 0 0 0 2px #4a5157;cursor:pointer;font-weight:600}
+.opts input:checked+span{background:#fff;color:var(--graphite);font-weight:800;box-shadow:inset 0 -4px 0 var(--red)}
+.opts input:focus-visible+span{outline:3px solid var(--red);outline-offset:2px}
+.opts label[hidden]{display:none}
+.ticket{background:var(--panel);border-radius:10px;padding:24px;position:sticky;top:56px;border-top:5px solid var(--red)}
+.ticket h3{font:800 20px var(--body);margin-bottom:10px}
+.ticket pre{white-space:pre-wrap;font:500 15px/1.6 var(--body);background:#2d3237;border-radius:6px;padding:16px;margin-bottom:16px;color:#eef1f3;min-height:120px}
+.fine{font-size:13px;color:var(--lmute);margin-top:10px}
+
+.why{padding:76px 0}
+.wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--graphite)}
+.wgrid>div{padding:22px 20px 0 0}
+.why b{display:block;font:800 44px/1 var(--disp);color:var(--red);margin-bottom:8px;letter-spacing:-.02em}
+.why p{color:var(--mute);font-size:16px}
+
+.tb{padding:84px 0;background:var(--white)}
+.tgrid{display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:center}
+.phone{background:var(--graphite);border-radius:44px;padding:12px;box-shadow:0 30px 60px rgba(23,25,28,.25);max-width:340px;justify-self:center;width:100%}
+.screen{background:#fff;border-radius:34px;padding:22px 14px 18px;min-height:440px;display:flex;flex-direction:column;gap:10px}
+.who{text-align:center;font-weight:800;font-size:15px;padding-bottom:8px;border-bottom:1px solid #e3e6e8;margin-bottom:6px}
+.who small{display:block;font-weight:600;color:var(--mute);font-size:12px}
+.missed{align-self:center;font-size:13px;color:var(--red);font-weight:800}
+.b{max-width:82%;padding:10px 14px;border-radius:20px;font-size:15px;line-height:1.45;opacity:0;transform:translateY(10px);transition:all .5s ease}
+.b.in{opacity:1;transform:none}
+.b.me{align-self:flex-end;background:var(--red);color:#fff;border-bottom-right-radius:6px}
+.b.them{align-self:flex-start;background:#e9ecee;border-bottom-left-radius:6px}
+.tb ul{list-style:none;padding:0;margin-top:18px}
+.tb li{padding:10px 0 10px 30px;position:relative;border-top:1px solid #e3e6e8;font-weight:600}
+.tb li::before{content:"";position:absolute;left:4px;top:20px;width:14px;height:3px;background:var(--red)}
+
+.lake{display:grid;grid-template-columns:1fr 1fr;min-height:420px}
+.lake .pic{overflow:hidden;position:relative}
+.lake .pic img{width:100%;height:100%;object-fit:cover}
+.lake .txt{padding:56px 40px;display:flex;flex-direction:column;justify-content:center;background:var(--chrome);color:var(--graphite)}
+.lake ul{padding-left:1.1em;margin-top:6px}
+
+.reviews{padding:76px 0}
+.rlabel{display:inline-block;font:800 14px var(--body);color:#fff;background:var(--graphite);padding:4px 12px;border-radius:4px;margin-bottom:14px}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,1fr);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+.rv{scroll-snap-align:start;border-radius:10px;padding:24px;background:var(--white);border-left:5px solid var(--chrome)}
+.rv .stars{color:var(--red);letter-spacing:3px;font-size:18px}
+.rv p{margin:10px 0 14px;font-size:17px}
+.rv small{color:var(--mute);font-weight:700;font-size:14px}
+
+.contact{padding:76px 0;background:var(--graphite);color:#fff}
+.cgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
+form{display:grid;gap:14px}
+form label{display:grid;gap:6px;font-weight:700}
+input[type=text],input[type=tel],textarea{font:inherit;padding:12px 14px;border-radius:6px;border:2px solid transparent;background:#fff;color:var(--graphite);width:100%}
+.note{min-height:1.5em;font-weight:700;color:#ff8a97}
+.map{background:var(--panel);border-radius:10px;padding:22px}
+.map svg{width:100%;height:auto;display:block}
+.map h3{font:800 22px var(--disp);margin-bottom:6px}
+.map p{color:#d7dcdf;font-size:16px}
+.info{margin-top:16px;display:grid;gap:6px;font-size:16px;color:#e3e7ea}
+.info a{color:#ff8a97;font-weight:700}
+footer{padding:24px 0 100px;font-size:14px;color:var(--mute)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.callbar{display:none}
+@media (max-width:900px){
+  .swatches,.wgrid{grid-template-columns:1fr 1fr}
+  .bgrid,.cgrid,.lake,.tgrid{grid-template-columns:1fr}
+  .lake .pic{height:260px}
+  .lake .txt{padding:40px 20px}
+  .ticket{position:static}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:15}
+  .callbar a{display:flex;justify-content:center;align-items:center;min-height:52px;border-radius:8px;font:800 16px var(--body);text-decoration:none}
+  .callbar .t{background:var(--red);color:#fff;animation:pulse 1.8s ease-out 1.2s 3}
+  .callbar .c{background:var(--graphite);color:#fff}
+}
+@media (max-width:480px){.swatches{gap:12px}.chip{height:64px}.sw{padding:12px 12px 16px}.sw h3{font-size:17px}.sw p{font-size:14px}.why b{font-size:34px}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(215,38,61,.55)}100%{box-shadow:0 0 0 16px rgba(215,38,61,0)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  h1 .w,.reveal,.b{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Demo preview built by David — not the official site. Photos are illustrative.</div>
+
+<header><div class="wrap">
+  <div class="logo">ZV <span>Detailing</span></div>
+  <div class="row">
+    <span class="status" id="status"><i class="dot"></i><span>Checking hours</span></span>
+    <a class="btn" href="tel:+18039245377">Call 803-924-5377</a>
+  </div>
+</div></header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="bg"><img src="img/hero.webp" alt="Freshly detailed dark blue truck hood with water beading on the paint" width="1200" height="685" fetchpriority="high"></div>
+  <span class="tag">Illustration</span>
+  <div class="wrap">
+    <div class="rule" aria-hidden="true"></div>
+    <h1 id="h1" data-split>Gloss you can see from the dock.</h1>
+    <p class="lede">Mobile detailing for cars, trucks and boats in Clemson and on Lake Keowee. Mac comes to you.</p>
+    <div class="row">
+      <a class="btn" href="#build">Build your detail</a>
+      <a class="btn ghost" href="sms:+18039245377">Text 803-924-5377</a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services" aria-labelledby="h-svc"><div class="wrap">
+  <h2 id="h-svc" class="reveal">Every finish Mac does</h2>
+  <p class="sub reveal">Pick one or stack them. It all happens in your driveway or at your dock.</p>
+  <div class="swatches">
+    <div class="sw reveal"><div class="chip c1" aria-hidden="true"></div><h3>Buff</h3><p>Takes the dull haze and light swirls out of the paint.</p></div>
+    <div class="sw reveal"><div class="chip c2" aria-hidden="true"></div><h3>Wax</h3><p>A deep shine with water beading off the hood.</p></div>
+    <div class="sw reveal"><div class="chip c3" aria-hidden="true"></div><h3>Wheel polish</h3><p>Brake dust off and the metal bright again.</p></div>
+    <div class="sw reveal"><div class="chip c4" aria-hidden="true"></div><h3>Ceramic coating</h3><p>A hard protective layer over the paint.</p></div>
+  </div>
+</div></section>
+
+<section class="builder" id="build" aria-labelledby="h-build"><div class="wrap bgrid">
+  <div class="reveal">
+    <h2 id="h-build">Build your detail, then text it over</h2>
+    <p class="sub">Pick what you're bringing and what it needs. The text writes itself, so there's no phone tag.</p>
+    <fieldset><legend>What are we detailing?</legend>
+      <div class="opts">
+        <label><input type="radio" name="kind" value="Car" checked><span>Car</span></label>
+        <label><input type="radio" name="kind" value="Truck or SUV"><span>Truck or SUV</span></label>
+        <label><input type="radio" name="kind" value="Boat at the dock"><span>Boat at the dock</span></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>What does it need?</legend>
+      <div class="opts" id="svc">
+        <label><input type="checkbox" value="Buff"><span>Buff</span></label>
+        <label><input type="checkbox" value="Wax" checked><span>Wax</span></label>
+        <label><input type="checkbox" value="Wheel polish"><span>Wheel polish</span></label>
+        <label><input type="checkbox" value="Ceramic coating"><span>Ceramic coating</span></label>
+        <label data-boat hidden><input type="checkbox" value="Silver package"><span>Silver package</span></label>
+        <label data-boat hidden><input type="checkbox" value="Bimini clean"><span>Bimini clean</span></label>
+        <label><input type="checkbox" value="Not sure, tell me what it needs"><span>Not sure</span></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>Where is it?</legend>
+      <div class="opts">
+        <label><input type="radio" name="where" value="at my house" checked><span>At my house</span></label>
+        <label><input type="radio" name="where" value="at work"><span>At work</span></label>
+        <label><input type="radio" name="where" value="docked on Lake Keowee"><span>On Lake Keowee</span></label>
+      </div>
+    </fieldset>
+  </div>
+  <aside class="ticket reveal" aria-live="polite">
+    <h3>Your text to Mac</h3>
+    <pre id="msg"></pre>
+    <a class="btn" id="send" href="sms:+18039245377">Open in Messages</a>
+    <p class="fine">Opens your phone's texting app with this filled in. Nothing sends until you hit send.</p>
+  </aside>
+</div></section>
+
+<section class="why" id="why" aria-labelledby="h-why"><div class="wrap">
+  <h2 id="h-why" class="reveal">Why people book Mac</h2>
+  <div class="wgrid">
+    <div class="reveal"><b data-count="5.0" data-dec="1">0</b><p>Google rating</p></div>
+    <div class="reveal"><b data-count="173">0</b><p>Google reviews</p></div>
+    <div class="reveal"><b>Same day</b><p>Customers say he answers requests the day they ask.</p></div>
+    <div class="reveal"><b>Mobile</b><p>He comes to the house, the office or the dock.</p></div>
+  </div>
+</div></section>
+
+<section class="tb" id="textback" aria-labelledby="h-tb"><div class="wrap tgrid">
+  <div class="reveal">
+    <h2 id="h-tb">Never miss a call — we text you back in seconds</h2>
+    <p class="sub">Mac's hands are usually full of polish. When a call goes unanswered, the site's number texts the customer right back so the job doesn't go to someone else.</p>
+    <ul>
+      <li>Missed call turns into a text in seconds</li>
+      <li>The customer answers by text, no phone tag</li>
+      <li>Mac replies when the buffer is off</li>
+    </ul>
+  </div>
+  <div class="phone" aria-label="Example text conversation after a missed call">
+    <div class="screen" id="thread">
+      <div class="who">ZV Detailing<small>803-924-5377</small></div>
+      <div class="missed">Missed call · 2:14 PM</div>
+      <div class="b me">Hey, it's Mac with ZV Detailing. Sorry I missed you, I'm mid-detail. What are we working on?</div>
+      <div class="b them">Pontoon on Keowee, needs a wax and the Bimini cleaned</div>
+      <div class="b me">Got it. I can come to your dock Thursday morning. Does 9 work?</div>
+      <div class="b them">Perfect, see you then</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="lake" aria-labelledby="h-lake">
+  <div class="pic"><img src="img/boat.webp" alt="Clean pontoon boat docked on a calm lake at sunrise" width="1000" height="571" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="txt reveal">
+    <h2 id="h-lake">Boats too, right at the dock</h2>
+    <p>Mac's crew details boats where they sit on Lake Keowee, so you never trailer it anywhere.</p>
+    <ul><li>Silver package for boats</li><li>Bimini top clean</li><li>Same wax and ceramic work as the trucks</li></ul>
+  </div>
+</section>
+
+<section class="reviews" id="reviews" aria-labelledby="h-rv"><div class="wrap">
+  <span class="rlabel">Sample reviews · placeholder text</span>
+  <h2 id="h-rv">What a review section would look like</h2>
+  <p class="sub">These are placeholders. On the real site, Mac's actual Google reviews go here.</p>
+  <div class="rail">
+    <article class="rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>Sample review: the truck looked better than the day I bought it.</p><small>Sample customer</small></article>
+    <article class="rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>Sample review: he came right to the dock and the pontoon was spotless.</p><small>Sample customer</small></article>
+    <article class="rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>Sample review: easy to book by text and showed up on time.</p><small>Sample customer</small></article>
+  </div>
+</div></section>
+
+<section class="contact" id="quote" aria-labelledby="h-q"><div class="wrap cgrid">
+  <div class="reveal">
+    <h2 id="h-q">Get a quote</h2>
+    <form id="qf">
+      <label>Your name<input type="text" required autocomplete="name"></label>
+      <label>Phone<input type="tel" required autocomplete="tel"></label>
+      <label>Year, make and model (or boat type)<input type="text"></label>
+      <label>What does it need?<textarea rows="3"></textarea></label>
+      <button class="btn" type="submit">Request a quote</button>
+      <p class="note" id="note" role="status"></p>
+    </form>
+  </div>
+  <div class="map reveal" id="area" aria-labelledby="h-area">
+    <h3 id="h-area">Where Mac works</h3>
+    <p>Based in Clemson. Mobile across the area, including Lake Keowee docks.</p>
+    <svg viewBox="0 0 400 320" role="img" aria-label="Map of South Carolina with a pin at Clemson">
+      <path d="M31.8,30.3L57.2,22.2L59.1,23.9L66.9,19.1L75.0,15.3L82.3,13.5L84.2,14.2L87.6,10.0L89.0,13.2L95.4,11.5L147.8,13.9L177.1,15.2L192.5,16.2L193.0,20.5L191.1,24.4L192.5,26.1L200.8,20.2L212.6,36.3L211.4,47.3L261.1,48.1L281.7,48.6L298.8,48.7L323.3,73.2L331.9,82.6L361.0,111.9L386.9,138.7L383.3,139.3L373.2,143.4L365.7,148.8L355.9,158.6L350.9,165.0L349.0,168.6L344.5,173.3L340.6,180.9L337.0,195.0L337.8,199.4L335.9,203.3L331.9,207.1L325.5,210.4L323.0,218.3L318.3,217.5L313.5,218.8L310.5,215.6L306.0,218.3L303.2,223.4L304.1,225.9L306.3,225.1L306.3,227.8L302.1,229.4L297.1,233.0L294.6,237.2L285.1,242.0L282.3,238.9L279.2,239.5L278.9,242.1L283.7,243.9L282.3,248.7L275.3,252.9L273.4,256.1L270.6,255.7L263.9,257.5L259.1,262.3L257.5,260.8L247.4,268.1L245.2,266.4L241.0,268.7L240.4,266.3L236.8,266.3L235.7,269.7L239.9,276.5L237.9,282.5L229.0,287.5L223.7,289.1L223.2,285.8L217.9,282.5L214.8,284.3L214.2,286.8L217.6,288.0L221.5,292.8L217.3,298.1L210.3,302.9L207.8,302.9L203.1,308.3L204.5,310.0L202.0,309.7L195.8,303.9L192.7,305.3L186.9,302.5L185.5,297.5L186.6,295.4L183.5,290.0L186.3,286.4L184.7,280.3L179.4,272.1L180.5,269.3L174.1,262.8L167.1,258.8L163.7,254.9L165.1,251.6L164.0,247.7L163.7,243.4L162.6,240.8L162.6,233.9L160.1,232.7L159.6,228.7L156.2,223.6L157.6,218.1L152.3,214.6L147.8,209.9L145.3,210.0L137.8,205.6L135.6,201.9L136.1,198.6L133.0,199.0L129.4,195.6L130.5,193.2L122.7,186.5L123.8,183.9L122.7,180.8L124.7,177.3L123.6,175.4L119.4,173.2L114.4,165.7L109.6,162.7L106.3,162.6L102.6,159.5L102.4,156.2L99.9,152.9L98.7,148.0L90.6,140.0L82.6,135.8L77.3,130.0L74.7,129.9L71.7,121.7L67.8,117.8L65.5,112.4L62.2,110.5L60.2,105.0L60.2,100.8L57.2,96.6L56.3,92.6L53.0,90.1L52.1,84.9L49.9,79.8L47.7,78.8L39.9,80.1L33.5,75.9L27.0,67.5L22.3,67.0L13.9,60.3L13.1,55.1L15.3,53.0L15.0,50.1L22.3,41.6L30.9,36.1L31.8,30.3Z" fill="#D7263D" stroke="#17191C" stroke-width="1.5"/>
+      <circle cx="52.9" cy="60.2" r="20" fill="#ffffff" fill-opacity=".25"/>
+      <circle cx="52.9" cy="60.2" r="7" fill="#17191C" stroke="#ffffff" stroke-width="3"/>
+      <text x="68.9" y="50.2" fill="#ffffff" font-family="Manrope,sans-serif" font-size="18" font-weight="800">Clemson</text>
+    </svg>
+    <div class="info">
+      <span>Hours: Monday to Saturday, 8am to 7pm. Sunday closed.</span>
+      <span>Base: 102 Broad St, Clemson, SC 29631 · <a href="https://maps.apple.com/?q=ZV+Detailing+102+Broad+St+Clemson+SC">Open in Maps</a></span>
+      <span>Call or text: <a href="tel:+18039245377">803-924-5377</a></span>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">ZV Detailing LLC, Clemson, SC. Demo preview built by David. Not the official ZV Detailing website. Sample reviews are placeholders.</div></footer>
+<div class="callbar"><a class="t" href="sms:+18039245377">Text Mac</a><a class="c" href="tel:+18039245377">Call</a></div>
+
+<script>
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('[data-split]').forEach(h=>{const t=h.textContent.trim();h.setAttribute('aria-label',t);h.innerHTML=t.split(/\s+/).map((x,i)=>'<span class="w" aria-hidden="true" style="animation-delay:'+(120+i*90)+'ms">'+x+'</span>').join(' ')});
+function count(el){const t=parseFloat(el.dataset.count),d=+(el.dataset.dec||0);if(RM){el.textContent=t.toFixed(d);return}const s=performance.now();(function f(n){const k=Math.min(1,(n-s)/1400),e=1-Math.pow(1-k,3);el.textContent=(t*e).toFixed(d);if(k<1)requestAnimationFrame(f)})(s)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');e.target.querySelectorAll('[data-count]').forEach(count);if(e.target.id==='thread'){[...e.target.querySelectorAll('.b')].forEach((b,i)=>setTimeout(()=>b.classList.add('in'),RM?0:300+i*700))}io.unobserve(e.target)}),{threshold:.2});
+document.querySelectorAll('.reveal,#thread').forEach(el=>io.observe(el));
+
+const msg=document.getElementById('msg'),send=document.getElementById('send');
+function build(){
+  const kind=document.querySelector('input[name=kind]:checked').value,boat=kind.startsWith('Boat');
+  document.querySelectorAll('[data-boat]').forEach(l=>{l.hidden=!boat;if(!boat)l.querySelector('input').checked=false});
+  const svc=[...document.querySelectorAll('#svc input:checked')].map(x=>x.value);
+  const where=document.querySelector('input[name=where]:checked').value;
+  const t='Hey Mac, I found you online. I have a '+kind.toLowerCase()+' '+where+'.\nLooking for: '+(svc.length?svc.join(', '):'not sure yet')+'.\nWhen are you free?';
+  msg.textContent=t;send.href='sms:+18039245377?&body='+encodeURIComponent(t);
+}
+document.querySelectorAll('.builder input').forEach(i=>i.addEventListener('change',build));build();
+
+(function(){
+  const f=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'});
+  const p=Object.fromEntries(f.formatToParts(new Date()).map(x=>[x.type,x.value]));
+  const m=(+p.hour)*60+(+p.minute),el=document.getElementById('status');
+  if(p.weekday!=='Sun'&&m>=480&&m<1140){el.classList.add('open');el.lastElementChild.textContent='Open until 7 PM'}
+  else el.lastElementChild.textContent=(p.weekday==='Sun'||(p.weekday==='Sat'&&m>=1140))?'Closed. Opens Monday 8 AM':(m<480?'Closed. Opens 8 AM':'Closed. Opens tomorrow 8 AM');
+})();
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();document.getElementById('note').textContent='Demo form. On the real site, this goes straight to Mac.'});
+</script>
+</body>
+</html>

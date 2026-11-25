@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>TreeSouth | Certified arborist tree care in Seneca, SC</title>
+<meta name="description" content="Demo preview of a redesigned site for TreeSouth, certified arborist tree care in Seneca, SC, including lakefront properties.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#1F3B2D; --slate:#46606E; --cedar:#A9622F; --fog:#EEF2F0; --ink:#14231B; --line:#C7D1CB; --mute:#3F5248;
+  --disp:'Newsreader',Georgia,serif;
+  --body:'Schibsted Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.65 var(--body);color:var(--ink);background:var(--fog);padding-top:38px}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--cedar);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.demo{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--pine);color:#dbe5df;font:500 13px/1.3 var(--body);text-align:center;padding:6px 12px;min-height:38px;display:flex;align-items:center;justify-content:center}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+.logo{font:600 30px/1 var(--disp);color:var(--pine);letter-spacing:-.01em}
+.logo small{display:block;font:500 13px var(--body);color:var(--slate);letter-spacing:0;margin-top:4px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:700;color:var(--slate)}
+.dot{width:10px;height:10px;border-radius:50%;background:#9aa8a0}
+.status.open .dot{background:#2f8f55}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:var(--pine);color:#fff;font:700 16px var(--body);border:0;border-radius:2px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#2b5240}
+.btn.cedar{background:var(--cedar)}
+.btn.cedar:hover{background:#8d5126}
+.tag{position:absolute;right:10px;top:10px;z-index:2;background:rgba(20,35,27,.72);color:#fff;font:500 12px var(--body);padding:3px 9px}
+
+/* hero: photo plate + floating card */
+.hero .pic{height:min(60vh,540px);overflow:hidden;position:relative}
+.hero .pic img{width:100%;height:100%;object-fit:cover;animation:kb 26s ease-out both}
+@keyframes kb{from{transform:scale(1.12) translateX(-1.5%)}to{transform:none}}
+.card{position:relative;margin:-140px auto 0;max-width:1060px;background:var(--fog);padding:40px 40px 0;z-index:1}
+h1{font:600 clamp(40px,6.4vw,80px)/1.02 var(--disp);color:var(--pine);max-width:15ch;letter-spacing:-.015em}
+h1 .w{display:inline-block;opacity:0;transform:translateY(.4em);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.lede{max-width:56ch;margin:16px 0 22px;font-size:19px;color:var(--mute)}
+.stat{display:flex;gap:40px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line);flex-wrap:wrap}
+.stat b{display:block;font:600 44px/1 var(--disp);color:var(--cedar)}
+.stat small{font-size:14px;color:var(--slate);font-weight:500}
+h2{font:600 clamp(32px,4.4vw,50px)/1.06 var(--disp);color:var(--pine);margin-bottom:12px;letter-spacing:-.01em}
+.sub{max-width:56ch;color:var(--mute);margin-bottom:24px}
+
+/* services: two-column index with leader lines */
+.services{padding:80px 0}
+.sgrid2{display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
+.idx{list-style:none;padding:0}
+.idx li{padding:18px 0;border-bottom:1px solid var(--line)}
+.idx h3{font:600 26px/1.15 var(--disp);color:var(--pine)}
+.idx p{color:var(--mute);font-size:16px;margin-top:4px}
+
+/* checklist */
+.check{padding:80px 0;background:#fff}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.list{list-style:none;padding:0;border-top:1px solid var(--line)}
+.list li{border-bottom:1px solid var(--line)}
+.list label{display:flex;gap:14px;align-items:center;min-height:56px;padding:8px 4px;cursor:pointer}
+.list input{width:22px;height:22px;accent-color:var(--pine);flex:none}
+.verdict{background:var(--pine);color:#fff;padding:28px;position:sticky;top:56px}
+.verdict h3{font:600 30px/1.1 var(--disp);margin-bottom:10px}
+.meter{height:8px;background:rgba(255,255,255,.2);overflow:hidden;margin:6px 0 16px}
+.meter i{display:block;height:100%;width:0;background:#E0A576;transition:width .5s ease}
+.verdict p{margin-bottom:18px}
+.fine{font-size:13px;color:#c6d4cb;margin-top:14px}
+
+/* why: process */
+.why{padding:80px 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--pine)}
+.steps>div{padding:22px 24px 0 0}
+.steps .n{font:600 italic 18px var(--disp);color:var(--cedar)}
+.steps h3{font:600 26px var(--disp);color:var(--pine);margin:4px 0 6px}
+
+/* lake */
+.lake{display:grid;grid-template-columns:1fr 1.1fr;background:var(--slate);color:#fff}
+.lake .pic{overflow:hidden;min-height:380px;position:relative}
+.lake .pic img{width:100%;height:100%;object-fit:cover}
+.lake .txt{padding:56px 44px;display:flex;flex-direction:column;justify-content:center}
+.lake h2{color:#fff}
+
+/* text-back: office message slip */
+.tb{padding:84px 0}
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.slip{background:#fff;border:1px solid var(--line);padding:26px 26px 20px;box-shadow:0 18px 40px rgba(20,35,27,.12);transform:rotate(-1.2deg)}
+.slip h3{font:600 22px var(--disp);color:var(--pine);border-bottom:2px solid var(--pine);padding-bottom:8px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:baseline}
+.slip h3 span{font:500 13px var(--body);color:var(--slate)}
+.ln{display:grid;grid-template-columns:96px 1fr;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:16px;opacity:0;transition:opacity .5s ease}
+.ln.in{opacity:1}
+.ln b{font-size:14px;color:var(--slate)}
+.ln.sent p{color:var(--pine);font-weight:500}
+
+/* reviews: editorial columns */
+.reviews{padding:80px 0;background:#fff}
+.rtag{font:700 14px var(--body);color:var(--cedar);margin-bottom:8px}
+.qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.qgrid figure{padding:8px 28px 0 0;margin-right:28px;border-right:1px solid var(--line)}
+.qgrid figure:last-child{border-right:0;margin-right:0}
+.qgrid blockquote{font:500 italic 24px/1.3 var(--disp);color:var(--pine)}
+.qgrid figcaption{margin-top:12px;font-size:14px;color:var(--slate);font-weight:500}
+
+/* quote + area */
+.contact{background:var(--pine);color:#fff;padding:72px 0}
+.contact h2{color:#fff}
+.fgrid{display:grid;grid-template-columns:1.15fr 1fr;gap:44px;align-items:start}
+form{display:grid;gap:14px}
+form label{display:grid;gap:6px;font-weight:700}
+input[type=text],input[type=tel],textarea{font:inherit;padding:12px;border-radius:2px;border:2px solid transparent;background:#fff;color:var(--ink);width:100%}
+.note{min-height:1.5em;font-weight:700;color:#f0c39b}
+.plate{background:var(--fog);color:var(--ink);padding:18px;outline:1px solid rgba(255,255,255,.4);outline-offset:6px}
+.plate h3{font:600 26px var(--disp);color:var(--pine)}
+.plate svg{width:100%;height:auto;display:block;margin:6px 0}
+.plate p{font-size:15px;color:var(--mute)}
+.plate a{color:var(--cedar);font-weight:700}
+footer{padding:22px 0 100px;font-size:14px;color:var(--slate)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.callbar{display:none}
+@media (max-width:860px){
+  .sgrid2,.cgrid,.fgrid,.lake,.tgrid{grid-template-columns:1fr}
+  .steps,.qgrid{grid-template-columns:1fr}
+  .qgrid figure{border-right:0;margin-right:0;padding:18px 0;border-bottom:1px solid var(--line)}
+  .card{margin-top:-70px;padding:28px 20px 0}
+  .verdict{position:static}
+  .lake .pic{min-height:240px}
+  .lake .txt{padding:40px 20px}
+  .slip{transform:none}
+  .callbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:15;justify-content:center;align-items:center;min-height:54px;border-radius:2px;background:var(--cedar);color:#fff;font:700 17px var(--body);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3);animation:pulse 1.8s ease-out 1.2s 3}
+}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(169,98,47,.6)}100%{box-shadow:0 0 0 18px rgba(169,98,47,0)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  h1 .w,.reveal,.ln{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Demo preview built by David — not the official site. Photos are illustrative.</div>
+
+<header><div class="wrap">
+  <div class="logo">TreeSouth<small>Certified arborist · Seneca, SC</small></div>
+  <div class="row">
+    <span class="status" id="status"><i class="dot"></i><span>Checking office hours</span></span>
+    <a class="btn" href="tel:+18648828262">Call 864-882-8262</a>
+  </div>
+</div></header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="pic"><img src="img/hero.webp" alt="Tall pine trees along a lake shoreline in morning light" width="1200" height="685" fetchpriority="high"><span class="tag">Illustration</span></div>
+  <div class="card">
+    <h1 id="h1" data-split>Ask an arborist before you cut.</h1>
+    <p class="lede">Certified arborist tree care in Seneca and around the lake. Paul looks at the tree first, then the crew does the work and leaves the driveway clean.</p>
+    <div class="row"><a class="btn" href="#check">Check your tree</a><a class="btn cedar" href="tel:+18648828262">Call the office</a></div>
+    <div class="stat">
+      <div><b data-count="5.0" data-dec="1">0</b><small>Google rating</small></div>
+      <div><b data-count="218">0</b><small>Google reviews</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services" aria-labelledby="h-svc"><div class="wrap sgrid2">
+  <div class="reveal"><h2 id="h-svc">The work</h2><p class="sub">Every job starts with an arborist's eye, not a chainsaw.</p></div>
+  <ul class="idx">
+    <li class="reveal"><h3>Arborist consultations</h3><p>Paul, a certified arborist, looks at the tree and tells you what it actually needs.</p></li>
+    <li class="reveal"><h3>Tree removal</h3><p>Done carefully, protecting the plants and beds around it.</p></li>
+    <li class="reveal"><h3>Lakefront trees</h3><p>Trees that can only come down toward the water, handled with a barge partner.</p></li>
+    <li class="reveal"><h3>Your logs, your call</h3><p>The crew leaves logs on request and cleans the driveway before leaving.</p></li>
+  </ul>
+</div></section>
+
+<section class="check" id="check" aria-labelledby="h-chk"><div class="wrap cgrid">
+  <div class="reveal">
+    <h2 id="h-chk">Is your tree worth a look?</h2>
+    <p class="sub">Tick anything you've noticed. These are common reasons people call an arborist.</p>
+    <ul class="list" id="signs">
+      <li><label><input type="checkbox" value="Dead or bare branches">Dead or bare branches up top</label></li>
+      <li><label><input type="checkbox" value="Leaning more than it used to">It leans more than it used to</label></li>
+      <li><label><input type="checkbox" value="Cracks or splits in the trunk">Cracks or splits in the trunk</label></li>
+      <li><label><input type="checkbox" value="Mushrooms at the base">Mushrooms growing at the base</label></li>
+      <li><label><input type="checkbox" value="Bark falling off">Bark peeling or falling off</label></li>
+      <li><label><input type="checkbox" value="Close to the house or dock">It's close to the house or the dock</label></li>
+    </ul>
+  </div>
+  <aside class="verdict reveal" aria-live="polite">
+    <h3 id="vt">Nothing ticked yet</h3>
+    <div class="meter"><i id="vm"></i></div>
+    <p id="vd">Pick what you've seen and we'll tell you what to mention when you call.</p>
+    <a class="btn cedar" href="#quote">Ask Paul to take a look</a>
+    <p class="fine">A guide for what to mention, not a diagnosis. Only an arborist on site can tell you that.</p>
+  </aside>
+</div></section>
+
+<section class="why" id="why" aria-labelledby="h-why"><div class="wrap">
+  <h2 id="h-why" class="reveal">Why it goes smoothly</h2>
+  <p class="sub reveal">One process, the same every time, from the first call to the clean driveway.</p>
+  <div class="steps">
+    <div class="reveal"><span class="n">First</span><h3>The office</h3><p>You call, and the office takes the address and what's going on.</p></div>
+    <div class="reveal"><span class="n">Then</span><h3>The arborist</h3><p>Paul visits, looks at the tree, and explains the options.</p></div>
+    <div class="reveal"><span class="n">Last</span><h3>The crew</h3><p>The crew does the work, protects your plants, and leaves the driveway clean.</p></div>
+  </div>
+</div></section>
+
+<section class="lake" aria-labelledby="h-lake">
+  <div class="pic"><img src="img/bark.webp" alt="Hand checking the bark of a tree" width="800" height="682" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="txt reveal">
+    <h2 id="h-lake">Lakefront trees are their own problem</h2>
+    <p>Some trees can't come down toward the house or the road. TreeSouth has worked the water side, including dropping a dead hickory into the lake with a barge partner to haul it out.</p>
+  </div>
+</section>
+
+<section class="tb" id="textback" aria-labelledby="h-tb"><div class="wrap tgrid">
+  <div class="reveal">
+    <h2 id="h-tb">Never miss a call — we text you back in seconds</h2>
+    <p class="sub">When the office line rings after hours or while everyone's on a call, the caller gets a text right away instead of a voicemail beep. The office picks up the thread in the morning.</p>
+  </div>
+  <div class="slip" id="slip" aria-label="Example missed call message slip with automatic text">
+    <h3>While you were out <span>Example</span></h3>
+    <div class="ln"><b>5:48 PM</b><p>Missed call from a homeowner near the lake</p></div>
+    <div class="ln sent"><b>Texted back</b><p>Thanks for calling TreeSouth. The office is closed, but we got your call. What's going on with your tree?</p></div>
+    <div class="ln"><b>Reply</b><p>Dead pine leaning toward our dock</p></div>
+    <div class="ln sent"><b>Next morning</b><p>The office scheduled Paul for an arborist visit.</p></div>
+  </div>
+</div></section>
+
+<section class="reviews" id="reviews" aria-labelledby="h-rv"><div class="wrap">
+  <p class="rtag">Sample reviews · placeholder text</p>
+  <h2 id="h-rv">In customers' words</h2>
+  <p class="sub">These are placeholders. The real site would show TreeSouth's actual Google reviews.</p>
+  <div class="qgrid">
+    <figure class="reveal"><blockquote>Sample review: Paul explained exactly what the old oak needed.</blockquote><figcaption>Sample customer</figcaption></figure>
+    <figure class="reveal"><blockquote>Sample review: the crew protected every plant in our beds.</blockquote><figcaption>Sample customer</figcaption></figure>
+    <figure class="reveal"><blockquote>Sample review: they handled the tree by the lake we were worried about.</blockquote><figcaption>Sample customer</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="contact" id="quote" aria-labelledby="h-q"><div class="wrap fgrid">
+  <div class="reveal">
+    <h2 id="h-q">Request an arborist visit</h2>
+    <form id="qf">
+      <label>Your name<input type="text" required autocomplete="name"></label>
+      <label>Phone<input type="tel" required autocomplete="tel"></label>
+      <label>Property address<input type="text" autocomplete="street-address"></label>
+      <label>What's going on with the tree?<textarea id="details" rows="3"></textarea></label>
+      <button class="btn cedar" type="submit">Request a visit</button>
+      <p class="note" id="note" role="status"></p>
+    </form>
+  </div>
+  <div class="plate reveal" id="area">
+    <h3>Service area</h3>
+    <p>Office in Seneca, serving the area around it, including lake properties.</p>
+    <svg viewBox="0 0 400 320" role="img" aria-label="Map of South Carolina with a pin at Seneca">
+      <path d="M31.8,30.3L57.2,22.2L59.1,23.9L66.9,19.1L75.0,15.3L82.3,13.5L84.2,14.2L87.6,10.0L89.0,13.2L95.4,11.5L147.8,13.9L177.1,15.2L192.5,16.2L193.0,20.5L191.1,24.4L192.5,26.1L200.8,20.2L212.6,36.3L211.4,47.3L261.1,48.1L281.7,48.6L298.8,48.7L323.3,73.2L331.9,82.6L361.0,111.9L386.9,138.7L383.3,139.3L373.2,143.4L365.7,148.8L355.9,158.6L350.9,165.0L349.0,168.6L344.5,173.3L340.6,180.9L337.0,195.0L337.8,199.4L335.9,203.3L331.9,207.1L325.5,210.4L323.0,218.3L318.3,217.5L313.5,218.8L310.5,215.6L306.0,218.3L303.2,223.4L304.1,225.9L306.3,225.1L306.3,227.8L302.1,229.4L297.1,233.0L294.6,237.2L285.1,242.0L282.3,238.9L279.2,239.5L278.9,242.1L283.7,243.9L282.3,248.7L275.3,252.9L273.4,256.1L270.6,255.7L263.9,257.5L259.1,262.3L257.5,260.8L247.4,268.1L245.2,266.4L241.0,268.7L240.4,266.3L236.8,266.3L235.7,269.7L239.9,276.5L237.9,282.5L229.0,287.5L223.7,289.1L223.2,285.8L217.9,282.5L214.8,284.3L214.2,286.8L217.6,288.0L221.5,292.8L217.3,298.1L210.3,302.9L207.8,302.9L203.1,308.3L204.5,310.0L202.0,309.7L195.8,303.9L192.7,305.3L186.9,302.5L185.5,297.5L186.6,295.4L183.5,290.0L186.3,286.4L184.7,280.3L179.4,272.1L180.5,269.3L174.1,262.8L167.1,258.8L163.7,254.9L165.1,251.6L164.0,247.7L163.7,243.4L162.6,240.8L162.6,233.9L160.1,232.7L159.6,228.7L156.2,223.6L157.6,218.1L152.3,214.6L147.8,209.9L145.3,210.0L137.8,205.6L135.6,201.9L136.1,198.6L133.0,199.0L129.4,195.6L130.5,193.2L122.7,186.5L123.8,183.9L122.7,180.8L124.7,177.3L123.6,175.4L119.4,173.2L114.4,165.7L109.6,162.7L106.3,162.6L102.6,159.5L102.4,156.2L99.9,152.9L98.7,148.0L90.6,140.0L82.6,135.8L77.3,130.0L74.7,129.9L71.7,121.7L67.8,117.8L65.5,112.4L62.2,110.5L60.2,105.0L60.2,100.8L57.2,96.6L56.3,92.6L53.0,90.1L52.1,84.9L49.9,79.8L47.7,78.8L39.9,80.1L33.5,75.9L27.0,67.5L22.3,67.0L13.9,60.3L13.1,55.1L15.3,53.0L15.0,50.1L22.3,41.6L30.9,36.1L31.8,30.3Z" fill="#46606E" stroke="#1F3B2D" stroke-width="1.5"/>
+      <circle cx="43.9" cy="60" r="20" fill="#A9622F" fill-opacity=".3"/>
+      <circle cx="43.9" cy="60" r="7" fill="#A9622F" stroke="#fff" stroke-width="3"/>
+      <text x="59.9" y="50" fill="#fff" font-family="Schibsted Grotesk,sans-serif" font-size="18" font-weight="700">Seneca</text>
+    </svg>
+    <p>Office hours: Monday to Friday, 8am to 5pm</p>
+    <p>7015 Wells Hwy, Suite C, Seneca, SC 29678 · <a href="https://maps.apple.com/?q=TreeSouth+7015+Wells+Hwy+Seneca+SC">Open in Maps</a></p>
+    <p>Call <a href="tel:+18648828262">864-882-8262</a></p>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">TreeSouth LLC, Seneca, SC. Demo preview built by David. Not the official TreeSouth website. Sample reviews are placeholders.</div></footer>
+<a class="callbar" href="tel:+18648828262">Call TreeSouth: 864-882-8262</a>
+
+<script>
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('[data-split]').forEach(h=>{const t=h.textContent.trim();h.setAttribute('aria-label',t);h.innerHTML=t.split(/\s+/).map((x,i)=>'<span class="w" aria-hidden="true" style="animation-delay:'+(120+i*90)+'ms">'+x+'</span>').join(' ')});
+function count(el){const t=parseFloat(el.dataset.count),d=+(el.dataset.dec||0);if(RM){el.textContent=t.toFixed(d);return}const s=performance.now();(function f(n){const k=Math.min(1,(n-s)/1400),e=1-Math.pow(1-k,3);el.textContent=(t*e).toFixed(d);if(k<1)requestAnimationFrame(f)})(s)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');if(e.target.dataset.count)count(e.target);if(e.target.id==='slip')[...e.target.querySelectorAll('.ln')].forEach((x,i)=>setTimeout(()=>x.classList.add('in'),RM?0:250+i*650));io.unobserve(e.target)}),{threshold:.2});
+document.querySelectorAll('.reveal,[data-count],#slip').forEach(el=>io.observe(el));
+function upd(){
+  const on=[...document.querySelectorAll('#signs input:checked')].map(x=>x.value),n=on.length,vt=document.getElementById('vt'),vd=document.getElementById('vd');
+  document.getElementById('vm').style.width=(n/6*100)+'%';
+  if(!n){vt.textContent='Nothing ticked yet';vd.textContent="Pick what you've seen and we'll tell you what to mention when you call."}
+  else if(n<3){vt.textContent='Worth mentioning';vd.textContent='Tell the office about: '+on.join(', ').toLowerCase()+'. Paul can check it on his visit.'}
+  else{vt.textContent='Have an arborist look soon';vd.textContent='Several signs together ('+on.join(', ').toLowerCase()+'). Call the office and ask for Paul to come out.'}
+  document.getElementById('details').value=n?'Noticed: '+on.join(', '):'';
+}
+document.querySelectorAll('#signs input').forEach(i=>i.addEventListener('change',upd));
+(function(){
+  const f=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'});
+  const p=Object.fromEntries(f.formatToParts(new Date()).map(x=>[x.type,x.value]));
+  const m=(+p.hour)*60+(+p.minute),wk=!['Sat','Sun'].includes(p.weekday),el=document.getElementById('status');
+  if(wk&&m>=480&&m<1020){el.classList.add('open');el.lastElementChild.textContent='Office open until 5 PM'}
+  else el.lastElementChild.textContent=(!wk||(p.weekday==='Fri'&&m>=1020))?'Office closed. Opens Monday 8 AM':(m<480?'Office closed. Opens 8 AM':'Office closed. Opens tomorrow 8 AM');
+})();
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();document.getElementById('note').textContent='Demo form. On the real site, this goes straight to the TreeSouth office.'});
+</script>
+</body>
+</html>

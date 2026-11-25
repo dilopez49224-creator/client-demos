@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mullinax Tree Service | Tree removal in Central, SC</title>
+<meta name="description" content="Demo preview of a one-page site for Mullinax Tree Service: tree removal, stump grinding, pruning and storm cleanup in Central, SC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#23402A; --pine:#173020; --hivis:#F26B1D; --char:#1E1F1C; --mist:#EEF1EA; --leaf:#5F8A4E; --mute:#4D5A4F;
+  --disp:'Anton','Impact','Arial Narrow',sans-serif;
+  --body:'Source Sans 3',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:18px/1.6 var(--body);color:var(--char);background:var(--mist);padding-top:38px}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--hivis);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.demo{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--hivis);color:var(--char);font:700 13px/1.3 var(--body);text-align:center;padding:6px 12px;min-height:38px;display:flex;align-items:center;justify-content:center}
+header{background:var(--forest);color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font:400 28px/1 var(--disp);letter-spacing:.03em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;background:var(--hivis);color:var(--char);font:800 17px var(--body);border:0;border-radius:3px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#ff8137}
+.btn.dark{background:var(--char);color:#fff}
+.tag{position:absolute;left:12px;bottom:12px;z-index:2;background:rgba(0,0,0,.65);color:#fff;font:700 12px var(--body);padding:4px 10px;border-radius:3px}
+
+/* hero: split with hazard stripe */
+.hero{background:var(--forest);color:#fff;position:relative}
+.hero .grid{display:grid;grid-template-columns:1fr 1.1fr;min-height:min(78vh,660px)}
+.hero .txt{padding:56px 40px 56px max(20px,calc((100vw - 1140px)/2 + 20px));display:flex;flex-direction:column;justify-content:center}
+.hero .pic{position:relative;overflow:hidden}
+.hero .pic img{width:100%;height:100%;object-fit:cover;animation:kb 24s ease-out both}
+@keyframes kb{from{transform:scale(1.16) translateY(2%)}to{transform:none}}
+.stripe{height:14px;background:repeating-linear-gradient(-45deg,var(--hivis) 0 18px,var(--char) 18px 36px)}
+h1{font:400 clamp(54px,8.6vw,116px)/.9 var(--disp);text-transform:uppercase;letter-spacing:.005em;max-width:9ch}
+h1 .w{display:inline-block;opacity:0;transform:translateY(.4em);animation:rise .6s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.lede{max-width:40ch;margin:18px 0 24px;font-size:20px;color:#e6ece3}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.stat{display:flex;gap:34px;margin-top:28px}
+.stat b{display:block;font:400 50px/1 var(--disp);color:var(--hivis)}
+.stat small{font-size:15px;font-weight:600;color:#cfd9cc}
+h2{font:400 clamp(40px,5.6vw,66px)/.95 var(--disp);text-transform:uppercase;margin-bottom:14px;color:var(--forest)}
+.sub{max-width:54ch;margin-bottom:26px;color:var(--mute)}
+
+/* services: numbered? no - big ruled rows */
+.services{padding:76px 0}
+.svc{border-top:3px solid var(--char)}
+.svc li{list-style:none;display:grid;grid-template-columns:260px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid #c9d1c5;align-items:baseline}
+.svc h3{font:400 34px/1 var(--disp);text-transform:uppercase;color:var(--char)}
+.svc p{color:var(--mute)}
+.svc ul{padding:0}
+
+/* job picker */
+.job{padding:76px 0;background:#fff}
+.jgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.treebox{background:var(--mist);border:3px solid var(--char);border-radius:4px;padding:18px;position:relative}
+.treebox svg{width:100%;height:auto;display:block}
+.scale{position:absolute;left:18px;top:14px;font:700 15px var(--body);color:var(--forest)}
+#tree{transform-box:fill-box;transform-origin:50% 100%;transition:transform .5s cubic-bezier(.3,1.4,.5,1),opacity .3s}
+#house{transition:transform .5s ease}
+fieldset{border:0;padding:0;margin:0 0 20px}
+legend{font-weight:800;margin-bottom:10px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opts label{position:relative}
+.opts input{position:absolute;opacity:0}
+.opts span{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border:2px solid var(--char);border-radius:3px;background:#fff;cursor:pointer;font-weight:600}
+.opts input:checked+span{background:var(--char);color:#fff;font-weight:800}
+.opts input:focus-visible+span{outline:3px solid var(--hivis);outline-offset:2px}
+.summary{font-weight:800;padding:14px 16px;background:var(--forest);color:#fff;border-left:8px solid var(--hivis);margin-bottom:16px}
+
+/* why: photo + facts */
+.why{display:grid;grid-template-columns:1.1fr .9fr;background:var(--pine);color:#fff}
+.why .pic{overflow:hidden;min-height:400px;position:relative}
+.why .pic img{width:100%;height:100%;object-fit:cover}
+.why .txt{padding:56px 40px}
+.why h2{color:#fff}
+.facts{list-style:none;padding:0;margin-top:10px}
+.facts li{padding:14px 0;border-top:1px solid rgba(255,255,255,.2);display:grid;grid-template-columns:28px 1fr;gap:10px}
+.facts li::before{content:"";width:18px;height:18px;margin-top:4px;background:var(--hivis);clip-path:polygon(0 40%,40% 80%,100% 0,100% 25%,40% 100%,0 65%)}
+
+/* text-back: dispatch log */
+.tb{padding:80px 0;background:var(--mist)}
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.log{background:var(--char);color:#fff;border-radius:4px;overflow:hidden;box-shadow:12px 12px 0 var(--hivis)}
+.log .head{display:flex;justify-content:space-between;padding:14px 18px;background:#2b2d28;font-weight:800}
+.log .head span{color:var(--hivis)}
+.entry{display:grid;grid-template-columns:70px 1fr;gap:12px;padding:14px 18px;border-top:1px solid #34372f;opacity:0;transform:translateX(-12px);transition:all .5s ease}
+.entry.in{opacity:1;transform:none}
+.entry time{font-weight:700;color:#aeb8a8;font-size:15px}
+.entry p{font-size:16px}
+.entry .lab{display:block;font-size:13px;font-weight:800;color:var(--hivis)}
+.entry.out .lab{color:#9fd48a}
+
+/* reviews: job tickets */
+.reviews{padding:76px 0;background:#fff}
+.rnote{font-weight:800;color:var(--hivis);background:var(--char);display:inline-block;padding:4px 12px;margin-bottom:14px;font-size:15px}
+.tickets{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tk{background:var(--mist);padding:24px 22px 20px;position:relative;border-top:6px solid var(--forest)}
+.tk::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:10px;background:radial-gradient(circle at 10px 0,transparent 8px,var(--mist) 9px) 0 0/20px 10px repeat-x}
+.tk .no{font-weight:800;font-size:14px;color:var(--mute)}
+.tk p{margin:8px 0 12px;font-size:18px;font-weight:600}
+.tk .stars{color:var(--hivis);letter-spacing:2px}
+
+/* quote + area */
+.contact{background:var(--forest);color:#fff;padding:72px 0}
+.contact h2{color:#fff}
+.cgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
+form{display:grid;gap:14px}
+form label{display:grid;gap:6px;font-weight:700}
+input[type=text],input[type=tel],textarea{font:inherit;padding:12px;border-radius:3px;border:2px solid transparent;background:#fff;color:var(--char);width:100%}
+.note{min-height:1.5em;font-weight:800;color:#ffb27f}
+.area{background:var(--pine);padding:22px;border:2px solid rgba(255,255,255,.18)}
+.area h3{font:400 32px/1 var(--disp);text-transform:uppercase;margin-bottom:8px}
+.area svg{width:100%;height:auto;display:block;margin:8px 0}
+.area p{color:#dfe7dc;font-size:17px}
+.area a{color:#ffb27f;font-weight:800}
+footer{padding:22px 0 100px;font-size:15px;color:var(--mute)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.callbar{display:none}
+@media (max-width:900px){
+  .hero .grid,.jgrid,.why,.cgrid,.tgrid{grid-template-columns:1fr}
+  .hero .pic{height:280px;order:-1}
+  .hero .txt{padding:36px 20px}
+  .why .pic{min-height:240px}
+  .why .txt{padding:40px 20px}
+  .svc li{grid-template-columns:1fr;gap:4px}
+  .tickets{grid-template-columns:1fr}
+  .log{box-shadow:8px 8px 0 var(--hivis)}
+  .callbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:15;justify-content:center;align-items:center;min-height:54px;border-radius:4px;background:var(--hivis);color:var(--char);font:800 18px var(--body);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35);animation:pulse 1.8s ease-out 1.2s 3}
+}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(242,107,29,.6)}100%{box-shadow:0 0 0 18px rgba(242,107,29,0)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  h1 .w,.reveal,.entry{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Demo preview built by David — not the official site. Photos are illustrative.</div>
+
+<header><div class="wrap">
+  <div class="logo">Mullinax Tree Service</div>
+  <a class="btn" href="tel:+18645084100">Call 864-508-4100</a>
+</div></header>
+
+<main>
+<section class="hero" aria-labelledby="h1"><div class="grid">
+  <div class="txt">
+    <h1 id="h1" data-split>Big trees. Clean yards.</h1>
+    <p class="lede">Tree removal, stump grinding and pruning in Central, SC. Massive oaks, storm damage, and a yard that's cleaned up before Will's crew leaves.</p>
+    <div class="row"><a class="btn" href="#job">Describe your tree</a><a class="btn dark" href="tel:+18645084100">Call now</a></div>
+    <div class="stat">
+      <div><b data-count="4.9" data-dec="1">0</b><small>Google rating</small></div>
+      <div><b data-count="254">0</b><small>Google reviews</small></div>
+    </div>
+  </div>
+  <div class="pic"><img src="img/hero.webp" alt="Climber in an orange helmet and harness high in a large oak tree" width="1100" height="628" fetchpriority="high"><span class="tag">Illustration</span></div>
+</div><div class="stripe" aria-hidden="true"></div></section>
+
+<section class="services" id="services" aria-labelledby="h-svc"><div class="wrap">
+  <h2 id="h-svc" class="reveal">What the crew does</h2>
+  <ul class="svc">
+    <li class="reveal"><h3>Tree removal</h3><p>From small yard trees to massive old oaks.</p></li>
+    <li class="reveal"><h3>Stump grinding</h3><p>Stumps ground down so the yard is usable again.</p></li>
+    <li class="reveal"><h3>Pruning</h3><p>Dead and overhanging limbs cut back, one tree or a whole row.</p></li>
+    <li class="reveal"><h3>Storm help</h3><p>Tree across the driveway after a storm? Call and the crew comes out.</p></li>
+  </ul>
+</div></section>
+
+<section class="job" id="job" aria-labelledby="h-job"><div class="wrap jgrid">
+  <div class="treebox reveal" aria-hidden="true">
+    <span class="scale" id="scaleLbl">Medium tree</span>
+    <svg viewBox="0 0 400 360">
+      <rect x="0" y="320" width="400" height="40" fill="#8FB173"/>
+      <g id="house"><rect x="250" y="250" width="110" height="70" fill="#fff" stroke="#1E1F1C" stroke-width="3"/><path d="M240 252 L305 205 L370 252Z" fill="#1E1F1C"/><rect x="292" y="282" width="24" height="38" fill="#23402A"/></g>
+      <g id="tree"><path d="M128 320 L136 210 L150 210 L158 320Z" fill="#5A3E2B"/><circle cx="143" cy="180" r="62" fill="#23402A"/><circle cx="100" cy="205" r="42" fill="#3D6B45"/><circle cx="186" cy="205" r="42" fill="#3D6B45"/><circle cx="143" cy="135" r="40" fill="#3D6B45"/></g>
+      <g id="storm" opacity="0"><path d="M120 300 L250 262" stroke="#5A3E2B" stroke-width="14" stroke-linecap="round"/><circle cx="262" cy="258" r="26" fill="#3D6B45"/></g>
+      <g id="stump" opacity="0"><rect x="126" y="304" width="34" height="16" rx="3" fill="#5A3E2B"/><ellipse cx="143" cy="304" rx="17" ry="5" fill="#C99A6B"/></g>
+    </svg>
+  </div>
+  <div class="reveal">
+    <h2 id="h-job">What's the job?</h2>
+    <p class="sub">Pick the closest match. It gives Will a head start before he comes out to look.</p>
+    <fieldset><legend>What do you need?</legend>
+      <div class="opts">
+        <label><input type="radio" name="type" value="removal" checked><span>Take a tree down</span></label>
+        <label><input type="radio" name="type" value="storm"><span>Tree fell / storm damage</span></label>
+        <label><input type="radio" name="type" value="stump"><span>Stump grinding</span></label>
+        <label><input type="radio" name="type" value="prune"><span>Pruning</span></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>How big is it?</legend>
+      <div class="opts">
+        <label><input type="radio" name="size" value=".55"><span>Small</span></label>
+        <label><input type="radio" name="size" value=".8" checked><span>Medium</span></label>
+        <label><input type="radio" name="size" value="1.05"><span>Big</span></label>
+        <label><input type="radio" name="size" value="1.3"><span>Massive old oak</span></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>Is it near the house?</legend>
+      <div class="opts">
+        <label><input type="radio" name="near" value="yes"><span>Yes, close</span></label>
+        <label><input type="radio" name="near" value="no" checked><span>No, open yard</span></label>
+      </div>
+    </fieldset>
+    <p class="summary" id="sum" aria-live="polite"></p>
+    <a class="btn" href="#quote">Send this to Will</a>
+  </div>
+</div></section>
+
+<section class="why" id="why" aria-labelledby="h-why">
+  <div class="pic"><img src="img/yard.webp" alt="Stump and stacked wood rounds in a front yard after a tree removal" width="1000" height="571" loading="lazy"><span class="tag">Illustration</span></div>
+  <div class="txt reveal">
+    <h2 id="h-why">Why Central calls Will</h2>
+    <ul class="facts">
+      <li>254 Google reviews at a 4.9 average</li>
+      <li>Big jobs: two massive oaks and three smaller trees down, six more pruned, for one customer</li>
+      <li>Cleanup so thorough customers mention the whole cul-de-sac</li>
+      <li>Repeat customers who call back for the next tree</li>
+    </ul>
+  </div>
+</section>
+
+<section class="tb" id="textback" aria-labelledby="h-tb"><div class="wrap tgrid">
+  <div class="reveal">
+    <h2 id="h-tb">Never miss a call — we text you back in seconds</h2>
+    <p class="sub">Nobody answers a phone from 60 feet up a tree. When a call goes unanswered, the customer gets a text right away, so a storm job doesn't go to the next number on Google.</p>
+  </div>
+  <div class="log" id="log" aria-label="Example missed call and automatic text log">
+    <div class="head">Mullinax text-back <span>live</span></div>
+    <div class="entry"><time>6:42 PM</time><p><span class="lab">Missed call</span>(864) caller, no voicemail</p></div>
+    <div class="entry out"><time>6:42 PM</time><p><span class="lab">Auto text sent</span>Hey, this is Mullinax Tree Service. Sorry we missed you, we're up a tree. What's going on?</p></div>
+    <div class="entry"><time>6:44 PM</time><p><span class="lab">Customer</span>Big limb came down on my fence in the storm</p></div>
+    <div class="entry out"><time>6:51 PM</time><p><span class="lab">Will</span>We can come look first thing tomorrow. Send the address?</p></div>
+  </div>
+</div></section>
+
+<section class="reviews" id="reviews" aria-labelledby="h-rv"><div class="wrap">
+  <span class="rnote">Sample reviews · placeholders</span>
+  <h2 id="h-rv">What customers would say</h2>
+  <p class="sub">Placeholder text. The real site would pull in Mullinax's actual Google reviews.</p>
+  <div class="tickets">
+    <article class="tk reveal"><span class="no">Sample review</span><p>They took down a huge oak and you'd never know it was there.</p><span class="stars" aria-label="5 stars">★★★★★</span></article>
+    <article class="tk reveal"><span class="no">Sample review</span><p>Came out fast after the storm and cleaned up every branch.</p><span class="stars" aria-label="5 stars">★★★★★</span></article>
+    <article class="tk reveal"><span class="no">Sample review</span><p>Fair, on time, and the stump is gone. Will call again.</p><span class="stars" aria-label="5 stars">★★★★★</span></article>
+  </div>
+</div></section>
+
+<section class="contact" id="quote" aria-labelledby="h-q"><div class="wrap cgrid">
+  <div class="reveal">
+    <h2 id="h-q">Get an estimate</h2>
+    <form id="qf">
+      <label>Your name<input type="text" required autocomplete="name"></label>
+      <label>Phone<input type="tel" required autocomplete="tel"></label>
+      <label>Address of the job<input type="text" autocomplete="street-address"></label>
+      <label>Tell us about the tree<textarea id="details" rows="3"></textarea></label>
+      <button class="btn" type="submit">Request my estimate</button>
+      <p class="note" id="note" role="status"></p>
+    </form>
+  </div>
+  <div class="area reveal" id="area">
+    <h3>Service area</h3>
+    <p>Based on Main Street in Central, working the yards around it.</p>
+    <svg viewBox="0 0 400 320" role="img" aria-label="Map of South Carolina with a pin at Central">
+      <path d="M31.8,30.3L57.2,22.2L59.1,23.9L66.9,19.1L75.0,15.3L82.3,13.5L84.2,14.2L87.6,10.0L89.0,13.2L95.4,11.5L147.8,13.9L177.1,15.2L192.5,16.2L193.0,20.5L191.1,24.4L192.5,26.1L200.8,20.2L212.6,36.3L211.4,47.3L261.1,48.1L281.7,48.6L298.8,48.7L323.3,73.2L331.9,82.6L361.0,111.9L386.9,138.7L383.3,139.3L373.2,143.4L365.7,148.8L355.9,158.6L350.9,165.0L349.0,168.6L344.5,173.3L340.6,180.9L337.0,195.0L337.8,199.4L335.9,203.3L331.9,207.1L325.5,210.4L323.0,218.3L318.3,217.5L313.5,218.8L310.5,215.6L306.0,218.3L303.2,223.4L304.1,225.9L306.3,225.1L306.3,227.8L302.1,229.4L297.1,233.0L294.6,237.2L285.1,242.0L282.3,238.9L279.2,239.5L278.9,242.1L283.7,243.9L282.3,248.7L275.3,252.9L273.4,256.1L270.6,255.7L263.9,257.5L259.1,262.3L257.5,260.8L247.4,268.1L245.2,266.4L241.0,268.7L240.4,266.3L236.8,266.3L235.7,269.7L239.9,276.5L237.9,282.5L229.0,287.5L223.7,289.1L223.2,285.8L217.9,282.5L214.8,284.3L214.2,286.8L217.6,288.0L221.5,292.8L217.3,298.1L210.3,302.9L207.8,302.9L203.1,308.3L204.5,310.0L202.0,309.7L195.8,303.9L192.7,305.3L186.9,302.5L185.5,297.5L186.6,295.4L183.5,290.0L186.3,286.4L184.7,280.3L179.4,272.1L180.5,269.3L174.1,262.8L167.1,258.8L163.7,254.9L165.1,251.6L164.0,247.7L163.7,243.4L162.6,240.8L162.6,233.9L160.1,232.7L159.6,228.7L156.2,223.6L157.6,218.1L152.3,214.6L147.8,209.9L145.3,210.0L137.8,205.6L135.6,201.9L136.1,198.6L133.0,199.0L129.4,195.6L130.5,193.2L122.7,186.5L123.8,183.9L122.7,180.8L124.7,177.3L123.6,175.4L119.4,173.2L114.4,165.7L109.6,162.7L106.3,162.6L102.6,159.5L102.4,156.2L99.9,152.9L98.7,148.0L90.6,140.0L82.6,135.8L77.3,130.0L74.7,129.9L71.7,121.7L67.8,117.8L65.5,112.4L62.2,110.5L60.2,105.0L60.2,100.8L57.2,96.6L56.3,92.6L53.0,90.1L52.1,84.9L49.9,79.8L47.7,78.8L39.9,80.1L33.5,75.9L27.0,67.5L22.3,67.0L13.9,60.3L13.1,55.1L15.3,53.0L15.0,50.1L22.3,41.6L30.9,36.1L31.8,30.3Z" fill="#F26B1D" stroke="#173020" stroke-width="1.5"/>
+      <circle cx="57.2" cy="56.3" r="20" fill="#fff" fill-opacity=".3"/>
+      <circle cx="57.2" cy="56.3" r="7" fill="#173020" stroke="#fff" stroke-width="3"/>
+      <text x="73.2" y="46.3" fill="#fff" font-family="Source Sans 3,sans-serif" font-size="18" font-weight="800">Central</text>
+    </svg>
+    <p>222 E Main St, Central, SC 29630 · <a href="https://maps.apple.com/?q=Mullinax+Tree+Service+222+E+Main+St+Central+SC">Open in Maps</a></p>
+    <p>Call <a href="tel:+18645084100">864-508-4100</a>. Tree down? Call first.</p>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Mullinax Tree Service, Central, SC. Demo preview built by David. Not the official Mullinax Tree Service website. Sample reviews are placeholders.</div></footer>
+<a class="callbar" href="tel:+18645084100">Call Mullinax: 864-508-4100</a>
+
+<script>
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('[data-split]').forEach(h=>{const t=h.textContent.trim();h.setAttribute('aria-label',t);h.innerHTML=t.split(/\s+/).map((x,i)=>'<span class="w" aria-hidden="true" style="animation-delay:'+(120+i*100)+'ms">'+x+'</span>').join(' ')});
+function count(el){const t=parseFloat(el.dataset.count),d=+(el.dataset.dec||0);if(RM){el.textContent=t.toFixed(d);return}const s=performance.now();(function f(n){const k=Math.min(1,(n-s)/1400),e=1-Math.pow(1-k,3);el.textContent=(t*e).toFixed(d);if(k<1)requestAnimationFrame(f)})(s)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');if(e.target.dataset.count)count(e.target);if(e.target.id==='log')[...e.target.querySelectorAll('.entry')].forEach((x,i)=>setTimeout(()=>x.classList.add('in'),RM?0:250+i*600));io.unobserve(e.target)}),{threshold:.2});
+document.querySelectorAll('.reveal,[data-count],#log').forEach(el=>io.observe(el));
+
+const SIZE={'.55':'Small','.8':'Medium','1.05':'Big','1.3':'Massive old oak'};
+const TYPE={removal:'take it down',storm:'clear storm damage',stump:'grind the stump',prune:'prune it'};
+function upd(){
+  const type=document.querySelector('input[name=type]:checked').value,size=document.querySelector('input[name=size]:checked').value,near=document.querySelector('input[name=near]:checked').value==='yes';
+  const tree=document.getElementById('tree');tree.style.transform='scale('+size+')';tree.style.opacity=(type==='stump'||type==='storm')?0:1;
+  document.getElementById('stump').setAttribute('opacity',type==='stump'?1:0);document.getElementById('storm').setAttribute('opacity',type==='storm'?1:0);
+  document.getElementById('house').style.transform=near?'translateX(-70px)':'none';
+  document.getElementById('scaleLbl').textContent=SIZE[size]+' tree';
+  const s=SIZE[size].toLowerCase()+' tree, need to '+TYPE[type]+(near?', close to the house.':', in an open yard.');
+  document.getElementById('sum').textContent='Your job: '+s.charAt(0).toUpperCase()+s.slice(1);
+  document.getElementById('details').value='From the picker: '+s;
+}
+document.querySelectorAll('.job input').forEach(i=>i.addEventListener('change',upd));upd();
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();document.getElementById('note').textContent='Demo form. On the real site, this goes straight to Will.'});
+</script>
+</body>
+</html>
