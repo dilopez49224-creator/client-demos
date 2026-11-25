@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>document.documentElement.classList.add('js')</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -87,6 +88,8 @@ footer{padding:22px 0;font-size:15px;background:#e9ebee;border-top:4px solid var
 :root{--dp-banner-h:40px}
 html{scroll-padding-top:var(--dp-banner-h)}
 body{padding-top:var(--dp-banner-h)}
+.say .grid2{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+@media (max-width:860px){.say .grid2{grid-template-columns:1fr}}
 .dp-banner{position:fixed;top:0;left:0;right:0;z-index:1000;min-height:40px;display:flex;align-items:center;justify-content:center;padding:8px 16px;background:var(--maroon);color:#fff;font:600 14px/1.3 var(--body);text-align:center;box-shadow:0 1px 0 rgba(0,0,0,.12)}
 .dp-textback{background:#eef0f2;padding:60px 0;border-top:1px solid #d3d7db}
 .dp-textback .dp-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
@@ -124,10 +127,62 @@ body{padding-top:var(--dp-banner-h)}
 .door .sign{transform:scale(1.05)}
 @keyframes door-up{0%{transform:translateY(0) scaleY(1)}100%{transform:translateY(-100%) scaleY(.9);visibility:hidden}}
 @media (prefers-reduced-motion:reduce){.door{display:none}}
+
+/* --- Motion kit + illustrations (Nov 24) --- */
+.kb{overflow:hidden;position:relative;aspect-ratio:16/7;max-height:460px;width:100%}
+.kb img{display:block;width:100%;height:100%;object-fit:cover;animation:kb 22s ease-in-out infinite alternate;will-change:transform}
+@keyframes kb{from{transform:scale(1) translate(0,0)}to{transform:scale(1.08) translate(-1.5%,-1%)}}
+.ill{position:relative;margin:0}
+.ill figcaption{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.62);color:#fff;font:600 12px/1 var(--body);padding:6px 9px;border-radius:4px;letter-spacing:.02em}
+.shot{display:block;width:100%;height:auto;border-radius:6px}
+.split .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.06em}
+.split .w>span{display:inline-block;transform:translateY(105%);animation:up .7s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*60ms + .15s)}
+@keyframes up{to{transform:none}}
+.js .rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.cta-bar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:900;display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 16px;text-align:center;border-radius:12px;font:700 17px var(--body);text-decoration:none;transform:translateY(160%);transition:transform .35s ease}
+.cta-bar.show{transform:none;animation:ring 1.6s 1s 3}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(0,0,0,.35)}100%{box-shadow:0 0 0 14px rgba(0,0,0,0)}}
+@media (max-width:899px){footer{padding-bottom:92px}.kb{aspect-ratio:4/3}}
+@media (min-width:900px){.cta-bar{display:none}}
+@media (prefers-reduced-motion:reduce){.kb img,.split .w>span,.cta-bar.show{animation:none}.split .w>span{transform:none}.js .rv{transform:none;transition:opacity .01ms}.cta-bar{transition:none}}
+
+/* Durham: service-counter receipt, screwed sign-plate reviews, shop-sign call bar */
+.md-tb{background:var(--steel) var(--ribs);color:#fff;padding:64px 0}
+.md-tb h2{color:#fff}
+.md-tb-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.md-tb p{max-width:46ch;margin-bottom:14px}
+.md-tb .tb-fine{font-size:15px;color:#e3e6e9}
+.md-rcpt{width:320px;max-width:100%;margin:0 auto;background:#fff;color:var(--ink);padding:22px 22px 30px;transform:rotate(1.2deg);
+  -webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - 12px) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/16px 12px repeat-x;
+  mask:linear-gradient(#000 0 0) top/100% calc(100% - 12px) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/16px 12px repeat-x;
+  filter:drop-shadow(0 10px 14px rgba(0,0,0,.3))}
+.md-rcpt-shop{font:400 34px/1 var(--disp);letter-spacing:.03em;color:var(--slate-d);text-align:center}
+.md-rcpt-sub{font-size:13px;text-align:center;color:var(--mute);padding-bottom:12px;border-bottom:2px dashed #c3cbd3;margin-bottom:10px}
+.md-rcpt-line{display:flex;justify-content:space-between;font-size:15px;padding:5px 0}
+.md-rcpt-line b{color:var(--maroon)}
+.md-rcpt-sms{display:flex;gap:10px;align-items:flex-start;margin-top:12px;padding-top:14px;border-top:2px dashed #c3cbd3}
+.md-rcpt-icon{flex:none;width:32px;height:32px;border-radius:6px;background:var(--maroon);color:#fff;padding:6px}
+.md-rcpt-icon svg{width:100%;height:100%;display:block}
+.md-rcpt-sms p{margin:0;font-size:15px;line-height:1.45}
+.md-rcpt-foot{font-size:13px;color:var(--mute);margin-top:14px;text-align:center}
+.md-rv{padding:64px 0}
+.md-rv .rv-fine{font-size:15px;color:var(--mute);margin:-6px 0 28px;max-width:60ch}
+.md-plates{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.md-plate{position:relative;background:#fff;border:2px solid #b9c0c8;box-shadow:0 2px 0 #d5d8dc;padding:26px 26px 24px;
+  background-image:radial-gradient(circle,#8d949b 2.5px,#c9cdd1 3px,transparent 4px),radial-gradient(circle,#8d949b 2.5px,#c9cdd1 3px,transparent 4px),radial-gradient(circle,#8d949b 2.5px,#c9cdd1 3px,transparent 4px),radial-gradient(circle,#8d949b 2.5px,#c9cdd1 3px,transparent 4px);
+  background-size:12px 12px;background-repeat:no-repeat;background-position:6px 6px,calc(100% - 6px) 6px,6px calc(100% - 6px),calc(100% - 6px) calc(100% - 6px)}
+.md-stars{display:block;color:var(--maroon);font-size:18px;letter-spacing:2px;margin-bottom:8px}
+.md-plate p{font-size:17px;margin-bottom:14px}
+.md-plate cite{font:400 26px/1 var(--disp);letter-spacing:.03em;font-style:normal;color:var(--slate-d)}
+.md-plate cite small{display:block;font:500 13px var(--body);color:var(--mute);margin-top:4px;letter-spacing:0}
+.md-cta{background:var(--slate);color:#fff;border:3px solid #fff;outline:2px solid var(--slate-d);font:700 18px var(--body)}
+@media (max-width:860px){.md-tb-grid,.md-plates{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.md-rcpt{transform:none}}
 </style>
 </head>
 <body>
-<div class="dp-banner">Demo preview built by David — not the official site.</div>
+<div class="dp-banner">Demo preview built by David — not the official site. Photos are illustrative.</div>
 <div class="door" id="door" aria-hidden="true">
   <div class="sign"><span class="sign-script">Mike Durham's</span><span class="sign-row"><span class="sign-block">AUTO REPAIR</span></span></div>
 </div>
@@ -148,7 +203,7 @@ body{padding-top:var(--dp-banner-h)}
   <div>
     <h1>A mechanic you can trust.</h1>
     <p class="lede">Auto repair on West Main Street in Central, SC.</p>
-    <p class="rating">4.9 stars from 74 Google reviews</p>
+    <p class="rating"><b class="count" data-to="4.9">4.9</b> stars from <b class="count" data-to="74">74</b> Google reviews</p>
     <p class="ahead">Appointments book up. Call ahead: <a href="tel:+18646393400">864-639-3400</a></p>
     <img class="shop" src="img/storefront.webp" width="636" height="366" alt="The real Mike Durham's Auto Repair shop on West Main Street: a white-painted brick building with the Mike Durham's Auto Repair sign above two gray roll-up bay doors">
   </div>
@@ -175,7 +230,7 @@ body{padding-top:var(--dp-banner-h)}
 </div></section>
 <div class="bay" aria-hidden="true"></div>
 
-<section class="info"><div class="wrap grid">
+<section class="info"><div class="wrap grid rv">
   <div>
     <h2>Shop hours</h2>
     <table class="hrs">
@@ -192,47 +247,45 @@ body{padding-top:var(--dp-banner-h)}
     <h2>Call</h2>
     <p><a href="tel:+18646393400">864-639-3400</a></p>
     <p>Calling is the fastest way to get on the schedule.</p>
+    <p><a href="https://www.facebook.com/pages/Mike-Durham-Auto/168735799810390">Facebook</a></p>
   </div>
 </div></section>
 <div class="bay" aria-hidden="true"></div>
 
-<section class="say"><div class="wrap">
-  <blockquote>"I can trust Mike to do an incredible job repairing my vehicle without the fear of being overcharged."</blockquote>
-  <cite>Google review, 5 stars</cite>
+<section class="say"><div class="wrap grid2">
+  <div class="rv"><blockquote>"I can trust Mike to do an incredible job repairing my vehicle without the fear of being overcharged."</blockquote>
+  <cite>Google review, 5 stars</cite></div>
+  <figure class="ill rv"><img class="shot" src="img/durham_hands.webp" alt="Illustration of a mechanic holding a wrench over an engine bay" width="900" height="514" loading="lazy" decoding="async"><figcaption>Illustration</figcaption></figure>
 </div></section>
 
-<section class="dp-textback" id="textback"><div class="wrap dp-grid">
-  <div>
+<section class="md-tb" id="textback"><div class="wrap md-tb-grid">
+  <div class="rv">
     <h2>Never miss a call — we text you back in seconds</h2>
     <p>When a call to Mike Durham Auto goes unanswered, the caller gets a text back right away, so they know you saw them and can reply without calling again.</p>
-    <p class="dp-fine">Sample message shown. The wording is set with Mike Durham Auto before it goes live.</p>
+    <p class="tb-fine">Sample message shown. The wording is set with Mike Durham Auto before it goes live.</p>
   </div>
-  <div class="dp-phone" role="img" aria-label="Phone showing a missed call followed by an instant text reply from Mike Durham Auto">
-    <div class="dp-screen">
-      <div class="dp-notch"></div>
-      <div class="dp-missed">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2z"/><path d="M15 3l6 6M21 3l-6 6"/></svg>
-        <div><b>Missed call</b><small>Incoming call &middot; just now</small></div>
-      </div>
-      <div class="dp-thread">
-        <span class="dp-from">Mike Durham Auto</span>
-        <div class="dp-bubble">Hi, this is Mike Durham Auto. Sorry we missed your call! Tell us what the car is doing and we'll get you on the schedule.</div>
-        <span class="dp-meta">Sent automatically, seconds after the missed call</span>
-      </div>
-    </div>
+  <div class="md-rcpt rv" role="img" aria-label="Shop receipt showing a missed call and the automatic text reply sent to the caller">
+    <div class="md-rcpt-shop">Mike Durham Auto</div>
+    <div class="md-rcpt-sub">224 W Main St &middot; Central, SC</div>
+    <div class="md-rcpt-line"><span>Incoming call</span><b>Missed</b></div>
+    <div class="md-rcpt-line"><span>Text back</span><b>Sent</b></div>
+    <div class="md-rcpt-sms"><span class="md-rcpt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2z"/><path d="M15 3l6 6M21 3l-6 6"/></svg></span><p>Hi, this is Mike Durham Auto. Sorry we missed your call! Tell us what the car is doing and we'll get you on the schedule.</p></div>
+    <div class="md-rcpt-foot">Sent automatically, seconds after the missed call</div>
   </div>
 </div></section>
 
-<section class="dp-reviews" id="sample-reviews"><div class="wrap">
+<section class="md-rv" id="sample-reviews"><div class="wrap">
   <h2>Sample reviews</h2>
-  <p class="dp-fine">Placeholder reviews for this preview only. They are not from real customers; the business's own reviews go here.</p>
-  <ul class="dp-cards">
-    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Straight answers and no upsell. Car was ready when promised."</p><cite>Tom<small>Sample review</small></cite></li>
-    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Explained the problem in plain English and fixed it the first time."</p><cite>Angela<small>Sample review</small></cite></li>
-    <li class="dp-card"><div class="dp-stars" aria-label="5 stars">★★★★★</div><p>"Fair pricing and they called before doing any extra work."</p><cite>Kevin<small>Sample review</small></cite></li>
+  <p class="rv-fine">Placeholder reviews for this preview only. They are not from real customers; the business's own reviews go here.</p>
+  <ul class="md-plates">
+    <li class="md-plate rv"><span class="md-stars" aria-label="5 stars">★★★★★</span><p>"Straight answers and no upsell. Car was ready when promised."</p><cite>Tom<small>Sample review</small></cite></li>
+    <li class="md-plate rv"><span class="md-stars" aria-label="5 stars">★★★★★</span><p>"Explained the problem in plain English and fixed it the first time."</p><cite>Angela<small>Sample review</small></cite></li>
+    <li class="md-plate rv"><span class="md-stars" aria-label="5 stars">★★★★★</span><p>"Fair pricing and they called before doing any extra work."</p><cite>Kevin<small>Sample review</small></cite></li>
   </ul>
 </div></section>
 </main>
+
+<a class="cta-bar md-cta" href="tel:+18646393400">Call the shop &middot; 864-639-3400</a>
 
 <footer><div class="wrap">Mike Durham Auto &middot; 224 W Main St, Central, SC &middot; 864-639-3400</div></footer>
 
@@ -264,6 +317,22 @@ document.getElementById('qf').addEventListener('submit',e=>{
 </script>
 <script>
 (function(){var b=document.querySelector('.dp-banner');if(!b)return;function f(){document.documentElement.style.setProperty('--dp-banner-h',b.offsetHeight+'px')}f();addEventListener('resize',f);addEventListener('load',f)})();
+</script>
+<script>
+(function(){
+const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('.split').forEach(h=>{const t=h.textContent.trim();h.setAttribute('aria-label',t);
+ h.innerHTML=t.split(/\s+/).map((w,i)=>'<span class="w" aria-hidden="true"><span style="--i:'+i+'">'+w+'</span></span>').join(' ')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+ if(calm)return;const el=e.target,s=el.dataset.to,to=+s,dec=(s.split('.')[1]||'').length,t0=performance.now(),D=1200;
+ const f=t=>{const k=Math.min(1,(t-t0)/D),v=to*(1-Math.pow(1-k,3));el.textContent=v.toFixed(dec);if(k<1)requestAnimationFrame(f)};
+ requestAnimationFrame(f)}),{threshold:.6});
+document.querySelectorAll('.count').forEach(el=>co.observe(el));
+const bar=document.querySelector('.cta-bar');
+if(bar)addEventListener('scroll',()=>bar.classList.toggle('show',scrollY>innerHeight*.6),{passive:true});
+})();
 </script>
 </body>
 </html>
