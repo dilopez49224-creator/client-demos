@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Roller Mills Smokehouse | Barbecue in Clemson, SC</title>
+<meta name="description" content="Pulled pork, baby back ribs and half chicken on Old Greenville Hwy in Clemson. Open Wednesday, Friday and Saturday. Catering available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#E4D5B7; --paper-l:#F3EADA; --slate:#333D47; --soot:#1E1A18; --brick:#9A4A30; --mustard:#C8962A;
+  --disp:'Bevan','Rockwell',Georgia,serif;
+  --body:'Schibsted Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --gut:16px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.6 var(--body);color:var(--soot);background:var(--paper-l);padding-top:34px}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--mustard);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--gut)}
+.demo{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--soot);color:var(--paper);font:600 13px/1.3 var(--body);text-align:center;padding:9px 12px}
+.demo span{opacity:.75;font-weight:500}
+
+header{background:var(--slate);color:var(--paper-l)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font:400 22px/1.1 var(--disp);letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:var(--brick);color:#fff;font:700 16px var(--body);border:0;border-radius:4px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#7f3c26}
+.btn.alt{background:var(--mustard);color:var(--soot)}
+.btn.alt:hover{background:#b3841f}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--soot);overflow:hidden}
+.kb{position:absolute;inset:0;overflow:hidden}
+.kb img{width:100%;height:100%;object-fit:cover;animation:kb 26s ease-in-out infinite alternate;will-change:transform}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08) translate(-1.5%,-1%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,26,24,.85) 0,rgba(30,26,24,.55) 45%,rgba(30,26,24,.05) 80%),linear-gradient(0deg,rgba(30,26,24,.7),rgba(30,26,24,0) 45%)}
+.hero .wrap{position:relative;z-index:1;min-height:min(80vh,640px);display:flex;flex-direction:column;justify-content:flex-end;padding-top:90px;padding-bottom:40px}
+h1{font:400 clamp(38px,7vw,82px)/1.02 var(--disp);max-width:12ch}
+.rise span{display:inline-block;opacity:0;transform:translateY(.5em);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.lede{max-width:42ch;font-size:19px;margin:14px 0 22px;color:#efe4d0}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.cap{position:absolute;right:12px;bottom:10px;z-index:1;font:500 12px var(--body);color:#e9dcc4;background:rgba(30,26,24,.6);padding:3px 8px;border-radius:3px}
+
+/* smoker week */
+.week{background:var(--slate);color:var(--paper-l);padding:40px 0 44px}
+.week .top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 20px;margin-bottom:18px}
+.week h2{font:400 clamp(26px,4vw,38px)/1.1 var(--disp)}
+.status{font-weight:700;font-size:18px;display:flex;align-items:center;gap:10px}
+.dot{width:12px;height:12px;border-radius:50%;background:#7b8590;flex:none}
+.status.open .dot{background:var(--mustard);box-shadow:0 0 0 6px rgba(200,150,42,.25)}
+.days{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.open-day{background:var(--paper);color:var(--soot);border-radius:4px;padding:16px 18px 18px;position:relative}
+.open-day b{display:block;font:400 26px/1.1 var(--disp)}
+.open-day span{font-weight:600}
+.open-day.today{outline:4px solid var(--mustard);outline-offset:-4px}
+.open-day.today::after{content:"Today";position:absolute;top:12px;right:14px;font:700 13px var(--body);background:var(--mustard);color:var(--soot);padding:2px 9px;border-radius:99px}
+.closed{margin-top:12px;color:#c9cfd6;font-size:15px}
+
+/* menu roll */
+.menu{padding:64px 0 56px}
+.menu .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:stretch}
+h2.sec{font:400 clamp(28px,4.4vw,44px)/1.08 var(--disp);margin-bottom:14px}
+.roll{background:var(--paper);padding:26px 24px 34px;position:relative;
+  -webkit-mask:linear-gradient(#000,#000) top/100% calc(100% - 12px) no-repeat,conic-gradient(from 135deg at 50% 100%,#000 90deg,#0000 0) bottom/24px 12px repeat-x;
+          mask:linear-gradient(#000,#000) top/100% calc(100% - 12px) no-repeat,conic-gradient(from 135deg at 50% 100%,#000 90deg,#0000 0) bottom/24px 12px repeat-x}
+.roll h3{font:400 24px/1.2 var(--disp);margin:6px 0 8px}
+.roll ul{list-style:none;padding:0;margin:0 0 14px}
+.roll li{padding:8px 0;border-bottom:1px solid rgba(30,26,24,.18);font-weight:500}
+.sauces{display:flex;gap:10px;flex-wrap:wrap}
+.sauce{display:flex;align-items:center;gap:8px;font-weight:600;background:var(--paper-l);border-radius:99px;padding:6px 14px 6px 6px}
+.sauce i{width:22px;height:22px;border-radius:50%}
+.fine{font-size:14px;color:#5a4f48;margin-top:14px}
+.mill{position:relative;border-radius:4px;overflow:hidden;margin:0}
+.mill img{width:100%;height:100%;object-fit:cover}
+.mill figcaption{position:absolute;left:10px;bottom:8px;font:500 12px var(--body);color:#fff;background:rgba(30,26,24,.6);padding:3px 8px;border-radius:3px}
+
+/* why */
+.why{background:var(--soot);color:var(--paper-l);padding:56px 0}
+.why .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.why .n{font:400 clamp(40px,6vw,64px)/1 var(--disp);color:var(--mustard)}
+.why p{margin-top:8px;max-width:30ch}
+
+/* text-back */
+.tb{padding:64px 0;background:var(--paper)}
+.tb .grid{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:center}
+.tb h2{font:400 clamp(26px,4vw,40px)/1.12 var(--disp);margin-bottom:12px;max-width:18ch}
+.tb p{max-width:46ch}
+.phone{background:var(--slate);border-radius:34px;padding:14px;box-shadow:0 30px 50px -30px rgba(30,26,24,.7)}
+.screen{background:var(--paper-l);border-radius:24px;padding:16px 14px 22px;min-height:400px;font-size:15px}
+.ph-top{display:flex;justify-content:space-between;font-weight:700;font-size:13px;color:#5a4f48;margin-bottom:14px}
+.missed{display:flex;gap:10px;align-items:center;background:#fff;border-radius:14px;padding:10px 12px;margin-bottom:14px}
+.missed b{color:var(--brick);white-space:nowrap}
+.bub{max-width:85%;padding:10px 13px;border-radius:16px;margin:8px 0;line-height:1.4}
+.bub.in{background:var(--mustard);color:var(--soot);border-bottom-left-radius:4px}
+.bub.out{background:var(--slate);color:#fff;margin-left:auto;border-bottom-right-radius:4px}
+.when{font-size:12px;color:#5a4f48;text-align:center;margin-top:10px}
+.js .bub{opacity:0;transform:translateY(8px);transition:opacity .4s ease,transform .4s ease}
+.js .phone.in .bub{opacity:1;transform:none}
+.js .phone.in .bub:nth-of-type(2){transition-delay:.6s}.js .phone.in .bub:nth-of-type(3){transition-delay:1.3s}
+
+/* reviews */
+.rev{padding:64px 0}
+.rev .note-top{color:#5a4f48;margin:-6px 0 22px}
+.tickets{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ticket{background:#fff;padding:22px 20px 20px;border-top:6px solid var(--brick);box-shadow:0 1px 0 rgba(30,26,24,.1);position:relative}
+.ticket:nth-child(2){border-top-color:var(--mustard);transform:rotate(.6deg)}
+.ticket:nth-child(3){border-top-color:var(--slate);transform:rotate(-.5deg)}
+.ticket p{font-size:16px}
+.ticket small{display:block;margin-top:12px;font-weight:700;color:#5a4f48}
+.rating{margin-top:28px;font-weight:600}
+.count{font:400 34px var(--disp);color:var(--brick)}
+
+/* catering form */
+.cater{background:var(--brick);color:#fff;padding:64px 0}
+.cater .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}
+.cater h2{font:400 clamp(28px,4.4vw,44px)/1.08 var(--disp);margin-bottom:8px}
+form{display:grid;gap:12px;margin-top:18px}
+label{display:grid;gap:5px;font-weight:700;font-size:15px}
+input,textarea,select{font:inherit;padding:12px;border-radius:4px;border:2px solid transparent;background:var(--paper-l);color:var(--soot);width:100%}
+.cater .btn{background:var(--soot)}
+.done{min-height:1.4em;font-weight:700}
+.area svg.scmap{width:100%;height:auto;display:block}
+.area h3{font:400 24px var(--disp);margin-bottom:6px}
+.area p{margin-bottom:12px}
+.area a{color:#fff}
+footer{background:var(--soot);color:var(--paper);padding:24px 0 96px;font-size:15px}
+.callbar{display:none}
+@media (max-width:820px){
+  .days{grid-template-columns:1fr}
+  .hero::after{background:linear-gradient(0deg,rgba(30,26,24,.94) 45%,rgba(30,26,24,.35))}
+  .mill img{aspect-ratio:16/10;height:auto}
+  .menu .grid,.tb .grid,.cater .grid{grid-template-columns:1fr}
+  .why .grid,.tickets{grid-template-columns:1fr}
+  .ticket:nth-child(n){transform:none}
+  .tb .grid{gap:30px}.phone{max-width:340px}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;justify-content:center;align-items:center;min-height:54px;background:var(--brick);color:#fff;font-weight:800;border-radius:6px;text-decoration:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.6);animation:pulse 1.4s ease-in-out 1.5s 3}
+  @keyframes pulse{50%{transform:scale(1.04)}}
+}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .kb img{animation:none}.js .rv,.js .bub{transform:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<script>(function(){function f(){var b=document.querySelector('.demo');if(b)document.body.style.paddingTop=b.offsetHeight+'px'}addEventListener('resize',f);document.addEventListener('DOMContentLoaded',f)})()</script>
+</head>
+<body>
+<div class="demo">Demo preview built by David — not the official site. <span>Photos are illustrative.</span></div>
+
+<header><div class="wrap">
+  <div class="logo">Roller Mills Smokehouse</div>
+  <a class="btn" href="tel:+18647222003">Call 864-722-2003</a>
+</div></header>
+
+<main>
+<section class="hero">
+  <div class="kb"><img src="img/ribs.webp" alt="Illustration: sliced smoked pork and ribs on butcher paper" fetchpriority="high"></div>
+  <div class="wrap">
+    <h1 class="rise" id="h1">Pulled pork, ribs and half chicken. Three days a week.</h1>
+    <p class="lede">Barbecue on Old Greenville Hwy in Clemson. Open Wednesday, Friday and Saturday, with catering on its own line.</p>
+    <div class="row">
+      <a class="btn" href="#week">Are you open today?</a>
+      <a class="btn alt" href="#catering">Plan catering</a>
+    </div>
+  </div>
+  <span class="cap">Illustration</span>
+</section>
+
+<section class="week" id="week"><div class="wrap">
+  <div class="top">
+    <h2>Smoker days</h2>
+    <p class="status" id="status" role="status"><i class="dot"></i><span>Checking the fire</span></p>
+  </div>
+  <div class="days" id="days">
+    <div class="open-day" data-d="Wed"><b>Wednesday</b><span>11am to 7pm</span></div>
+    <div class="open-day" data-d="Fri"><b>Friday</b><span>11am to 7pm</span></div>
+    <div class="open-day" data-d="Sat"><b>Saturday</b><span>11am to 5:30pm</span></div>
+  </div>
+  <p class="closed">Closed Sunday, Monday, Tuesday and Thursday.</p>
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap grid">
+  <div class="roll rv">
+    <h2 class="sec">Off the smoker</h2>
+    <ul><li>Pulled pork</li><li>Baby back ribs</li><li>Half chicken</li></ul>
+    <h3>On the side</h3>
+    <ul><li>Corn casserole</li><li>Pimento mac and cheese</li><li>Sweet potato crunch</li><li>Potato salad</li><li>Cornbread</li></ul>
+    <h3>Two sauces</h3>
+    <div class="sauces"><span class="sauce"><i style="background:#7A2E1C"></i>OG sauce</span><span class="sauce"><i style="background:#C8962A"></i>Mustard-style</span></div>
+    <p class="fine">Sample menu for this preview. Your real menu and prices go here.</p>
+  </div>
+  <figure class="mill rv"><img src="img/mill.webp" alt="Illustration: smoke rising from a smoker beside an old brick mill at dusk" loading="lazy"><figcaption>Illustration</figcaption></figure>
+</div></section>
+
+<section class="why"><div class="wrap grid">
+  <div class="rv"><div class="n"><span class="count" style="color:inherit;font-size:inherit" data-to="4.9" data-dec="1">4.9</span></div><p>stars on Google, from <span class="count" style="color:inherit;font:inherit" data-to="223">223</span> reviews.</p></div>
+  <div class="rv"><div class="n">Big</div><p>portions. Regulars say you won't leave hungry.</p></div>
+  <div class="rv"><div class="n">Catering</div><p>runs on its own line, so event orders get their own attention.</p></div>
+</div></section>
+
+<section class="tb"><div class="wrap grid">
+  <div>
+    <h2>Never miss a call — we text you back in seconds</h2>
+    <p>Lunch rush, phone ringing, hands full of pork. If a call goes unanswered, the caller gets a text from Roller Mills right away, so a catering order doesn't slip to the next place on the list.</p>
+  </div>
+  <div class="phone" id="phone" role="img" aria-label="Phone mock-up: a missed call, then an instant text from Roller Mills Smokehouse and a reply from the caller.">
+    <div class="screen" aria-hidden="true">
+      <div class="ph-top"><span>12:41 PM</span><span>Messages</span></div>
+      <div class="missed"><b>Missed call</b><span>Roller Mills Smokehouse</span></div>
+      <p class="bub in">Hey, it's Roller Mills. Sorry we missed you, the line's busy at the counter. What can we get you?</p>
+      <p class="bub out">Do y'all cater? Need food for about 40 on the 14th.</p>
+      <p class="bub in">We do. Our catering line will call you back today to go over it.</p>
+      <p class="when">Sample conversation</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="rev"><div class="wrap">
+  <h2 class="sec">Sample reviews</h2>
+  <p class="note-top">Placeholders for this preview. Your real Google reviews go here.</p>
+  <div class="tickets">
+    <div class="ticket rv"><p>"Ribs fell right off the bone and the sides were just as good. We'll be back Saturday."</p><small>Sample review</small></div>
+    <div class="ticket rv"><p>"Pimento mac and cheese is worth the drive on its own."</p><small>Sample review</small></div>
+    <div class="ticket rv"><p>"They catered our office lunch and everybody asked where the food came from."</p><small>Sample review</small></div>
+  </div>
+</div></section>
+
+<section class="cater" id="catering"><div class="wrap grid">
+  <div>
+    <h2>Feeding a crowd?</h2>
+    <p>Tell us about your event and the catering team will get back to you with a quote.</p>
+    <form id="qf">
+      <label>Your name<input type="text" required autocomplete="name"></label>
+      <label>Phone<input type="tel" required autocomplete="tel"></label>
+      <label>Event date<input type="date"></label>
+      <label>How many people?<input type="number" min="1" inputmode="numeric"></label>
+      <label>What are you planning?<textarea rows="3"></textarea></label>
+      <button class="btn" type="submit">Request a catering quote</button>
+      <p class="done" id="done" role="status"></p>
+    </form>
+  </div>
+  <div class="area">
+    <h3>Find us in Clemson</h3>
+    <p>323 Old Greenville Hwy, Clemson, SC 29631<br><a href="https://maps.apple.com/?q=Roller+Mills+Smokehouse+323+Old+Greenville+Hwy+Clemson+SC">Open in Maps</a></p>
+    <svg class="scmap" viewBox="0 0 400 320" role="img" aria-label="Map of South Carolina with a pin at Clemson"><path d="M31.8,30.3L57.2,22.2L59.1,23.9L66.9,19.1L75.0,15.3L82.3,13.5L84.2,14.2L87.6,10.0L89.0,13.2L95.4,11.5L147.8,13.9L177.1,15.2L192.5,16.2L193.0,20.5L191.1,24.4L192.5,26.1L200.8,20.2L212.6,36.3L211.4,47.3L261.1,48.1L281.7,48.6L298.8,48.7L323.3,73.2L331.9,82.6L361.0,111.9L386.9,138.7L383.3,139.3L373.2,143.4L365.7,148.8L355.9,158.6L350.9,165.0L349.0,168.6L344.5,173.3L340.6,180.9L337.0,195.0L337.8,199.4L335.9,203.3L331.9,207.1L325.5,210.4L323.0,218.3L318.3,217.5L313.5,218.8L310.5,215.6L306.0,218.3L303.2,223.4L304.1,225.9L306.3,225.1L306.3,227.8L302.1,229.4L297.1,233.0L294.6,237.2L285.1,242.0L282.3,238.9L279.2,239.5L278.9,242.1L283.7,243.9L282.3,248.7L275.3,252.9L273.4,256.1L270.6,255.7L263.9,257.5L259.1,262.3L257.5,260.8L247.4,268.1L245.2,266.4L241.0,268.7L240.4,266.3L236.8,266.3L235.7,269.7L239.9,276.5L237.9,282.5L229.0,287.5L223.7,289.1L223.2,285.8L217.9,282.5L214.8,284.3L214.2,286.8L217.6,288.0L221.5,292.8L217.3,298.1L210.3,302.9L207.8,302.9L203.1,308.3L204.5,310.0L202.0,309.7L195.8,303.9L192.7,305.3L186.9,302.5L185.5,297.5L186.6,295.4L183.5,290.0L186.3,286.4L184.7,280.3L179.4,272.1L180.5,269.3L174.1,262.8L167.1,258.8L163.7,254.9L165.1,251.6L164.0,247.7L163.7,243.4L162.6,240.8L162.6,233.9L160.1,232.7L159.6,228.7L156.2,223.6L157.6,218.1L152.3,214.6L147.8,209.9L145.3,210.0L137.8,205.6L135.6,201.9L136.1,198.6L133.0,199.0L129.4,195.6L130.5,193.2L122.7,186.5L123.8,183.9L122.7,180.8L124.7,177.3L123.6,175.4L119.4,173.2L114.4,165.7L109.6,162.7L106.3,162.6L102.6,159.5L102.4,156.2L99.9,152.9L98.7,148.0L90.6,140.0L82.6,135.8L77.3,130.0L74.7,129.9L71.7,121.7L67.8,117.8L65.5,112.4L62.2,110.5L60.2,105.0L60.2,100.8L57.2,96.6L56.3,92.6L53.0,90.1L52.1,84.9L49.9,79.8L47.7,78.8L39.9,80.1L33.5,75.9L27.0,67.5L22.3,67.0L13.9,60.3L13.1,55.1L15.3,53.0L15.0,50.1L22.3,41.6L30.9,36.1L31.8,30.3Z" fill="#C8962A" stroke="#F3EADA" stroke-width="2" stroke-linejoin="round"/><circle cx="52.9" cy="60.2" r="14" fill="#1E1A18" opacity=".25"/><circle cx="52.9" cy="60.2" r="6" fill="#1E1A18" stroke="#fff" stroke-width="2"/><text x="68.9" y="66.2" font-size="20" font-weight="800" fill="#1E1A18" font-family="inherit">Clemson</text></svg>
+    <p style="margin-top:14px">Counter: <a href="tel:+18647222003">864-722-2003</a><br>Catering: <a href="tel:+18647222085">864-722-2085</a></p>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Roller Mills Smokehouse, 323 Old Greenville Hwy, Clemson, SC. <a href="tel:+18647222003">864-722-2003</a></div></footer>
+<a class="callbar" href="tel:+18647222003">Call 864-722-2003</a>
+
+<script>
+const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+(function(){const h=document.getElementById('h1');if(calm)return;const w=h.textContent.split(' ');h.textContent='';w.forEach((x,i)=>{const s=document.createElement('span');s.textContent=x;s.style.animationDelay=(i*55)+'ms';h.appendChild(s);h.appendChild(document.createTextNode(' '))})})();
+const HRS={Wed:[660,1140],Fri:[660,1140],Sat:[660,1050]};
+const ORDER=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const FULL={Sun:'Sunday',Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday',Sat:'Saturday'};
+function fmt(m){const h=Math.floor(m/60),mm=m%60,ap=h>=12?'pm':'am',h12=((h+11)%12)+1;return h12+(mm?':'+String(mm).padStart(2,'0'):'')+ap}
+(function(){
+  const f=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'});
+  const p=Object.fromEntries(f.formatToParts(new Date()).map(x=>[x.type,x.value])),d=p.weekday,m=(+p.hour)*60+(+p.minute);
+  document.querySelectorAll('.open-day').forEach(el=>{if(el.dataset.d===d)el.classList.add('today')});
+  const st=document.getElementById('status'),txt=st.querySelector('span'),h=HRS[d];
+  if(h&&m>=h[0]&&m<h[1]){st.classList.add('open');txt.textContent='Open now until '+fmt(h[1])}
+  else{let i=ORDER.indexOf(d),nx=null;for(let k=0;k<8;k++){const dd=ORDER[(i+k)%7],hh=HRS[dd];if(hh&&(k>0||m<hh[0])){nx={d:dd,k:k,o:hh[0]};break}}
+    txt.textContent='Closed now. Next open '+(nx.k===0?'today':nx.k===1?'tomorrow':FULL[nx.d])+' at '+fmt(nx.o)}
+})();
+function count(el){const to=+el.dataset.to,dec=+(el.dataset.dec||0);if(calm){el.textContent=to.toFixed(dec);return}const t0=performance.now();(function s(t){const k=Math.min(1,(t-t0)/1100),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(s)})(t0)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.count').forEach(count);io.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});
+document.querySelectorAll('.rv,#phone').forEach(el=>io.observe(el));
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();document.getElementById('done').textContent='Demo form. On the live site this sends your request to the catering team.'});
+</script>
+</body>
+</html>

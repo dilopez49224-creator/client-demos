@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Jungle Studios | Barbershop in Easley, SC</title>
+<meta name="description" content="A calm barbershop on S Pendleton St in Easley. Cuts for grown-ups and kids with Obi and Aidan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --jungle:#14382A; --moss:#1F4A38; --fern:#2C6149; --gold:#C9A227; --espresso:#1E1714; --leaf:#8DBF4B; --cream:#F3EFE4;
+  --disp:'Young Serif',Georgia,serif;
+  --body:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --gut:16px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.6 var(--body);color:var(--cream);background:var(--espresso);padding-top:34px}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--leaf);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--gut)}
+.demo{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--gold);color:var(--espresso);font:600 13px/1.3 var(--body);text-align:center;padding:9px 12px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+.logo{font:400 26px/1 var(--disp);color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:var(--gold);color:var(--espresso);font:700 16px var(--body);border:0;border-radius:999px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#ddb53a}
+.btn.ghost{background:transparent;color:var(--cream);border:2px solid rgba(243,239,228,.45)}
+
+/* hero: arch window onto the shop */
+.hero{background:var(--jungle);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;padding-top:40px}
+.copy{padding-bottom:56px}
+h1{font:400 clamp(42px,6.6vw,84px)/1.02 var(--disp);max-width:10ch}
+.rise span{display:inline-block;opacity:0;transform:translateY(.45em);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.lede{font-size:19px;max-width:36ch;margin:16px 0 24px;color:#d8d2c2}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.arch{position:relative;border-radius:999px 999px 0 0;overflow:hidden;aspect-ratio:4/5;border:6px solid var(--gold);border-bottom:0}
+.arch img{width:100%;height:100%;object-fit:cover;animation:kb 26s ease-in-out infinite alternate;will-change:transform}
+@keyframes kb{from{transform:scale(1.04)}to{transform:scale(1.12) translate(-2%,1%)}}
+.cap{position:absolute;left:50%;transform:translateX(-50%);bottom:10px;font:500 12px var(--body);background:rgba(20,56,42,.75);padding:3px 10px;border-radius:99px}
+.stars{margin-top:22px;font-weight:600;color:var(--leaf)}
+.count{font:400 26px var(--disp);color:var(--gold)}
+
+/* services: barber-pole stripe list */
+.svc{padding:64px 0;background:var(--cream);color:var(--espresso)}
+.svc .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+h2{font:400 clamp(30px,4.6vw,48px)/1.08 var(--disp);margin-bottom:10px}
+.cuts{list-style:none;padding:0;margin:0;border-left:8px solid;border-image:repeating-linear-gradient(180deg,var(--jungle) 0 14px,var(--gold) 14px 28px,var(--cream) 28px 34px) 8}
+.cuts li{padding:16px 0 16px 22px;border-bottom:1px solid rgba(30,23,20,.14)}
+.cuts b{display:block;font:400 26px/1.2 var(--disp);color:var(--jungle)}
+.clip{position:relative;border-radius:18px;overflow:hidden}
+.clip figcaption{position:absolute;left:12px;bottom:10px;font:500 12px var(--body);background:rgba(30,23,20,.6);color:#fff;padding:3px 9px;border-radius:99px}
+
+/* booking (quote form) */
+.book{padding:64px 0;background:var(--espresso)}
+.sub{color:#c7bfb0;margin-bottom:26px;max-width:52ch}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+fieldset{border:0;padding:0;margin:0}
+legend{font-weight:700;margin-bottom:10px;color:var(--gold)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{position:relative}
+.opts input{position:absolute;opacity:0}
+.opts span{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:2px solid #3e5a4c;border-radius:999px;cursor:pointer;background:var(--moss);font-weight:500}
+.opts input:checked+span{background:var(--gold);border-color:var(--gold);color:var(--espresso);font-weight:700}
+.opts input:focus-visible+span{outline:3px solid var(--leaf);outline-offset:2px}
+.opts input:disabled+span{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.ticket{margin-top:30px;display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start}
+.summary{background:var(--jungle);border-left:6px solid var(--gold);border-radius:4px 14px 14px 4px;padding:20px 22px}
+.summary p{font:400 24px/1.3 var(--disp)}
+form{display:grid;gap:12px}
+form label.f{display:grid;gap:5px;font-weight:700;font-size:15px}
+input[type=text],input[type=tel],textarea{font:inherit;padding:12px;border-radius:10px;border:2px solid transparent;background:var(--cream);color:var(--espresso);width:100%}
+.done{min-height:1.4em;font-weight:700;color:var(--leaf)}
+
+/* why */
+.why{background:var(--fern);padding:56px 0}
+.why ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why li{border-top:3px solid var(--gold);padding-top:14px;font-weight:500}
+.why li b{display:block;font:400 24px/1.2 var(--disp);color:#fff;margin-bottom:6px}
+
+/* text-back: horizontal timeline + chat */
+.tb{background:var(--jungle);padding:64px 0;position:relative;overflow:hidden}
+.tb::before{content:"";position:absolute;right:-120px;top:-80px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(141,191,75,.18),transparent 70%)}
+.tb .grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:center;position:relative}
+.tb h2{max-width:16ch}
+.flow{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:14px;counter-reset:s}
+.flow li{display:flex;gap:14px;align-items:flex-start}
+.flow li::before{counter-increment:s;content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--espresso);font-weight:700;display:grid;place-items:center}
+.phone{background:#0f0c0a;border-radius:38px;padding:12px;border:2px solid #3e5a4c}
+.screen{background:var(--cream);color:var(--espresso);border-radius:28px;padding:18px 14px 22px;min-height:390px;font-size:15px}
+.ph-top{text-align:center;font-weight:700;margin-bottom:12px}
+.ph-top small{display:block;font-weight:500;font-size:12px;color:#5b524c}
+.missed{text-align:center;font-size:13px;color:#a0392b;font-weight:600;margin-bottom:10px}
+.bub{max-width:84%;padding:10px 13px;border-radius:18px;margin:8px 0;line-height:1.4}
+.bub.in{background:var(--jungle);color:#fff;border-bottom-left-radius:5px}
+.bub.out{background:var(--gold);color:var(--espresso);margin-left:auto;border-bottom-right-radius:5px}
+.when{font-size:12px;color:#5b524c;text-align:center;margin-top:10px}
+.js .bub{opacity:0;transform:scale(.96);transform-origin:left bottom;transition:opacity .35s ease,transform .35s ease}
+.js .phone.in .bub{opacity:1;transform:none}
+.js .phone.in .bub:nth-of-type(2){transition-delay:.6s}.js .phone.in .bub:nth-of-type(3){transition-delay:1.2s}
+
+/* reviews: swipe strip */
+.rev{background:var(--cream);color:var(--espresso);padding:64px 0}
+.rev .note{color:#5b524c;margin-bottom:20px}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+.strip blockquote{scroll-snap-align:start;background:#fff;border-radius:22px 22px 22px 4px;padding:22px;font-size:17px}
+.strip cite{display:block;margin-top:12px;font-style:normal;font-weight:700;font-size:14px;color:var(--fern)}
+
+/* area */
+.area{background:var(--espresso);padding:56px 0}
+.area .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;align-items:start}
+.area h3{font:400 24px var(--disp);color:var(--gold);margin-bottom:8px}
+.hrs td{padding:4px 14px 4px 0}
+.hrs tr.today td{color:var(--leaf);font-weight:700}
+svg.scmap{width:100%;height:auto;display:block}
+footer{padding:22px 0 96px;font-size:15px;color:#b8b0a0;border-top:1px solid #33291f}
+.callbar{display:none}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:0}
+  .arch{order:-1;max-width:360px;margin:0 auto;aspect-ratio:1/1}
+  .copy{padding-top:28px}
+  .svc .grid,.steps,.ticket,.tb .grid,.area .grid{grid-template-columns:1fr}
+  .why ul{grid-template-columns:1fr 1fr}
+  .phone{max-width:320px}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;justify-content:center;align-items:center;min-height:54px;background:var(--gold);color:var(--espresso);font-weight:700;border-radius:999px;text-decoration:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.6);animation:pulse 1.4s ease-in-out 1.5s 3}
+  @keyframes pulse{50%{transform:scale(1.04)}}
+}
+@media (max-width:420px){.why ul{grid-template-columns:1fr}}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .arch img{animation:none}.js .rv,.js .bub{transform:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<script>(function(){function f(){var b=document.querySelector('.demo');if(b)document.body.style.paddingTop=b.offsetHeight+'px'}addEventListener('resize',f);document.addEventListener('DOMContentLoaded',f)})()</script>
+</head>
+<body>
+<div class="demo">Demo preview built by David — not the official site. Photos are illustrative.</div>
+<header><div class="wrap">
+  <div class="logo">Jungle Studios</div>
+  <a class="btn" href="tel:+18645409331">Call 864-540-9331</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div class="copy">
+    <h1 class="rise" id="h1">Sit back. Your cut is handled.</h1>
+    <p class="lede">A calm barbershop in Easley. Cuts for grown-ups and kids, with Obi and Aidan.</p>
+    <div class="row"><a class="btn" href="#book">Pick your chair</a><a class="btn ghost" href="#visit">Hours and directions</a></div>
+    <p class="stars rv"><span class="count" data-to="4.9" data-dec="1">4.9</span> stars from <span class="count" data-to="248">248</span> Google reviews</p>
+  </div>
+  <div class="arch"><img src="img/shop.webp" alt="Illustration: barbershop interior with tropical plants and leather chairs" fetchpriority="high"><span class="cap">Illustration</span></div>
+</div></section>
+
+<section class="svc"><div class="wrap grid">
+  <div class="rv">
+    <h2>In the chair</h2>
+    <ul class="cuts">
+      <li><b>Haircuts</b>Clean, seamless blends, done the way you asked.</li>
+      <li><b>Kids' cuts</b>Patient with little ones, even the wiggly first-timers.</li>
+      <li><b>Something else?</b>Ask Obi or Aidan what they can do for you.</li>
+    </ul>
+  </div>
+  <figure class="clip rv"><img src="img/clippers.webp" alt="Illustration: clippers and comb on a wooden counter beside a monstera leaf" loading="lazy"><figcaption>Illustration</figcaption></figure>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+  <h2>Pick your chair</h2>
+  <p class="sub">Choose a barber, a cut and a day. The shop gets back to you to lock in a time.</p>
+  <div class="steps">
+    <fieldset class="rv"><legend>Barber</legend><div class="opts">
+      <label><input type="radio" name="b" value="Obi"><span>Obi</span></label>
+      <label><input type="radio" name="b" value="Aidan"><span>Aidan</span></label>
+      <label><input type="radio" name="b" value="whoever's free first" checked><span>First available</span></label>
+    </div></fieldset>
+    <fieldset class="rv"><legend>Cut</legend><div class="opts">
+      <label><input type="radio" name="c" value="a haircut" checked><span>Haircut</span></label>
+      <label><input type="radio" name="c" value="a kid's cut"><span>Kid's cut</span></label>
+      <label><input type="radio" name="c" value="something else"><span>Something else</span></label>
+    </div></fieldset>
+    <fieldset class="rv"><legend>Day</legend><div class="opts" id="day"></div></fieldset>
+  </div>
+  <div class="ticket">
+    <div class="summary" aria-live="polite"><p id="sum"></p></div>
+    <form id="qf">
+      <label class="f">Your name<input type="text" required autocomplete="name"></label>
+      <label class="f">Phone<input type="tel" required autocomplete="tel"></label>
+      <button class="btn" type="submit">Request this chair</button>
+      <p class="done" id="done" role="status"></p>
+    </form>
+  </div>
+</div></section>
+
+<section class="why"><div class="wrap">
+  <ul>
+    <li class="rv"><b>A drink on arrival</b>Offered when you walk in.</li>
+    <li class="rv"><b>Calm in here</b>An inviting, unhurried shop.</li>
+    <li class="rv"><b>Good with kids</b>Parents keep bringing them back.</li>
+    <li class="rv"><b>Like family</b>That's how regulars describe it.</li>
+  </ul>
+</div></section>
+
+<section class="tb"><div class="wrap grid">
+  <div>
+    <h2>Never miss a call — we text you back in seconds</h2>
+    <p>Clippers in hand, phone on the counter. When a call goes unanswered, the caller gets a text from Jungle Studios right away.</p>
+    <ol class="flow">
+      <li>You call while Obi or Aidan is mid-cut.</li>
+      <li>A text lands in seconds so you know the shop saw it.</li>
+      <li>Reply with a day, and the barber books you when they're free.</li>
+    </ol>
+  </div>
+  <div class="phone" id="phone" role="img" aria-label="Phone mock-up: a missed call, then an instant text from Jungle Studios and a reply from the caller.">
+    <div class="screen" aria-hidden="true">
+      <p class="ph-top">Jungle Studios<small>Text message</small></p>
+      <p class="missed">Missed call, 3:12 PM</p>
+      <p class="bub in">Hey, it's Jungle Studios. We're in the middle of a cut. Want us to save you a spot?</p>
+      <p class="bub out">Yes please, Saturday morning with Aidan?</p>
+      <p class="bub in">Got it. Aidan will text you a time shortly.</p>
+      <p class="when">Sample conversation</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="rev"><div class="wrap">
+  <h2>Sample reviews</h2>
+  <p class="note">Placeholders for this preview. Your real Google reviews go here.</p>
+  <div class="strip">
+    <blockquote class="rv">"Best fade I've had in years and the shop actually feels relaxing."<cite>Sample review</cite></blockquote>
+    <blockquote class="rv">"My son used to cry at haircuts. Not here."<cite>Sample review</cite></blockquote>
+    <blockquote class="rv">"Walked in a stranger, walked out a regular."<cite>Sample review</cite></blockquote>
+  </div>
+</div></section>
+
+<section class="area" id="visit"><div class="wrap grid">
+  <div><h3>Hours</h3><table class="hrs" id="hrs">
+    <tr data-d="Tue Wed Thu Fri"><td>Tuesday to Friday</td><td>9am to 7pm</td></tr>
+    <tr data-d="Sat"><td>Saturday</td><td>9am to 4pm</td></tr>
+    <tr data-d="Sun Mon"><td>Sunday and Monday</td><td>Closed</td></tr>
+  </table></div>
+  <div><h3>Find us in Easley</h3><p>1027 S Pendleton St, Apt E<br>Easley, SC 29642</p><p><a href="https://maps.apple.com/?q=Jungle+Studios+1027+S+Pendleton+St+Easley+SC">Open in Maps</a></p><p style="margin-top:8px"><a href="tel:+18645409331">864-540-9331</a></p></div>
+  <div><svg class="scmap" viewBox="0 0 400 320" role="img" aria-label="Map of South Carolina with a pin at Easley"><path d="M31.8,30.3L57.2,22.2L59.1,23.9L66.9,19.1L75.0,15.3L82.3,13.5L84.2,14.2L87.6,10.0L89.0,13.2L95.4,11.5L147.8,13.9L177.1,15.2L192.5,16.2L193.0,20.5L191.1,24.4L192.5,26.1L200.8,20.2L212.6,36.3L211.4,47.3L261.1,48.1L281.7,48.6L298.8,48.7L323.3,73.2L331.9,82.6L361.0,111.9L386.9,138.7L383.3,139.3L373.2,143.4L365.7,148.8L355.9,158.6L350.9,165.0L349.0,168.6L344.5,173.3L340.6,180.9L337.0,195.0L337.8,199.4L335.9,203.3L331.9,207.1L325.5,210.4L323.0,218.3L318.3,217.5L313.5,218.8L310.5,215.6L306.0,218.3L303.2,223.4L304.1,225.9L306.3,225.1L306.3,227.8L302.1,229.4L297.1,233.0L294.6,237.2L285.1,242.0L282.3,238.9L279.2,239.5L278.9,242.1L283.7,243.9L282.3,248.7L275.3,252.9L273.4,256.1L270.6,255.7L263.9,257.5L259.1,262.3L257.5,260.8L247.4,268.1L245.2,266.4L241.0,268.7L240.4,266.3L236.8,266.3L235.7,269.7L239.9,276.5L237.9,282.5L229.0,287.5L223.7,289.1L223.2,285.8L217.9,282.5L214.8,284.3L214.2,286.8L217.6,288.0L221.5,292.8L217.3,298.1L210.3,302.9L207.8,302.9L203.1,308.3L204.5,310.0L202.0,309.7L195.8,303.9L192.7,305.3L186.9,302.5L185.5,297.5L186.6,295.4L183.5,290.0L186.3,286.4L184.7,280.3L179.4,272.1L180.5,269.3L174.1,262.8L167.1,258.8L163.7,254.9L165.1,251.6L164.0,247.7L163.7,243.4L162.6,240.8L162.6,233.9L160.1,232.7L159.6,228.7L156.2,223.6L157.6,218.1L152.3,214.6L147.8,209.9L145.3,210.0L137.8,205.6L135.6,201.9L136.1,198.6L133.0,199.0L129.4,195.6L130.5,193.2L122.7,186.5L123.8,183.9L122.7,180.8L124.7,177.3L123.6,175.4L119.4,173.2L114.4,165.7L109.6,162.7L106.3,162.6L102.6,159.5L102.4,156.2L99.9,152.9L98.7,148.0L90.6,140.0L82.6,135.8L77.3,130.0L74.7,129.9L71.7,121.7L67.8,117.8L65.5,112.4L62.2,110.5L60.2,105.0L60.2,100.8L57.2,96.6L56.3,92.6L53.0,90.1L52.1,84.9L49.9,79.8L47.7,78.8L39.9,80.1L33.5,75.9L27.0,67.5L22.3,67.0L13.9,60.3L13.1,55.1L15.3,53.0L15.0,50.1L22.3,41.6L30.9,36.1L31.8,30.3Z" fill="#C9A227" stroke="#1E1714" stroke-width="2" stroke-linejoin="round"/><circle cx="71.2" cy="46.4" r="14" fill="#8DBF4B" opacity=".25"/><circle cx="71.2" cy="46.4" r="6" fill="#8DBF4B" stroke="#fff" stroke-width="2"/><text x="87.2" y="52.4" font-size="20" font-weight="800" fill="#1E1714" font-family="inherit">Easley</text></svg></div>
+</div></section>
+</main>
+<footer><div class="wrap">Jungle Studios, 1027 S Pendleton St, Easley, SC. <a href="tel:+18645409331">864-540-9331</a></div></footer>
+<a class="callbar" href="tel:+18645409331">Call 864-540-9331</a>
+
+<script>
+const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+(function(){const h=document.getElementById('h1');if(calm)return;const w=h.textContent.split(' ');h.textContent='';w.forEach((x,i)=>{const s=document.createElement('span');s.textContent=x;s.style.animationDelay=(i*70)+'ms';h.appendChild(s);h.appendChild(document.createTextNode(' '))})})();
+const OPEN=['Tue','Wed','Thu','Fri','Sat'],CLOSE={Tue:1140,Wed:1140,Thu:1140,Fri:1140,Sat:960},NAMES={Sun:'Sunday',Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday',Sat:'Saturday'};
+function et(off){const f=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'numeric',hourCycle:'h23'});const p=Object.fromEntries(f.formatToParts(new Date(Date.now()+off*864e5)).map(x=>[x.type,x.value]));return{w:p.weekday,md:p.month+' '+p.day,m:(+p.hour)*60+(+p.minute)}}
+const box=document.getElementById('day');let first=true;
+for(let i=0;i<7;i++){const d=et(i),ok=OPEN.includes(d.w)&&!(i===0&&d.m>=CLOSE[d.w]-30),l=document.createElement('label');
+  l.innerHTML='<input type="radio" name="d" value="'+NAMES[d.w]+' ('+d.md+')"'+(ok?'':' disabled')+(ok&&first?' checked':'')+'><span>'+(i===0?'Today':d.w+' '+d.md)+'</span>';
+  if(ok&&first)first=false;box.appendChild(l)}
+function sum(){const v=n=>(document.querySelector('input[name='+n+']:checked')||{}).value;document.getElementById('sum').textContent='Book '+v('c')+' with '+v('b')+' on '+(v('d')||'the next open day')+'.'}
+document.querySelectorAll('.opts input').forEach(i=>i.addEventListener('change',sum));sum();
+(function(){const t=et(0).w;document.querySelectorAll('#hrs tr').forEach(r=>{if(r.dataset.d.split(' ').includes(t))r.classList.add('today')})})();
+function count(el){const to=+el.dataset.to,dec=+(el.dataset.dec||0);if(calm){el.textContent=to.toFixed(dec);return}const t0=performance.now();(function s(t){const k=Math.min(1,(t-t0)/1100),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(s)})(t0)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.count').forEach(count);io.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});
+document.querySelectorAll('.rv,#phone').forEach(el=>io.observe(el));
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();document.getElementById('done').textContent='Demo form. On the live site this sends your request to the shop.'});
+</script>
+</body>
+</html>

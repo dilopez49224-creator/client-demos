@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hannah's Cleaning Services | House cleaning in Seneca, SC</title>
+<meta name="description" content="Recurring, one-time, move-out and listing-ready house cleaning in Seneca, SC. A walkthrough first, so you know what to expect.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mint:#BFE6D6; --mist:#E6F3EE; --teal:#0F5C5A; --deep:#0A3F3E; --lemon:#F2D35B; --linen:#FAFAF7; --ink:#173533;
+  --disp:'Calistoga',Georgia,serif;
+  --body:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --gut:16px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.6 var(--body);color:var(--ink);background:var(--linen);padding-top:34px}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 var(--gut)}
+.demo{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--teal);color:#e2f4ec;font:600 13px/1.3 var(--body);text-align:center;padding:9px 12px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+.logo{font:400 24px/1.1 var(--disp);color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:var(--teal);color:#fff;font:700 16px var(--body);border:0;border-radius:14px;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--deep)}
+.btn.soft{background:var(--mint);color:var(--teal)}
+
+/* hero */
+.hero{padding:12px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:center}
+h1{font:400 clamp(42px,6.2vw,76px)/1.02 var(--disp);max-width:11ch;color:var(--deep)}
+.rise span{display:inline-block;opacity:0;transform:translateY(.45em);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.lede{font-size:19px;max-width:40ch;margin:16px 0 24px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.kb{position:relative;overflow:hidden;border-radius:30px 30px 30px 140px;aspect-ratio:7/5}
+.kb img{width:100%;height:100%;object-fit:cover;animation:kb 26s ease-in-out infinite alternate;will-change:transform}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08) translate(-1.5%,-1%)}}
+.cap{position:absolute;right:14px;bottom:12px;font:600 12px var(--body);background:rgba(250,250,247,.85);color:var(--teal);padding:3px 10px;border-radius:99px}
+.rating{margin-top:22px;font-weight:600}
+.count{font:400 28px var(--disp);color:var(--teal)}
+
+/* services: checklist */
+.svc{padding:64px 0;background:var(--mist)}
+h2{font:400 clamp(30px,4.4vw,46px)/1.08 var(--disp);margin-bottom:10px;color:var(--deep)}
+.svc .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
+.list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.list li{background:#fff;border-radius:18px;padding:18px 18px 18px 58px;position:relative}
+.list li::before{content:"";position:absolute;left:18px;top:20px;width:26px;height:26px;border-radius:8px;background:var(--lemon) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%230F5C5A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+.list b{display:block;font-weight:800}
+.list li.wide{grid-column:1/-1}
+
+/* estimate builder (quote form) */
+.est{padding:64px 0}
+.sub{max-width:56ch;margin-bottom:28px}
+.builder{display:grid;grid-template-columns:1fr 1.05fr;gap:36px;align-items:start}
+.house{background:var(--mist);border-radius:26px;padding:22px}
+.house svg{display:block;width:100%;height:auto}
+.room{transition:fill .35s ease}
+.room.on{fill:var(--mint)}
+.room.bath.on{fill:#cfe7f4}
+.ctrl{display:grid;gap:20px}
+.stepper{display:flex;align-items:center;justify-content:space-between;background:var(--mist);border-radius:14px;padding:10px 12px 10px 18px}
+.stepper b{font-weight:800}
+.stepper .n{font:400 28px var(--disp);min-width:2ch;text-align:center}
+.stepper button{width:44px;height:44px;border-radius:12px;border:2px solid var(--teal);background:#fff;color:var(--teal);font:800 22px var(--body);cursor:pointer}
+.stepper button:hover{background:var(--mint)}
+fieldset{border:0;padding:0}
+legend{font-weight:800;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:2px solid var(--teal);border-radius:999px;cursor:pointer;background:#fff;font-weight:600}
+.chips input:checked+span{background:var(--teal);color:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--lemon);outline-offset:2px}
+.sum{background:var(--lemon);border-radius:14px;padding:16px 18px;font-weight:700}
+form{display:grid;gap:12px}
+form label.f{display:grid;gap:5px;font-weight:700;font-size:15px}
+input[type=text],input[type=tel],textarea{font:inherit;padding:12px;border-radius:12px;border:2px solid #cfe3dc;background:#fff;color:var(--ink);width:100%}
+.done{min-height:1.4em;font-weight:800;color:var(--teal)}
+
+/* why */
+.why{padding:64px 0;background:var(--deep);color:#eaf6f1}
+.why .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.why h2{color:#fff}
+.why figure{position:relative;border-radius:26px;overflow:hidden}
+.why figcaption{position:absolute;left:14px;bottom:12px;font:600 12px var(--body);background:rgba(250,250,247,.85);color:var(--teal);padding:3px 10px;border-radius:99px}
+.why dl{display:grid;gap:18px;margin-top:10px}
+.why dt{font:400 22px var(--disp);color:var(--lemon)}
+.why dd{margin:2px 0 0}
+
+/* text-back: phone resting on a lemon card */
+.tb{padding:64px 0;background:var(--linen)}
+.tb .card{background:var(--lemon);border-radius:34px;padding:44px clamp(20px,5vw,56px);display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:center}
+.tb h2{max-width:17ch}
+.phone{background:var(--deep);border-radius:36px;padding:11px;transform:rotate(3deg);box-shadow:0 24px 40px -24px rgba(10,63,62,.7)}
+.screen{background:#fff;border-radius:27px;padding:16px 14px 20px;min-height:380px;font-size:15px}
+.ph-top{display:flex;align-items:center;gap:10px;border-bottom:1px solid #e3ece8;padding-bottom:10px;margin-bottom:10px;font-weight:800}
+.ph-top i{width:30px;height:30px;border-radius:50%;background:var(--mint);display:grid;place-items:center;font-style:normal;color:var(--teal)}
+.missed{font-size:13px;font-weight:700;color:#b23b2e;text-align:center;margin:4px 0 8px}
+.bub{max-width:85%;padding:10px 13px;border-radius:16px;margin:8px 0;line-height:1.4}
+.bub.in{background:var(--mist);border-bottom-left-radius:4px}
+.bub.out{background:var(--teal);color:#fff;margin-left:auto;border-bottom-right-radius:4px}
+.when{font-size:12px;color:#56706c;text-align:center;margin-top:10px}
+.js .bub{opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease}
+.js .phone.in .bub{opacity:1;transform:none}
+.js .phone.in .bub:nth-of-type(2){transition-delay:.6s}.js .phone.in .bub:nth-of-type(3){transition-delay:1.2s}
+
+/* reviews */
+.rev{padding:8px 0 64px}
+.rev .note{color:#56706c;margin-bottom:22px}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.revs blockquote{background:var(--mist);border-radius:22px;padding:26px 22px 20px;position:relative}
+.revs blockquote::before{content:"\201C";position:absolute;top:-6px;left:16px;font:400 64px/1 var(--disp);color:var(--lemon)}
+.revs p{margin-top:16px}
+.revs cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:14px;color:var(--teal)}
+
+/* area */
+.area{background:var(--mist);padding:56px 0}
+.area .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;align-items:center}
+.area h3{font:400 24px var(--disp);color:var(--deep);margin-bottom:6px}
+svg.scmap{width:100%;height:auto;display:block}
+footer{padding:22px 0 96px;font-size:15px}
+.callbar{display:none}
+@media (max-width:860px){
+  .hero .wrap,.svc .grid,.builder,.why .grid,.area .grid{grid-template-columns:1fr}
+  .list{grid-template-columns:1fr}
+  .tb .card{grid-template-columns:1fr;padding:32px 20px}
+  .phone{max-width:300px;margin:0 auto}
+  .revs{grid-template-columns:1fr}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;justify-content:center;align-items:center;min-height:54px;background:var(--teal);color:#fff;font-weight:800;border-radius:16px;text-decoration:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.4);animation:pulse 1.4s ease-in-out 1.5s 3}
+  @keyframes pulse{50%{transform:scale(1.04)}}
+}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .kb img{animation:none}.js .rv,.js .bub{transform:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<script>(function(){function f(){var b=document.querySelector('.demo');if(b)document.body.style.paddingTop=b.offsetHeight+'px'}addEventListener('resize',f);document.addEventListener('DOMContentLoaded',f)})()</script>
+</head>
+<body>
+<div class="demo">Demo preview built by David — not the official site. Photos are illustrative.</div>
+<header><div class="wrap">
+  <div class="logo">Hannah's Cleaning Services</div>
+  <a class="btn" href="tel:+18649037377">Call 864-903-7377</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div>
+    <h1 class="rise" id="h1">Come home to a clean house.</h1>
+    <p class="lede">House cleaning in Seneca. Hannah walks through your home first, so you know exactly what you're getting.</p>
+    <div class="row"><a class="btn" href="#estimate">Build my request</a><a class="btn soft" href="#area">Where we clean</a></div>
+    <p class="rating rv"><span class="count" data-to="5.0" data-dec="1">5.0</span> stars from <span class="count" data-to="94">94</span> Google reviews</p>
+  </div>
+  <div class="kb"><img src="img/kitchen.webp" alt="Illustration: bright clean kitchen with sunlight and a bowl of lemons" fetchpriority="high"><span class="cap">Illustration</span></div>
+</div></section>
+
+<section class="svc"><div class="wrap grid">
+  <div class="rv"><h2>What we clean</h2><p>Regular visits or a one-time reset, on a schedule that works around you.</p></div>
+  <ul class="list">
+    <li class="rv"><b>Recurring cleaning</b>The same careful clean, on your schedule.</li>
+    <li class="rv"><b>One-time cleans</b>A deep reset when the house needs it.</li>
+    <li class="rv"><b>Move-out cleans</b>Done on tight deadlines.</li>
+    <li class="rv"><b>Listing-ready cleans</b>For sellers and their agents before photos.</li>
+    <li class="rv wide"><b>Help with a new baby</b>Support during pregnancy and after the baby comes home.</li>
+  </ul>
+</div></section>
+
+<section class="est" id="estimate"><div class="wrap">
+  <h2>Tell us about your home</h2>
+  <p class="sub">Set your rooms and the kind of clean. Hannah will follow up to set up a walkthrough and a quote.</p>
+  <div class="builder">
+    <div class="house rv">
+      <svg viewBox="0 0 400 300" role="img" aria-label="Floor plan of your home. Rooms fill in as you add them.">
+        <path d="M20 120 200 20 380 120" fill="none" stroke="#0F5C5A" stroke-width="6" stroke-linejoin="round"/>
+        <rect x="40" y="120" width="320" height="160" fill="#FAFAF7" stroke="#0F5C5A" stroke-width="5" rx="4"/>
+        <rect class="room bed" x="50" y="130" width="96" height="66" rx="4" fill="#eef2f1"/>
+        <rect class="room bed" x="152" y="130" width="96" height="66" rx="4" fill="#eef2f1"/>
+        <rect class="room bed" x="254" y="130" width="96" height="66" rx="4" fill="#eef2f1"/>
+        <rect class="room bed" x="50" y="204" width="96" height="66" rx="4" fill="#eef2f1"/>
+        <rect class="room bed" x="152" y="204" width="96" height="66" rx="4" fill="#eef2f1"/>
+        <rect class="room bath" x="254" y="204" width="46" height="66" rx="4" fill="#eef2f1"/>
+        <rect class="room bath" x="304" y="204" width="46" height="66" rx="4" fill="#eef2f1"/>
+      </svg>
+    </div>
+    <div class="ctrl">
+      <div class="stepper"><b>Bedrooms</b><div style="display:flex;align-items:center;gap:8px"><button type="button" data-k="bed" data-d="-1" aria-label="Fewer bedrooms">&minus;</button><span class="n" id="nbed">3</span><button type="button" data-k="bed" data-d="1" aria-label="More bedrooms">+</button></div></div>
+      <div class="stepper"><b>Bathrooms</b><div style="display:flex;align-items:center;gap:8px"><button type="button" data-k="bath" data-d="-1" aria-label="Fewer bathrooms">&minus;</button><span class="n" id="nbath">2</span><button type="button" data-k="bath" data-d="1" aria-label="More bathrooms">+</button></div></div>
+      <fieldset><legend>What kind of clean?</legend><div class="chips">
+        <label><input type="radio" name="k" value="a recurring clean" checked><span>Recurring</span></label>
+        <label><input type="radio" name="k" value="a one-time clean"><span>One-time</span></label>
+        <label><input type="radio" name="k" value="a move-out clean"><span>Move-out</span></label>
+        <label><input type="radio" name="k" value="a listing-ready clean"><span>Getting ready to list</span></label>
+      </div></fieldset>
+      <p class="sum" id="sum" aria-live="polite"></p>
+      <form id="qf">
+        <label class="f">Your name<input type="text" required autocomplete="name"></label>
+        <label class="f">Phone<input type="tel" required autocomplete="tel"></label>
+        <label class="f">Anything we should know?<textarea rows="2"></textarea></label>
+        <button class="btn" type="submit">Send my request</button>
+        <p class="done" id="done" role="status"></p>
+      </form>
+    </div>
+  </div>
+</div></section>
+
+<section class="why"><div class="wrap grid">
+  <figure class="rv"><img src="img/bedroom.webp" alt="Illustration: neatly made bed with white linens in a sunny bedroom" loading="lazy"><figcaption>Illustration</figcaption></figure>
+  <div class="rv">
+    <h2>Why people keep Hannah</h2>
+    <dl>
+      <dt>A walkthrough first</dt><dd>Expectations are set before the first clean, so nothing is a surprise.</dd>
+      <dt>No pre-cleaning</dt><dd>Customers say they stopped tidying up before the crew arrives.</dd>
+      <dt>Flexible scheduling</dt><dd>Including tight move-out and listing deadlines.</dd>
+    </dl>
+  </div>
+</div></section>
+
+<section class="tb"><div class="wrap"><div class="card">
+  <div>
+    <h2>Never miss a call — we text you back in seconds</h2>
+    <p>Hannah's usually mid-clean with gloves on. If your call goes unanswered, you get a text right away, and a real reply as soon as she's free.</p>
+  </div>
+  <div class="phone" id="phone" role="img" aria-label="Phone mock-up: a missed call, then an instant text from Hannah's Cleaning Services and a reply from the caller.">
+    <div class="screen" aria-hidden="true">
+      <div class="ph-top"><i>H</i>Hannah's Cleaning</div>
+      <p class="missed">Missed call, 10:26 AM</p>
+      <p class="bub in">Hi! This is Hannah's Cleaning. Sorry I missed you, I'm with a client. How can I help?</p>
+      <p class="bub out">Looking for a move-out clean by the 30th. 3 bed, 2 bath.</p>
+      <p class="bub in">I can help with that. I'll call you this afternoon to set up a walkthrough.</p>
+      <p class="when">Sample conversation</p>
+    </div>
+  </div>
+</div></div></section>
+
+<section class="rev"><div class="wrap">
+  <h2>Sample reviews</h2>
+  <p class="note">Placeholders for this preview. Your real Google reviews go here.</p>
+  <div class="revs">
+    <blockquote class="rv"><p>Our house has never felt this fresh. Worth every visit.</p><cite>Sample review</cite></blockquote>
+    <blockquote class="rv"><p>They had our rental spotless the day before the new tenants moved in.</p><cite>Sample review</cite></blockquote>
+    <blockquote class="rv"><p>Easy to schedule and always on time.</p><cite>Sample review</cite></blockquote>
+  </div>
+</div></section>
+
+<section class="area" id="area"><div class="wrap grid">
+  <div><h3>Where we clean</h3><p>Seneca, SC and nearby. Not sure if you're in range? Just call.</p></div>
+  <div><h3>Hours</h3><p>Monday to Friday, 9am to 5pm</p><p id="open" style="margin-top:6px;font-weight:800"></p><p style="margin-top:6px"><a href="tel:+18649037377">864-903-7377</a></p></div>
+  <div><svg class="scmap" viewBox="0 0 400 320" role="img" aria-label="Map of South Carolina with a pin at Seneca"><path d="M31.8,30.3L57.2,22.2L59.1,23.9L66.9,19.1L75.0,15.3L82.3,13.5L84.2,14.2L87.6,10.0L89.0,13.2L95.4,11.5L147.8,13.9L177.1,15.2L192.5,16.2L193.0,20.5L191.1,24.4L192.5,26.1L200.8,20.2L212.6,36.3L211.4,47.3L261.1,48.1L281.7,48.6L298.8,48.7L323.3,73.2L331.9,82.6L361.0,111.9L386.9,138.7L383.3,139.3L373.2,143.4L365.7,148.8L355.9,158.6L350.9,165.0L349.0,168.6L344.5,173.3L340.6,180.9L337.0,195.0L337.8,199.4L335.9,203.3L331.9,207.1L325.5,210.4L323.0,218.3L318.3,217.5L313.5,218.8L310.5,215.6L306.0,218.3L303.2,223.4L304.1,225.9L306.3,225.1L306.3,227.8L302.1,229.4L297.1,233.0L294.6,237.2L285.1,242.0L282.3,238.9L279.2,239.5L278.9,242.1L283.7,243.9L282.3,248.7L275.3,252.9L273.4,256.1L270.6,255.7L263.9,257.5L259.1,262.3L257.5,260.8L247.4,268.1L245.2,266.4L241.0,268.7L240.4,266.3L236.8,266.3L235.7,269.7L239.9,276.5L237.9,282.5L229.0,287.5L223.7,289.1L223.2,285.8L217.9,282.5L214.8,284.3L214.2,286.8L217.6,288.0L221.5,292.8L217.3,298.1L210.3,302.9L207.8,302.9L203.1,308.3L204.5,310.0L202.0,309.7L195.8,303.9L192.7,305.3L186.9,302.5L185.5,297.5L186.6,295.4L183.5,290.0L186.3,286.4L184.7,280.3L179.4,272.1L180.5,269.3L174.1,262.8L167.1,258.8L163.7,254.9L165.1,251.6L164.0,247.7L163.7,243.4L162.6,240.8L162.6,233.9L160.1,232.7L159.6,228.7L156.2,223.6L157.6,218.1L152.3,214.6L147.8,209.9L145.3,210.0L137.8,205.6L135.6,201.9L136.1,198.6L133.0,199.0L129.4,195.6L130.5,193.2L122.7,186.5L123.8,183.9L122.7,180.8L124.7,177.3L123.6,175.4L119.4,173.2L114.4,165.7L109.6,162.7L106.3,162.6L102.6,159.5L102.4,156.2L99.9,152.9L98.7,148.0L90.6,140.0L82.6,135.8L77.3,130.0L74.7,129.9L71.7,121.7L67.8,117.8L65.5,112.4L62.2,110.5L60.2,105.0L60.2,100.8L57.2,96.6L56.3,92.6L53.0,90.1L52.1,84.9L49.9,79.8L47.7,78.8L39.9,80.1L33.5,75.9L27.0,67.5L22.3,67.0L13.9,60.3L13.1,55.1L15.3,53.0L15.0,50.1L22.3,41.6L30.9,36.1L31.8,30.3Z" fill="#0F5C5A" stroke="#E6F3EE" stroke-width="2" stroke-linejoin="round"/><circle cx="43.9" cy="60" r="14" fill="#F2D35B" opacity=".25"/><circle cx="43.9" cy="60" r="6" fill="#F2D35B" stroke="#fff" stroke-width="2"/><text x="59.9" y="66" font-size="20" font-weight="800" fill="#FAFAF7" font-family="inherit">Seneca</text></svg></div>
+</div></section>
+</main>
+<footer><div class="wrap">Hannah's Cleaning Services LLC, Seneca, SC. <a href="tel:+18649037377">864-903-7377</a></div></footer>
+<a class="callbar" href="tel:+18649037377">Call 864-903-7377</a>
+
+<script>
+const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+(function(){const h=document.getElementById('h1');if(calm)return;const w=h.textContent.split(' ');h.textContent='';w.forEach((x,i)=>{const s=document.createElement('span');s.textContent=x;s.style.animationDelay=(i*70)+'ms';h.appendChild(s);h.appendChild(document.createTextNode(' '))})})();
+const st={bed:3,bath:2},MAX={bed:6,bath:4},MIN={bed:1,bath:1};
+function paint(){
+  document.querySelectorAll('.room.bed').forEach((r,i)=>r.classList.toggle('on',i<st.bed));
+  document.querySelectorAll('.room.bath').forEach((r,i)=>r.classList.toggle('on',i<st.bath));
+  document.getElementById('nbed').textContent=st.bed;document.getElementById('nbath').textContent=st.bath;
+  const k=document.querySelector('input[name=k]:checked').value;
+  document.getElementById('sum').textContent=st.bed+' bed, '+st.bath+' bath, '+k+'. Hannah will reach out to set up a walkthrough and quote.';
+}
+document.querySelectorAll('.stepper button').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.k;st[k]=Math.max(MIN[k],Math.min(MAX[k],st[k]+(+b.dataset.d)));paint()}));
+document.querySelectorAll('input[name=k]').forEach(i=>i.addEventListener('change',paint));paint();
+(function(){const f=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'});const p=Object.fromEntries(f.formatToParts(new Date()).map(x=>[x.type,x.value]));const m=(+p.hour)*60+(+p.minute);const o=['Mon','Tue','Wed','Thu','Fri'].includes(p.weekday)&&m>=540&&m<1020;document.getElementById('open').textContent=o?'Open now':'Closed right now'})();
+function count(el){const to=+el.dataset.to,dec=+(el.dataset.dec||0);if(calm){el.textContent=to.toFixed(dec);return}const t0=performance.now();(function s(t){const k=Math.min(1,(t-t0)/1100),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(s)})(t0)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.count').forEach(count);io.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});
+document.querySelectorAll('.rv,#phone').forEach(el=>io.observe(el));
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();document.getElementById('done').textContent='Demo form. On the live site this sends your request straight to Hannah.'});
+</script>
+</body>
+</html>
